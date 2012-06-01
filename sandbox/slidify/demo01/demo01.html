@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+  Google HTML5 slide template
+
+  Authors: Luke Mah?? (code)
+           Marcin Wichary (code and design)
+           
+           Dominic Mazzoni (browser compatibility)
+           Charles Chen (ChromeVox support)
+
+  URL: http://code.google.com/p/html5slides/
+-->
+
+<html>
+  <head>
+    <title>Presentation</title>
+    <meta charset='utf-8'>
+    
+    <!-- LOAD HTML5SLIDES CSS FILES AND JS -->
+    <link rel="stylesheet" href="html5slides/styles.css">
+    <script src='html5slides/slides.js'></script>
+    
+    <!-- LOAD HIGHLIGHTER CSS FILES AND JS -->
+    <link rel="stylesheet" href="highlight/acid.css">
+    
+    <!-- LOAD MATHJAX JS -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+      });
+    </script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
+    <!-- LOAD CUSTOM CSS AND JS -->
+        
+  </head>
+  
+  <body style='display: none'>
+     <section class='slides layout-regular template-default'>
+       <article>
+         <h1>Slidify</h1>
+
+<p>超簡単スライド作成</p>
+
+<p>@kohske</p>
+
+       </article>
+       <article>
+         <h3>手軽に資料を作りましょう</h3>
+
+<ul>
+<li>markdown!!</li>
+<li>knitr!!</li>
+<li>slidify</li>
+</ul>
+
+<p>やばいレベル。</p>
+
+       </article>
+       <article>
+         <h3>インストール</h3>
+
+<pre class="knitr"><div class="source">library(devtools)
+install_github("slidify", "ramnathv")
+</div></pre>
+
+<p>以下も必要かも。</p>
+
+<pre class="knitr"><div class="source">install_github("knitr", "yihui")
+install_github("whisker", "edwindj")
+install_github("markdown", "rstudio")
+</div></pre>
+
+       </article>
+       <article>
+         <h3>コード評価ももちろんオーケー</h3>
+
+<pre class="knitr"><div class="source">ctl <- c(4.17, 5.58, 5.18, 6.11, 4.5, 4.61, 5.17, 
+    4.53, 5.33, 5.14)
+trt <- c(4.81, 4.17, 4.41, 3.59, 5.87, 3.83, 6.03, 
+    4.89, 4.32, 4.69)
+group <- gl(2, 10, 20, labels = c("Ctl", "Trt"))
+weight <- c(ctl, trt)
+lm.D9 <- lm(weight ~ group)
+
+coef(lm.D9)
+</div><div class="output">## (Intercept)    groupTrt 
+##       5.032      -0.371 
+</div></pre>
+
+       </article>
+       <article>
+         <h3>プロットもオーケー</h3>
+
+<pre class="knitr"><div class="source">par(family = "sans")
+curve(sin(x), -10, 10, main = "正弦波")
+</div><img src="figure/f32.png" class="plot" />
+</pre>
+
+       </article>
+       <article>
+         <h3>ggplot2もオーケー</h3>
+
+<pre class="knitr"><div class="source">library(ggplot2)
+ggplot(NULL, aes(c(-10, 10))) + stat_function(fun = sin)
+</div><img src="figure/f33.png" class="plot" />
+</pre>
+
+       </article>
+       <article>
+         <h2>これはいいね。おしまい。</h2>
+
+       </article>
+     </section>
+  </body>
+
+</html>
