@@ -1,53 +1,40 @@
 <!DOCTYPE html>
-<!--
-  Google HTML5 slide template
+	<!--
+	Google HTML5 slide template
 
-  Authors: Luke Mah?? (code)
-           Marcin Wichary (code and design)
-           
-           Dominic Mazzoni (browser compatibility)
-           Charles Chen (ChromeVox support)
+Authors: Luke Mah?? (code)
+Marcin Wichary (code and design)
 
-  URL: http://code.google.com/p/html5slides/
--->
+Dominic Mazzoni (browser compatibility)
+Charles Chen (ChromeVox support)
 
+URL: http://code.google.com/p/html5slides/
+	-->
+	
 <html>
-  <head>
-    <title>Presentation</title>
-    <meta charset='utf-8'>
-    
-    <!-- LOAD HTML5SLIDES CSS FILES AND JS -->
-    <link rel="stylesheet" href="html5slides/styles.css">
-    <script src='html5slides/slides.js'></script>
-    
-    <!-- LOAD HIGHLIGHTER CSS FILES AND JS -->
-    <link rel="stylesheet" href="highlight/acid.css">
-    
-    <!-- LOAD MATHJAX JS -->
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
-      });
-    </script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
-    
-    <!-- LOAD CUSTOM CSS AND JS -->
-        
-  </head>
+<head>
+	<title>Presentation</title>
+	<meta charset='utf-8'>
+	
+	<!-- LOAD STYLE SHEETS -->
+	<link rel="stylesheet" href="libraries/html5slides/styles.css">
+	<link rel="stylesheet" href="libraries/highlight/styles/acid.css">
+  <!-- LOAD CUSTOM CSS -->
   
-  <body style='display: none'>
-     <section class='slides layout-regular template-default'>
-       <article>
-         <h1>Markdown, Knitr, and Slidify</h1>
+    
+</head>
+<body style='display: none'>
+	<section class='slides layout-regular template-default'>
+	  <article class = "" id = "pXAX"> 
+      <h1>Markdown, Knitr, and Slidify</h1>
 
 <p>state-of-the-art report/presentation generation in R</p>
 
 <h2>@kohske</h2>
 
-       </article>
-       <article>
-         <h3>Easy, fun, and beautiful</h3>
+    </article>
+	  <article class = "" id = "TPS6"> 
+      <h3>Easy, fun, and beautiful</h3>
 
 <div class="chunk"><div class="rcode"><div class="source"><pre class="knitr"><span class="symbol">txt</span> <span class="assignement">&lt;-</span> <span class="functioncall">rep</span><span class="keyword">(</span><span class="functioncall">c</span><span class="keyword">(</span><span class="string">"E"</span><span class="keyword">,</span> <span class="string">"a"</span><span class="keyword">,</span> <span class="string">"s"</span><span class="keyword">,</span> <span class="string">"y"</span><span class="keyword">)</span><span class="keyword">,</span> <span class="number">10</span><span class="keyword">)</span>
 <span class="functioncall">grid.text</span><span class="keyword">(</span><span class="symbol">txt</span><span class="keyword">,</span> <span class="number">0.5</span> <span class="keyword">+</span> <span class="functioncall">sin</span><span class="keyword">(</span><span class="number">2</span> <span class="keyword">*</span> <span class="symbol">pi</span> <span class="keyword">*</span> <span class="functioncall">seq_along</span><span class="keyword">(</span><span class="symbol">txt</span><span class="keyword">)</span><span class="keyword">/</span><span class="functioncall">length</span><span class="keyword">(</span><span class="symbol">txt</span><span class="keyword">)</span><span class="keyword">)</span><span class="keyword">/</span><span class="number">2.2</span><span class="keyword">,</span>
@@ -55,9 +42,9 @@
         <span class="argument">col</span> <span class="argument">=</span> <span class="functioncall">rainbow</span><span class="keyword">(</span><span class="functioncall">length</span><span class="keyword">(</span><span class="symbol">txt</span><span class="keyword">)</span><span class="keyword">)</span><span class="keyword">)</span><span class="keyword">)</span>
 </pre></div></div><div class="rimage right"><img src="figure/ch1.png" class="plot" /></div></div>
 
-       </article>
-       <article>
-         <h3>Reproducible</h3>
+    </article>
+	  <article class = "" id = "eQmD"> 
+      <h3>Reproducible</h3>
 
 <h4>Freedom from</h4>
 
@@ -76,9 +63,9 @@
 <li>Picture</li>
 </ul>
 
-       </article>
-       <article>
-         <h3>Tools</h3>
+    </article>
+	  <article class = "" id = "UdBM"> 
+      <h3>Tools</h3>
 
 <p>All tools are available for free.</p>
 
@@ -89,11 +76,11 @@
 <li><p><a href="http://rstudio.org/">Rstudio</a>: excellent support for knitr.</p></li>
 </ul>
 
-<p><img src="figure/r-logo.png" alt="R logo"></p>
+<p><img src="figure/r-logo.png" alt="R logo"/></p>
 
-       </article>
-       <article>
-         <h3>Step-by-step tutorial</h3>
+    </article>
+	  <article class = "" id = "pWz1"> 
+      <h3>Step-by-step tutorial</h3>
 
 <ol>
 <li>Prepare data</li>
@@ -104,9 +91,9 @@
 <li>Publish</li>
 </ol>
 
-       </article>
-       <article>
-         <h3>1. Prepare data</h3>
+    </article>
+	  <article class = "" id = "pW5r"> 
+      <h3>1. Prepare data</h3>
 
 <p>Ok, use <code>iris</code>.</p>
 
@@ -122,9 +109,9 @@
 
 <p>Of course, you may use data from your own experiment.</p>
 
-       </article>
-       <article>
-         <h3>2. Write a code for data analysis</h3>
+    </article>
+	  <article class = "" id = "SpFN"> 
+      <h3>2. Write a code for data analysis</h3>
 
 <p>summary of <code>iris</code></p>
 
@@ -145,9 +132,9 @@
 ##                 
 </pre></div></div></div>
 
-       </article>
-       <article>
-         <h3>2. Write a code for data analysis</h3>
+    </article>
+	  <article class = "" id = "9Pma"> 
+      <h3>2. Write a code for data analysis</h3>
 
 <p>Old-fashioned statistical test.</p>
 
@@ -215,27 +202,27 @@
 ## 4  Petal.Width
 </pre></div></div></div>
 
-       </article>
-       <article>
-         <h3>3. Write a code for summary output.</h3>
+    </article>
+	  <article class = "" id = "aa3C"> 
+      <h3>3. Write a code for summary output.</h3>
 
 <ul>
 <li>For presentation, figures are better</li>
 <li>For report, <a href="http://kohske.github.com/sandbox/slidify/why-slidify/whyslidify_static.html">static html</a> version with detailed information may be better</li>
 </ul>
 
-       </article>
-       <article>
-         <h3>4. Visualization</h3>
+    </article>
+	  <article class = "" id = "zX7R"> 
+      <h3>4. Visualization</h3>
 
 <div class="chunk"><div class="rcode"><div class="source"><pre class="knitr"><span class="functioncall">library</span><span class="keyword">(</span><span class="symbol">ggplot2</span><span class="keyword">)</span>
 <span class="functioncall">ggplot</span><span class="keyword">(</span><span class="symbol">iris2</span><span class="keyword">,</span> <span class="functioncall">aes</span><span class="keyword">(</span><span class="symbol">variable</span><span class="keyword">,</span> <span class="symbol">value</span><span class="keyword">,</span> <span class="argument">colour</span> <span class="argument">=</span> <span class="symbol">Species</span><span class="keyword">)</span><span class="keyword">)</span> <span class="keyword">+</span>
     <span class="functioncall">geom_boxplot</span><span class="keyword">(</span><span class="keyword">)</span> <span class="keyword">+</span> <span class="functioncall">theme_grey</span><span class="keyword">(</span><span class="argument">base_size</span> <span class="argument">=</span> <span class="number">24</span><span class="keyword">)</span>
 </pre></div></div><div class="rimage default"><img src="figure/ch6.png" class="plot" /></div></div>
 
-       </article>
-       <article>
-         <h3>5. Markdown</h3>
+    </article>
+	  <article class = "" id = "gCVm"> 
+      <h3>5. Markdown</h3>
 
 <p>You can knit text, codes, and pictures in a <a href="http://daringfireball.net/projects/markdown/">markdown</a> file.</p>
 
@@ -257,18 +244,18 @@
 <div class="chunk"><div class="rcode"><div class="source"><pre class="knitr"><span class="functioncall">slidify</span><span class="keyword">(</span><span class="string">"whyslidify.Rmd"</span><span class="keyword">)</span>
 </pre></div></div></div>
 
-       </article>
-       <article>
-         <h3>6. Publish</h3>
+    </article>
+	  <article class = "" id = "O7os"> 
+      <h3>6. Publish</h3>
 
 <ul>
 <li>Upload the html and relevant files.</li>
 <li>Let your boss or your client know the url.</li>
 </ul>
 
-       </article>
-       <article>
-         <h3>How to install</h3>
+    </article>
+	  <article class = "" id = "VtCx"> 
+      <h3>How to install</h3>
 
 <div class="chunk"><div class="rcode"><div class="source"><pre class="knitr"><span class="functioncall">install.packages</span><span class="keyword">(</span><span class="string">"devtools"</span><span class="keyword">)</span>
 <span class="functioncall">library</span><span class="keyword">(</span><span class="symbol">devtools</span><span class="keyword">)</span>
@@ -283,8 +270,21 @@
 <li>It also provides a space for publication of knitted report, <a href="http://www.rpubs.com/">Rpubs</a>.</li>
 </ul>
 
-       </article>
-     </section>
-  </body>
-
+    </article>
+  </section>
+</body>
+  <!-- LOAD JAVASCRIPTS  -->
+	<script src='libraries/html5slides/slides.js'></script>
+	<!-- LOAD MATHJAX JS -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+    });
+  </script>
+  <script type="text/javascript"  
+src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <!-- DONE LOADING MATHJAX -->
+	
+		
 </html>

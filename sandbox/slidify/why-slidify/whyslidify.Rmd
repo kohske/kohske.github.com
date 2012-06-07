@@ -3,6 +3,7 @@ library(knitr)
 library(grid)
 opts_knit$set(out.format = 'html')
 ```
+---
 
 # Markdown, Knitr, and Slidify
 

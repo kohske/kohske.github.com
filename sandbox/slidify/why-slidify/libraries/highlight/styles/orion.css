@@ -1,59 +1,59 @@
 .background{
-  color: #eeeeee ;
+  color: #1E1616 ;
 }
 .number{
-  color: #800080 ;
+  color: #9C928C ;
 }
 .functioncall{
   font-weight: 'bolder' ;
-  color: #0080c0 ;
+  color: #7B2421 ;
 }
 .string{
-  color: #a68500 ;
+  color: #635D63 ;
 }
 .keyword{
   font-weight: bolder ;
-  color: #bb7977;
+  color: #49d4d6;
 }
 .argument{
-  color: #000000 ;
+  color: #C4B1A8 ;
 }
 .comment{
-  color: #ff8000 ;
+  color: #C4674A ;
 }
 .roxygencomment{
-  color: #ff8000;
+  color: #C4674A;
 }
 .formalargs{
-  color: #000000;
+  color: #C4B1A8;
 }
 .eqformalargs{
-  color: #000000;
+  color: #C4B1A8;
 }
 .assignement{
-  color: #000000;
+  color: #C4B1A8;
 }
 .package{
   font-weight: bolder;
-  color: #8080c0;
+  color: #BA1919;
 }
 .slot{
   font-style:italic;
-  color: #000000;
+  color: #C4B1A8;
 }
 .symbol{
-  color: #ff0080 ;
+  color: #7B94AD ;
 }
 .prompt{
-  color: #000000 ;
+  color: #C4B1A8 ;
 }
 
 pre {
-  background: #eeeeee;
+  background: #1e1616;
   font-family: "Consolas", Monaco, monospace;
   font-size: 20px;
   line-height: 24px;
-  color: black;
+  color: #c4b1a8;
  -webkit-border-radius:10px;
  -moz-border-radius:10px;
   border-radius:10px;
@@ -67,4 +67,3 @@ code {
   color: #B22222; /*firebrick*/
   font-size: 95%;
 }
-
