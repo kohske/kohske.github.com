@@ -1,6 +1,6 @@
 ```{r setup, echo = FALSE}
-opts_knit$set(out.format = 'html')
-opts_chunk$set(highlight = TRUE)
+#opts_knit$set(out.format = 'html')
+#opts_chunk$set(highlight = TRUE)
 ```
 
 # Slidify
