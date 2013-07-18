@@ -1,0 +1,132 @@
+
+  <!DOCTYPE html> 
+  <meta charset="utf-8">
+  <body> 
+ <style> 
+.link {  
+stroke: #666;
+opacity: 0.6;
+stroke-width: 1.5px; 
+} 
+.node circle { 
+stroke: #fff; 
+opacity: 0.6;
+stroke-width: 1.5px; 
+} 
+text { 
+font: 7px serif; 
+opacity: 0.6;
+pointer-events: none; 
+} 
+</style> 
+
+<script src=d3.v3.min.js></script>
+
+<script> 
+ var links = [ { "source" : "lattice", "target" : "abcdeFBA" }, { "source" : "plyr", "target" : "abctools" }, { "source" : "ggplot2", "target" : "abctools" }, { "source" : "lattice", "target" : "abd" }, { "source" : "ggplot2", "target" : "abd" }, { "source" : "plyr", "target" : "abd" }, { "source" : "lattice", "target" : "AER" }, { "source" : "lattice", "target" : "agridat" }, { "source" : "lattice", "target" : "ape" }, { "source" : "plyr", "target" : "AppliedPredictiveModeling" }, { "source" : "lattice", "target" : "AppliedPredictiveModeling" }, { "source" : "plyr", "target" : "aqp" }, { "source" : "lattice", "target" : "aqp" }, { "source" : "lattice", "target" : "aqp" }, { "source" : "ggplot2", "target" : "archetypes" }, { "source" : "lattice", "target" : "asbio" }, { "source" : "lattice", "target" : "automap" }, { "source" : "ggplot2", "target" : "automap" }, { "source" : "plyr", "target" : "bams" }, { "source" : "ggplot2", "target" : "bams" }, { "source" : "lattice", "target" : "bams" }, { "source" : "lattice", "target" : "baseline" }, { "source" : "plyr", "target" : "BatchExperiments" }, { "source" : "plyr", "target" : "BatchJobs" }, { "source" : "lattice", "target" : "bbmle" }, { "source" : "ggplot2", "target" : "bbmle" }, { "source" : "ggplot2", "target" : "BCEA" }, { "source" : "ggplot2", "target" : "bcrm" }, { "source" : "lattice", "target" : "beanplot" }, { "source" : "ggplot2", "target" : "bear" }, { "source" : "plyr", "target" : "bear" }, { "source" : "ggplot2", "target" : "benchmark" }, { "source" : "lattice", "target" : "betareg" }, { "source" : "lattice", "target" : "biclust" }, { "source" : "lattice", "target" : "binom" }, { "source" : "plyr", "target" : "biom" }, { "source" : "lattice", "target" : "bnlearn" }, { "source" : "lattice", "target" : "CARBayes" }, { "source" : "lattice", "target" : "cardidates" }, { "source" : "lattice", "target" : "caret" }, { "source" : "plyr", "target" : "caret" }, { "source" : "ggplot2", "target" : "Causata" }, { "source" : "plyr", "target" : "cda" }, { "source" : "ggplot2", "target" : "cda" }, { "source" : "lattice", "target" : "cem" }, { "source" : "lattice", "target" : "ChainLadder" }, { "source" : "lattice", "target" : "ChoiceModelR" }, { "source" : "ggplot2", "target" : "chron" }, { "source" : "ggplot2", "target" : "clhs" }, { "source" : "plyr", "target" : "clhs" }, { "source" : "ggplot2", "target" : "clhs" }, { "source" : "lattice", "target" : "clusterCons" }, { "source" : "ggplot2", "target" : "clusthaplo" }, { "source" : "ggplot2", "target" : "coloc" }, { "source" : "lattice", "target" : "CombMSC" }, { "source" : "lattice", "target" : "contrast" }, { "source" : "lattice", "target" : "copula" }, { "source" : "lattice", "target" : "CORElearn" }, { "source" : "lattice", "target" : "CorrBin" }, { "source" : "lattice", "target" : "Cubist" }, { "source" : "ggplot2", "target" : "cvxclustr" }, { "source" : "lattice", "target" : "DAAG" }, { "source" : "lattice", "target" : "DAAGxtras" }, { "source" : "ggplot2", "target" : "data.table" }, { "source" : "plyr", "target" : "data.table" }, { "source" : "lattice", "target" : "DATforDCEMRI" }, { "source" : "lattice", "target" : "dclone" }, { "source" : "lattice", "target" : "dcmle" }, { "source" : "lattice", "target" : "ddepn" }, { "source" : "ggplot2", "target" : "Deducer" }, { "source" : "plyr", "target" : "Deducer" }, { "source" : "lattice", "target" : "denstrip" }, { "source" : "lattice", "target" : "desirability" }, { "source" : "lattice", "target" : "Devore6" }, { "source" : "lattice", "target" : "DiceDesign" }, { "source" : "ggplot2", "target" : "dielectric" }, { "source" : "lattice", "target" : "DierckxSpline" }, { "source" : "ggplot2", "target" : "directlabels" }, { "source" : "lattice", "target" : "directlabels" }, { "source" : "plyr", "target" : "discreteRV" }, { "source" : "lattice", "target" : "diveMove" }, { "source" : "lattice", "target" : "DoseFinding" }, { "source" : "plyr", "target" : "dostats" }, { "source" : "lattice", "target" : "dplR" }, { "source" : "ggplot2", "target" : "dsm" }, { "source" : "lattice", "target" : "dyn" }, { "source" : "ggplot2", "target" : "eeptools" }, { "source" : "plyr", "target" : "eeptools" }, { "source" : "lattice", "target" : "effects" }, { "source" : "lattice", "target" : "eHOF" }, { "source" : "lattice", "target" : "emdbook" }, { "source" : "plyr", "target" : "emdbook" }, { "source" : "ggplot2", "target" : "epibase" }, { "source" : "plyr", "target" : "epibase" }, { "source" : "plyr", "target" : "EpiContactTrace" }, { "source" : "lattice", "target" : "ergm" }, { "source" : "lattice", "target" : "eRm" }, { "source" : "lattice", "target" : "etm" }, { "source" : "ggplot2", "target" : "evaluate" }, { "source" : "lattice", "target" : "evtree" }, { "source" : "ggplot2", "target" : "extracat" }, { "source" : "plyr", "target" : "extracat" }, { "source" : "lattice", "target" : "FactoMineR" }, { "source" : "lattice", "target" : "faoutlier" }, { "source" : "lattice", "target" : "fastR" }, { "source" : "lattice", "target" : "FAwR" }, { "source" : "lattice", "target" : "fda" }, { "source" : "ggplot2", "target" : "FField" }, { "source" : "lattice", "target" : "fit.models" }, { "source" : "lattice", "target" : "flexclust" }, { "source" : "lattice", "target" : "flexmix" }, { "source" : "ggplot2", "target" : "frontiles" }, { "source" : "lattice", "target" : "FuncMap" }, { "source" : "lattice", "target" : "gamclass" }, { "source" : "lattice", "target" : "gbm" }, { "source" : "plyr", "target" : "gcbd" }, { "source" : "lattice", "target" : "gcbd" }, { "source" : "lattice", "target" : "gcExplorer" }, { "source" : "ggplot2", "target" : "gcookbook" }, { "source" : "plyr", "target" : "gcookbook" }, { "source" : "lattice", "target" : "geoR" }, { "source" : "plyr", "target" : "geospt" }, { "source" : "ggplot2", "target" : "GGally" }, { "source" : "plyr", "target" : "GGally" }, { "source" : "ggplot2", "target" : "ggmap" }, { "source" : "plyr", "target" : "ggmap" }, { "source" : "plyr", "target" : "ggmcmc" }, { "source" : "ggplot2", "target" : "ggmcmc" }, { "source" : "ggplot2", "target" : "ggparallel" }, { "source" : "plyr", "target" : "ggparallel" }, { "source" : "plyr", "target" : "ggplot2" }, { "source" : "ggplot2", "target" : "ggROC" }, { "source" : "ggplot2", "target" : "ggROC" }, { "source" : "ggplot2", "target" : "ggthemes" }, { "source" : "plyr", "target" : "ggthemes" }, { "source" : "lattice", "target" : "glogis" }, { "source" : "lattice", "target" : "gMCP" }, { "source" : "ggplot2", "target" : "gppois" }, { "source" : "ggplot2", "target" : "granovaGG" }, { "source" : "plyr", "target" : "granovaGG" }, { "source" : "lattice", "target" : "gridBase" }, { "source" : "lattice", "target" : "gridDebug" }, { "source" : "ggplot2", "target" : "gridDebug" }, { "source" : "ggplot2", "target" : "gridExtra" }, { "source" : "lattice", "target" : "gridExtra" }, { "source" : "lattice", "target" : "gridSVG" }, { "source" : "lattice", "target" : "grImport" }, { "source" : "ggplot2", "target" : "GSE" }, { "source" : "lattice", "target" : "GSE" }, { "source" : "plyr", "target" : "GSIF" }, { "source" : "plyr", "target" : "GSIF" }, { "source" : "lattice", "target" : "gstat" }, { "source" : "lattice", "target" : "gstat" }, { "source" : "ggplot2", "target" : "gstudio" }, { "source" : "lattice", "target" : "gsubfn" }, { "source" : "plyr", "target" : "gtable" }, { "source" : "plyr", "target" : "harvestr" }, { "source" : "lattice", "target" : "heplots" }, { "source" : "lattice", "target" : "hexbin" }, { "source" : "lattice", "target" : "hexbin" }, { "source" : "lattice", "target" : "hgam" }, { "source" : "lattice", "target" : "HH" }, { "source" : "ggplot2", "target" : "HistData" }, { "source" : "plyr", "target" : "HistData" }, { "source" : "lattice", "target" : "HistData" }, { "source" : "lattice", "target" : "HistData" }, { "source" : "plyr", "target" : "HiveR" }, { "source" : "lattice", "target" : "HiveR" }, { "source" : "ggplot2", "target" : "HLMdiag" }, { "source" : "plyr", "target" : "HLMdiag" }, { "source" : "lattice", "target" : "Hmisc" }, { "source" : "lattice", "target" : "Hmisc" }, { "source" : "lattice", "target" : "HSAUR" }, { "source" : "lattice", "target" : "HSAUR2" }, { "source" : "lattice", "target" : "hydroPSO" }, { "source" : "lattice", "target" : "hydroTSM" }, { "source" : "lattice", "target" : "hyperSpec" }, { "source" : "ggplot2", "target" : "hyperSpec" }, { "source" : "lattice", "target" : "IDPmisc" }, { "source" : "plyr", "target" : "installr" }, { "source" : "ggplot2", "target" : "installr" }, { "source" : "lattice", "target" : "intamap" }, { "source" : "lattice", "target" : "IPSUR" }, { "source" : "lattice", "target" : "isa2" }, { "source" : "ggplot2", "target" : "ISIPTA" }, { "source" : "plyr", "target" : "ISIPTA" }, { "source" : "lattice", "target" : "JoSAE" }, { "source" : "ggplot2", "target" : "kdetrees" }, { "source" : "lattice", "target" : "Kmisc" }, { "source" : "ggplot2", "target" : "Kmisc" }, { "source" : "ggplot2", "target" : "knitrBootstrap" }, { "source" : "plyr", "target" : "knitrBootstrap" }, { "source" : "lattice", "target" : "Lahman" }, { "source" : "ggplot2", "target" : "Lahman" }, { "source" : "plyr", "target" : "Lahman" }, { "source" : "lattice", "target" : "languageR" }, { "source" : "lattice", "target" : "languageR" }, { "source" : "lattice", "target" : "latticeExtra" }, { "source" : "lattice", "target" : "latticeExtra" }, { "source" : "lattice", "target" : "latticist" }, { "source" : "ggplot2", "target" : "lda" }, { "source" : "lattice", "target" : "LDheatmap" }, { "source" : "ggplot2", "target" : "LDheatmap" }, { "source" : "lattice", "target" : "lga" }, { "source" : "lattice", "target" : "libamtrack" }, { "source" : "plyr", "target" : "lint" }, { "source" : "plyr", "target" : "llama" }, { "source" : "lattice", "target" : "lme4" }, { "source" : "lattice", "target" : "locfit" }, { "source" : "lattice", "target" : "LPCM" }, { "source" : "plyr", "target" : "lsmeans" }, { "source" : "lattice", "target" : "lsmeans" }, { "source" : "lattice", "target" : "lsmeans" }, { "source" : "plyr", "target" : "lubridate" }, { "source" : "ggplot2", "target" : "MAc" }, { "source" : "ggplot2", "target" : "MAd" }, { "source" : "lattice", "target" : "makeR" }, { "source" : "lattice", "target" : "maptools" }, { "source" : "ggplot2", "target" : "marked" }, { "source" : "lattice", "target" : "marmap" }, { "source" : "lattice", "target" : "MASS" }, { "source" : "lattice", "target" : "Matrix" }, { "source" : "lattice", "target" : "mboost" }, { "source" : "ggplot2", "target" : "mchof" }, { "source" : "lattice", "target" : "McSpatial" }, { "source" : "lattice", "target" : "meboot" }, { "source" : "plyr", "target" : "meifly" }, { "source" : "plyr", "target" : "metagen" }, { "source" : "lattice", "target" : "MethComp" }, { "source" : "lattice", "target" : "metrumrg" }, { "source" : "lattice", "target" : "mice" }, { "source" : "ggplot2", "target" : "microbenchmark" }, { "source" : "lattice", "target" : "MIfuns" }, { "source" : "lattice", "target" : "mirt" }, { "source" : "lattice", "target" : "mixstock" }, { "source" : "ggplot2", "target" : "mixstock" }, { "source" : "lattice", "target" : "mlbench" }, { "source" : "lattice", "target" : "mlogit" }, { "source" : "lattice", "target" : "mobForest" }, { "source" : "ggplot2", "target" : "Mobilize" }, { "source" : "lattice", "target" : "Morpho" }, { "source" : "lattice", "target" : "mosaic" }, { "source" : "lattice", "target" : "movMF" }, { "source" : "lattice", "target" : "MPDiR" }, { "source" : "plyr", "target" : "MplusAutomation" }, { "source" : "lattice", "target" : "MplusAutomation" }, { "source" : "lattice", "target" : "mpMap" }, { "source" : "lattice", "target" : "mritc" }, { "source" : "ggplot2", "target" : "MSG" }, { "source" : "lattice", "target" : "msSurv" }, { "source" : "ggplot2", "target" : "multilevelPSA" }, { "source" : "plyr", "target" : "multilevelPSA" }, { "source" : "lattice", "target" : "multitable" }, { "source" : "ggplot2", "target" : "multitable" }, { "source" : "ggplot2", "target" : "munsell" }, { "source" : "lattice", "target" : "mutoss" }, { "source" : "lattice", "target" : "MVA" }, { "source" : "lattice", "target" : "mvna" }, { "source" : "lattice", "target" : "nFactors" }, { "source" : "lattice", "target" : "nlme" }, { "source" : "ggplot2", "target" : "NlsyLinks" }, { "source" : "plyr", "target" : "NlsyLinks" }, { "source" : "lattice", "target" : "npmlreg" }, { "source" : "ggplot2", "target" : "nullabor" }, { "source" : "plyr", "target" : "nullabor" }, { "source" : "lattice", "target" : "nutshell" }, { "source" : "lattice", "target" : "odfWeave" }, { "source" : "lattice", "target" : "Oncotree" }, { "source" : "plyr", "target" : "openair" }, { "source" : "lattice", "target" : "openair" }, { "source" : "lattice", "target" : "opencpu.demo" }, { "source" : "ggplot2", "target" : "opencpu.demo" }, { "source" : "plyr", "target" : "opencpu.demo" }, { "source" : "lattice", "target" : "opencpu.demo" }, { "source" : "ggplot2", "target" : "opencpu.demo" }, { "source" : "ggplot2", "target" : "OpenStreetMap" }, { "source" : "lattice", "target" : "opm" }, { "source" : "lattice", "target" : "OrgMassSpecR" }, { "source" : "lattice", "target" : "pander" }, { "source" : "ggplot2", "target" : "pander" }, { "source" : "ggplot2", "target" : "PBImisc" }, { "source" : "lattice", "target" : "PBImisc" }, { "source" : "ggplot2", "target" : "pcrsim" }, { "source" : "ggplot2", "target" : "pcrsim" }, { "source" : "lattice", "target" : "penDvine" }, { "source" : "ggplot2", "target" : "PhaseType" }, { "source" : "lattice", "target" : "phmm" }, { "source" : "ggplot2", "target" : "pitchRx" }, { "source" : "plyr", "target" : "pitchRx" }, { "source" : "lattice", "target" : "PKPDmodels" }, { "source" : "ggplot2", "target" : "planar" }, { "source" : "plyr", "target" : "planar" }, { "source" : "lattice", "target" : "planar" }, { "source" : "lattice", "target" : "playwith" }, { "source" : "ggplot2", "target" : "playwith" }, { "source" : "lattice", "target" : "plm" }, { "source" : "plyr", "target" : "plotKML" }, { "source" : "plyr", "target" : "plumbr" }, { "source" : "lattice", "target" : "polyCub" }, { "source" : "lattice", "target" : "polywog" }, { "source" : "lattice", "target" : "popPK" }, { "source" : "ggplot2", "target" : "popReconstruct" }, { "source" : "lattice", "target" : "postgwas" }, { "source" : "lattice", "target" : "postgwas" }, { "source" : "ggplot2", "target" : "ppstat" }, { "source" : "lattice", "target" : "primer" }, { "source" : "ggplot2", "target" : "PRISMA" }, { "source" : "plyr", "target" : "pROC" }, { "source" : "ggplot2", "target" : "processdata" }, { "source" : "ggplot2", "target" : "profr" }, { "source" : "ggplot2", "target" : "ProgGUIinR" }, { "source" : "ggplot2", "target" : "ProgGUIinR" }, { "source" : "plyr", "target" : "ProjectTemplate" }, { "source" : "ggplot2", "target" : "ProjectTemplate" }, { "source" : "lattice", "target" : "protViz" }, { "source" : "ggplot2", "target" : "PSCBS" }, { "source" : "lattice", "target" : "pscl" }, { "source" : "ggplot2", "target" : "psd" }, { "source" : "plyr", "target" : "psd" }, { "source" : "lattice", "target" : "psychomix" }, { "source" : "lattice", "target" : "psyphy" }, { "source" : "ggplot2", "target" : "qdap" }, { "source" : "plyr", "target" : "qdap" }, { "source" : "plyr", "target" : "qgraph" }, { "source" : "lattice", "target" : "QT" }, { "source" : "lattice", "target" : "QTLRel" }, { "source" : "ggplot2", "target" : "quadrupen" }, { "source" : "lattice", "target" : "R2admb" }, { "source" : "ggplot2", "target" : "R2admb" }, { "source" : "lattice", "target" : "randomLCA" }, { "source" : "lattice", "target" : "rangeMapper" }, { "source" : "lattice", "target" : "rasterVis" }, { "source" : "ggplot2", "target" : "rasterVis" }, { "source" : "ggplot2", "target" : "rattle" }, { "source" : "ggplot2", "target" : "rbefdata" }, { "source" : "plyr", "target" : "rbefdata" }, { "source" : "plyr", "target" : "Rcell" }, { "source" : "ggplot2", "target" : "Rcell" }, { "source" : "lattice", "target" : "Rcmdr" }, { "source" : "lattice", "target" : "RcmdrPlugin.HH" }, { "source" : "lattice", "target" : "RcmdrPlugin.IPSUR" }, { "source" : "lattice", "target" : "RcmdrPlugin.temis" }, { "source" : "lattice", "target" : "RcppDE" }, { "source" : "plyr", "target" : "rcqp" }, { "source" : "lattice", "target" : "REPPlab" }, { "source" : "plyr", "target" : "reshape2" }, { "source" : "lattice", "target" : "reshape2" }, { "source" : "plyr", "target" : "rfigshare" }, { "source" : "lattice", "target" : "RFLPtools" }, { "source" : "plyr", "target" : "rgbif" }, { "source" : "ggplot2", "target" : "rgbif" }, { "source" : "lattice", "target" : "RGraphics" }, { "source" : "ggplot2", "target" : "RGraphics" }, { "source" : "ggplot2", "target" : "RGraphics" }, { "source" : "lattice", "target" : "RGraphics" }, { "source" : "lattice", "target" : "rioja" }, { "source" : "lattice", "target" : "RItools" }, { "source" : "lattice", "target" : "RMark" }, { "source" : "lattice", "target" : "rminer" }, { "source" : "lattice", "target" : "rms" }, { "source" : "lattice", "target" : "RobLox" }, { "source" : "lattice", "target" : "robustbase" }, { "source" : "ggplot2", "target" : "robustbase" }, { "source" : "lattice", "target" : "robustfa" }, { "source" : "ggplot2", "target" : "robustHD" }, { "source" : "ggplot2", "target" : "robustlmm" }, { "source" : "lattice", "target" : "robustX" }, { "source" : "plyr", "target" : "ropensnp" }, { "source" : "lattice", "target" : "rpanel" }, { "source" : "ggplot2", "target" : "rpf" }, { "source" : "ggplot2", "target" : "rplos" }, { "source" : "ggplot2", "target" : "rplos" }, { "source" : "plyr", "target" : "rplos" }, { "source" : "lattice", "target" : "rrcov" }, { "source" : "lattice", "target" : "rrcovNA" }, { "source" : "plyr", "target" : "RSA" }, { "source" : "ggplot2", "target" : "RSA" }, { "source" : "lattice", "target" : "RSA" }, { "source" : "lattice", "target" : "RSiena" }, { "source" : "plyr", "target" : "rspear" }, { "source" : "lattice", "target" : "Rssa" }, { "source" : "ggplot2", "target" : "rtf" }, { "source" : "lattice", "target" : "rtf" }, { "source" : "lattice", "target" : "runjags" }, { "source" : "lattice", "target" : "runjags" }, { "source" : "plyr", "target" : "rvertnet" }, { "source" : "ggplot2", "target" : "rvertnet" }, { "source" : "lattice", "target" : "rysgran" }, { "source" : "ggplot2", "target" : "Rz" }, { "source" : "ggplot2", "target" : "SamplerCompare" }, { "source" : "lattice", "target" : "SASmixed" }, { "source" : "plyr", "target" : "scales" }, { "source" : "lattice", "target" : "scape" }, { "source" : "lattice", "target" : "scapeMCMC" }, { "source" : "lattice", "target" : "SCEPtER" }, { "source" : "plyr", "target" : "SciencePo" }, { "source" : "ggplot2", "target" : "SciencePo" }, { "source" : "ggplot2", "target" : "seewave" }, { "source" : "lattice", "target" : "SemiPar" }, { "source" : "plyr", "target" : "semPlot" }, { "source" : "lattice", "target" : "semPLS" }, { "source" : "plyr", "target" : "SGP" }, { "source" : "lattice", "target" : "simecol" }, { "source" : "lattice", "target" : "simFrame" }, { "source" : "lattice", "target" : "simFrame" }, { "source" : "lattice", "target" : "Sleuth2" }, { "source" : "lattice", "target" : "Sleuth3" }, { "source" : "lattice", "target" : "SMIR" }, { "source" : "lattice", "target" : "SNPRelate" }, { "source" : "plyr", "target" : "soilDB" }, { "source" : "lattice", "target" : "soilDB" }, { "source" : "lattice", "target" : "solaR" }, { "source" : "lattice", "target" : "sp" }, { "source" : "lattice", "target" : "sp" }, { "source" : "lattice", "target" : "spacetime" }, { "source" : "ggplot2", "target" : "spcosa" }, { "source" : "lattice", "target" : "spdep" }, { "source" : "lattice", "target" : "sperich" }, { "source" : "ggplot2", "target" : "spikeSlabGAM" }, { "source" : "ggplot2", "target" : "SPOT" }, { "source" : "lattice", "target" : "SPOT" }, { "source" : "lattice", "target" : "SPSL" }, { "source" : "plyr", "target" : "Stack" }, { "source" : "lattice", "target" : "STAR" }, { "source" : "lattice", "target" : "stellaR" }, { "source" : "ggplot2", "target" : "strvalidator" }, { "source" : "ggplot2", "target" : "strvalidator" }, { "source" : "ggplot2", "target" : "SuperLearner" }, { "source" : "lattice", "target" : "SuperLearner" }, { "source" : "lattice", "target" : "survey" }, { "source" : "lattice", "target" : "survSNP" }, { "source" : "lattice", "target" : "sybil" }, { "source" : "lattice", "target" : "tableplot" }, { "source" : "ggplot2", "target" : "tabplot" }, { "source" : "plyr", "target" : "taRifx" }, { "source" : "lattice", "target" : "taRifx" }, { "source" : "lattice", "target" : "taRifx" }, { "source" : "ggplot2", "target" : "taRifx" }, { "source" : "plyr", "target" : "taRifx.geo" }, { "source" : "plyr", "target" : "taxize" }, { "source" : "lattice", "target" : "TeachingDemos" }, { "source" : "ggplot2", "target" : "TeachingDemos" }, { "source" : "lattice", "target" : "tergm" }, { "source" : "lattice", "target" : "texmex" }, { "source" : "plyr", "target" : "TextRegression" }, { "source" : "ggplot2", "target" : "timeit" }, { "source" : "ggplot2", "target" : "timeline" }, { "source" : "ggplot2", "target" : "TimeProjection" }, { "source" : "plyr", "target" : "TimeProjection" }, { "source" : "lattice", "target" : "tmvtnorm" }, { "source" : "lattice", "target" : "topicmodels" }, { "source" : "ggplot2", "target" : "tourr" }, { "source" : "ggplot2", "target" : "tourrGui" }, { "source" : "ggplot2", "target" : "transmission" }, { "source" : "plyr", "target" : "transmission" }, { "source" : "plyr", "target" : "transnet" }, { "source" : "ggplot2", "target" : "trapezoid" }, { "source" : "plyr", "target" : "trapezoid" }, { "source" : "plyr", "target" : "treecm" }, { "source" : "ggplot2", "target" : "treecm" }, { "source" : "ggplot2", "target" : "TriMatch" }, { "source" : "lattice", "target" : "trip" }, { "source" : "plyr", "target" : "TripleR" }, { "source" : "ggplot2", "target" : "TripleR" }, { "source" : "ggplot2", "target" : "tspmeta" }, { "source" : "lattice", "target" : "unmarked" }, { "source" : "ggplot2", "target" : "varbvs" }, { "source" : "plyr", "target" : "vcdExtra" }, { "source" : "ggplot2", "target" : "vcdExtra" }, { "source" : "lattice", "target" : "vegan" }, { "source" : "lattice", "target" : "vegan" }, { "source" : "lattice", "target" : "VHDClassification" }, { "source" : "lattice", "target" : "visreg" }, { "source" : "lattice", "target" : "waterData" }, { "source" : "ggplot2", "target" : "wethepeople" }, { "source" : "plyr", "target" : "wethepeople" }, { "source" : "ggplot2", "target" : "wq" }, { "source" : "ggplot2", "target" : "xkcd" }, { "source" : "lattice", "target" : "XLConnect" }, { "source" : "ggplot2", "target" : "XLConnect" }, { "source" : "lattice", "target" : "zoo" }, { "source" : "lattice", "target" : "zoo" }, { "source" : "ggplot2", "target" : "zoo" } ] ; 
+ var nodes = {}
+
+// Compute the distinct nodes from the links.
+links.forEach(function(link) {
+link.source = nodes[link.source] || 
+(nodes[link.source] = {name: link.source});
+link.target = nodes[link.target] || 
+(nodes[link.target] = {name: link.target});
+link.value = +link.value;
+});
+
+var width = 1200
+height = 1200;
+
+var force = d3.layout.force() 
+.nodes(d3.values(nodes)) 
+.links(links) 
+.size([width, height]) 
+.linkDistance(50) 
+.charge(-100) 
+.on("tick", tick) 
+.start(); 
+
+var svg = d3.select("body").append("svg") 
+.attr("width", width) 
+.attr("height", height); 
+
+var link = svg.selectAll(".link") 
+.data(force.links()) 
+.enter().append("line") 
+.attr("class", "link"); 
+
+var node = svg.selectAll(".node") 
+.data(force.nodes()) 
+.enter().append("g") 
+.attr("class", "node") 
+.on("mouseover", mouseover) 
+.on("mouseout", mouseout) 
+.on("click", click)
+.on("dblclick", dblclick)
+.call(force.drag); 
+
+node.append("circle") 
+.attr("r", 8)
+.style("fill", "#3182bd");
+
+node.append("text") 
+.attr("x", 12) 
+.attr("dy", ".35em") 
+.style("fill", "#3182bd")
+.text(function(d) { return d.name; }); 
+
+function tick() { 
+link 
+.attr("x1", function(d) { return d.source.x; }) 
+.attr("y1", function(d) { return d.source.y; }) 
+.attr("x2", function(d) { return d.target.x; }) 
+.attr("y2", function(d) { return d.target.y; }); 
+
+node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; }); 
+} 
+
+function mouseover() { 
+d3.select(this).select("circle").transition() 
+.duration(750) 
+.attr("r", 16); 
+} 
+
+function mouseout() { 
+d3.select(this).select("circle").transition() 
+.duration(750) 
+.attr("r", 8); 
+} 
+// action to take on mouse click
+function click() {
+d3.select(this).select("text").transition()
+.duration(750)
+.attr("x", 22)
+.style("stroke-width", ".5px")
+.style("opacity", 1)
+.style("fill", "#E34A33")
+.style("font", "17.5px serif");
+d3.select(this).select("circle").transition()
+.duration(750)
+.style("fill", "#E34A33")
+.attr("r", 16)
+}
+
+// action to take on mouse double click
+function dblclick() {
+d3.select(this).select("circle").transition()
+.duration(750)
+.attr("r", 6)
+.style("fill", "#E34A33");
+d3.select(this).select("text").transition()
+.duration(750)
+.attr("x", 12)
+.style("stroke", "none")
+.style("fill", "#E34A33")
+.style("stroke", "none")
+.style("opacity", 0.6)
+.style("font", "7px serif");
+}
+
+</script>
+ </body>
