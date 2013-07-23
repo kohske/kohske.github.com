@@ -1,12 +1,42 @@
-// sample_014
-//
-// WebGLでテクスチャを利用する
+// カメラ系
+var c;
+var q = new qtnIV();
+var qt = q.identity(q.create());
+
+// マウスムーブイベントに登録する処理
+function mouseMove(e){
+	var cw = c.width;
+	var ch = c.height;
+	var wh = 1 / Math.sqrt(cw * cw + ch * ch);
+	var x = e.clientX - c.offsetLeft - cw * 0.5;
+	var y = e.clientY - c.offsetTop - ch * 0.5;
+	var sq = Math.sqrt(x * x + y * y);
+	var r = sq * 2.0 * Math.PI * wh;
+	if(sq != 1){
+		sq = 1 / sq;
+		x *= sq;
+		y *= sq;
+	}
+	q.rotate(r, [y, x, 0.0], qt);
+}
+
+// 球体の数とか
+var N = 18;
+var origins = new Array();
+var rotates = new Array();
+
+for (var i=0; i < N; ++i){ 
+    origins[i] = [(Math.random()-0.5)*2*3, (Math.random()-0.5)*2*3, (Math.random()-0.5)*2*3];
+    rotates[i] = [Math.random(), Math.random(), Math.random()];
+}
+
 
 onload = function(){
     // canvasエレメントを取得
-    var c = document.getElementById('canvas');
-    c.width = 500;
-    c.height = 300;
+    c = document.getElementById('canvas');
+    c.width = 800;
+    c.height =800;
+    c.addEventListener('mousemove', mouseMove, true);
     
     // webglコンテキストを取得
     var gl = c.getContext('webgl') || c.getContext('experimental-webgl');
@@ -21,60 +51,35 @@ onload = function(){
     // attributeLocationを配列に取得
     var attLocation = new Array();
     attLocation[0] = gl.getAttribLocation(prg, 'position');
+    //    attLocation[1] = gl.getAttribLocation(prg, 'normal');
     attLocation[1] = gl.getAttribLocation(prg, 'color');
     attLocation[2] = gl.getAttribLocation(prg, 'textureCoord');
     
     // attributeの要素数を配列に格納
     var attStride = new Array();
     attStride[0] = 3;
+    //    attStride[1] = 3;
     attStride[1] = 4;
     attStride[2] = 2;
     
-    // 頂点の位置
-    var position = [
-	    -1.0,  1.0,  0.0,
-	1.0,  1.0,  0.0,
-	    -1.0, -1.0,  0.0,
-	1.0, -1.0,  0.0
-    ];
-    
-    // 頂点色
-    var color = [
-	1.0, 1.0, 1.0, 1.0,
-	1.0, 1.0, 1.0, 1.0,
-	1.0, 1.0, 1.0, 1.0,
-	1.0, 1.0, 1.0, 1.0
-    ];
-    
-    // テクスチャ座標
-    var textureCoord = [
-	0.0, 0.0,
-	1.0, 0.0,
-	0.0, 1.0,
-	1.0, 1.0
-    ];
-    
-    // 頂点インデックス
-    var index = [
-	0, 1, 2,
-	3, 2, 1
-    ];
-    
-    // VBOとIBOの生成
-    var vPosition     = create_vbo(position);
-    var vColor        = create_vbo(color);
-    var vTextureCoord = create_vbo(textureCoord);
-    var VBOList       = [vPosition, vColor, vTextureCoord];
-    var iIndex        = create_ibo(index);
-    
-    // VBOとIBOの登録
-    set_attribute(VBOList, attLocation, attStride);
-    gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, iIndex);
-    
+    // 球体モデル
+    var earthData     = sphere(64*2, 64*2, 1, [1.0, 1.0, 1.0, 1.0]);
+    var ePosition     = create_vbo(earthData.p);
+    //    var eNormal       = create_vbo(earthData.n);
+    var eColor        = create_vbo(earthData.c);
+    var eTextureCoord = create_vbo(earthData.t);
+    //    var eVBOList      = [ePosition, eNormal, eColor, eTextureCoord];
+    var eVBOList      = [ePosition, eColor, eTextureCoord];
+    var eIndex        = create_ibo(earthData.i);
+
     // uniformLocationを配列に取得
     var uniLocation = new Array();
-    uniLocation[0]  = gl.getUniformLocation(prg, 'mvpMatrix');
-    uniLocation[1]  = gl.getUniformLocation(prg, 'texture');
+    uniLocation[0] = gl.getUniformLocation(prg, 'mvpMatrix');
+    uniLocation[1] = gl.getUniformLocation(prg, 'texture');
+    
+    // VBOとIBOの登録
+    set_attribute(eVBOList, attLocation, attStride);
+    gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, eIndex);
     
     // 各種行列の生成と初期化
     var m = new matIV();
@@ -85,7 +90,7 @@ onload = function(){
     var mvpMatrix = m.identity(m.create());
     
     // ビュー×プロジェクション座標変換行列
-    m.lookAt([0.0, 2.0, 5.0], [0, 0, 0], [0, 1, 0], vMatrix);
+    m.lookAt([0.0, 0.0, 10.0], [0, 0, 0], [0, 1, 0], vMatrix);
     m.perspective(45, c.width / c.height, 0.1, 100, pMatrix);
     m.multiply(pMatrix, vMatrix, tmpMatrix);
     
@@ -100,7 +105,6 @@ onload = function(){
     var texture = null;
     
     // テクスチャを生成
-//    create_texture('rs.png');
     create_texture('rs.png');
     
     // カウンタの宣言
@@ -109,28 +113,38 @@ onload = function(){
     // 恒常ループ
     (function(){
 	// canvasを初期化
-	gl.clearColor(0.0, 0.0, 0.0, 1.0);
+	gl.clearColor(1.0, 0.9, 0.9, 1.0);
 	gl.clearDepth(1.0);
 	gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
 	
 	// カウンタを元にラジアンを算出
-	count++;
-	var rad = (count % 360) * Math.PI / 180;
+//	count++;
+	var rad = (180 + count / 30 % 360) * Math.PI / 180;
 	
 	// テクスチャをバインドする
 	gl.bindTexture(gl.TEXTURE_2D, texture);
 	
 	// uniform変数にテクスチャを登録
 	gl.uniform1i(uniLocation[1], 0);
-	
-	// モデル座標変換行列の生成
-	m.identity(mMatrix);
-	m.rotate(mMatrix, rad, [0, 1, 0], mMatrix);
-	m.multiply(tmpMatrix, mMatrix, mvpMatrix);
-	
-	// uniform変数の登録と描画
-	gl.uniformMatrix4fv(uniLocation[0], false, mvpMatrix);
-	gl.drawElements(gl.TRIANGLES, index.length, gl.UNSIGNED_SHORT, 0);
+
+	for (var i=0; i<N; ++i){ 
+	    var qMatrix = m.identity(m.create());
+	    q.toMatIV(qt, qMatrix);
+
+	    // モデル座標変換行列の生成
+	    m.identity(mMatrix);
+	    m.multiply(mMatrix, qMatrix, mMatrix);
+	    m.translate(mMatrix, origins[i], mMatrix);
+	    //	m.rotate(mMatrix, rad, [1, 0, 0], mMatrix);
+	    //m.rotate(mMatrix, rad, [0, 1, 0], mMatrix);
+	    m.rotate(mMatrix, rad, rotates[i], mMatrix);
+	    m.multiply(tmpMatrix, mMatrix, mvpMatrix);
+
+	    // uniform変数の登録と描画
+
+	    gl.uniformMatrix4fv(uniLocation[0], false, mvpMatrix);	
+	    gl.drawElements(gl.TRIANGLES, earthData.i.length, gl.UNSIGNED_SHORT, 0);
+	}
 	
 	// コンテキストの再描画
 	gl.flush();
@@ -233,6 +247,7 @@ onload = function(){
     function set_attribute(vbo, attL, attS){
 	// 引数として受け取った配列を処理する
 	for(var i in vbo){
+	    
 	    // バッファをバインドする
 	    gl.bindBuffer(gl.ARRAY_BUFFER, vbo[i]);
 	    
