@@ -26,7 +26,7 @@ var origins = new Array();
 var rotates = new Array();
 
 for (var i=0; i < N; ++i){ 
-    origins[i] = [(Math.random()-0.5)*2*3, (Math.random()-0.5)*2*3, (Math.random()-0.5)*2*3];
+    origins[i] = [(Math.random()-0.5)*2*4, (Math.random()-0.5)*2*4, (Math.random()-0.5)*2*4];
     rotates[i] = [Math.random(), Math.random(), Math.random()];
 }
 //origins[0] = [0, 0, 0];
@@ -53,32 +53,35 @@ onload = function(){
     // attributeLocationを配列に取得
     var attLocation = new Array();
     attLocation[0] = gl.getAttribLocation(prg, 'position');
-    //    attLocation[1] = gl.getAttribLocation(prg, 'normal');
     attLocation[1] = gl.getAttribLocation(prg, 'color');
     attLocation[2] = gl.getAttribLocation(prg, 'textureCoord');
+    attLocation[3] = gl.getAttribLocation(prg, 'normal');
     
     // attributeの要素数を配列に格納
     var attStride = new Array();
     attStride[0] = 3;
-    //    attStride[1] = 3;
     attStride[1] = 4;
     attStride[2] = 2;
+    attStride[3] = 3;
     
     // 球体モデル
     var earthData     = sphere(64*2, 64*2, 0.75, [1.0, 1.0, 1.0, 1.0]);
     var ePosition     = create_vbo(earthData.p);
-    //    var eNormal       = create_vbo(earthData.n);
+    var eNormal       = create_vbo(earthData.n);
     var eColor        = create_vbo(earthData.c);
     var eTextureCoord = create_vbo(earthData.t);
-    //    var eVBOList      = [ePosition, eNormal, eColor, eTextureCoord];
-    var eVBOList      = [ePosition, eColor, eTextureCoord];
+    var eVBOList      = [ePosition, eColor, eTextureCoord, eNormal];
+    //var eVBOList      = [ePosition, eColor, eTextureCoord];
     var eIndex        = create_ibo(earthData.i);
 
     // uniformLocationを配列に取得
     var uniLocation = new Array();
     uniLocation[0] = gl.getUniformLocation(prg, 'mvpMatrix');
     uniLocation[1] = gl.getUniformLocation(prg, 'texture');
-    
+    uniLocation[2] = gl.getUniformLocation(prg, 'invMatrix');
+    uniLocation[3] = gl.getUniformLocation(prg, 'lightDirection');    
+    uniLocation[4] = gl.getUniformLocation(prg, 'eyeDirection');
+
     // VBOとIBOの登録
     set_attribute(eVBOList, attLocation, attStride);
     gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, eIndex);
@@ -90,11 +93,15 @@ onload = function(){
     var pMatrix   = m.identity(m.create());
     var tmpMatrix = m.identity(m.create());
     var mvpMatrix = m.identity(m.create());
+    var invMatrix = m.identity(m.create());
     
     // ビュー×プロジェクション座標変換行列
     m.lookAt([0.0, 0.0, 10.0], [0, 0, 0], [0, 1, 0], vMatrix);
     m.perspective(45, c.width / c.height, 0.1, 100, pMatrix);
     m.multiply(pMatrix, vMatrix, tmpMatrix);
+
+    var lightDirection = [-0.5, 0.5, 0.5];
+    var eyeDirection = [0.0, 0.0, 20.0];
     
     // 深度テストを有効にする
     gl.enable(gl.DEPTH_TEST);
@@ -152,8 +159,13 @@ onload = function(){
 	    m.multiply(tmpMatrix, mMatrix, mvpMatrix);
 
 	    // uniform変数の登録と描画
+	    m.inverse(mMatrix, invMatrix);
 
 	    gl.uniformMatrix4fv(uniLocation[0], false, mvpMatrix);	
+	    gl.uniformMatrix4fv(uniLocation[2], false, invMatrix);
+	    gl.uniform3fv(uniLocation[3], lightDirection);
+	    gl.uniform3fv(uniLocation[4], eyeDirection);
+
 	    gl.drawElements(gl.TRIANGLES, earthData.i.length, gl.UNSIGNED_SHORT, 0);
 	}
 	
