@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Rotating Snake Illusion (WebGL 3D version)</title>
+    <script src="../lib/minMatrixb.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+
+    
+    <script id="vs" type="x-shader/x-vertex">
+      attribute vec3 position;
+      attribute vec4 color;
+      attribute vec2 textureCoord;
+      uniform   mat4 mvpMatrix;
+      varying   vec4 vColor;
+      varying   vec2 vTextureCoord;
+
+      void main(void){
+      vColor        = color;
+      vTextureCoord = textureCoord;
+      gl_Position   = mvpMatrix * vec4(position, 1.0);
+      }
+    </script>
+    
+    <script id="fs" type="x-shader/x-fragment">
+      #define M_PI (3.1415926535897932384626433832795)
+      precision mediump float;
+
+      uniform sampler2D texture;
+      varying vec4      vColor;
+      varying vec2      vTextureCoord;
+
+      void main(void){
+      vec2 tFrag = vec2(1.0 / 512.0);
+
+      float Nx = 16.0;
+      float Ny = 16.0;
+      float tx = vTextureCoord.x;
+      float ty = acos(2.0*vTextureCoord.y-1.0)/M_PI;
+      vec4 destColor = texture2D(texture, vec2(tx, ty)*vec2(Nx, Ny) + vec2(0.5, 0)*step(0.5, fract(ty * Ny/2.0)));
+      gl_FragColor  = vColor * destColor;
+      if(gl_FragColor.a < 0.5)
+			  gl_FragColor  = vec4(1.0, 1.0, 1.0, 1.0);
+      
+      }
+    </script>
+  </head>
+  <body>
+    <p>
+      WebGLとGLSLを使った錯視です。静止画（というか静止風景）ですが、動いて見えます（全然最適化はしてません、すいません）。
+      テクスチャは画像ですがタイリングはフラグメントシェーダでやってます。
+      マウスでグリグリ動きます。
+      HTML5のインプットツール群とも連携できるので、パラメータ調整も可能です（実装してませんが）。<br/>
+      初めてGLSLを使って錯視を作りましたが、ものすごい可能性を感じます。が、この喜びをわかってくれる人がなかなかいない・・・。
+    <p>
+
+
+    <p>蛇の回転錯視は立命館大学の北岡明佳先生の作品です。詳しくは<a href="http://www.ritsumei.ac.jp/~akitaoka/rotate.html">こちら</a>。この作品を作るにあたり、<a href="http://wgld.org/">wgld.org</a>さんのコードを借りまくってます。本当に感謝です。</p>
+
+    <p>The "Rotating snakes" illusion is developed by Prof. Akiyoshi Kitaoka, see <a href="http://www.psy.ritsumei.ac.jp/~akitaoka/rotsnakee.html">http://www.psy.ritsumei.ac.jp/~akitaoka/rotsnakee.html</a> for more information. A large part of avascript and GLSL codes are just a minor revision of the codes in <a href="http://wgld.org/">wgld.org</a>. Thanks!!</p>
+
+    <canvas id="canvas"></canvas>
+  </body>
+</html>
