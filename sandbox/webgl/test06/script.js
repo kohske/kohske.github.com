@@ -9,19 +9,19 @@ var then = Date.now();
 
 // マウスムーブイベントに登録する処理
 function mouseMove(e){
-	var cw = c.width;
-	var ch = c.height;
-	var wh = 1 / Math.sqrt(cw * cw + ch * ch);
-	var x = e.clientX - c.offsetLeft - cw * 0.5;
-	var y = e.clientY - c.offsetTop - ch * 0.5;
-	var sq = Math.sqrt(x * x + y * y);
-	var r = sq * 2.0 * Math.PI * wh;
-	if(sq != 1){
-		sq = 1 / sq;
-		x *= sq;
-		y *= sq;
-	}
-	q.rotate(r, [y, x, 0.0], qt);
+    var cw = c.width;
+    var ch = c.height;
+    var wh = 1 / Math.sqrt(cw * cw + ch * ch);
+    var x = e.clientX - c.offsetLeft - cw * 0.5;
+    var y = e.clientY - c.offsetTop - ch * 0.5;
+    var sq = Math.sqrt(x * x + y * y);
+    var r = sq * 2.0 * Math.PI * wh;
+    if(sq != 1){
+	sq = 1 / sq;
+	x *= sq;
+	y *= sq;
+    }
+    q.rotate(r, [y, x, 0.0], qt);
 }
 
 // 球体の数とか
@@ -160,29 +160,29 @@ onload = function(){
 	    if (i == 0) {
 		m.rotate(mMatrix, rad, [0, 0, 1], mMatrix);
 		m.scale(mMatrix, [1.3, 1.4, 1.3], mMatrix);
-	    }
-
-	    var dfac = rad/5.0;
-	    if (state == 0) {
-		m.rotate(mMatrix, rad, [0, 0, 1], mMatrix);
-		if (i == 1) {
-		    m.translate(mMatrix, [-1.5, 2.0, 0.0], mMatrix);
-		} else if (i == 2) {
-		    m.translate(mMatrix, [ 1.5, 2.0, 0.0], mMatrix);
-		} else if (i == 3) {
-		    m.translate(mMatrix, [-1.5, -2.0, 0.0], mMatrix);
-		} else if (i == 4) {
-		    m.translate(mMatrix, [ 1.5, -2.0, 0.0], mMatrix);
-		}
-	    } else if (state == 1) {
-		if (i == 1) {
-		    m.translate(mMatrix, [-1.5-dfac, 2.0+dfac, 0.0], mMatrix);
-		} else if (i == 2) {
-		    m.translate(mMatrix, [ 1.5-dfac, 2.0-dfac, 0.0], mMatrix);
-		} else if (i == 3) {
-		    m.translate(mMatrix, [-1.5+dfac, -2.0+dfac, 0.0], mMatrix);
-		} else if (i == 4) {
-		    m.translate(mMatrix, [ 1.5+dfac, -2.0-dfac, 0.0], mMatrix);
+	    } else {
+		var dfac = rad/5.0;
+		if (state == 0) {
+		    m.rotate(mMatrix, rad, [0, 0, 1], mMatrix);
+		    if (i == 1) {
+			m.translate(mMatrix, [-1.5, 2.0, 0.0], mMatrix);
+		    } else if (i == 2) {
+			m.translate(mMatrix, [ 1.5, 2.0, 0.0], mMatrix);
+		    } else if (i == 3) {
+			m.translate(mMatrix, [-1.5, -2.0, 0.0], mMatrix);
+		    } else if (i == 4) {
+			m.translate(mMatrix, [ 1.5, -2.0, 0.0], mMatrix);
+		    }
+		} else if (state == 1) {
+		    if (i == 1) {
+			m.translate(mMatrix, [-1.5-dfac, 2.0+dfac, 0.0], mMatrix);
+		    } else if (i == 2) {
+			m.translate(mMatrix, [ 1.5-dfac, 2.0-dfac, 0.0], mMatrix);
+		    } else if (i == 3) {
+			m.translate(mMatrix, [-1.5+dfac, -2.0+dfac, 0.0], mMatrix);
+		    } else if (i == 4) {
+			m.translate(mMatrix, [ 1.5+dfac, -2.0-dfac, 0.0], mMatrix);
+		    }
 		}
 	    }
 
@@ -356,7 +356,7 @@ onload = function(){
 	    
 	    // ミップマップを生成
 	    gl.generateMipmap(gl.TEXTURE_2D);
- 
+	    
 	    
 	    // テクスチャのバインドを無効化
 	    gl.bindTexture(gl.TEXTURE_2D, null);
