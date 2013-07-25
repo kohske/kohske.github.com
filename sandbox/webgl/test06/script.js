@@ -24,6 +24,10 @@ function mouseMove(e){
     q.rotate(r, [y, x, 0.0], qt);
 }
 
+function zero_vp() {
+    q.identity(qt);
+}
+
 // 球体の数とか
 
 var origins = new Array();
@@ -118,12 +122,15 @@ onload = function(){
 		 document.getElementById('tex_col'),
 		 document.getElementById('tex_non')];
     var p_state = 0;
+    var e_ball = document.getElementById('balls');
+    var p_ball = true;
 
     // 恒常ループ
     (function(){
 	for (var i=0; i<3; ++i) {
 	    if(e_tex[i].checked) {p_state = i; break;}
 	}
+	p_ball = e_ball.checked?true:false;
 
 	var delta = Date.now() - then;
 
@@ -161,6 +168,7 @@ onload = function(){
 		m.rotate(mMatrix, rad, [0, 0, 1], mMatrix);
 		m.scale(mMatrix, [1.3, 1.4, 1.3], mMatrix);
 	    } else {
+		if (!p_ball) break;
 		var dfac = rad/5.0;
 		if (state == 0) {
 		    m.rotate(mMatrix, rad, [0, 0, 1], mMatrix);
