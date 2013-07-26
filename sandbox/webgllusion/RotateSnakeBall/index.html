@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Rotating Snake Illusion (WebGL 3D version)</title>
+    <script src="../lib/minMatrixb.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+
+    
+    <script id="vs" type="x-shader/x-vertex">
+      attribute vec3 position;
+      attribute vec4 color;
+      attribute vec2 textureCoord;
+      attribute vec3 normal;
+      uniform   mat4 mvpMatrix;
+      uniform   mat4 invMatrix;
+      uniform   vec3 lightDirection;
+      uniform   vec3 eyeDirection;
+      uniform   bool lighting;
+      varying   vec4 vColor;
+      varying   vec2 vTextureCoord;
+      
+
+      void main(void){
+
+      if (lighting) {
+      vec4 ambientColor = vec4(0.1, 0.1, 0.1, 0.0);
+
+      vec3  invLight = normalize(invMatrix * vec4(lightDirection, 0.0)).xyz;
+      vec3  invEye   = normalize(invMatrix * vec4(eyeDirection, 0.0)).xyz;
+      vec3  halfLE   = normalize(invLight + invEye);
+
+      float diffuse  = clamp(dot(normal, invLight), 0.5, 1.0);
+      float specular = pow(clamp(dot(normal, halfLE), 0.0, 1.0), 10.0);
+      vec4  light    = color * vec4(vec3(diffuse), 1.0) + vec4(vec3(specular), 0.0);
+      
+      vColor         = light + ambientColor;
+      } else {
+      vColor = color;
+      }
+      vTextureCoord = textureCoord;
+      gl_Position   = mvpMatrix * vec4(position, 1.0);
+
+      }
+    </script>
+    
+    <script id="fs" type="x-shader/x-fragment">
+      #define M_PI (3.1415926535897932384626433832795)
+      precision mediump float;
+
+      uniform sampler2D texture;
+      uniform bool white_zero;
+      uniform bool tex_one;
+      uniform bool bg_star;
+      varying vec4      vColor;
+      varying vec2      vTextureCoord;
+
+      void main(void){
+
+      float Nx = 0.0;
+      float Ny = 0.0;
+
+      if (tex_one && bg_star) {
+      Nx = 20.0;
+      Ny = 20.0;
+      } else {
+      Nx = 16.0;
+      Ny = 16.0;
+      }
+
+      if (tex_one && !bg_star) {
+      gl_FragColor = vec4(0.8, 0.9, 0.7, 1.0);
+      } else {
+      float tx = vTextureCoord.x;
+      float ty = acos(2.0*vTextureCoord.y-1.0)/M_PI;
+      vec4 destColor = texture2D(texture, vec2(tx, ty)*vec2(Nx, Ny) + vec2(0.5, 0)*step(0.5, fract(ty * Ny/2.0)));
+      gl_FragColor  = vColor * destColor;
+      }
+
+      if(gl_FragColor.a < 0.5) {
+			  if (white_zero) {discard;}
+			  else {gl_FragColor  = vec4(1.0, 1.0, 1.0, 1.0);}
+			  }
+			  }
+    </script>
+  </head>
+  <body>
+
+    <table>
+      <tr>
+	<td><canvas id="canvas"></canvas></td>
+	<td>
+	  <p>
+	    <input type="checkbox" id="bg_star" checked="checked"/> 星空背景 <br/><br/>
+	    <input type="checkbox" id="mouse_view"/> マウスで視点変換 <br/><br/>
+	    <input type="checkbox" id="lighting" checked="checked"/> ライティング <br/><br/>
+	    <input type="checkbox" id="white_zero"/> 白領域を透明に <br/><br/>
+	    <input type="range" id="ballsize" min="0.1" max="2" step="0.01" value="1" /> <br/>回転錯視球の大きさ
+	  </p>
+	</td>
+      </tr>
+    </table>
+
+    <p>
+    <p>蛇の回転錯視の３次元版です。蛇の回転錯視は立命館大学の北岡明佳先生の作品です。詳しくは<a href="http://www.ritsumei.ac.jp/~akitaoka/rotate.html">こちら</a>。</p>
+    <p>The "Rotating snakes" illusion is developed by Prof. Akiyoshi Kitaoka, see <a href="http://www.psy.ritsumei.ac.jp/~akitaoka/rotsnakee.html">http://www.psy.ritsumei.ac.jp/~akitaoka/rotsnakee.html</a> for more information.</p>
+
+    <p>この作品を作るにあたり、<a href="http://wgld.org/">wgld.org</a>さんのコードを借りまくってます。本当に感謝です。<br/>
+      A large part of avascript and GLSL codes are just a minor revision of the codes in <a href="http://wgld.org/">wgld.org</a>. Thanks!!</p>
+    
+  </body>
+</html>
