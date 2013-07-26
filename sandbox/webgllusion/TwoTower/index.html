@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Two Tower Illusion (WebGL 3D version)</title>
+    <script src="../lib/three.min.js"></script>
+    <script src="../lib/OrbitControls.js"></script>
+    <script src="script.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <table>
+      <tr>
+	<td><div id="three"></div></td>
+	<td>
+	  <p>
+	    <input type="checkbox" id="ot" checked="checked"/> 空間内に２個の塔を描画 <br/><br/>
+	    <button onclick = "reset_view()">カメラ位置を初期化</button>
+	  </p>
+	</td>
+      </tr>
+    </table>
+
+    <p>
+      有名な<a href="http://ja.wikipedia.org/wiki/%E6%96%9C%E5%A1%94%E9%8C%AF%E8%A6%96">斜塔錯視</a>です。
+      デフォルトでは空間内に同じ傾きの塔が２個配置されています。
+      チェックボックスをオフにすると、オリジナルの斜塔錯視になります。
+      斜塔錯視の原理がよくわかるような気がします。
+    </p>
+  </body>
+</html>
