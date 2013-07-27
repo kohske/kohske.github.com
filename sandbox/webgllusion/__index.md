@@ -15,8 +15,9 @@ WebGLとGLSLを使った3D錯視のデモを紹介します。
 ## 謝辞
 
 このデモを作るにあたり、[wgld.org](http://wgld.org)さんのコードを借りまくってます。本当に感謝です。
+あと[Three.js](http://threejs.org/)も使ってます。
 
-A large part of avascript and GLSL codes are just a minor revision of the codes in [wgld.org](http://wgld.org). Thanks!!
+A part of javascript and GLSL codes are just a minor revision of the codes in [wgld.org](http://wgld.org). Thanks!!
 
 
 
