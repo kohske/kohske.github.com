@@ -11,6 +11,7 @@ WebGLとGLSLを使った3D錯視のデモを紹介します。
 - [蛇の回転球錯視](RotateSnakeBall/index.html)
 - [知覚的体制化とゼラチン楕円球錯視](GelatinousEllipse/index.html)
 - [斜塔錯視](TwoTower/index.html)
+- [ホローフェース錯視](HollowFace/index.html)
 
 ## 謝辞
 
