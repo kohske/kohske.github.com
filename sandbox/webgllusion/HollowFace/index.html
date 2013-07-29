@@ -13,13 +13,28 @@
 	<td id="three"></td>
 	<td>
 	  <p>
-	    <a href="http://ja.wikipedia.org/wiki/%E6%96%9C%E5%A1%94%E9%8C%AF%E8%A6%96">Hollow face 錯視</a>です。やっつけ仕事です。
-	    Three.jsのサンプル<a href="http://mrdoob.github.io/three.js/examples/webgl_materials_cubemap.html">Three.js cube mapping demo</a>のコード借りてます。
+
+	    <input type="radio" id="e_v_2d" checked="checked" name="view" onclick="change_view(2);">2Dモード</input>
+	    <input type="radio" id="e_v_3d" name="view" onclick="change_view(3);">3Dモード</input><br/><br/>
+	    
+	    <input type="checkbox" id="e_cam">視点移動有効（2Dモードのみ）</input><br/>
+	    <input type="checkbox" id="e_bg" checked="checked" onclick="change_bg();">背景を描画</input><br/>
+	    <input type="checkbox" id="e_wf" onclick="change_wireframe();">ワイヤーフレーム</input><br/>
+	  </p>
+	  <hr/>
+	  <p>
+	    <a href="http://ja.wikipedia.org/wiki/%E6%96%9C%E5%A1%94%E9%8C%AF%E8%A6%96">Hollow face 錯視</a>です。やっつけ仕事です。<br/>
+	    両眼立体視が得意な人は、3Dモードで交差法による立体視が可能です。両眼視差のdepth情報とピクトリアルなdepth情報のコンフリクトが体験出来ます。
+	    
+
 	  </p>
 	</td>
       </tr>
     </table>
 
-    
+    <h3>以下の素材を使っています</h3>
+    <ul>
+      <li>背景テクスチャ・顔ジオメトリモデル・ライブラリ: <a href="http://threejs.org/">http://threejs.org/</a></li>
+    </ul>
   </body>
 </html>

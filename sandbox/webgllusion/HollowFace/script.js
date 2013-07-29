@@ -1,5 +1,10 @@
+var reflectionCube
+var ef_bg = false;
+var e_view = 2;
+var shader;
+var e_bg;
 var geo;
-var obj1, obj2, obj3;
+var obj = new Array();
 var oc1, oc2, oc3;
 
 var camera, scene, renderer;
@@ -18,6 +23,7 @@ var width = 800;
 var height = 800;
 var windowHalfX = width / 2;
 var windowHalfY = height / 2;
+var can_size;
 
 document.addEventListener('mousemove', onDocumentMouseMove, false);
 
@@ -48,14 +54,6 @@ function init() {
     pointLight.position.set( 0, 0, -1000 );
     scene.add( pointLight );
 
-    // light representation
-
-    sphere = new THREE.SphereGeometry( 100, 16, 8 );
-    lightMesh = new THREE.Mesh( sphere, new THREE.MeshBasicMaterial( { color: 0xffaa00 } ) );
-    lightMesh.position = pointLight.position;
-    lightMesh.scale.x = lightMesh.scale.y = lightMesh.scale.z = 0.05;
-//    scene.add( lightMesh );
-
     var path = "../img/SwedishRoyalCastle/";
     var format = '.jpg';
     var urls = [
@@ -64,21 +62,25 @@ function init() {
 	path + 'pz' + format, path + 'nz' + format
     ];
 
-    var reflectionCube = THREE.ImageUtils.loadTextureCube( urls );
+    reflectionCube = THREE.ImageUtils.loadTextureCube( urls );
     reflectionCube.format = THREE.RGBFormat;
 
     
     var refractionCube = new THREE.Texture( reflectionCube.image, new THREE.CubeRefractionMapping() );
     refractionCube.format = THREE.RGBFormat;
 
-    //var cubeMaterial3 = new THREE.MeshPhongMaterial( { color: 0x000000, specular:0xaa0000, envMap: reflectionCube, combine: THREE.MixOperation, reflectivity: 0.25 } );
-    var cubeMaterial3 = new THREE.MeshLambertMaterial( { color: 0xff6600, ambient: 0x993300, envMap: reflectionCube, combine: THREE.MixOperation, reflectivity: 0.3 } );
-    var cubeMaterial2 = new THREE.MeshLambertMaterial( { color: 0xffee00, ambient: 0x996600, envMap: refractionCube, refractionRatio: 0.95 } );
-    var cubeMaterial1 = new THREE.MeshLambertMaterial( { color: 0xffffff, ambient: 0xaaaaaa, envMap: reflectionCube } )
+    
+    var cubeMaterial = new Array();
+    cubeMaterial[0] = new THREE.MeshPhongMaterial( { color: 0xaa3333, ambient:0x111111, specular: 0xaaaaaa, envMap: reflectionCube, 
+						     combine: THREE.MixOperation, reflectivity: 0.75 } );
+    cubeMaterial[1] = new THREE.MeshPhongMaterial( { color: 0x33aa33, ambient:0x111111, specular: 0xaaaaaa, envMap: reflectionCube, 
+						     combine: THREE.MixOperation, reflectivity: 0.75 } );
+    cubeMaterial[2] = new THREE.MeshPhongMaterial( { color: 0x3333aa, ambient:0x111111, specular: 0xaaaaaa, envMap: reflectionCube, 
+						     combine: THREE.MixOperation, reflectivity: 0.75 } );
 
     // Skybox
 
-    var shader = THREE.ShaderLib[ "cube" ];
+    shader = THREE.ShaderLib[ "cube" ];
     shader.uniforms[ "tCube" ].value = reflectionCube;
 
     var material = new THREE.ShaderMaterial( {
@@ -100,19 +102,15 @@ function init() {
     renderer.setSize( width, height );
     renderer.autoClear = false;
     document.getElementById("three").appendChild( renderer.domElement );
-
-    //
-
-    //
+    can_size = {w: renderer.domElement.width, h: renderer.domElement.height};
 
     loader = new THREE.BinaryLoader( true );
-//    document.body.appendChild( loader.statusDomElement );
+    //    document.body.appendChild( loader.statusDomElement );
 
-    loader.load( "../img/WaltHead_bin.js", function( geometry ) { createScene( geometry, cubeMaterial1, cubeMaterial2, cubeMaterial3 ) } );
+    loader.load( "../img/WaltHead_bin.js", function( geometry ) { createScene( geometry, cubeMaterial[0], cubeMaterial[1], cubeMaterial[2] ) } );
 
-    //
-
-//    window.addEventListener( 'resize', onWindowResize, false );
+    e_bg = document.getElementById("e_bg");
+    e_cam = document.getElementById("e_cam");
 
 }
 
@@ -128,7 +126,6 @@ function onWindowResize() {
     cameraCube.updateProjectionMatrix();
 
     renderer.setSize( window.innerWidth, window.innerHeight );
-
 }
 
 function createScene( geometry, m1, m2, m3 ) {
@@ -140,32 +137,26 @@ function createScene( geometry, m1, m2, m3 ) {
 	return true;
     });
     geo = geometry;
-    var s = 10;
     
     var mesh = new THREE.Mesh( geometry, m1 );
-    mesh.position.z = - 100;
-    mesh.scale.x = mesh.scale.y = mesh.scale.z = s;
     mesh.material.side = THREE.DoubleSide;
     scene.add( mesh );
-    obj1 = mesh;
+    obj[0] = mesh;
 
     var mesh = new THREE.Mesh( geometry, m2 );
-    mesh.position.x = - 600;
-    mesh.position.z = - 100;
-    mesh.scale.x = mesh.scale.y = mesh.scale.z = s;
     mesh.material.side = THREE.DoubleSide;
     scene.add( mesh );
-    obj2 = mesh;
+    obj[1] = mesh;
 
     var mesh = new THREE.Mesh( geometry, m3 );
-    mesh.position.x = 600;
-    mesh.position.z = - 100;
-    mesh.scale.x = mesh.scale.y = mesh.scale.z = s;
     mesh.material.side = THREE.DoubleSide;
     scene.add( mesh );
-    obj3 = mesh;
+    obj[2] = mesh;
 
-//    loader.statusDomElement.style.display = "none";
+    change_view(2);
+    change_bg();
+
+    //    loader.statusDomElement.style.display = "none";
 
 }
 
@@ -186,23 +177,121 @@ function animate() {
 }
 
 function render() {
-
     var timer = -0.0003 * Date.now();
 
-//    lightMesh.position.x = 1500 * Math.cos( timer );
-//    lightMesh.position.z = 1500 * Math.sin( timer );
+    // 2D view
+    if (2 == e_view) {
+	if (obj[2]) {
+	    obj[0].rotation.x = timer;
+	    obj[1].rotation.y = timer;
+	    obj[2].rotation.y = -timer;
+	}
 
-    obj1.rotation.x = timer;
-    obj2.rotation.y = timer;
-    obj3.rotation.y = -timer;
+	if (e_cam.checked) {
+	    camera.position.x += ( mouseX - camera.position.x ) * .05;
+	    camera.position.y += ( - mouseY - camera.position.y ) * .05;
+	} else {
+	    camera.position.x = camera.position.y = 0.0;    
+	}
+	camera.lookAt( scene.position );	
 
-    camera.position.x += ( mouseX - camera.position.x ) * .05;
-    camera.position.y += ( - mouseY - camera.position.y ) * .05;
+	if (ef_bg) {
+	    cameraCube.rotation.copy( camera.rotation );
+	    renderer.render( sceneCube, cameraCube );
+	}
+	renderer.render( scene, camera );
 
-    camera.lookAt( scene.position );
-    cameraCube.rotation.copy( camera.rotation );
+    } else if (3 == e_view) {
 
-    renderer.render( sceneCube, cameraCube );
-    renderer.render( scene, camera );
+	if (obj[2]) {
+	    obj[0].rotation.x = timer;
+	    obj[1].rotation.y = timer;
+	    obj[2].rotation.y = -timer;
 
+	}
+
+	
+	camera.position.x = 150;
+	camera.position.y = 0;
+	camera.lookAt( scene.position );
+	renderer.setViewport( can_size.w/2*0.02, can_size.h*0.02, can_size.w/2*0.96, can_size.h*0.96);
+	renderer.setScissor( can_size.w/2*0.02, can_size.h*0.02, can_size.w/2*0.96, can_size.h*0.96);
+
+	if (ef_bg) {
+	    cameraCube.rotation.copy( camera.rotation );
+	    renderer.render( sceneCube, cameraCube );
+	}
+	renderer.render(scene, camera);
+
+
+	camera.position.x = -150;
+	camera.position.y = 0;
+	camera.lookAt( scene.position );
+
+	renderer.setViewport( can_size.w/2*1.02, can_size.h*0.02, can_size.w/2*0.96, can_size.h*0.96);
+	renderer.setScissor( can_size.w/2*1.02, can_size.h*0.02, can_size.w/2*0.96, can_size.h*0.96);
+	
+	if (ef_bg) {
+	    cameraCube.rotation.copy( camera.rotation );
+	    renderer.render( sceneCube, cameraCube );
+	}
+	renderer.render(scene, camera);
+    }
+    
+
+}
+
+change_view = function(dim) {
+    if (!obj[2]) return;
+    e_view = dim;
+    var s = 10;
+    if (2 == e_view) {
+	camera.fov = 50;
+	camera.aspect = 1.0;
+	camera.updateProjectionMatrix()
+
+	obj[0].position.set(0, 0, 100);
+	obj[0].scale.set(s, s, s);
+
+	obj[1].position.set(600, 0, -100);
+	obj[1].scale.set(s, s, s);
+
+	obj[2].position.set(-600, 0, -100);
+	obj[2].scale.set(s, s, s);
+
+	renderer.enableScissorTest ( false );
+	renderer.setViewport( 0, 0, can_size.w, can_size.h);
+
+    } else if (3 == e_view) {
+	camera.fov = 50;
+	camera.aspect = 0.5;
+	camera.updateProjectionMatrix()
+
+	obj[0].position.set(0, -100, 100);
+	obj[0].scale.set(s, s, s);
+
+	obj[1].position.set(200, 300, 500);
+	obj[1].scale.set(s/2, s/2, s/2);
+
+	obj[2].position.set(-200, 300, 500);
+	obj[2].scale.set(s/2, s/2, s/2);
+
+	renderer.enableScissorTest ( true );
+	//	    obj[0].material.wireframe = true;
+	
+    }
+}
+
+change_wireframe = function() {
+    if (!obj[2]) return;
+    var f = document.getElementById("e_wf").checked;
+    for (var i=0; i<obj.length; ++i) obj[i].material.wireframe = f;
+}
+
+change_bg = function() {
+    if (!obj[2]) return;
+    ef_bg = document.getElementById("e_bg").checked;
+    for (var i=0; i<obj.length; ++i) {
+	obj[i].material.reflectivity = ef_bg?0.5:0;
+    }
 }
