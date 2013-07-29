@@ -3,7 +3,6 @@ var ef_bg = false;
 var e_view = 2;
 var shader;
 var e_bg;
-var geo;
 var obj = new Array();
 var oc1, oc2, oc3;
 
@@ -129,15 +128,22 @@ function onWindowResize() {
 }
 
 function createScene( geometry, m1, m2, m3 ) {
-    
+
+    g0 = geometry.clone();
     geometry.faces = geometry.faces.filter(function(i) {
 	if (geometry.vertices[i.a].z < 0) return false;
 	if (geometry.vertices[i.b].z < 0) return false;
 	if (geometry.vertices[i.c].z < 0) return false;
 	return true;
     });
-    geo = geometry;
     
+    g0.faces = g0.faces.filter(function(i) {
+	if (geometry.vertices[i.a].z > 0) return false;
+	if (geometry.vertices[i.b].z > 0) return false;
+	if (geometry.vertices[i.c].z > 0) return false;
+	return true;
+    });
+
     var mesh = new THREE.Mesh( geometry, m1 );
     mesh.material.side = THREE.DoubleSide;
     scene.add( mesh );
@@ -148,7 +154,7 @@ function createScene( geometry, m1, m2, m3 ) {
     scene.add( mesh );
     obj[1] = mesh;
 
-    var mesh = new THREE.Mesh( geometry, m3 );
+    var mesh = new THREE.Mesh( g0, m3 );
     mesh.material.side = THREE.DoubleSide;
     scene.add( mesh );
     obj[2] = mesh;
