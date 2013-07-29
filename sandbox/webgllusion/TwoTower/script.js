@@ -44,7 +44,7 @@ scene.add(ambient);
 var geometry = new THREE.CylinderGeometry(0.0, 0.3, 25, 30, 30, true);
 //var geometry = new THREE.SphereGeometry(1, 32, 16);
 
-var tex = THREE.ImageUtils.loadTexture( '../img/renga2.jpg' );
+var tex = THREE.ImageUtils.loadTexture( '../img/seamlesstextures.net/626_stone_randomstonework.jpg' );
 tex.wrapS = tex.wrapT = THREE.RepeatWrapping;
 tex.repeat.set( 4, 60 );
 
