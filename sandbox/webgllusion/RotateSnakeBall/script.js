@@ -73,7 +73,7 @@ onload = function(){
     attStride[3] = 3;
     
     // 球体モデル
-    var earthData     = sphere(64*2, 64*2, 0.75, [1.0, 1.0, 1.0, 1.0]);
+    var earthData     = sphere(64, 64, 0.75, [1.0, 1.0, 1.0, 1.0]);
     var ePosition     = create_vbo(earthData.p);
     var eNormal       = create_vbo(earthData.n);
     var eColor        = create_vbo(earthData.c);
@@ -133,7 +133,7 @@ onload = function(){
     
     // テクスチャを生成
     create_texture('../img/rotate_snake_patch.png', 0);
-    create_texture('../img/stars-texture-2.jpg', 1);
+    create_texture('../img/seamlesstextures.net/656_clouds_nightsky.jpg', 1);
     
     // カウンタの宣言
     var count = 0;
@@ -217,7 +217,7 @@ onload = function(){
 	// モデル座標変換行列の生成
 	m.identity(mMatrix);
 	m.multiply(mMatrix, qMatrix, mMatrix);
-	m.scale(mMatrix, [100, 100, 100], mMatrix);
+	m.scale(mMatrix, [50, 50, 50], mMatrix);
 	m.multiply(tmpMatrix, mMatrix, mvpMatrix);
 
 	// uniform変数の登録と描画
