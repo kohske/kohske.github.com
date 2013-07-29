@@ -116,7 +116,7 @@ onload = function(){
     var texture = null;
     
     // テクスチャを生成
-    create_texture('../img/dry_ground.png');
+    create_texture('../img/seamlesstextures.net/093_abstract_bluewater.jpg');
     
     // 装飾ステート
     var e_tex = [document.getElementById('tex_tex'),
@@ -138,7 +138,7 @@ onload = function(){
 	var delta = Date.now() - then;
 
 	// canvasを初期化
-	gl.clearColor(1.0, 0.9, 0.9, 1.0);
+	gl.clearColor(0.9, 0.9, 0.9, 1.0);
 	gl.clearDepth(1.0);
 	gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
 	
