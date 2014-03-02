@@ -1,4 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -26,41 +28,27 @@ code > span.al { color: #ff0000; font-weight: bold; }
 code > span.fu { color: #06287e; }
 code > span.er { color: #ff0000; font-weight: bold; }
   </style>
-  <link rel="stylesheet" href="github.css" type="text/css" />
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="http://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
   <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <script src="http://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
 </head>
 <body>
-<div id="header">
-<h1 class="title">RマークダウンとPandocで楽々レポート作成</h1>
-<h2 class="author"><span class="citation">@kohske</span></h2>
-<h3 class="date">2014/3/1</h3>
+<div class="slide titlepage">
+  <h1 class="title">RマークダウンとPandocで楽々レポート作成</h1>
+  <p class="author">
+<span class="citation">@kohske</span>
+  </p>
+  <p class="date">2014/3/1</p>
 </div>
-<div id="TOC">
-<ul>
-<li><a href="#はじめに">はじめに</a><ul>
-<li><a href="#役に立つ資料">役に立つ資料</a></li>
-</ul></li>
-<li><a href="#メタ情報の記述">メタ情報の記述</a><ul>
-<li><a href="#簡易記法">簡易記法</a></li>
-<li><a href="#yaml記法">YAML記法</a></li>
-</ul></li>
-<li><a href="#レポート生成コマンド-おなじない">レポート生成コマンド (おなじない)</a><ul>
-<li><a href="#r上でpandocを使う">R上でpandocを使う</a></li>
-</ul></li>
-<li><a href="#例あやめの解析-またかよorz">例：あやめの解析 (またかよ・・・orz)</a><ul>
-<li><a href="#データの雰囲気">データの雰囲気</a></li>
-<li><a href="#データの解析">データの解析</a></li>
-<li><a href="#データの可視化">データの可視化</a></li>
-</ul></li>
-<li><a href="#最後に">最後に</a></li>
-</ul>
-</div>
-<h1 id="はじめに"><a href="#はじめに">はじめに</a></h1>
+<div id="はじめに" class="slide section level1">
+<h1>はじめに</h1>
 <p>Rマークダウンでドキュメントとコード書いて→ knit() → pandoc → (html | pdf | docx) します。</p>
-<h2 id="役に立つ資料"><a href="#役に立つ資料">役に立つ資料</a></h2>
-<ul>
+<h2 id="役に立つ資料">役に立つ資料</h2>
+<ul class="incremental">
 <li><span class="citation">@teramonagiさんの資料</span>
-<ul>
+<ul class="incremental">
 <li>Tokyo.R@36 ～knitr+pandocではじめる～『R MarkdownでReproducible Research』 <a href="http://www.slideshare.net/teramonagi/tokyo-r36-20140222">http://www.slideshare.net/teramonagi/tokyo-r36-20140222</a></li>
 <li>Tokyo.R@36 ～knitrパッケージではじめる～『R MarkdownでReproducible Research』の基礎編のコード <a href="http://rpubs.com/teramonagi/TokyoR36_Basic">http://rpubs.com/teramonagi/TokyoR36_Basic</a></li>
 <li>Tokyo.R@36 ～knitrパッケージではじめる～『R MarkdownでReproducible Research』の応用編のコード <a href="http://rpubs.com/teramonagi/TokyoR36_Advanced">http://rpubs.com/teramonagi/TokyoR36_Advanced</a></li>
@@ -70,15 +58,17 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <li>マークダウン用 github.css <a href="https://gist.github.com/andyferra/2554919">https://gist.github.com/andyferra/2554919</a></li>
 </ul>
 <p>も参考にしてくださいね〜</p>
-<h1 id="メタ情報の記述"><a href="#メタ情報の記述">メタ情報の記述</a></h1>
+</div>
+<div id="メタ情報の記述" class="slide section level1">
+<h1>メタ情報の記述</h1>
 <p>マークダウンファイルにはメタ情報を含めることができます。</p>
-<h2 id="簡易記法"><a href="#簡易記法">簡易記法</a></h2>
+<h2 id="簡易記法">簡易記法</h2>
 <p>ファイル先頭を</p>
 <pre><code>% タイトル
 % 著者
 % 日付</code></pre>
 <p>で始めることができます。</p>
-<h2 id="yaml記法"><a href="#yaml記法">YAML記法</a></h2>
+<h2 id="yaml記法">YAML記法</h2>
 <p>ファイルの先頭にYAMLでメタ情報を入れることができます。次の例を参考にして下さい。</p>
 <pre><code>---
 title: RマークダウンとPandocで楽々レポート作成
@@ -86,25 +76,27 @@ author: &quot;@ohske&quot;
 tags: [R, pandoc, Dynamic Documentation]
 abstract: Rマークダウンでドキュメントとコード書いて→ knit() → pandoc → (html | pdf | docx)します。
 ---</code></pre>
-<h1 id="レポート生成コマンド-おなじない"><a href="#レポート生成コマンド-おなじない">レポート生成コマンド (おなじない)</a></h1>
+</div>
+<div id="レポート生成コマンド-おなじない" class="slide section level1">
+<h1>レポート生成コマンド (おなじない)</h1>
 <p>まずは、</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(knitr)
 <span class="kw">knit</span>(<span class="st">&quot;pandoc-md.Rmd&quot;</span>)</code></pre>
 <p>としてRマークダウンファイル(.Rmd)からマークダウンファイルを作成します。 続いて、マークダウンファイルをPandocによって様々な形式に変換します。</p>
-<ul>
+<ul class="incremental">
 <li><p>HTMLファイルの作成</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">pandoc</span> -s --toc -c github.css --mathjax pandoc-md.md -o pandoc-md.html</code></pre>
-<ul>
+<ul class="incremental">
 <li>github.cssというファイルを同じフォルダに入れときます。</li>
 </ul></li>
 <li><p>LaTeXファイルの作成</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">pandoc</span> -s --toc --number-sections --listings -V documentclass=ltjarticle -H preamble.tex pandoc-md.md -o pandoc-md.tex</code></pre>
-<ul>
+<ul class="incremental">
 <li>必要の応じてプリアンブルを記述したpreamble.texを準備します。</li>
 </ul></li>
 <li><p>PDFファイルの作成</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">pandoc</span> --toc --number-sections --listings -V documentclass=ltjarticle -H preamble.tex --latex-engine=lualatex -H preamble.tex pandoc-md.md -o pandoc-md.pdf</code></pre>
-<ul>
+<ul class="incremental">
 <li>必要の応じてプリアンブルを記述したpreamble.texを準備します。</li>
 </ul></li>
 <li><p>DOCXファイルの作成</p>
@@ -113,11 +105,11 @@ abstract: Rマークダウンでドキュメントとコード書いて→ knit(
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">pandoc</span> -s --mathjax -i -t slidy pandoc-md.md -o pandoc-slidy.html</code></pre></li>
 <li><p>PDFスライド(Bearer)の作成</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">pandoc</span> -t beamer --listings -H preamble-beamer.tex --latex-engine=lualatex pandoc-md.md -o pandoc-beamer.pdf</code></pre>
-<ul>
+<ul class="incremental">
 <li>必要の応じてプリアンブルを記述したpreamble-beamer.texを準備します。</li>
 </ul></li>
 </ul>
-<h2 id="r上でpandocを使う"><a href="#r上でpandocを使う">R上でpandocを使う</a></h2>
+<h2 id="r上でpandocを使う">R上でpandocを使う</h2>
 <p>knitrパッケージには<code>pandoc()</code>という関数があるんですが、オプション渡すのが面倒なので<code>system()</code>でpandocを実行します。</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">knit</span>(<span class="st">&quot;pandoc-md.Rmd&quot;</span>)
 <span class="kw">system</span>(<span class="st">&quot;pandoc -s --toc -c github.css --mathjax pandoc-md.md -o pandoc-md.html&quot;</span>)
@@ -126,10 +118,12 @@ abstract: Rマークダウンでドキュメントとコード書いて→ knit(
 <span class="kw">system</span>(<span class="st">&quot;pandoc pandoc-md.md -o pandoc-md.docx&quot;</span>)
 <span class="kw">system</span>(<span class="st">&quot;pandoc -s --mathjax -i -t slidy pandoc-md.md -o pandoc-slidy.html&quot;</span>)
 <span class="kw">system</span>(<span class="st">&quot;pandoc -t beamer --listings -H preamble-beamer.tex --latex-engine=lualatex pandoc-md.md -o pandoc-beamer.pdf&quot;</span>)</code></pre>
-<h1 id="例あやめの解析-またかよorz"><a href="#例あやめの解析-またかよorz">例：あやめの解析 (またかよ・・・orz)</a></h1>
+</div>
+<div id="例あやめの解析-またかよorz" class="slide section level1">
+<h1>例：あやめの解析 (またかよ・・・orz)</h1>
 <p><strong>あやめ</strong>とは、<del>さかな</del>植物の名前です。おそらく、世界中でも最も多く解析にさらされた植物でしょう。</p>
 <p>学名は<em>Iris sanguinea</em>といいます。イリスではなくて、アイリスです。 <sub>大きい声では言えませんが今でも「イリス」と呼んでます。</sub></p>
-<h2 id="データの雰囲気"><a href="#データの雰囲気">データの雰囲気</a></h2>
+<h2 id="データの雰囲気">データの雰囲気</h2>
 <pre class="sourceCode r"><code class="sourceCode r">pander::<span class="kw">pandoc</span>(<span class="kw">head</span>(iris), <span class="dt">caption=</span><span class="st">&quot;あやめのデータ (1-6行)&quot;</span>, <span class="dt">split.tables =</span> <span class="dv">100</span>)</code></pre>
 <table>
 <caption>あやめのデータ (1-6行)</caption>
@@ -192,7 +186,7 @@ abstract: Rマークダウンでドキュメントとコード書いて→ knit(
 </tr>
 </tbody>
 </table>
-<h2 id="データの解析"><a href="#データの解析">データの解析</a></h2>
+<h2 id="データの解析">データの解析</h2>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cor</span>(iris[, -<span class="dv">5</span>])</code></pre>
 <pre><code>##              Sepal.Length Sepal.Width Petal.Length Petal.Width
 ## Sepal.Length       1.0000     -0.1176       0.8718      0.8179
@@ -200,7 +194,7 @@ abstract: Rマークダウンでドキュメントとコード書いて→ knit(
 ## Petal.Length       0.8718     -0.4284       1.0000      0.9629
 ## Petal.Width        0.8179     -0.3661       0.9629      1.0000</code></pre>
 <p>等幅フォントにできるかな</p>
-<h2 id="データの可視化"><a href="#データの可視化">データの可視化</a></h2>
+<h2 id="データの可視化">データの可視化</h2>
 <p>ヒストグラムを作って、正規分布(<span class="math">\(\frac{1}{\sqrt{2\pi\sigma^2}} \exp\left(-\frac{\left(x-\mu\right)^2}{2\sigma^2}\right)\)</span>)と比べてみます。</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(<span class="dt">mar=</span><span class="kw">c</span>(<span class="fl">2.5</span>, <span class="fl">2.5</span>, <span class="fl">1.5</span>, <span class="dv">1</span>))
 <span class="kw">hist</span>(<span class="kw">scale</span>(iris[, <span class="dv">1</span>]), <span class="dt">probability =</span> <span class="ot">TRUE</span>, <span class="dt">ylim=</span><span class="kw">c</span>(<span class="dv">0</span>, <span class="fl">0.5</span>))
@@ -208,7 +202,10 @@ abstract: Rマークダウンでドキュメントとコード書いて→ knit(
 <div class="figure">
 <img src="figure/md-docx-fig1.png" alt="ヒストグラム" /><p class="caption">ヒストグラム</p>
 </div>
-<h1 id="最後に"><a href="#最後に">最後に</a></h1>
+</div>
+<div id="最後に" class="slide section level1">
+<h1>最後に</h1>
 <p>Enjoy!!</p>
+</div>
 </body>
 </html>

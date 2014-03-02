@@ -68,22 +68,35 @@ knit("pandoc-md.Rmd")
 ```bash
 $ pandoc -s --toc -c github.css --mathjax pandoc-md.md -o pandoc-md.html
 ```
-github.cssというファイルを同じフォルダに入れときます。
+    - github.cssというファイルを同じフォルダに入れときます。
 
 - LaTeXファイルの作成
 ```bash
-$ pandoc -s --toc --number-sections -V documentclass=ltjarticle pandoc-md.md -o pandoc-md.tex
+$ pandoc -s --toc --number-sections --listings -V documentclass=ltjarticle -H preamble.tex pandoc-md.md -o pandoc-md.tex
 ```
+    - 必要の応じてプリアンブルを記述したpreamble.texを準備します。
 
 - PDFファイルの作成
 ```bash
-$ pandoc -s --toc --number-sections --listings -V documentclass=ltjarticle --latex-engine=lualatex pandoc-md.md -o pandoc-md.pdf
+$ pandoc --toc --number-sections --listings -V documentclass=ltjarticle -H preamble.tex --latex-engine=lualatex -H preamble.tex pandoc-md.md -o pandoc-md.pdf
 ```
+    - 必要の応じてプリアンブルを記述したpreamble.texを準備します。
 
 - DOCXファイルの作成
 ```bash
-$ pandoc -s pandoc-md.md -o pandoc-md.docx
+$ pandoc pandoc-md.md -o pandoc-md.docx
 ```
+
+- HTML5スライド(slidy)の作成
+```bash
+$ pandoc -s --mathjax -i -t slidy pandoc-md.md -o pandoc-slidy.html
+```
+
+- PDFスライド(Bearer)の作成
+```bash
+$ pandoc -t beamer --listings -H preamble-beamer.tex --latex-engine=lualatex pandoc-md.md -o pandoc-beamer.pdf
+```
+    - 必要の応じてプリアンブルを記述したpreamble-beamer.texを準備します。
 
 ## R上でpandocを使う
 
@@ -91,10 +104,13 @@ knitrパッケージには`pandoc()`という関数があるんですが、オ�
 
 
 ```r
+knit("pandoc-md.Rmd")
 system("pandoc -s --toc -c github.css --mathjax pandoc-md.md -o pandoc-md.html")
-system("pandoc -s --toc --number-sections -V documentclass=ltjarticle pandoc-md.md -o pandoc-md.tex")
-system("pandoc -s --toc --number-sections --listings -V documentclass=ltjarticle --latex-engine=lualatex pandoc-md.md -o pandoc-md.pdf")
-system("pandoc -s pandoc-md.md -o pandoc-md.docx")
+system("pandoc -s --toc --number-sections --listings -V documentclass=ltjarticle -H preamble.tex pandoc-md.md -o pandoc-md.tex")
+system("pandoc --toc --number-sections --listings -V documentclass=ltjarticle --latex-engine=lualatex -H preamble.tex pandoc-md.md -o pandoc-md.pdf")
+system("pandoc pandoc-md.md -o pandoc-md.docx")
+system("pandoc -s --mathjax -i -t slidy pandoc-md.md -o pandoc-slidy.html")
+system("pandoc -t beamer --listings -H preamble-beamer.tex --latex-engine=lualatex pandoc-md.md -o pandoc-beamer.pdf")
 ```
 
 
