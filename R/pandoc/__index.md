@@ -1,6 +1,6 @@
 # knitrとpandocでレポートの作成
 
-- [入力元のRマークダウンファイル](pandoc-md.Rmd)
+- [入力元のRマークダウンファイル](https://raw.github.com/kohske/kohske.github.com/master/R/pandoc/pandoc-md.Rmd)
     - [knit()して生成されたマークダウンファイル(pandoc-md.md)](https://raw.github.com/kohske/kohske.github.com/master/R/pandoc/pandoc-md.md)
 
 ## 出来上がったレポート
