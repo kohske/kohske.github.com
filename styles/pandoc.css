@@ -51,12 +51,7 @@ h5 {
 }
 
 h1.title {
-        font-size: 200%;
-        font-weight: bold;
-        padding-top: 0.2em;
-        padding-bottom: 0.2em;
-        text-align: left;
-        border: none;
+    display:none;
 }
 
 dt code {
