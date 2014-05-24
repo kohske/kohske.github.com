@@ -76,18 +76,24 @@
 	<td><canvas id="canvas"></canvas><td>
 	<td>
 	  <p>
-	    <input id="tex_tex" type="radio" name="tex" checked> テクスチャ
-	    <input id="tex_col" type="radio" name="tex"> テクスチャなし
-	    <input id="tex_non" type="radio" name="tex"> シルエット（２次元）
-	    <br/><br/>
+	  <p>球の種類<br/>
+	    <input id="tex_tex" type="radio" name="tex" checked> テクスチャ<br/>
+	    <input id="tex_col" type="radio" name="tex"> テクスチャなし<br/>
+	    <input id="tex_non" type="radio" name="tex"> シルエット（２次元）<br/>
+	    <br/>
 	    <input id="balls" type="checkbox" checked>周辺の球を表示<br/><br/>
 	    <button onclick="zero_vp()">視点をリセット</button><br/><br/>
 	    テクスチャなし状態での色 <input id="ball_col" type="color" value="#66fafa"/>
 	  </p>
-	  <p>
-	    Yair Weiss and Edward H. Adelson によるグループングとゼラチン楕円錯視(?)の3次元版です。<a href="http://www.cs.huji.ac.il/~yweiss/ellipse.html">http://www.cs.huji.ac.il/~yweiss/ellipse.html</a>。一目瞭然だと思いますが、楕円球の解釈が周りの4点の動きで劇的に変わります（回転と変形、剛体と非剛体）。斜めあたりから見ても結構変わります。但しテクスチャ付きだと回転がドミナントだと思います。
+	  <hr/>
+	  <p>Yair Weiss and Edward H. Adelson によるグループングとゼラチン楕円錯視(?)の3次元版です。<a href="http://www.cs.huji.ac.il/~yweiss/ellipse.html">http://www.cs.huji.ac.il/~yweiss/ellipse.html</a>。</p>
+	  <p>球の種類、周辺の球の有無、視点、球の色を操作できます。刺激上でマウスを動かすと視点を変えることが出来ます。</p>
+	  <p>重要なのは球の種類です。
+	    シルエットにすると一目瞭然だと思いますが、楕円球の解釈が周りの4点の動きで劇的に変わります（回転と変形、剛体と非剛体）。
+	    3次元イメージでテクスチャなしの場合でも解釈の変化が起こり、非剛体知覚が生じます。この時、斜めから見ても角度によっては解釈の変化が起こると思います。
+	    つまり、この錯視は2次元パターン知覚の問題ではなく、2次元入力から3次元構造の復元過程において生じる現象であり、物体認識に近い処理過程で起こっている可能性を示唆するものです。
+	    テクスチャ付きだと回転がドミナントだと思います。
 	  </p>
-    
 	</td>
       </tr>
     </table>

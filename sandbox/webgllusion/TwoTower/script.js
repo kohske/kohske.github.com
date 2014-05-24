@@ -1,4 +1,4 @@
-var ot1, ot2, e_bg;
+var ot1, ot2, e_bg, pr1, pr2;
 var can_size;
 // (1)レンダラの初期化
 var renderer = new THREE.WebGLRenderer();
@@ -17,12 +17,24 @@ var controls2 = new THREE.OrbitControls( camera2 );
 camera2.position = new THREE.Vector3(0, 0, 0);
 //camera2.lookAt(new THREE.Vector3(0, 0, 0));
 
+var camera3 = new THREE.OrthographicCamera(-1, 1, -1, 1, 0.1, 100);
+var camera4 = new THREE.OrthographicCamera(0.5, -0.5, 1, -1, -50, 50);
+var controls3 = new THREE.OrbitControls( camera3 );
+var controls4 = new THREE.OrbitControls( camera4 );
+
+camera3.position = new THREE.Vector3(0, 5, 2);
+camera3.lookAt(new THREE.Vector3(0, 0, 0));
+camera4.position = new THREE.Vector3(0, 5, 2);
+camera4.lookAt(new THREE.Vector3(0, 0, 0));
+
+
 // (4)ライトの作成
 var light = new THREE.DirectionalLight(0xcccccc);
 light.position = new THREE.Vector3(0.577, 0.577, -0.577);
 scene.add(light);
 
-var ambient = new THREE.AmbientLight(0x333333);
+//var ambient = new THREE.AmbientLight(0x333333);
+var ambient = new THREE.AmbientLight(0x888888);
 scene.add(ambient);
 
 // (5)表示する物体の作成
@@ -41,7 +53,7 @@ scene.add(ambient);
 */
 
 
-var geometry = new THREE.CylinderGeometry(0.0, 0.3, 25, 30, 30, true);
+var geometry = new THREE.CylinderGeometry(0.3, 0.3, 25, 30, 30, true);
 //var geometry = new THREE.SphereGeometry(1, 32, 16);
 
 var tex = THREE.ImageUtils.loadTexture( '../img/seamlesstextures.net/626_stone_randomstonework.jpg' );
@@ -75,11 +87,11 @@ var urls = [
     path + 'pz' + format, path + 'nz' + format
 ];
 /*
-var urls = [
-    path + 'posx' + format, path + 'negx' + format,
-    path + 'posy' + format, path + 'negy' + format,
-    path + 'posz' + format, path + 'negz' + format
-];
+  var urls = [
+  path + 'posx' + format, path + 'negx' + format,
+  path + 'posy' + format, path + 'negy' + format,
+  path + 'posz' + format, path + 'negz' + format
+  ];
 */
 
 var reflectionCube = THREE.ImageUtils.loadTextureCube( urls );
@@ -111,29 +123,51 @@ function render() {
     renderer.setClearColorHex(e_bg.checked?0x000000:0xe0ffff, 1);
     
     var pp = ot1.checked?1:0;
+    var proj = pr1.checked?1:0;
     for (var i=0; i<N; ++i) {
 	meshes[i].visible = pp?vis[i]:!vis[i];
     }
-    if (pp) {
-	renderer.setViewport( 0, 0, can_size.w, can_size.h);
-	renderer.enableScissorTest ( false );
-	renderer.render(scene, camera);
-    } else {
-	renderer.setViewport( 0, 0, can_size.w/2, can_size.h);
-	renderer.setScissor( 0, 0, can_size.w/2, can_size.h);
-	renderer.enableScissorTest ( true );
-	renderer.render(scene, camera2);
+    if (proj) {
+	if (pp) {
+	    renderer.setViewport( 0, 0, can_size.w, can_size.h);
+	    renderer.enableScissorTest ( false );
+	    renderer.render(scene, camera);
+	} else {
+	    renderer.setViewport( 0, 0, can_size.w/2, can_size.h);
+	    renderer.setScissor( 0, 0, can_size.w/2, can_size.h);
+	    renderer.enableScissorTest ( true );
+	    renderer.render(scene, camera2);
 
-	renderer.setViewport( can_size.w/2, 0, can_size.w/2, can_size.h);
-	renderer.setScissor( can_size.w/2, 0, can_size.w/2, can_size.h);
-	renderer.enableScissorTest ( true );
-	renderer.render(scene, camera2);
+	    renderer.setViewport( can_size.w/2, 0, can_size.w/2, can_size.h);
+	    renderer.setScissor( can_size.w/2, 0, can_size.w/2, can_size.h);
+	    renderer.enableScissorTest ( true );
+	    renderer.render(scene, camera2);
+	}
+    } else {
+	if (pp) {
+	    renderer.setViewport( 0, 0, can_size.w, can_size.h);
+	    renderer.enableScissorTest ( false );
+	    renderer.render(scene, camera3);
+	} else {
+	    renderer.setViewport( 0, 0, can_size.w/2, can_size.h);
+	    renderer.setScissor( 0, 0, can_size.w/2, can_size.h);
+	    renderer.enableScissorTest ( true );
+	    renderer.render(scene, camera4);
+
+	    renderer.setViewport( can_size.w/2, 0, can_size.w/2, can_size.h);
+	    renderer.setScissor( can_size.w/2, 0, can_size.w/2, can_size.h);
+	    renderer.enableScissorTest ( true );
+	    renderer.render(scene, camera4);
+	}
     }
     //    mesh.rotation.y = 0.3 * (+new Date - baseTime) / 1000;
 
 
     try{controls1.update();} catch(e){}
     try{controls2.update();} catch(e){}
+    try{controls3.update();} catch(e){}
+    try{controls4.update();} catch(e){}
+
 
     requestAnimationFrame(render);
 };
@@ -142,6 +176,8 @@ onload = function() {
     renderer.setClearColorHex(0x000000, 1);
     ot1 = document.getElementById("ot1");
     ot2 = document.getElementById("ot2");
+    pr1 = document.getElementById("pr1");
+    pr2 = document.getElementById("pr2");
     e_bg = document.getElementById("e_bg");
 
     document.getElementById('three').appendChild(renderer.domElement);

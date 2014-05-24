@@ -129,7 +129,8 @@ function onWindowResize() {
 
 function createScene( geometry, m1, m2, m3 ) {
 
-    g0 = geometry.clone();
+    var g0 = geometry.clone();
+    var g1 = geometry.clone();
     geometry.faces = geometry.faces.filter(function(i) {
 	if (geometry.vertices[i.a].z < 0) return false;
 	if (geometry.vertices[i.b].z < 0) return false;
@@ -144,12 +145,19 @@ function createScene( geometry, m1, m2, m3 ) {
 	return true;
     });
 
+    g1.faces = g1.faces.filter(function(i) {
+	if (geometry.vertices[i.a].y < 0) return false;
+	if (geometry.vertices[i.b].y < 0) return false;
+	if (geometry.vertices[i.c].y < 0) return false;
+	return true;
+    });
+
     var mesh = new THREE.Mesh( geometry, m1 );
     mesh.material.side = THREE.DoubleSide;
     scene.add( mesh );
     obj[0] = mesh;
 
-    var mesh = new THREE.Mesh( geometry, m2 );
+    var mesh = new THREE.Mesh( g1, m2 );
     mesh.material.side = THREE.DoubleSide;
     scene.add( mesh );
     obj[1] = mesh;
@@ -184,14 +192,14 @@ function animate() {
 
 function render() {
     var timer = -0.0003 * Date.now();
+    if (obj[2]) {
+	obj[0].rotation.y = timer;
+	obj[1].rotation.x = timer;
+	obj[2].rotation.y = -timer;
+    }
 
     // 2D view
     if (2 == e_view) {
-	if (obj[2]) {
-	    obj[0].rotation.x = timer;
-	    obj[1].rotation.y = timer;
-	    obj[2].rotation.y = -timer;
-	}
 
 	if (e_cam.checked) {
 	    camera.position.x += ( mouseX - camera.position.x ) * .05;
@@ -208,14 +216,6 @@ function render() {
 	renderer.render( scene, camera );
 
     } else if (3 == e_view) {
-
-	if (obj[2]) {
-	    obj[0].rotation.x = timer;
-	    obj[1].rotation.y = timer;
-	    obj[2].rotation.y = -timer;
-
-	}
-
 	
 	camera.position.x = 150;
 	camera.position.y = 0;
@@ -283,8 +283,6 @@ change_view = function(dim) {
 	obj[2].scale.set(s/2, s/2, s/2);
 
 	renderer.enableScissorTest ( true );
-	//	    obj[0].material.wireframe = true;
-	
     }
 }
 
