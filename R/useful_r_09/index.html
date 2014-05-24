@@ -4,22 +4,101 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
-  <title>「Rによるドキュメント・プレゼンテーション生成」サポートページ</title>
+  <title>「ドキュメント・プレゼンテーション生成」サポートページ</title>
   <style type="text/css">code{white-space: pre;}</style>
-  <link rel="stylesheet" href="../../styles/pandoc.css" type="text/css" />
+  <link rel="stylesheet" href="../../styles/github.css" type="text/css" />
 </head>
 <body>
 <div id="header">
-<h1 class="title">「Rによるドキュメント・プレゼンテーション生成」サポートページ</h1>
+<h1 class="title">「ドキュメント・プレゼンテーション生成」サポートページ</h1>
 </div>
-<h1 id="rによるドキュメントプレゼンテーション生成サポートページ">「Rによるドキュメント・プレゼンテーション生成」サポートページ</h1>
+<div id="TOC">
 <ul>
-<li><a href="http://www.kyoritsu-pub.co.jp/series/185/">共立出版サイト</a></li>
+<li><a href="#関連ツール更新情報">関連ツール更新情報</a><ul>
+<li><a href="#knitr">knitr</a><ul>
+<li><a href="#新しいチャンクオプション">新しいチャンクオプション</a></li>
+<li><a href="#その他の変更点">その他の変更点</a></li>
+</ul></li>
+<li><a href="#rstudio">Rstudio</a></li>
+<li><a href="#rmarkdown">rmarkdown</a></li>
+<li><a href="#shiny">shiny</a></li>
+<li><a href="#rcharts">rCharts</a></li>
+<li><a href="#slidify">slidify</a></li>
+</ul></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#関連リンク">関連リンク</a></li>
+<li><a href="#正誤表">正誤表</a></li>
+<li><a href="#サンプルプログラム">サンプルプログラム</a></li>
 </ul>
-<h2 id="関連ツール更新情報">関連ツール更新情報</h2>
-<h2 id="関連リンク">関連リンク</h2>
-<h2 id="正誤表">正誤表</h2>
-<h2 id="サンプルプログラム">サンプルプログラム</h2>
+</div>
+<hr />
+<p><a href="http://www.kyoritsu-pub.co.jp/series/185/">シリーズ Useful R</a> / <a href="http://www.kyoritsu-pub.co.jp/bookdetail/9784320123724">共立出版サイト</a> / <a href="http://www.amazon.co.jp/dp/4320123727">Amazon</a></p>
+<p>Rによるレポート生成を取り巻く環境は日々進化しています。 サポートサイトでは本書ではカバーしきれなかった点、大幅な変更点など随時お知らせします。</p>
+<p>また質問などは takahashi.kohske@gmail.com またはTwitter <a href="http://twitter.com/kohske">@kohske</a> までお気軽にどうぞ(回答の保証はできませんが・・・)。 有益そうな質問については、ご了承頂ければFAQに掲載させてもらう予定です。</p>
+<h1 id="関連ツール更新情報"><a href="#関連ツール更新情報">関連ツール更新情報</a></h1>
+<h2 id="knitr"><a href="#knitr">knitr</a></h2>
+<h3 id="新しいチャンクオプション"><a href="#新しいチャンクオプション">新しいチャンクオプション</a></h3>
+<p>付録Bのリストに加えて以下のチャンクオプションが新たに追加されています。</p>
+<ul>
+<li><p><code>collapse</code>: <code>TRUE</code>ならチャンクコードと評価結果を一つのブロックで出力します。(<a href="http://github.com/yihui/knitr-examples/blob/master/039-merge.Rmd">サンプルRmd</a> / <a href="http://github.com/yihui/knitr-examples/blob/master/039-merge.md">サンプルmd</a>)</p></li>
+<li><p><code>fig.retina</code>: Retinaディスプレイ用に図の大きさを調整します。例えば<code>fig.retina = 2</code>で<code>fig.width = 5</code>、<code>dpi = 72</code>なら、実際の画像の幅は<code>5*72*2</code>で720ピクセルになります。</p></li>
+<li><p><code>strip.white</code>: <code>TRUE</code> (既定値)ならチャンク前後の空白行を取り除きます。</p></li>
+<li><p><code>render</code>: レンダリング関数を指定します。既定値は<code>print</code>(S4オブジェクトの場合は<code>show</code>)です。</p></li>
+<li><p><code>cache.comments</code>: <code>FALSE</code>ならチャンク内のコメントの更新は無視されます。</p></li>
+<li><p><code>R.options</code>: チャンク内だけで有効なRのグローバルオプション(<code>options</code>)を設定します。</p></li>
+<li><p><code>out.width.px</code>, <code>out.height.px</code>: 図のサイズをピクセル単位で取得します。読み取り専用です。</p></li>
+</ul>
+<h3 id="その他の変更点"><a href="#その他の変更点">その他の変更点</a></h3>
+<ul>
+<li>2014/5/31 開発版ではS3メソッドディスパッチによるレンダリング関数のカスタマイズが可能です。解説ページを作成する予定です。</li>
+</ul>
+<h2 id="rstudio"><a href="#rstudio">Rstudio</a></h2>
+<ul>
+<li>2014/5/31 <a href="http://www.rstudio.com/ide/download/preview">プレビュー版</a>ではレポート作成機能が大幅に向上しています。解説ページを作成する予定です。
+<ul>
+<li>ドキュメント変換に<code>rmarkdown</code>パッケージを採用</li>
+<li>レポート生成バックエンドにPandoc採用</li>
+<li>YAMLによるメタデータ指定</li>
+<li>MS Word DOCX形式への変換</li>
+</ul></li>
+</ul>
+<h2 id="rmarkdown"><a href="#rmarkdown">rmarkdown</a></h2>
+<ul>
+<li>Rstudioのプレビューバージョンでドキュメント変換のバックエンドに採用されています。<code>rmarkdown</code>パッケージについては解説ページを作成する予定です。</li>
+</ul>
+<h2 id="shiny"><a href="#shiny">shiny</a></h2>
+<h2 id="rcharts"><a href="#rcharts">rCharts</a></h2>
+<h2 id="slidify"><a href="#slidify">slidify</a></h2>
+<h1 id="faq"><a href="#faq">FAQ</a></h1>
+<p>随時追加予定です。質問等は takahashi.kohske@gmail.com またはTwitter <a href="http://twitter.com/kohske">@kohske</a> までお気軽に。</p>
+<h1 id="関連リンク"><a href="#関連リンク">関連リンク</a></h1>
+<ul>
+<li>rChartsの利用例（5章）
+<ul>
+<li><a href="http://rpubs.com/kohske/12331">Polychart</a></li>
+<li><a href="http://rpubs.com/kohske/12406">morris.js</a></li>
+<li><a href="http://rpubs.com/kohske/12408">NVD3</a></li>
+<li><a href="http://rpubs.com/kohske/12409">Highcharts</a></li>
+</ul></li>
+<li><a href="http://kohske.github.io/R/pandoc/">Pandocの利用例（4章）</a>
+<ul>
+<li><code>rmarkdown</code>パッケージを使うと、より簡単にPandocを利用できます。解説ページを作成する予定です。</li>
+</ul></li>
+<li><p><a href="http://rpubs.com/kohske">著者のRpubs集</a></p></li>
+<li>stackoverflow
+<ul>
+<li><a href="http://stackoverflow.com/questions/tagged/knitr">knitrタグ</a></li>
+<li><a href="http://stackoverflow.com/questions/tagged/rstudio">rstudioタグ</a></li>
+<li><a href="http://stackoverflow.com/questions/tagged/shiny">shinyタグ</a></li>
+<li><a href="http://stackoverflow.com/questions/tagged/rcharts">rchartsタグ</a></li>
+<li><a href="http://stackoverflow.com/questions/tagged/slidify">slidifyタグ</a></li>
+</ul></li>
+</ul>
+<h1 id="正誤表"><a href="#正誤表">正誤表</a></h1>
+<p>随時追加予定です。</p>
+<h1 id="サンプルプログラム"><a href="#サンプルプログラム">サンプルプログラム</a></h1>
+<p><span class="citation">[sample.zip (@x MB)]</span>()</p>
+<p>書籍中のRマークアップファイルなどが含まれています。</p>
 <br/><hr/>
 <p>
   コンタクトは takahashi.kohske@gmail.com またはTwitter <a href="https://twitter.com/kohske">@kohske</a>まで。本業は<a href="http://www.fennel.rcast.u-tokyo.ac.jp/profilej_ktakahashi.html">こちら</a>。
