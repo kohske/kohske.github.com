@@ -52,14 +52,14 @@
 <li><p><code>collapse</code>: <code>TRUE</code>ならチャンクコードと評価結果を一つのブロックで出力します。(<a href="http://github.com/yihui/knitr-examples/blob/master/039-merge.Rmd">サンプルRmd</a> / <a href="http://github.com/yihui/knitr-examples/blob/master/039-merge.md">サンプルmd</a>)</p></li>
 <li><p><code>fig.retina</code>: Retinaディスプレイ用に図の大きさを調整します。例えば<code>fig.retina = 2</code>で<code>fig.width = 5</code>、<code>dpi = 72</code>なら、実際の画像の幅は<code>5*72*2</code>で720ピクセルになります。</p></li>
 <li><p><code>strip.white</code>: <code>TRUE</code> (既定値)ならチャンク前後の空白行を取り除きます。</p></li>
-<li><p><code>render</code>: レンダリング関数を指定します。既定値は<code>print</code>(S4オブジェクトの場合は<code>show</code>)です。</p></li>
+<li><p><code>render</code>: レンダリング関数を指定します(<a href="http://rpubs.com/kohske/18343">解説ページ</a>)。既定値は<code>print</code>(S4オブジェクトの場合は<code>show</code>)です。</p></li>
 <li><p><code>cache.comments</code>: <code>FALSE</code>ならチャンク内のコメントの更新は無視されます。</p></li>
 <li><p><code>R.options</code>: チャンク内だけで有効なRのグローバルオプション(<code>options</code>)を設定します。</p></li>
 <li><p><code>out.width.px</code>, <code>out.height.px</code>: 図のサイズをピクセル単位で取得します。読み取り専用です。</p></li>
 </ul>
 <h3 id="その他の変更点"><a href="#その他の変更点">その他の変更点</a></h3>
 <ul>
-<li>2014/5/31 開発版ではS3メソッドディスパッチによるレンダリング関数のカスタマイズが可能です。解説ページを作成する予定です。</li>
+<li>S3メソッドディスパッチによるレンダリング関数のカスタマイズが可能です(<a href="http://rpubs.com/kohske/18343">解説ページ</a>)。</li>
 </ul>
 <h2 id="rstudio"><a href="#rstudio">Rstudio</a></h2>
 <ul>
