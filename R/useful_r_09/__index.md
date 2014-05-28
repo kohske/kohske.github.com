@@ -28,6 +28,11 @@ Rによるレポート生成を取り巻く環境は日々進化しています�
 また質問などは takahashi.kohske@gmail.com またはTwitter [\@kohske](http://twitter.com/kohske) までお気軽にどうぞ(回答の保証はできませんが・・・)。
 有益そうな質問については、ご了承頂ければFAQに掲載させてもらう予定です。
 
+# 更新履歴
+
+- 2014/5/28 サンプルサイトを作成しました。
+- 2014/5/24 knitrバージョン1.6がリリースされました。
+
 # 関連ツール更新情報
 
 ## knitr
@@ -56,15 +61,16 @@ Rによるレポート生成を取り巻く環境は日々進化しています�
 
 ### その他の変更点
 
-- S3メソッドディスパッチによるレンダリング関数のカスタマイズが可能です([解説ページ](http://rpubs.com/kohske/18343))。
+- S3メソッドディスパッチによるレンダリング関数のカスタマイズが可能になっています([解説ページ](http://rpubs.com/kohske/18343))。
 
 ## Rstudio
 
-- 2014/5/31 [プレビュー版](http://www.rstudio.com/ide/download/preview)ではレポート作成機能が大幅に向上しています。解説ページを作成する予定です。
-    - ドキュメント変換に`rmarkdown`パッケージを採用
-    - レポート生成バックエンドにPandoc採用
-    - YAMLによるメタデータ指定
-	- MS Word DOCX形式への変換
+[プレビュー版](http://www.rstudio.com/ide/download/preview)ではレポート作成機能が大幅に向上しています。解説ページを作成する予定です。
+
+- ドキュメント変換に`rmarkdown`パッケージを採用
+- レポート生成バックエンドにPandoc採用
+- YAMLによるメタデータ指定
+- MS Word DOCX形式への変換
 
 ## rmarkdown
 
@@ -82,23 +88,33 @@ Rによるレポート生成を取り巻く環境は日々進化しています�
 
 # 関連リンク
 
-- rChartsの利用例（5章）
-    - [Polychart](http://rpubs.com/kohske/12331)
-    - [morris.js](http://rpubs.com/kohske/12406)
-    - [NVD3](http://rpubs.com/kohske/12408)
-    - [Highcharts](http://rpubs.com/kohske/12409)
+## Pandocの利用例（4章）
+
+- `knitr`とPandocを利用したドキュメント作成例です([サンプルサイト](http://kohske.github.io/R/pandoc/))。
+- `rmarkdown`パッケージを使うと、より簡単にPandocを利用できます。解説ページを作成する予定です。
+
+## rChartsの解説と利用例（5章）
+
+rChartsの解説と利用例をRpubsに掲載しています。
+
+- [Polychart](http://rpubs.com/kohske/12331)
+- [morris.js](http://rpubs.com/kohske/12406)
+- [NVD3](http://rpubs.com/kohske/12408)
+- [Highcharts](http://rpubs.com/kohske/12409)
 	
-- [Pandocの利用例（4章）](http://kohske.github.io/R/pandoc/)
-    - `rmarkdown`パッケージを使うと、より簡単にPandocを利用できます。解説ページを作成する予定です。
+## stackoverflow
 
-- [著者のRpubs集](http://rpubs.com/kohske)
+stackoverflowは技術系QアンドAサイトです。英語ですが有益な情報が豊富です。
 
-- stackoverflow
-    - [knitrタグ](http://stackoverflow.com/questions/tagged/knitr)
-    - [rstudioタグ](http://stackoverflow.com/questions/tagged/rstudio)
-    - [shinyタグ](http://stackoverflow.com/questions/tagged/shiny)
-    - [rchartsタグ](http://stackoverflow.com/questions/tagged/rcharts)
-    - [slidifyタグ](http://stackoverflow.com/questions/tagged/slidify)
+- [knitrタグ](http://stackoverflow.com/questions/tagged/knitr)
+- [rstudioタグ](http://stackoverflow.com/questions/tagged/rstudio)
+- [shinyタグ](http://stackoverflow.com/questions/tagged/shiny)
+- [rchartsタグ](http://stackoverflow.com/questions/tagged/rcharts)
+- [slidifyタグ](http://stackoverflow.com/questions/tagged/slidify)
+
+## [著者のRpubs集](http://rpubs.com/kohske)
+
+玉石混淆
 
 # 正誤表
 
@@ -106,6 +122,7 @@ Rによるレポート生成を取り巻く環境は日々進化しています�
 
 # サンプルプログラム
 
-[sample.zip (@x MB)]()
+本書で扱ったRマークダウンファイルやRスクリプトなどです。
 
-書籍中のRマークアップファイルなどが含まれています。
+[githubリポジトリ](http://github.com/kohske/Useful_R_09_sample) / [zipファイルダウンロード](https://github.com/kohske/Useful_R_09_sample/archive/master.zip)
+
