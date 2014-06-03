@@ -30,6 +30,7 @@ Rによるレポート生成を取り巻く環境は日々進化しています�
 
 # 更新履歴
 
+- 2014/6/3 rmarkdownパッケージの解説を追加しました。
 - 2014/5/28 サンプルサイトを作成しました。
 - 2014/5/24 knitrバージョン1.6がリリースされました。
 
@@ -74,7 +75,7 @@ Rによるレポート生成を取り巻く環境は日々進化しています�
 
 ## rmarkdown
 
-- Rstudioのプレビューバージョンでドキュメント変換のバックエンドに採用されています。`rmarkdown`パッケージについては解説ページを作成する予定です。
+- Rstudioのプレビューバージョンでドキュメント変換のバックエンドに採用されています。`rmarkdown`パッケージについては[解説ページ](../rmarkdown/index.html)を参考にして下さい。
 
 ## shiny
 
@@ -91,7 +92,7 @@ Rによるレポート生成を取り巻く環境は日々進化しています�
 ## Pandocの利用例（4章）
 
 - `knitr`とPandocを利用したドキュメント作成例です([サンプルサイト](http://kohske.github.io/R/pandoc/))。
-- `rmarkdown`パッケージを使うと、より簡単にPandocを利用できます。解説ページを作成する予定です。
+- `rmarkdown`パッケージを使うと、より簡単にPandocを利用できます。`rmarkdown`パッケージについては[解説ページ](../rmarkdown/index.html)を参考にして下さい。
 
 ## rChartsの解説と利用例（5章）
 
@@ -126,3 +127,6 @@ stackoverflowは技術系QアンドAサイトです。英語ですが有益な�
 
 [githubリポジトリ](http://github.com/kohske/Useful_R_09_sample) / [zipファイルダウンロード](https://github.com/kohske/Useful_R_09_sample/archive/master.zip)
 
+# さいごに
+
+Enjoy!!
