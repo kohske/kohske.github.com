@@ -1,0 +1,83 @@
+---
+title: rmarkdownパッケージで楽々ドキュメント生成
+author: "@kohske"
+output:
+  html_document:
+    toc: true
+    theme: united
+    fig_width: 3
+    fig_height: 2
+  pdf_document:
+    toc: true
+    highlight: zenburn
+    latex_engine: lualatex
+    fig_width: 3
+    fig_height: 2
+    fig_caption: true
+    number_sections: true
+    pandoc_args: [-V documentclass=ltjarticle, --include-in-header=preamble.tex]
+  word_document:
+    highlight: tango
+    fig_width: 2
+    fig_height: 1.5
+    fig_caption: true	
+  beamer_presentation:
+    incremental: true
+    pandoc_args: [--latex-engine=lualatex, --include-in-header=preamble.tex]
+    fig_width: 3
+    fig_height: 2
+  revealjs_presentation:
+    incremental: true
+    transition: cube
+    fig_width: 3
+    fig_height: 2
+  ioslides_presentation:
+    incremental: true
+    transition: faster
+    fig_width: 3
+    fig_height: 2
+---
+
+## はじめに
+
+Rマークダウンでドキュメントとコード書いて→ `rmarkdown::render()` します。
+
+## 例：あやめの解析 (またかよ・・・orz)
+
+**あやめ**とは、
+
+- ~~さかな~~植物の名前です。
+- おそらく、世界中でも最も多く解析にさらされた植物でしょう。
+- 学名は*Iris sanguinea*といいます。
+- イリスではなくて、アイリスです。
+- ~大きい声では言えませんが今でも「イリス」と呼んでます。~
+
+## データの雰囲気
+
+ここでは先頭の6行を見てみましょう。
+
+```{r results="asis"}
+knitr::kable(head(iris), format = "pandoc", caption="あやめのデータ (1-6行)")
+```
+
+## データの解析
+
+変数間の相関を調べてみましょう。
+
+```{r results="asis"}
+knitr::kable(cor(iris[, -5]), format = "pandoc", caption="あやめの相関")
+```
+
+## データの可視化
+
+ヒストグラムを作って、正規分布($\frac{1}{\sqrt{2\pi\sigma^2}} \exp\left(-\frac{\left(x-\mu\right)^2}{2\sigma^2}\right)$)と比べてみます。
+
+```{r md-docx-fig1, dpi = 150, fig.cap = "ヒストグラム"}
+par(mar=c(2.5, 2.5, 1.5, 1))
+hist(scale(iris[, 1]), probability = TRUE, ylim=c(0, 0.5), main = NULL)
+curve(dnorm(x), add=TRUE)
+```
+
+## 最後に
+
+Enjoy!!
