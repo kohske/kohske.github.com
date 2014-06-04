@@ -18,6 +18,41 @@ title: "rmarkdownパッケージで楽々ドキュメント生成"
 
 ついでに付け加えておくと、`rmarkdown::render()`は内部で`knitr::knit()`を呼び出しているので「ドキュメント・プレゼンテーション生成」の3章で解説した`knitr`パッケージのチャンクオプションやフックなどはそのまま利用することができます。ですので、knitrユーザは簡単にrmarkdownに移行することができます。
 
+# サンプル
+
+とりあえずサンプルです。
+
+- [Rマークダウンファイル](http://raw.githubusercontent.com/kohske/kohske.github.com/master/R/rmarkdown/sample/rm-sample.Rmd)
+
+このRマークダウンファイルに対して、`render()`します。
+なお、PDFで必要な[プリアンブル](http://raw.githubusercontent.com/kohske/kohske.github.com/master/R/rmarkdown/sample/preamble.tex)です。
+
+```r
+library(rmarkdown)
+render("rm-sample.Rmd", "html_document") # HTMLレポート
+render("rm-sample.Rmd", "pdf_document") # PDFレポート
+render("rm-sample.Rmd", "word_document") # MS Wordレポート
+render("rm-sample.Rmd", "revealjs_presentation", "rm-sample-reveal.html") # revealjs ウェブスライド
+render("rm-sample.Rmd", "ioslides_presentation", "rm-sample-io2012.html") # io2012 ウェブスライド
+render("rm-sample.Rmd", "beamer_presentation", "rm-sample-beamer.pdf") # beamer スライド
+```
+
+出力結果を置いておきます。
+
+- [HTMLレポート](http://kohske.github.io/R/rmarkdown/sample/rm-sample.html)
+- [PDFレポート](http://kohske.github.io/R/rmarkdown/sample/rm-sample.pdf) (PDF注意)
+- [MS Word レポート](http://kohske.github.io/R/rmarkdown/sample/rm-sample.docx) (DOCX注意)
+- [revealjs ウェブスライド](http://kohske.github.io/R/rmarkdown/sample/rm-sample-reveal.html)
+- [io2012 ウェブスライド](http://kohske.github.io/R/rmarkdown/sample/rm-sample-io2012.html)
+- [Beamer スライド](http://kohske.github.io/R/rmarkdown/sample/rm-sample-beamer.pdf) (PDF注意)
+
+ここでは一つの、そして唯一のRマークダウンファイルから全てのフォーマットを生成してるので、デザインとかはあまり気にしてません。
+例えばセクションヘッダはレベル2(`## ...`)にしてますが(ウェブスライドのため)、PDFの場合はレベル1(`# ...`)の方が良いでしょう。
+通常はいずれかのフォーマットを選択すると思いますので、そのフォーマットに合わせて下さい。
+
+それと、BeamerとPDFレポートの両方に出力するため、YAMLフロントマターのdocumentclassの指定をややこしい方法で行っています。
+PDFレポートだけならトップレベルに`documentclass: ltjarticle`で大丈夫です。
+
 # rmarkdownパッケージのインストール
 
 - [RStudio Preview Release](http://www.rstudio.com/ide/download/preview)をインストールするとついてきます。Pandocもついてきます。
@@ -230,6 +265,7 @@ RStuidoではRスクリプト編集中に[Compile Notebook]というアイコン
 
 # 更新履歴
 
+- 2014/6/4 サンプルを追加。
 - 2014/6/4 `word_document()`を忘れていたので追加。
 - 2014/6/3 作成しました。
 

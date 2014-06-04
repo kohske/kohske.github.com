@@ -34,6 +34,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <div id="TOC">
 <ul>
 <li><a href="#はじめに">はじめに</a></li>
+<li><a href="#サンプル">サンプル</a></li>
 <li><a href="#rmarkdownパッケージのインストール">rmarkdownパッケージのインストール</a></li>
 <li><a href="#rmarkdownの特徴">rmarkdownの特徴</a></li>
 <li><a href="#rmarkdownの使い方">rmarkdownの使い方</a></li>
@@ -58,6 +59,30 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <p><code>rmarkdown</code>パッケージでは<code>render()</code>という関数でドキュメントを生成します。 ですが、大雑把に言うと<code>render()</code>は<code>knitr::knit()</code>でRマークダウンからマークダウンに変換して、Pandocを使ってマークダウンをHTMLやPDFなどに変換します。ですので、実際にできることは、ピュアknitrとそう変わりはありません。</p>
 <p>なお<code>knitr</code>パッケージの<code>knit2html()</code>は<code>knitr::knit()</code>でRマークダウンからマークダウンに変換して、<code>markdown::markdownToHTML()</code>でHTMLに変換しています。マークダウンから他のフォーマットへの変換にはPandocを利用することもできます。詳細は<a href="http://kohske.github.io/R/pandoc/">解説ページ</a>を参考にして下さい。</p>
 <p>ついでに付け加えておくと、<code>rmarkdown::render()</code>は内部で<code>knitr::knit()</code>を呼び出しているので「ドキュメント・プレゼンテーション生成」の3章で解説した<code>knitr</code>パッケージのチャンクオプションやフックなどはそのまま利用することができます。ですので、knitrユーザは簡単にrmarkdownに移行することができます。</p>
+<h1 id="サンプル">サンプル</h1>
+<p>とりあえずサンプルです。</p>
+<ul>
+<li><a href="http://raw.githubusercontent.com/kohske/kohske.github.com/master/R/rmarkdown/sample/rm-sample.Rmd">Rマークダウンファイル</a></li>
+</ul>
+<p>このRマークダウンファイルに対して、<code>render()</code>します。 なお、PDFで必要な<a href="http://raw.githubusercontent.com/kohske/kohske.github.com/master/R/rmarkdown/sample/preamble.tex">プリアンブル</a>です。</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(rmarkdown)
+<span class="kw">render</span>(<span class="st">&quot;rm-sample.Rmd&quot;</span>, <span class="st">&quot;html_document&quot;</span>) <span class="co"># HTMLレポート</span>
+<span class="kw">render</span>(<span class="st">&quot;rm-sample.Rmd&quot;</span>, <span class="st">&quot;pdf_document&quot;</span>) <span class="co"># PDFレポート</span>
+<span class="kw">render</span>(<span class="st">&quot;rm-sample.Rmd&quot;</span>, <span class="st">&quot;word_document&quot;</span>) <span class="co"># MS Wordレポート</span>
+<span class="kw">render</span>(<span class="st">&quot;rm-sample.Rmd&quot;</span>, <span class="st">&quot;revealjs_presentation&quot;</span>, <span class="st">&quot;rm-sample-reveal.html&quot;</span>) <span class="co"># revealjs ウェブスライド</span>
+<span class="kw">render</span>(<span class="st">&quot;rm-sample.Rmd&quot;</span>, <span class="st">&quot;ioslides_presentation&quot;</span>, <span class="st">&quot;rm-sample-io2012.html&quot;</span>) <span class="co"># io2012 ウェブスライド</span>
+<span class="kw">render</span>(<span class="st">&quot;rm-sample.Rmd&quot;</span>, <span class="st">&quot;beamer_presentation&quot;</span>, <span class="st">&quot;rm-sample-beamer.pdf&quot;</span>) <span class="co"># beamer スライド</span></code></pre>
+<p>出力結果を置いておきます。</p>
+<ul>
+<li><a href="http://kohske.github.io/R/rmarkdown/sample/rm-sample.html">HTMLレポート</a></li>
+<li><a href="http://kohske.github.io/R/rmarkdown/sample/rm-sample.pdf">PDFレポート</a> (PDF注意)</li>
+<li><a href="http://kohske.github.io/R/rmarkdown/sample/rm-sample.docx">MS Word レポート</a> (DOCX注意)</li>
+<li><a href="http://kohske.github.io/R/rmarkdown/sample/rm-sample-reveal.html">revealjs ウェブスライド</a></li>
+<li><a href="http://kohske.github.io/R/rmarkdown/sample/rm-sample-io2012.html">io2012 ウェブスライド</a></li>
+<li><a href="http://kohske.github.io/R/rmarkdown/sample/rm-sample-beamer.pdf">Beamer スライド</a> (PDF注意)</li>
+</ul>
+<p>ここでは一つの、そして唯一のRマークダウンファイルから全てのフォーマットを生成してるので、デザインとかはあまり気にしてません。 例えばセクションヘッダはレベル2(<code>## ...</code>)にしてますが(ウェブスライドのため)、PDFの場合はレベル1(<code># ...</code>)の方が良いでしょう。 通常はいずれかのフォーマットを選択すると思いますので、そのフォーマットに合わせて下さい。</p>
+<p>それと、BeamerとPDFレポートの両方に出力するため、YAMLフロントマターのdocumentclassの指定をややこしい方法で行っています。 PDFレポートだけならトップレベルに<code>documentclass: ltjarticle</code>で大丈夫です。</p>
 <h1 id="rmarkdownパッケージのインストール">rmarkdownパッケージのインストール</h1>
 <ul>
 <li><a href="http://www.rstudio.com/ide/download/preview">RStudio Preview Release</a>をインストールするとついてきます。Pandocもついてきます。</li>
@@ -170,6 +195,10 @@ output:
 <td align="left">md_document</td>
 <td align="left">色々な種類の拡張マークダウンへの出力を行います。</td>
 </tr>
+<tr class="odd">
+<td align="left">word_document</td>
+<td align="left">なんと!!MS Word出力です(.docx)。</td>
+</tr>
 </tbody>
 </table>
 <p>例えば<code>html_document(toc = TRUE, theme = &quot;journal&quot;)</code>などとしてフォーマットオブジェクトを作成して<code>render()</code>関数に渡します。</p>
@@ -277,6 +306,8 @@ plot(cars)
 <p>これから試します。試した人は情報下さい。</p>
 <h1 id="更新履歴">更新履歴</h1>
 <ul>
+<li>2014/6/4 サンプルを追加。</li>
+<li>2014/6/4 <code>word_document()</code>を忘れていたので追加。</li>
 <li>2014/6/3 作成しました。</li>
 </ul>
 <h1 id="さいごに">さいごに</h1>
