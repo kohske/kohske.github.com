@@ -129,6 +129,7 @@ rmarkdownパッケージでは出力フォーマットを独自に作成する�
 |revealjs_presentation|[revealjs](http://lab.hakim.se/reveal-js/)というウェブスライドに出力します。|
 |ioslides_presentation|Googleの[I/O 2014スライド](http://code.google.com/p/io-2012-slides/)というウェブスライドに出力します。|
 |md_document|色々な種類の拡張マークダウンへの出力を行います。|
+|word_document|なんと!!MS Word出力です(.docx)。|
 
 例えば`html_document(toc = TRUE, theme = "journal")`などとしてフォーマットオブジェクトを作成して`render()`関数に渡します。
 
@@ -229,6 +230,7 @@ RStuidoではRスクリプト編集中に[Compile Notebook]というアイコン
 
 # 更新履歴
 
+- 2014/6/4 `word_document()`を忘れていたので追加。
 - 2014/6/3 作成しました。
 
 # さいごに
