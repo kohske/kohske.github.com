@@ -30,6 +30,7 @@ Rによるレポート生成を取り巻く環境は日々進化しています�
 
 # 更新履歴
 
+- 2014/6/13 rChartsとslidifyの更新情報を追加しました。
 - 2014/6/3 rmarkdownパッケージの解説を追加しました。
 - 2014/5/28 サンプルサイトを作成しました。
 - 2014/5/24 knitrバージョン1.6がリリースされました。
@@ -81,7 +82,29 @@ Rによるレポート生成を取り巻く環境は日々進化しています�
 
 ## rCharts
 
+- exampleが公式のデモとして追加されました。
+```
+demo(package="rCharts")
+```
+とすると利用できるデモ一覧が表示されます。
+デモを表示するには、
+```
+demo(highcharts)
+```
+などとします。  
+(2014/6/13)
+
 ## slidify
+
+- 試験的に`encoding`オプションがサポートされました。Windows環境で日本語を利用できるようになります。`fix-encode`ブランチで実装されているので、以下のようにして試してみてください。
+```
+devtools::install_github("ramnathv/slidify@fix-encode")
+library(slidify)
+# 例
+slidify('index-CP932.Rmd', encoding='CP932') # SJISエンコードの場合
+slidify('index-UTF8.Rmd', encoding='UTF8') # UTF8の場合
+```
+(2014/6/13)
 
 # FAQ
 
