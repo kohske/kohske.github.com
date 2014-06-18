@@ -30,6 +30,7 @@ Rによるレポート生成を取り巻く環境は日々進化しています�
 
 # 更新履歴
 
+- 2014/6/18 shinyの更新情報を追加しました。
 - 2014/6/13 rChartsとslidifyの更新情報を追加しました。
 - 2014/6/3 rmarkdownパッケージの解説を追加しました。
 - 2014/5/28 サンプルサイトを作成しました。
@@ -79,6 +80,17 @@ Rによるレポート生成を取り巻く環境は日々進化しています�
 - Rstudioのプレビューバージョンでドキュメント変換のバックエンドに採用されています。`rmarkdown`パッケージについては[解説ページ](../rmarkdown/index.html)を参考にして下さい。
 
 ## shiny
+
+2014年6月14日にshiny 0.10.0がCRAN上でリリースされました。主要は変更点は次の通りです。
+
+- R markdown V2で作成するドキュメントにshinyアプリケーションを埋め込めるようになりました。プレビュー版のRstudioを使うと簡単に試すことができます。詳細は[rmarkdownのウェブサイト](http://rmarkdown.rstudio.com/authoring_shiny.html)を参考にして下さい。
+- `shinyApp()`関数によりshinyAppオブジェクトを作成できます。`shinyApp()`にはUIとサーバ関数を渡します。shinyAppオブジェクトを評価するとアプリケーションが起動します。詳細は`?shinyApp`でオンラインヘルプの例を見てください。
+- UI用のレイアウト関数が追加されています。
+    - `flowLayout`: 子要素を左から右、上から下に配置します。
+    - `splitLayout`: 子要素を等間隔に水平に配置します。`cellWidths`引数で列幅を指定することもできます。
+    - `inputPanel`: `flowLayout`と同じですが、領域全体の背景がグレイになります。
+- サーバ側での絞り込み検索を行う`updateSelectizeInput()`関数が追加されました。詳細は[shinyのサイト](http://shiny.rstudio.com/articles/selectize.html)を参考にして下さい。
+- `actionLink`という新しい入力ポイントが追加されました。`actionButton`と同じ動作ですが、通常のリンク付きテキストとして表示されます。
 
 ## rCharts
 
