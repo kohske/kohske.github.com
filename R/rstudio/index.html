@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>Rstudioで楽々ドキュメント生成</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="../../styles/github.css" type="text/css" />
+</head>
+<body>
+<div id="header">
+<h1 class="title">Rstudioで楽々ドキュメント生成</h1>
+</div>
+<div id="TOC">
+<ul>
+<li><a href="#はじめに">はじめに</a></li>
+<li><a href="#rスクリプトからノートブックの作成">Rスクリプトからノートブックの作成</a></li>
+<li><a href="#rマークダウンからレポート作成">Rマークダウンからレポート作成</a><ul>
+<li><a href="#shinyのあるウェブレポートの作成">Shinyのあるウェブレポートの作成</a></li>
+</ul></li>
+<li><a href="#r-presentation">R Presentation</a></li>
+<li><a href="#更新履歴">更新履歴</a></li>
+<li><a href="#さいごに">さいごに</a></li>
+</ul>
+</div>
+<h1 id="はじめに">はじめに</h1>
+<p>一言でいうと、Rstudio上でRマークダウンからHTML/PDF/MS Wordレポート、ウェブスライド、Shiny入りのレポートなどを作成できるようになりました。以下、解説です。</p>
+<p><a href="http://kohske.github.io/R/useful_r_09/">シリーズ Useful R 9 「ドキュメント・プレゼンテーション生成」</a> 第8章ではRstudioのドキュメント生成支援機能について説明しています。 本書の内容は執筆時(2014年3月)の最新公式バージョン0.98.501をターゲットにしています。</p>
+<p>2014年6月に最新公式バージョンが0.98.932となり、ドキュメント生成支援機能が大幅にアップデートされました。 ドキュメント変換に<a href="http://rmarkdown.rstudio.com/"><code>rmarkdown</code>パッケージ</a>を採用しています。これに伴いユーザインタフェースにも若干の変更があります。<code>rmarkdown</code>パッケージやRマークダウンの書式の変更点については<a href="http://kohske.github.io/R/rmarkdown/">解説記事 (rmarkdownパッケージで楽々ドキュメント生成)</a>をご覧ください。この解説記事ではRstudioについての変更点を説明します。</p>
+<p>なお、<code>rmarkdown</code>パッケージも裏では<code>knitr</code>が仕事しているので、本書中の<code>knitr</code>の関する解説内容には大きな変更はありません。</p>
+<h1 id="rスクリプトからノートブックの作成">Rスクリプトからノートブックの作成</h1>
+<ol style="list-style-type: decimal">
+<li>Rスクリプトを新規作成するか、既存のRスクリプトファイルを開きます。ここまでは同じです。</li>
+<li>編集画面の[Compile Notebook]というボタンをクリックします。ボタンの位置が変更されているので注意して下さい。新規ファイルの場合は保存ダイアログが開くので適当にファイル名をつけて保存して下さい。 <img src="pics/notebook_compile.png" alt="Rスクリプト編集画面" /></li>
+<li>ノートブックのフォーマットを選択するダイアログが開きます。現在、HTML、PDF、MS Wordの3種類が選択できます。 <img src="pics/notebook_select.png" alt="ノートブックのフォーマット選択画面" /></li>
+<li>フォーマットに対応してプレビュー画面が開きます。次のキャプチャはMS Wordフォーマットでノートブックを作成したものです。 <img src="pics/notebook_preview_word.png" alt="ノートブックのプレビュー画面 (MS Word形式)" /></li>
+</ol>
+<p>従来は、[Compile Notebook]をクリックするとタイトルや作成者を記入するダイアログが開きました(本書8.2節)。 新しいRstudioではタイトルや作成者はRスクリプトのYAMLフロントマターを使って次のように指定することができます。 YAMLフロントマターではこれ以外の項目も設定可能です。詳細は<a href="http://kohske.github.io/R/rmarkdown/">解説記事 (rmarkdownパッケージで楽々ドキュメント生成)</a>をご覧ください。</p>
+<pre><code>#&#39; ---
+#&#39; title: rmarkdownパッケージで楽々ドキュメント生成
+#&#39; author: &quot;@kohske&quot;
+#&#39;---</code></pre>
+<p>省略するとファイル名がタイトルに、ユーザ名が作成者になります。</p>
+<h1 id="rマークダウンからレポート作成">Rマークダウンからレポート作成</h1>
+<p>新しいRstudioではRマークダウンファイル(.Rmd)からHTML、PDF、MS Wordの各種レポート、ウェブスライドやBeamerスライド、Shinyドキュメントを作成できるようになっています。</p>
+<ol style="list-style-type: decimal">
+<li>[File]-[New File]または新規作成アイコン(本書図8.2)をクリックして[R Markdown...]を選択します。</li>
+<li>ダイアログが表示されるので、タイトルと作成者を記入してレポートのフォーマットを選択します。なお、ここで記入、選択した情報は新規作成される.RmdファイルのYAMLフロントマターに反映されるだけなので、後で変更することも可能です。 <img src="pics/rmd-new-doc.png" />
+<ul>
+<li>[Document]はレポート形式の出力です。<br /></li>
+<li>[Presentation]はウェブスライドやBeamerスライドです。<br /></li>
+<li>[Shiny]はShinyウェブアプリを含むHTMLレポートやウェブスライドです。</li>
+</ul></li>
+<li>ここではHTMLレポートを作成します。[OK]をクリックするとエディタの中に雛形が開きます。この中で、上の<code>---</code>で囲まれた部分はYAMLフロントマターです。ドキュメントのメタ情報を指定します。それ以降はテンプレなので適当に削除して大丈夫です。 <img src="pics/rmd-edit-html.png" /></li>
+<li><p>[Knit HTML]をクリックするとレポートが作成されます。</p>
+<ul>
+<li>.Rmdファイルを保存していない状態だと一時ファイルとしてレポートが作成されます。</li>
+<li>.Rmdファイルを保存した後は、.Rmdファイルのあるフォルダにレポートが作成されます。</li>
+</ul></li>
+</ol>
+<p>上のキャプチャにあるように、新しいRstudioではRマークダウンの編集パネルの中でレポート生成に関する設定を行うことができます。</p>
+<ul>
+<li>[Knit HTML]の右横の▼をクリックすると出力フォーマットを選択できます。</li>
+<li>その右横の歯車アイコンをクリックするとドキュメント作成のオプションを設定できます。</li>
+</ul>
+<h2 id="shinyのあるウェブレポートの作成">Shinyのあるウェブレポートの作成</h2>
+<p>新しいRStudioではウェブレポートやウェブスライドの中にShinyウェブアプリを埋め込むことができます。</p>
+<ol style="list-style-type: decimal">
+<li>.Rmdを新規作成する際にShinyを選択します。Documentは通常のHTMLレポート、Presentationはウェブスライドです。<br /><img src="pics/rmd-new-shiny.png" /></li>
+<li>テンプレが作成されるので、適当に編集します。<br /><img src="pics/rmd-edit-shiny.png" /></li>
+<li>編集が終わったら、[Run Document]という再生アイコンをクリックします。ドキドキ。
+<ul>
+<li>未保存だとファイル保存ダイアログが出てきます。適当にファイル名付けて保存して下さい。</li>
+</ul></li>
+<li>なんということでしょう！！プレビュー画面にはHTMLレポート、その中にShinyです。もちろんこれはインタラクティブに操作することができます。<br /><img src="pics/rmd-preview-shiny.png" /></li>
+</ol>
+<h1 id="r-presentation">R Presentation</h1>
+<p>R Presentation (本書8.4節)については、ユーザインタフェースに若干の変更はありますが、今のところ大きな変更はありません。</p>
+<h1 id="更新履歴">更新履歴</h1>
+<ul>
+<li>2014/6/19 作成しました。</li>
+</ul>
+<h1 id="さいごに">さいごに</h1>
+<p>Enjoy!!</p>
+<br/><hr/>
+<p>
+  コンタクトは takahashi.kohske@gmail.com またはTwitter <a href="https://twitter.com/kohske">@kohske</a>まで。本業は<a href="http://www.fennel.rcast.u-tokyo.ac.jp/profilej_ktakahashi.html">こちら</a>。
+</p>
+</body>
+</html>

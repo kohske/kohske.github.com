@@ -30,6 +30,7 @@ Rによるレポート生成を取り巻く環境は日々進化しています�
 
 # 更新履歴
 
+- 2014/6/19 Rstudioの更新情報を追加しました。
 - 2014/6/18 shinyの更新情報を追加しました。
 - 2014/6/13 rChartsとslidifyの更新情報を追加しました。
 - 2014/6/3 rmarkdownパッケージの解説を追加しました。
@@ -68,7 +69,7 @@ Rによるレポート生成を取り巻く環境は日々進化しています�
 
 ## Rstudio
 
-[プレビュー版](http://www.rstudio.com/ide/download/preview)ではレポート作成機能が大幅に向上しています。解説ページを作成する予定です。
+2014年6月19日にRstudio 0.98.932が公式リリースされました。レポート作成機能が大幅に向上しています。詳細は[解説ページ](../rstudio/index.html)をご覧ください。
 
 - ドキュメント変換に`rmarkdown`パッケージを採用
 - レポート生成バックエンドにPandoc採用
@@ -77,13 +78,13 @@ Rによるレポート生成を取り巻く環境は日々進化しています�
 
 ## rmarkdown
 
-- Rstudioのプレビューバージョンでドキュメント変換のバックエンドに採用されています。`rmarkdown`パッケージについては[解説ページ](../rmarkdown/index.html)を参考にして下さい。
+- 最新のRstudioでドキュメント変換のバックエンドに採用されています。`rmarkdown`パッケージについては[解説ページ](../rmarkdown/index.html)を参考にして下さい。
 
 ## shiny
 
 2014年6月14日にshiny 0.10.0がCRAN上でリリースされました。主要は変更点は次の通りです。
 
-- R markdown V2で作成するドキュメントにshinyアプリケーションを埋め込めるようになりました。プレビュー版のRstudioを使うと簡単に試すことができます。詳細は[rmarkdownのウェブサイト](http://rmarkdown.rstudio.com/authoring_shiny.html)を参考にして下さい。
+- R markdown V2で作成するドキュメントにshinyアプリケーションを埋め込めるようになりました。最新のRstudioを使うと簡単に試すことができます。詳細は[rmarkdownのウェブサイト](http://rmarkdown.rstudio.com/authoring_shiny.html)、及び[解説ページ](../rstudio/index.html)を参考にして下さい。
 - `shinyApp()`関数によりshinyAppオブジェクトを作成できます。`shinyApp()`にはUIとサーバ関数を渡します。shinyAppオブジェクトを評価するとアプリケーションが起動します。詳細は`?shinyApp`でオンラインヘルプの例を見てください。
 - UI用のレイアウト関数が追加されています。
     - `flowLayout`: 子要素を左から右、上から下に配置します。
