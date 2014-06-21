@@ -25,11 +25,12 @@ title: "「ドキュメント・プレゼンテーション生成」サポート
 
 Rによるレポート生成を取り巻く環境は日々進化しています。サポートサイトでは本書ではカバーしきれなかった点、大幅な変更点など随時お知らせします。
 
-また質問などは takahashi.kohske@gmail.com またはTwitter [\@kohske](http://twitter.com/kohske) までお気軽にどうぞ(回答の保証はできませんが・・・)。
+また質問などは [コメント欄](#コメント欄)、takahashi.kohske@gmail.com までメール、またはTwitter [\@kohske](http://twitter.com/kohske) までお気軽にどうぞ(回答の保証はできませんが・・・)。
 有益そうな質問については、ご了承頂ければFAQに掲載させてもらう予定です。
 
 # 更新履歴
 
+- 2014/6/22 [コメント欄](#コメント欄)を追加しました。
 - 2014/6/19 Rstudioの更新情報を追加しました。
 - 2014/6/18 shinyの更新情報を追加しました。
 - 2014/6/13 rChartsとslidifyの更新情報を追加しました。
@@ -166,3 +167,19 @@ stackoverflowは技術系QアンドAサイトです。英語ですが有益な�
 # さいごに
 
 Enjoy!!
+
+# コメント欄
+
+質問など、ご自由にどうぞ。
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'kohske-useful-r-09-support'; // Required - Replace <example> with your forum shortname
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
