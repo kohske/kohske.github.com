@@ -30,6 +30,7 @@ Rによるレポート生成を取り巻く環境は日々進化しています�
 
 # 更新履歴
 
+- 2014/6/30 正誤表を更新しました。
 - 2014/6/22 [コメント欄](#コメント欄)を追加しました。
 - 2014/6/19 Rstudioの更新情報を追加しました。
 - 2014/6/18 shinyの更新情報を追加しました。
@@ -157,6 +158,16 @@ stackoverflowは技術系QアンドAサイトです。英語ですが有益な�
 # 正誤表
 
 随時追加予定です。
+
+## 第6章
+- [2014/6/30] p.120のコード例(`norm-dist.Rmd`)内、scianimatorライブラリへのリンクが無効になっています。以下のリンクに書き換えて試して下さい (Thanks to 石田様)。
+```
+options(markdown.HTML.header=
+  '<link rel="stylesheet" href="https://rawgithub.com/brentertz/scianimator/master/assets/css/scianimator.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="https://rawgithub.com/brentertz/scianimator/master/assets/js/jquery.scianimator.min.js"></script>'
+)
+```
 
 # サンプルプログラム
 

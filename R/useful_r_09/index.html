@@ -34,13 +34,15 @@
 <li><a href="#stackoverflow">stackoverflow</a></li>
 <li><a href="#著者のrpubs集"><a href="http://rpubs.com/kohske">著者のRpubs集</a></a></li>
 </ul></li>
-<li><a href="#正誤表">正誤表</a></li>
+<li><a href="#正誤表">正誤表</a><ul>
+<li><a href="#第6章">第6章</a></li>
+</ul></li>
 <li><a href="#サンプルプログラム">サンプルプログラム</a></li>
 <li><a href="#さいごに">さいごに</a></li>
 <li><a href="#コメント欄">コメント欄</a></li>
 </ul>
 </div>
-<h1 id="はじめに"><a href="#はじめに">はじめに</a></h1>
+<h1 id="はじめに">はじめに</h1>
 <p>シリーズ Useful R 9 「ドキュメント・プレゼンテーション生成」(共立出版）のサポートページです。</p>
 <p><a href="http://www.kyoritsu-pub.co.jp/series/185/">シリーズ Useful R</a> / <a href="http://www.kyoritsu-pub.co.jp/bookdetail/9784320123724">共立出版サイト</a> / <a href="http://www.amazon.co.jp/dp/4320123727">Amazon</a></p>
 <blockquote>
@@ -51,8 +53,9 @@
 </blockquote>
 <p>Rによるレポート生成を取り巻く環境は日々進化しています。サポートサイトでは本書ではカバーしきれなかった点、大幅な変更点など随時お知らせします。</p>
 <p>また質問などは <a href="#コメント欄">コメント欄</a>、takahashi.kohske@gmail.com までメール、またはTwitter <a href="http://twitter.com/kohske">@kohske</a> までお気軽にどうぞ(回答の保証はできませんが・・・)。 有益そうな質問については、ご了承頂ければFAQに掲載させてもらう予定です。</p>
-<h1 id="更新履歴"><a href="#更新履歴">更新履歴</a></h1>
+<h1 id="更新履歴">更新履歴</h1>
 <ul>
+<li>2014/6/30 正誤表を更新しました。</li>
 <li>2014/6/22 <a href="#コメント欄">コメント欄</a>を追加しました。</li>
 <li>2014/6/19 Rstudioの更新情報を追加しました。</li>
 <li>2014/6/18 shinyの更新情報を追加しました。</li>
@@ -61,10 +64,10 @@
 <li>2014/5/28 サンプルサイトを作成しました。</li>
 <li>2014/5/24 knitrバージョン1.6がリリースされました。</li>
 </ul>
-<h1 id="関連ツール更新情報"><a href="#関連ツール更新情報">関連ツール更新情報</a></h1>
-<h2 id="knitr"><a href="#knitr">knitr</a></h2>
+<h1 id="関連ツール更新情報">関連ツール更新情報</h1>
+<h2 id="knitr">knitr</h2>
 <p>2014年5月25日にknitr 1.6がCRAN上でリリースされました。Windows上で日本語が使いやすくなっています。 本書では公式1.5ではなくリリース前の1.6開発版をターゲットにしていたので、多くの機能については本書中で解説しています。 ここではその他の新機能を挙げておきます。</p>
-<h3 id="新しいチャンクオプション"><a href="#新しいチャンクオプション">新しいチャンクオプション</a></h3>
+<h3 id="新しいチャンクオプション">新しいチャンクオプション</h3>
 <p>付録Bのリストに加えて以下のチャンクオプションが新たに追加されています。</p>
 <ul>
 <li><p><code>collapse</code>: <code>TRUE</code>ならチャンクコードと評価結果を一つのブロックで出力します。(<a href="http://github.com/yihui/knitr-examples/blob/master/039-merge.Rmd">サンプルRmd</a> / <a href="http://github.com/yihui/knitr-examples/blob/master/039-merge.md">サンプルmd</a>)</p></li>
@@ -75,11 +78,11 @@
 <li><p><code>R.options</code>: チャンク内だけで有効なRのグローバルオプション(<code>options</code>)を設定します。</p></li>
 <li><p><code>out.width.px</code>, <code>out.height.px</code>: 図のサイズをピクセル単位で取得します。読み取り専用です。</p></li>
 </ul>
-<h3 id="その他の変更点"><a href="#その他の変更点">その他の変更点</a></h3>
+<h3 id="その他の変更点">その他の変更点</h3>
 <ul>
 <li>S3メソッドディスパッチによるレンダリング関数のカスタマイズが可能になっています(<a href="http://rpubs.com/kohske/18343">解説ページ</a>)。</li>
 </ul>
-<h2 id="rstudio"><a href="#rstudio">Rstudio</a></h2>
+<h2 id="rstudio">Rstudio</h2>
 <p>2014年6月19日にRstudio 0.98.932が公式リリースされました。レポート作成機能が大幅に向上しています。詳細は<a href="../rstudio/index.html">解説ページ</a>をご覧ください。</p>
 <ul>
 <li>ドキュメント変換に<code>rmarkdown</code>パッケージを採用</li>
@@ -87,11 +90,11 @@
 <li>YAMLによるメタデータ指定</li>
 <li>MS Word DOCX形式への変換</li>
 </ul>
-<h2 id="rmarkdown"><a href="#rmarkdown">rmarkdown</a></h2>
+<h2 id="rmarkdown">rmarkdown</h2>
 <ul>
 <li>最新のRstudioでドキュメント変換のバックエンドに採用されています。<code>rmarkdown</code>パッケージについては<a href="../rmarkdown/index.html">解説ページ</a>を参考にして下さい。</li>
 </ul>
-<h2 id="shiny"><a href="#shiny">shiny</a></h2>
+<h2 id="shiny">shiny</h2>
 <p>2014年6月14日にshiny 0.10.0がCRAN上でリリースされました。主要は変更点は次の通りです。</p>
 <ul>
 <li>R markdown V2で作成するドキュメントにshinyアプリケーションを埋め込めるようになりました。最新のRstudioを使うと簡単に試すことができます。詳細は<a href="http://rmarkdown.rstudio.com/authoring_shiny.html">rmarkdownのウェブサイト</a>、及び<a href="../rstudio/index.html">解説ページ</a>を参考にして下さい。</li>
@@ -105,7 +108,7 @@
 <li>サーバ側での絞り込み検索を行う<code>updateSelectizeInput()</code>関数が追加されました。詳細は<a href="http://shiny.rstudio.com/articles/selectize.html">shinyのサイト</a>を参考にして下さい。</li>
 <li><code>actionLink</code>という新しい入力ポイントが追加されました。<code>actionButton</code>と同じ動作ですが、通常のリンク付きテキストとして表示されます。</li>
 </ul>
-<h2 id="rcharts"><a href="#rcharts">rCharts</a></h2>
+<h2 id="rcharts">rCharts</h2>
 <ul>
 <li><p>exampleが公式のデモとして追加されました。</p>
 <pre><code>demo(package=&quot;rCharts&quot;)</code></pre>
@@ -113,7 +116,7 @@
 <pre><code>demo(highcharts)</code></pre>
 <p>などとします。<br />(2014/6/13)</p></li>
 </ul>
-<h2 id="slidify"><a href="#slidify">slidify</a></h2>
+<h2 id="slidify">slidify</h2>
 <ul>
 <li><p>試験的に<code>encoding</code>オプションがサポートされました。Windows環境で日本語を利用できるようになります。<code>fix-encode</code>ブランチで実装されているので、以下のようにして試してみてください。</p>
 <pre><code>devtools::install_github(&quot;ramnathv/slidify@fix-encode&quot;)
@@ -123,15 +126,15 @@ slidify(&#39;index-CP932.Rmd&#39;, encoding=&#39;CP932&#39;) # SJISエンコー�
 slidify(&#39;index-UTF8.Rmd&#39;, encoding=&#39;UTF8&#39;) # UTF8の場合</code></pre>
 <p>(2014/6/13)</p></li>
 </ul>
-<h1 id="faq"><a href="#faq">FAQ</a></h1>
+<h1 id="faq">FAQ</h1>
 <p>随時追加予定です。質問等は takahashi.kohske@gmail.com またはTwitter <a href="http://twitter.com/kohske">@kohske</a> までお気軽に。</p>
-<h1 id="関連リンク"><a href="#関連リンク">関連リンク</a></h1>
-<h2 id="pandocの利用例4章"><a href="#pandocの利用例4章">Pandocの利用例（4章）</a></h2>
+<h1 id="関連リンク">関連リンク</h1>
+<h2 id="pandocの利用例4章">Pandocの利用例（4章）</h2>
 <ul>
 <li><code>knitr</code>とPandocを利用したドキュメント作成例です(<a href="http://kohske.github.io/R/pandoc/">サンプルサイト</a>)。</li>
 <li><code>rmarkdown</code>パッケージを使うと、より簡単にPandocを利用できます。<code>rmarkdown</code>パッケージについては<a href="../rmarkdown/index.html">解説ページ</a>を参考にして下さい。</li>
 </ul>
-<h2 id="rchartsの解説と利用例5章"><a href="#rchartsの解説と利用例5章">rChartsの解説と利用例（5章）</a></h2>
+<h2 id="rchartsの解説と利用例5章">rChartsの解説と利用例（5章）</h2>
 <p>rChartsの解説と利用例をRpubsに掲載しています。</p>
 <ul>
 <li><a href="http://rpubs.com/kohske/12331">Polychart</a></li>
@@ -139,7 +142,7 @@ slidify(&#39;index-UTF8.Rmd&#39;, encoding=&#39;UTF8&#39;) # UTF8の場合</code
 <li><a href="http://rpubs.com/kohske/12408">NVD3</a></li>
 <li><a href="http://rpubs.com/kohske/12409">Highcharts</a></li>
 </ul>
-<h2 id="stackoverflow"><a href="#stackoverflow">stackoverflow</a></h2>
+<h2 id="stackoverflow">stackoverflow</h2>
 <p>stackoverflowは技術系QアンドAサイトです。英語ですが有益な情報が豊富です。</p>
 <ul>
 <li><a href="http://stackoverflow.com/questions/tagged/knitr">knitrタグ</a></li>
@@ -148,16 +151,25 @@ slidify(&#39;index-UTF8.Rmd&#39;, encoding=&#39;UTF8&#39;) # UTF8の場合</code
 <li><a href="http://stackoverflow.com/questions/tagged/rcharts">rchartsタグ</a></li>
 <li><a href="http://stackoverflow.com/questions/tagged/slidify">slidifyタグ</a></li>
 </ul>
-<h2 id="著者のrpubs集"><a href="#著者のrpubs集"><a href="http://rpubs.com/kohske">著者のRpubs集</a></a></h2>
+<h2 id="著者のrpubs集"><a href="http://rpubs.com/kohske">著者のRpubs集</a></h2>
 <p>玉石混淆</p>
-<h1 id="正誤表"><a href="#正誤表">正誤表</a></h1>
+<h1 id="正誤表">正誤表</h1>
 <p>随時追加予定です。</p>
-<h1 id="サンプルプログラム"><a href="#サンプルプログラム">サンプルプログラム</a></h1>
+<h2 id="第6章">第6章</h2>
+<ul>
+<li><p>[2014/6/30] p.120のコード例(<code>norm-dist.Rmd</code>)内、scianimatorライブラリへのリンクが無効になっています。以下のリンクに書き換えて試して下さい (Thanks to 石田様)。</p>
+<pre><code>options(markdown.HTML.header=
+  &#39;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://rawgithub.com/brentertz/scianimator/master/assets/css/scianimator.css&quot;/&gt;
+  &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;https://rawgithub.com/brentertz/scianimator/master/assets/js/jquery.scianimator.min.js&quot;&gt;&lt;/script&gt;&#39;
+)</code></pre></li>
+</ul>
+<h1 id="サンプルプログラム">サンプルプログラム</h1>
 <p>本書で扱ったRマークダウンファイルやRスクリプトなどです。</p>
 <p><a href="http://github.com/kohske/Useful_R_09_sample">githubリポジトリ</a> / <a href="https://github.com/kohske/Useful_R_09_sample/archive/master.zip">zipファイルダウンロード</a></p>
-<h1 id="さいごに"><a href="#さいごに">さいごに</a></h1>
+<h1 id="さいごに">さいごに</h1>
 <p>Enjoy!!</p>
-<h1 id="コメント欄"><a href="#コメント欄">コメント欄</a></h1>
+<h1 id="コメント欄">コメント欄</h1>
 <p>質問など、ご自由にどうぞ。</p>
 <div id="disqus_thread">
 
