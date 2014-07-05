@@ -1,0 +1,217 @@
+\documentclass[10pt,landscape]{ltjarticle}
+\usepackage{multicol}
+\usepackage{calc}
+\usepackage{ifthen}
+\usepackage[landscape]{geometry}
+\usepackage{hyperref}
+\usepackage{applekeys}
+\usepackage{luatexja-fontspec}
+\usepackage{framed}
+\setmainfont[Ligatures=TeX]{TeXGyreHeros}
+\geometry{top=1cm,left=1cm,right=1cm,bottom=1cm} 
+\pagestyle{empty}
+\makeatletter
+\renewcommand{\subsection}{\@startsection{subsection}{2}{0mm}%
+                                {-1explus -.5ex minus -.2ex}%
+                                {0.5ex plus .2ex}%
+                                {\normalfont\normalsize\bfseries}}
+\makeatother
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt plus 0.5ex}
+
+\begin{document}
+
+\raggedright
+\footnotesize
+\begin{multicols}{3}
+
+\setlength{\premulticols}{1pt}
+\setlength{\postmulticols}{1pt}
+\setlength{\multicolsep}{1pt}
+\setlength{\columnsep}{2pt}
+
+\begin{center}
+     \Large{\textbf{RStudioキーボードショートカット\\(完全版)}}
+\end{center}
+
+\today
+
+\subsection{コンソール}
+\begin{tabular}{p{30mm}p{25mm}p{25mm}}
+カーソルをコンソールに & \ctlkey 2 & \ctlkey 2 \\
+コンソールを消去 & \ctlkey L & \cmdkey\ L \\
+カーソルを行頭に & Home & \cmdkey\ Left \\
+カーソルを行末に & End & \cmdkey\ Right \\
+履歴 & Up/Down & Up/Down \\
+履歴をポップアップ & \ctlkey Up & \cmdkey\ Up \\
+実行中のコマンドを停止 & Esc & Esc \\
+作業フォルダの変更 & \ctlkey \shiftkey\ H & \ctlkey \shiftkey\ H
+\end{tabular}
+
+\subsection{編集}
+\begin{tabular}{p{30mm}p{25mm}p{25mm}}
+取り消す & \ctlkey Z & \cmdkey\ Z \\
+やり直す & \ctlkey \shiftkey\ Z & \cmdkey\ \shiftkey\ Z \\
+カット & \ctlkey X & \cmdkey\ X \\
+コピー & \ctlkey C & \cmdkey\ C \\
+ペースト & \ctlkey V & \cmdkey\ V \\
+全て選択 & \ctlkey A & \cmdkey\ A \\
+単語に移動 & \ctlkey Left/Right & \optkey\ Left/Right \\
+先頭/末尾に & \ctlkey Home/End \par \ctlkey Up/Down & \cmdkey\ Home/End or \cmdkey\ Up/Down \\
+行を削除 & \ctlkey D & \cmdkey\ D \\
+選択 & \shiftkey\ [Arrow] & \shiftkey\ [Arrow] \\
+単語を選択 & \ctlkey \shiftkey\ Left/Right & \optkey\ \shiftkey\ Left/Right \\
+行頭まで選択 & \optkey\ \shiftkey\ Left & \cmdkey\ \shiftkey\ Left \\
+行末まで選択 & \optkey\ \shiftkey\ Right & \cmdkey\ \shiftkey\ Right \\
+1ページ分を選択 & \shiftkey\ PageUp/Down & \shiftkey\ PageUp/Down \\
+先頭/末尾まで選択 & \ctlkey \shiftkey\ Home/End \par \shiftkey\ \optkey\ Up/Down & \cmdkey\ \shiftkey\ Up/Down \\
+左の単語を削除 & \ctlkey Backspace & \optkey\ Backspace \\
+右の単語を削除 &  & \optkey\ Delete \\
+行末まで削除 &  & \ctlkey K \\
+行頭まで削除 &  & \optkey\ Backspace \\
+インデント & Tab (行頭で) & Tab (行頭で) \\
+インデント解除 & \shiftkey\ Tab & \shiftkey\ Tab \\
+行頭までヤンク & \ctlkey U & \ctlkey U \\
+行末までヤンク & \ctlkey K & \ctlkey K \\
+ヤンクを挿入 & \ctlkey Y & \ctlkey Y \\
+\verb|<-|を挿入 & \optkey\ - & \optkey\ - \\
+カーソル位置の関数のヘルプを表示 & F1 & F1 \\
+カーソル位置の関数のコードを表示 & F2 & F2
+\end{tabular}
+
+\subsection{補完}
+\begin{tabular}{p{30mm}p{30mm}p{20mm}}
+補完 & Tab / \ctlkey Space & Tab / \cmdkey\ Space \\
+候補を選択 & Up/Down & Up/Down \\
+補完を実行 & \returnkey\ /Tab/Right & \returnkey\ /Tab/Right \\
+補完を中止 & Esc & Esc
+\end{tabular}
+
+
+  \subsection{エディタ}
+\begin{tabular}{p{30mm}p{30mm}p{20mm}}
+ファイル/関数を検索 & \ctlkey . & \ctlkey . \\
+カーソルをエディタに & \ctlkey 1 & \ctlkey 1 \\
+新規ファイル & \ctlkey \shiftkey\ N & \cmdkey\ \shiftkey\ N \\
+新規ファイル(Chrome) & \ctlkey \optkey\ \shiftkey\ N & \cmdkey\ \shiftkey\ \optkey\ N \\
+ファイルを開く & \ctlkey O & \cmdkey\ O \\
+ファイルを保存 & \ctlkey S & \cmdkey\ S \\
+ファイルを閉じる & \ctlkey W & \cmdkey\ W \\
+ファイルを閉じる \par (Chrome) & \ctlkey \optkey\ W & \cmdkey\ \optkey\ W \\
+全てのファイルを閉じる & \ctlkey \shiftkey\ W & \cmdkey\ \shiftkey\ W \\
+HTMLをプレビュー & \ctlkey \shiftkey\ Y & \cmdkey\ \shiftkey\ Y \\
+ファイルをKnit() & \ctlkey \shiftkey\ K & \cmdkey\ \shiftkey\ K \\
+ノートブックを作成 & \ctlkey \shiftkey\ K & \cmdkey\ \shiftkey\ K \\
+PDFを作成 & \ctlkey \shiftkey\ I & \cmdkey\ \shiftkey\ I \\
+チャンクを挿入 & \ctlkey \optkey\ I & \cmdkey\ \optkey\ I \\
+コードブロックを挿入 & \ctlkey \shiftkey\ R & \cmdkey\ \shiftkey\ R \\
+現在行/選択範囲を評価 & \ctlkey \returnkey & \cmdkey\ \returnkey \\
+前回の範囲を再評価 & \ctlkey \shiftkey\ P & \cmdkey\ \shiftkey\ P \\
+ファイルを評価 & \ctlkey \optkey\ R & \cmdkey\ \optkey\ R \\
+先頭から現在行まで評価 & \ctlkey \optkey\ B & \cmdkey\ \optkey\ B \\
+現在行から最後まで評価 & \ctlkey \optkey\ E & \cmdkey\ \optkey\ E \\
+関数定義を評価 & \ctlkey \optkey\ F & \cmdkey\ \optkey\ F \\
+コードブロックを評価 & \ctlkey \optkey\ T & \cmdkey\ \optkey\ T \\
+前のチャンクを評価 & \ctlkey \optkey\ P & \cmdkey\ \optkey\ P \\
+現在のチャンクを評価 & \ctlkey \optkey\ C & \cmdkey\ \optkey\ C \\
+次のチャンクを評価 & \ctlkey \optkey\ N & \cmdkey\ \optkey\ N \\
+ファイルを\verb|source| & \ctlkey \shiftkey\ O & \cmdkey\ \shiftkey\ O \\
+現在のファイルを\verb|source| & \ctlkey \shiftkey\ S & \cmdkey\ \shiftkey\ S \\
+エコー付きで\verb|source| & \ctlkey \shiftkey\ \returnkey & \cmdkey\ \shiftkey\ \returnkey \\
+選択範囲を折り畳み & \optkey\ L & \cmdkey\ \optkey\ L \\
+選択範囲を折り畳み解除 & \shiftkey\ \optkey\ L & \cmdkey\ \shiftkey\ \optkey\ L \\
+全て折り畳み & \optkey\ O & \cmdkey\ \optkey\ O \\
+全て折り畳み解除 & \shiftkey\ \optkey\ O & \cmdkey\ \shiftkey\ \optkey\ O \\
+行番号に移動 & \shiftkey\ \optkey\ G & \cmdkey\ \shiftkey\ \optkey\ G \\
+関数/チャンクにジャンプ & \shiftkey\ \optkey\ J & \cmdkey\ \shiftkey\ \optkey\ J \\
+タブの切り替え & \ctlkey \optkey\ Down & \ctlkey \optkey\ Down \\
+左/右のタブ & Win: \ctlkey \optkey\ Left/Right \par Linux: \ctlkey PageUp/Down & \ctlkey \optkey\ Left/Right \\
+左端/右端のタブ & \ctlkey \shiftkey\ \optkey\ Left/Right & \ctlkey \shiftkey\ \optkey\ Left/Right \\
+次へ移動 & \ctlkey F9 & \cmdkey\ F9 \\
+前へ移動 & \ctlkey F10 & \cmdkey\ F10 \\
+選択範囲から関数を作成 & \ctlkey \optkey\ X & \cmdkey\ \optkey\ X \\
+選択範囲から変数を作成 & \ctlkey \optkey\ V & \cmdkey\ \optkey\ V \\
+行をインデント & \ctlkey I & \cmdkey\ I \\
+行/範囲をコメント & \ctlkey \shiftkey\ C & \cmdkey\ \shiftkey\ C \\
+コメントを整形 & \ctlkey \shiftkey\ / & \cmdkey\ \shiftkey\ / \\
+カーソル前後を入れ替え &  & \ctlkey T \\
+行/範囲を上下に移動 & \optkey\ Up/Down & \optkey\ Up/Down \\
+行/範囲を上下にコピー & \shiftkey\ \optkey\ Up/Down & \cmdkey\ \optkey\ Up/Down \\
+対応する括弧に移動 & \ctlkey P & \ctlkey P \\
+検索/置換 & \ctlkey F & \cmdkey\ F \\
+次を検索 & Win:F3, Linux:\ctlkey G & \cmdkey\ G \\
+前を検索 & Win:\shiftkey\ F3, Linux:\ctlkey \shiftkey\ G & \cmdkey\ \shiftkey\ G \\
+選択範囲で検索 & \ctlkey F3 & \cmdkey\ E \\
+置換して次に & \ctlkey \shiftkey\ J & \cmdkey\ \shiftkey\ J \\
+複数のファイルを検索 & \ctlkey \shiftkey\ F & \cmdkey\ \shiftkey\ F \\
+スペルチェック & F7 & F7 
+\end{tabular}
+
+\subsection{表示}
+\begin{tabular}{p{30mm}p{30mm}p{20mm}}
+エディタにフォーカス & \ctlkey 1 & \ctlkey 1 \\
+コンソールにフォーカス & \ctlkey 2 & \ctlkey 2 \\
+ヘルプにフォーカス & \ctlkey 3 & \ctlkey 3 \\
+履歴タブを表示 & \ctlkey 4 & \ctlkey 4 \\
+ファイルタブを表示 & \ctlkey 5 & \ctlkey 5 \\
+プロットタブを表示 & \ctlkey 6 & \ctlkey 6 \\
+パッケージタブを表示 & \ctlkey 7 & \ctlkey 7 \\
+環境タブを表示 & \ctlkey 8 & \ctlkey 8 \\
+Git/SVNタブを表示 & \ctlkey 9 & \ctlkey 9 \\
+ビルドタブを表示 & \ctlkey 0 & \ctlkey 0 \\
+PDFプレビューと同期 & \ctlkey F8 & \cmdkey\ F8 \\
+ショートカットを表示 & \optkey\ \shiftkey\ K & \optkey\ \shiftkey\ K
+\end{tabular}
+
+\subsection{ビルド・パッケージ・VCS}
+\begin{tabular}{p{30mm}p{30mm}p{20mm}}
+ビルドしてリロード & \ctlkey \shiftkey\ B & \cmdkey\ \shiftkey\ B \\
+全てをロード & \ctlkey \shiftkey\ L & \cmdkey\ \shiftkey\ L \\
+パッケージテスト & \ctlkey \shiftkey\ T & \cmdkey\ \shiftkey\ T \\
+パッケージテスト(web) & \ctlkey \optkey\ F7 & \cmdkey\ \optkey\ F7 \\
+パッケージチェック & \ctlkey \shiftkey\ E & \cmdkey\ \shiftkey\ E \\
+ドキュメントの作成 & \ctlkey \shiftkey\ D & \cmdkey\ \shiftkey\ D \\
+ドキュメントの差分 & \ctlkey \optkey\ D & \ctlkey \optkey\ D \\
+コミット & \ctlkey \optkey\ M & \ctlkey \optkey\ M \\
+差分ビューのスクロール & \ctlkey Up/Down & \ctlkey Up/Down \\
+Stage/Unstage (Git) & Spacebar & Spacebar \\
+Stage/Unstageして次に移動 (Git) & \returnkey\  & \returnkey\ 
+\end{tabular}
+
+\subsection{プロット}
+\begin{tabular}{p{30mm}p{30mm}p{20mm}}
+前のプロット & \ctlkey \shiftkey\ PageUp & \cmdkey\ \shiftkey\ PageUp \\
+次のプロット & \ctlkey \shiftkey\ PageDown & \cmdkey\ \shiftkey\ PageDown
+\end{tabular}
+
+\subsection{セッション・デバッグ}
+\begin{tabular}{p{30mm}p{30mm}p{20mm}}
+セッションの終了 & \ctlkey Q & \cmdkey\ Q \\
+Rを再起動 & \ctlkey \shiftkey\ F10 & \cmdkey\ \shiftkey\ F10 \\
+ブレークポイントの設定 & \shiftkey\ F9 & \shiftkey\ F9 \\
+次の行を評価 & F10 & F10 \\
+評価を続ける & \shiftkey\ F5 & \shiftkey\ F5 \\
+デバッグの中止 & \shiftkey\ F8 & \shiftkey\ F8
+\end{tabular}
+
+\begin{framed}
+左はWindows/Linux、右はMac OS X
+
+\begin{description}
+\setlength{\parskip}{0cm} 
+\setlength{\itemsep}{1pt}
+\item[\ctlkey] Control
+\item[\cmdkey] コマンド
+\item[\shiftkey] シフト
+\item[\optkey] Alt (Win/Linux) / Option (Mac)
+\end{description}
+\end{framed}
+
+\rule{0.3\linewidth}{0.25pt}
+
+\scriptsize
+Copyright \copyright\ 2014 @kohske
+
+\end{multicols}
+\end{document}
