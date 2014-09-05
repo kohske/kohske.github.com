@@ -18,12 +18,18 @@
 <li><a href="#更新履歴">更新履歴</a></li>
 <li><a href="#関連ツール更新情報">関連ツール更新情報</a><ul>
 <li><a href="#knitr">knitr</a><ul>
+<li><a href="#ver.-1.7">Ver. 1.7</a></li>
+<li><a href="#ver.-1.6">Ver. 1.6</a><ul>
 <li><a href="#新しいチャンクオプション">新しいチャンクオプション</a></li>
 <li><a href="#その他の変更点">その他の変更点</a></li>
 </ul></li>
+</ul></li>
 <li><a href="#rstudio">Rstudio</a></li>
 <li><a href="#rmarkdown">rmarkdown</a></li>
-<li><a href="#shiny">shiny</a></li>
+<li><a href="#shiny">shiny</a><ul>
+<li><a href="#ver.-0.10.1">Ver. 0.10.1</a></li>
+<li><a href="#ver.-0.10.0">Ver. 0.10.0</a></li>
+</ul></li>
 <li><a href="#rcharts">rCharts</a></li>
 <li><a href="#slidify">slidify</a></li>
 </ul></li>
@@ -55,6 +61,8 @@
 <p>また質問などは <a href="#コメント欄">コメント欄</a>、takahashi.kohske@gmail.com までメール、またはTwitter <a href="http://twitter.com/kohske">@kohske</a> までお気軽にどうぞ(回答の保証はできませんが・・・)。 有益そうな質問については、ご了承頂ければFAQに掲載させてもらう予定です。</p>
 <h1 id="更新履歴">更新履歴</h1>
 <ul>
+<li>2014/9/5 shinyの更新情報を追加しました。</li>
+<li>2014/9/5 knitrの更新情報を追加しました。</li>
 <li>2014/6/30 正誤表を更新しました。</li>
 <li>2014/6/22 <a href="#コメント欄">コメント欄</a>を追加しました。</li>
 <li>2014/6/19 Rstudioの更新情報を追加しました。</li>
@@ -66,8 +74,14 @@
 </ul>
 <h1 id="関連ツール更新情報">関連ツール更新情報</h1>
 <h2 id="knitr">knitr</h2>
+<h3 id="ver.-1.7">Ver. 1.7</h3>
+<ul>
+<li><p>チャンクオプション <code>fig.showtext</code>: <code>TRUE</code>に設定すると<code>showtext</code>パッケージを使うことができます。</p></li>
+<li><p>パッケージオプション <code>global.par</code>: <code>opts_knit$set(global.par = TRUE)</code>とすると、<code>par()</code>によるオプション設定が次のチャンクでも有効になります。</p></li>
+</ul>
+<h3 id="ver.-1.6">Ver. 1.6</h3>
 <p>2014年5月25日にknitr 1.6がCRAN上でリリースされました。Windows上で日本語が使いやすくなっています。 本書では公式1.5ではなくリリース前の1.6開発版をターゲットにしていたので、多くの機能については本書中で解説しています。 ここではその他の新機能を挙げておきます。</p>
-<h3 id="新しいチャンクオプション">新しいチャンクオプション</h3>
+<h4 id="新しいチャンクオプション">新しいチャンクオプション</h4>
 <p>付録Bのリストに加えて以下のチャンクオプションが新たに追加されています。</p>
 <ul>
 <li><p><code>collapse</code>: <code>TRUE</code>ならチャンクコードと評価結果を一つのブロックで出力します。(<a href="http://github.com/yihui/knitr-examples/blob/master/039-merge.Rmd">サンプルRmd</a> / <a href="http://github.com/yihui/knitr-examples/blob/master/039-merge.md">サンプルmd</a>)</p></li>
@@ -78,7 +92,7 @@
 <li><p><code>R.options</code>: チャンク内だけで有効なRのグローバルオプション(<code>options</code>)を設定します。</p></li>
 <li><p><code>out.width.px</code>, <code>out.height.px</code>: 図のサイズをピクセル単位で取得します。読み取り専用です。</p></li>
 </ul>
-<h3 id="その他の変更点">その他の変更点</h3>
+<h4 id="その他の変更点">その他の変更点</h4>
 <ul>
 <li>S3メソッドディスパッチによるレンダリング関数のカスタマイズが可能になっています(<a href="http://rpubs.com/kohske/18343">解説ページ</a>)。</li>
 </ul>
@@ -95,6 +109,14 @@
 <li>最新のRstudioでドキュメント変換のバックエンドに採用されています。<code>rmarkdown</code>パッケージについては<a href="../rmarkdown/index.html">解説ページ</a>を参考にして下さい。</li>
 </ul>
 <h2 id="shiny">shiny</h2>
+<h3 id="ver.-0.10.1">Ver. 0.10.1</h3>
+<p>2014年7月26日にshiny 0.10.1がCRAN上でリリースされました。主要は変更点は次の通りです。</p>
+<ul>
+<li>WindowsでUNICODEがサポートされました。これにより、Windows上で日本語でshinyを使えるようになります。Congratulation!! 利用の際は、<code>server.R</code>、<code>ui.R</code>ともUTF-8で保存します。</li>
+<li><code>textOutput()</code>, <code>imageOutput()</code>, <code>plotOutput()</code>, <code>htmlOutput()</code>に引数<code>inline</code>が追加されました。<code>TRUE</code>にすると、これらの要素がインライン要素(<code>&lt;span&gt;&lt;/span&gt;</code>)として出力されます。http://shiny.rstudio.com/gallery/inline-output.html にサンプルがあります。</li>
+<li>入力ポイント<code>select</code>と<code>selectize</code>で選択肢のグループ化が可能になりました。利用するには<code>choices</code>にリストのリストを渡します。http://shiny.rstudio.com/gallery/option-groups-for-selectize-input.html にサンプルがあります。</li>
+</ul>
+<h3 id="ver.-0.10.0">Ver. 0.10.0</h3>
 <p>2014年6月14日にshiny 0.10.0がCRAN上でリリースされました。主要は変更点は次の通りです。</p>
 <ul>
 <li>R markdown V2で作成するドキュメントにshinyアプリケーションを埋め込めるようになりました。最新のRstudioを使うと簡単に試すことができます。詳細は<a href="http://rmarkdown.rstudio.com/authoring_shiny.html">rmarkdownのウェブサイト</a>、及び<a href="../rstudio/index.html">解説ページ</a>を参考にして下さい。</li>
