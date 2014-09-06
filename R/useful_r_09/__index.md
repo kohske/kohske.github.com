@@ -31,6 +31,11 @@ Rによるレポート生成を取り巻く環境は日々進化しています�
 # 重要なお知らせ
 
 - 2014/9/5現在、windowsで`knit2html()`を使った時に、含まれる日本語文字によっては上手く動作しません(Thanks to @habari2011dunia 様)。この問題を回避するには、本書4.5節「Pandocによるレポートフォーマットの変換」で紹介している方法を用いるか、`rmarkdown`パッケージ([解説ページ](../rmarkdown/index.html))を用いて下さい。
+- 2014/9/6 上記問題は解決されました。最新版の`markdown`パッケージをgithubからインストールして下さい。
+```
+install.packages("devtools") # 必要なら
+devtools::install_github("rstudio/markdown")
+```
 
 # 更新履歴
 
