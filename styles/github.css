@@ -276,3 +276,7 @@ pre {
   pre code, pre tt {
     background-color: transparent;
     border: none; }
+
+#TOC {
+  line-height: 1.0;
+}
