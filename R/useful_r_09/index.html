@@ -28,6 +28,7 @@
 <li><a href="#rstudio">Rstudio</a></li>
 <li><a href="#rmarkdown">rmarkdown</a></li>
 <li><a href="#shiny">shiny</a><ul>
+<li><a href="#ver.-0.10.2">Ver. 0.10.2</a></li>
 <li><a href="#ver.-0.10.1">Ver. 0.10.1</a></li>
 <li><a href="#ver.-0.10.0">Ver. 0.10.0</a></li>
 </ul></li>
@@ -69,6 +70,7 @@ devtools::install_github(&quot;rstudio/markdown&quot;)</code></pre></li>
 </ul>
 <h1 id="更新履歴"><a href="#更新履歴">更新履歴</a></h1>
 <ul>
+<li>2014/10/ shinyの更新情報を追加しました。</li>
 <li>2014/9/5 shinyの更新情報を追加しました。</li>
 <li>2014/9/5 knitrの更新情報を追加しました。</li>
 <li>2014/6/30 正誤表を更新しました。</li>
@@ -117,6 +119,15 @@ devtools::install_github(&quot;rstudio/markdown&quot;)</code></pre></li>
 <li>最新のRstudioでドキュメント変換のバックエンドに採用されています。<code>rmarkdown</code>パッケージについては<a href="../rmarkdown/index.html">解説ページ</a>を参考にして下さい。</li>
 </ul>
 <h2 id="shiny"><a href="#shiny">shiny</a></h2>
+<h3 id="ver.-0.10.2"><a href="#ver.-0.10.2">Ver. 0.10.2</a></h3>
+<p>2014年10月1日にshiny 0.10.2がCRAN上でリリースされました。主要は変更点は次の通りです。</p>
+<ul>
+<li>動作保証はR 3.0.0以上となりました。</li>
+<li><code>server.R</code>、<code>ui.R</code>の中身を<code>app.R</code>というひとつのファイルにまとめられるようになりました。</li>
+<li><code>DataTables</code>のバージョンが1.10.2に上がっているので、既存のオプション設定が正しく動作しないかもしれません。</li>
+<li>ファイルアップロードのための<code>fileInput()</code>がIE8およびIE9で動作するようになりました。複数ファイルのアップロードは一部ブラウザでは利用できません。</li>
+<li>プログレスバーを表示するための<code>Progress</code>と<code>withProgress</code>が追加されました。<a href="http://shiny.rstudio.com/gallery/progress-example.html">サンプル</a></li>
+</ul>
 <h3 id="ver.-0.10.1"><a href="#ver.-0.10.1">Ver. 0.10.1</a></h3>
 <p>2014年7月26日にshiny 0.10.1がCRAN上でリリースされました。主要は変更点は次の通りです。</p>
 <ul>

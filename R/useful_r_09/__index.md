@@ -39,6 +39,7 @@ devtools::install_github("rstudio/markdown")
 
 # 更新履歴
 
+- 2014/10/ shinyの更新情報を追加しました。
 - 2014/9/5 shinyの更新情報を追加しました。
 - 2014/9/5 knitrの更新情報を追加しました。
 - 2014/6/30 正誤表を更新しました。
@@ -102,6 +103,16 @@ devtools::install_github("rstudio/markdown")
 - 最新のRstudioでドキュメント変換のバックエンドに採用されています。`rmarkdown`パッケージについては[解説ページ](../rmarkdown/index.html)を参考にして下さい。
 
 ## shiny
+
+### Ver. 0.10.2
+
+2014年10月1日にshiny 0.10.2がCRAN上でリリースされました。主要は変更点は次の通りです。
+
+- 動作保証はR 3.0.0以上となりました。
+- `server.R`、`ui.R`の中身を`app.R`というひとつのファイルにまとめられるようになりました。
+- `DataTables`のバージョンが1.10.2に上がっているので、既存のオプション設定が正しく動作しないかもしれません。
+- ファイルアップロードのための`fileInput()`がIE8およびIE9で動作するようになりました。複数ファイルのアップロードは一部ブラウザでは利用できません。
+- プログレスバーを表示するための`Progress`と`withProgress`が追加されました。[サンプル](http://shiny.rstudio.com/gallery/progress-example.html)
 
 ### Ver. 0.10.1
 
