@@ -70,7 +70,8 @@ devtools::install_github(&quot;rstudio/markdown&quot;)</code></pre></li>
 </ul>
 <h1 id="更新履歴"><a href="#更新履歴">更新履歴</a></h1>
 <ul>
-<li>2014/10/ shinyの更新情報を追加しました。</li>
+<li>2014/10/5 knitrの更新情報を追加しました。</li>
+<li>2014/10/5 shinyの更新情報を追加しました。</li>
 <li>2014/9/5 shinyの更新情報を追加しました。</li>
 <li>2014/9/5 knitrの更新情報を追加しました。</li>
 <li>2014/6/30 正誤表を更新しました。</li>
@@ -86,8 +87,14 @@ devtools::install_github(&quot;rstudio/markdown&quot;)</code></pre></li>
 <h2 id="knitr"><a href="#knitr">knitr</a></h2>
 <h3 id="ver.-1.7"><a href="#ver.-1.7">Ver. 1.7</a></h3>
 <ul>
-<li><p>チャンクオプション <code>fig.showtext</code>: <code>TRUE</code>に設定すると<code>showtext</code>パッケージを使うことができます。</p></li>
-<li><p>パッケージオプション <code>global.par</code>: <code>opts_knit$set(global.par = TRUE)</code>とすると、<code>par()</code>によるオプション設定が次のチャンクでも有効になります。</p></li>
+<li><code>kable()</code>に<code>col.names</code>オプションが追加されました。列の名前を指定できます。</li>
+<li>アウトプットフック<code>text</code>が追加されました。テキストチャンク（コードチャンク以外の部分）に対して適用されます。</li>
+<li>チャンクオプション <code>fig.showtext</code>: <code>TRUE</code>に設定すると<code>showtext</code>パッケージを使うことができます。</li>
+<li>パッケージオプション <code>global.par</code>: <code>opts_knit$set(global.par = TRUE)</code>とすると、<code>par()</code>によるオプション設定が次のチャンクでも有効になります。</li>
+<li>Node.js用の言語エンジン<code>node</code>が追加されました。</li>
+<li><code>knit()</code>によりRの既定の<code>option(digits)</code>が7から4に変更されなくなりました。</li>
+<li>プロット画像ファイルの番号付けの方法が変更されました。チャンク名<code>foo</code>に対して、<code>foo-1</code>、<code>foo-2</code>、...というファイル名になります。</li>
+<li><code>fig.show='animate'</code>でビデオ出力する場合の既定のフォーマットがOGGからWebMに変更されました。</li>
 </ul>
 <h3 id="ver.-1.6"><a href="#ver.-1.6">Ver. 1.6</a></h3>
 <p>2014年5月25日にknitr 1.6がCRAN上でリリースされました。Windows上で日本語が使いやすくなっています。 本書では公式1.5ではなくリリース前の1.6開発版をターゲットにしていたので、多くの機能については本書中で解説しています。 ここではその他の新機能を挙げておきます。</p>
