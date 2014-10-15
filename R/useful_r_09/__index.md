@@ -39,6 +39,7 @@ devtools::install_github("rstudio/markdown")
 
 # 更新履歴
 
+- 2014/10/13 knitrの更新情報を追加しました。
 - 2014/10/5 knitrの更新情報を追加しました。
 - 2014/10/5 shinyの更新情報を追加しました。
 - 2014/9/5 shinyの更新情報を追加しました。
@@ -58,6 +59,8 @@ devtools::install_github("rstudio/markdown")
 
 ### Ver. 1.7
 
+2014年10月13日にknitr 1.7がCRAN上でリリースされました。主な変更点は次の通りです。
+
 - `kable()`に`col.names`オプションが追加されました。列の名前を指定できます。
 - アウトプットフック`text`が追加されました。テキストチャンク（コードチャンク以外の部分）に対して適用されます。
 - チャンクオプション `fig.showtext`: `TRUE`に設定すると`showtext`パッケージを使うことができます。
@@ -66,6 +69,7 @@ devtools::install_github("rstudio/markdown")
 - `knit()`によりRの既定の`option(digits)`が7から4に変更されなくなりました。
 - プロット画像ファイルの番号付けの方法が変更されました。チャンク名`foo`に対して、`foo-1`、`foo-2`、...というファイル名になります。
 - `fig.show='animate'`でビデオ出力する場合の既定のフォーマットがOGGからWebMに変更されました。
+- エラーと警告が発生した部分のコードが表示されるようになっているはずです。
 
 ### Ver. 1.6
 
