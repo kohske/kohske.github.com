@@ -39,6 +39,7 @@ devtools::install_github("rstudio/markdown")
 
 # 更新履歴
 
+- 2014/11/15 knitrの更新情報を追加しました。
 - 2014/10/13 knitrの更新情報を追加しました。
 - 2014/10/5 knitrの更新情報を追加しました。
 - 2014/10/5 shinyの更新情報を追加しました。
@@ -56,6 +57,21 @@ devtools::install_github("rstudio/markdown")
 # 関連ツール更新情報
 
 ## knitr
+
+### Ver. 1.8
+
+2014年11月11日にknitr 1.8がCRAN上でリリースされました。主な変更点は次の通りです。
+
+- `fig_chunk()`関数が追加されました。`fig_chunk(チャンクラベル, 拡張子, 番号)`とすることでチャンクで出力される図のファイル名を得ることができます。ドキュメント内で図を参照したい場合、`\includegraphics{\Sexpr{fig_chunk('foo', 'pdf')}}`などとします。
+- `kable()`に`escape`引数が追加されました。TRUEとすると特殊な文字をエスケープします。
+- `knit_filter()`関数が追加されました。`utils::aspel`と組み合わせることでスペルチェックを行うことができます。使用例は`?knit_filter`を参照して下さい。
+- `spin_child()`関数が追加されました。ドキュメント内に別のRスクリプトの処理結果を埋め込むために使うことができます。
+- `inline_expr()`関数が追加されました。ドキュメント内にインラインコード例を記述したい場合、``` `` `r knitr::inline_expr('1+1')` `` ```とすると、`` `r 1+1` ``と出力されます。面倒ですね。
+- `kable()`に`table.envir`引数が追加されました。LaTeX出力でテーブルの環境を指定できます。
+- `stitch()`用のスクリプトで`# ---- label, options ---- `という形式のチャンクヘッダがサポートされてます。
+- [Groovy](http://groovy.codehaus.org/Japanese+Home)用の言語エンジン`groovy`が追加されました。
+
+
 
 ### Ver. 1.7
 
