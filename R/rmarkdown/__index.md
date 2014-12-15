@@ -5,16 +5,16 @@ title: "rmarkdownパッケージで楽々ドキュメント生成"
 
 # はじめに
 
-[シリーズ Useful R 9 「ドキュメント・プレゼンテーション生成」](http://kohske.github.io/R/useful_r_09/)では、
+[シリーズ Useful R 9 「ドキュメント・プレゼンテーション生成」](https://kohske.github.io/R/useful_r_09/)では、
 `knitr`パッケージを使ってRマークダウンファイルをマークダウンファイルやHTMLファイルに変換する方法を解説しています。
 
-2014年以降、RStudio開発チームは[`rmarkdown`](http://rmarkdown.rstudio.com/)という新しいマークダウン処理用の[パッケージ開発](https://github.com/rstudio/rmarkdown)を進めています。かなりガチで進めています。
+2014年以降、RStudio開発チームは[`rmarkdown`](https://rmarkdown.rstudio.com/)という新しいマークダウン処理用の[パッケージ開発](https://github.com/rstudio/rmarkdown)を進めています。かなりガチで進めています。
 ここでは`rmarkdown`パッケージの特徴や使い方を解説します。
 
 `rmarkdown`パッケージでは`render()`という関数でドキュメントを生成します。
 ですが、大雑把に言うと`render()`は`knitr::knit()`でRマークダウンからマークダウンに変換して、Pandocを使ってマークダウンをHTMLやPDFなどに変換します。ですので、実際にできることは、ピュアknitrとそう変わりはありません。
 
-なお`knitr`パッケージの`knit2html()`は`knitr::knit()`でRマークダウンからマークダウンに変換して、`markdown::markdownToHTML()`でHTMLに変換しています。マークダウンから他のフォーマットへの変換にはPandocを利用することもできます。詳細は[解説ページ](http://kohske.github.io/R/pandoc/)を参考にして下さい。
+なお`knitr`パッケージの`knit2html()`は`knitr::knit()`でRマークダウンからマークダウンに変換して、`markdown::markdownToHTML()`でHTMLに変換しています。マークダウンから他のフォーマットへの変換にはPandocを利用することもできます。詳細は[解説ページ](https://kohske.github.io/R/pandoc/)を参考にして下さい。
 
 ついでに付け加えておくと、`rmarkdown::render()`は内部で`knitr::knit()`を呼び出しているので「ドキュメント・プレゼンテーション生成」の3章で解説した`knitr`パッケージのチャンクオプションやフックなどはそのまま利用することができます。ですので、knitrユーザは簡単にrmarkdownに移行することができます。
 
@@ -22,10 +22,10 @@ title: "rmarkdownパッケージで楽々ドキュメント生成"
 
 とりあえずサンプルです。
 
-- [Rマークダウンファイル](http://raw.githubusercontent.com/kohske/kohske.github.com/master/R/rmarkdown/sample/rm-sample.Rmd)
+- [Rマークダウンファイル](https://raw.githubusercontent.com/kohske/kohske.github.com/master/R/rmarkdown/sample/rm-sample.Rmd)
 
 このRマークダウンファイルに対して、`render()`します。
-なお、PDFで必要な[プリアンブル](http://raw.githubusercontent.com/kohske/kohske.github.com/master/R/rmarkdown/sample/preamble.tex)です。
+なお、PDFで必要な[プリアンブル](https://raw.githubusercontent.com/kohske/kohske.github.com/master/R/rmarkdown/sample/preamble.tex)です。
 
 ```r
 library(rmarkdown)
@@ -39,12 +39,12 @@ render("rm-sample.Rmd", "beamer_presentation", "rm-sample-beamer.pdf") # beamer 
 
 出力結果を置いておきます。
 
-- [HTMLレポート](http://kohske.github.io/R/rmarkdown/sample/rm-sample.html)
-- [PDFレポート](http://kohske.github.io/R/rmarkdown/sample/rm-sample.pdf) (PDF注意)
-- [MS Word レポート](http://kohske.github.io/R/rmarkdown/sample/rm-sample.docx) (DOCX注意)
-- [revealjs ウェブスライド](http://kohske.github.io/R/rmarkdown/sample/rm-sample-reveal.html)
-- [io2012 ウェブスライド](http://kohske.github.io/R/rmarkdown/sample/rm-sample-io2012.html)
-- [Beamer スライド](http://kohske.github.io/R/rmarkdown/sample/rm-sample-beamer.pdf) (PDF注意)
+- [HTMLレポート](https://kohske.github.io/R/rmarkdown/sample/rm-sample.html)
+- [PDFレポート](https://kohske.github.io/R/rmarkdown/sample/rm-sample.pdf) (PDF注意)
+- [MS Word レポート](https://kohske.github.io/R/rmarkdown/sample/rm-sample.docx) (DOCX注意)
+- [revealjs ウェブスライド](https://kohske.github.io/R/rmarkdown/sample/rm-sample-reveal.html)
+- [io2012 ウェブスライド](https://kohske.github.io/R/rmarkdown/sample/rm-sample-io2012.html)
+- [Beamer スライド](https://kohske.github.io/R/rmarkdown/sample/rm-sample-beamer.pdf) (PDF注意)
 
 ここでは一つの、そして唯一のRマークダウンファイルから全てのフォーマットを生成してるので、デザインとかはあまり気にしてません。
 例えばセクションヘッダはレベル2(`## ...`)にしてますが(ウェブスライドのため)、PDFの場合はレベル1(`# ...`)の方が良いでしょう。

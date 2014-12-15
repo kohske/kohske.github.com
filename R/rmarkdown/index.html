@@ -53,18 +53,18 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <li><a href="#さいごに">さいごに</a></li>
 </ul>
 </div>
-<h1 id="はじめに"><a href="#はじめに">はじめに</a></h1>
-<p><a href="http://kohske.github.io/R/useful_r_09/">シリーズ Useful R 9 「ドキュメント・プレゼンテーション生成」</a>では、 <code>knitr</code>パッケージを使ってRマークダウンファイルをマークダウンファイルやHTMLファイルに変換する方法を解説しています。</p>
-<p>2014年以降、RStudio開発チームは<a href="http://rmarkdown.rstudio.com/"><code>rmarkdown</code></a>という新しいマークダウン処理用の<a href="https://github.com/rstudio/rmarkdown">パッケージ開発</a>を進めています。かなりガチで進めています。 ここでは<code>rmarkdown</code>パッケージの特徴や使い方を解説します。</p>
+<h1 id="はじめに">はじめに</h1>
+<p><a href="https://kohske.github.io/R/useful_r_09/">シリーズ Useful R 9 「ドキュメント・プレゼンテーション生成」</a>では、 <code>knitr</code>パッケージを使ってRマークダウンファイルをマークダウンファイルやHTMLファイルに変換する方法を解説しています。</p>
+<p>2014年以降、RStudio開発チームは<a href="https://rmarkdown.rstudio.com/"><code>rmarkdown</code></a>という新しいマークダウン処理用の<a href="https://github.com/rstudio/rmarkdown">パッケージ開発</a>を進めています。かなりガチで進めています。 ここでは<code>rmarkdown</code>パッケージの特徴や使い方を解説します。</p>
 <p><code>rmarkdown</code>パッケージでは<code>render()</code>という関数でドキュメントを生成します。 ですが、大雑把に言うと<code>render()</code>は<code>knitr::knit()</code>でRマークダウンからマークダウンに変換して、Pandocを使ってマークダウンをHTMLやPDFなどに変換します。ですので、実際にできることは、ピュアknitrとそう変わりはありません。</p>
-<p>なお<code>knitr</code>パッケージの<code>knit2html()</code>は<code>knitr::knit()</code>でRマークダウンからマークダウンに変換して、<code>markdown::markdownToHTML()</code>でHTMLに変換しています。マークダウンから他のフォーマットへの変換にはPandocを利用することもできます。詳細は<a href="http://kohske.github.io/R/pandoc/">解説ページ</a>を参考にして下さい。</p>
+<p>なお<code>knitr</code>パッケージの<code>knit2html()</code>は<code>knitr::knit()</code>でRマークダウンからマークダウンに変換して、<code>markdown::markdownToHTML()</code>でHTMLに変換しています。マークダウンから他のフォーマットへの変換にはPandocを利用することもできます。詳細は<a href="https://kohske.github.io/R/pandoc/">解説ページ</a>を参考にして下さい。</p>
 <p>ついでに付け加えておくと、<code>rmarkdown::render()</code>は内部で<code>knitr::knit()</code>を呼び出しているので「ドキュメント・プレゼンテーション生成」の3章で解説した<code>knitr</code>パッケージのチャンクオプションやフックなどはそのまま利用することができます。ですので、knitrユーザは簡単にrmarkdownに移行することができます。</p>
-<h1 id="サンプル"><a href="#サンプル">サンプル</a></h1>
+<h1 id="サンプル">サンプル</h1>
 <p>とりあえずサンプルです。</p>
 <ul>
-<li><a href="http://raw.githubusercontent.com/kohske/kohske.github.com/master/R/rmarkdown/sample/rm-sample.Rmd">Rマークダウンファイル</a></li>
+<li><a href="https://raw.githubusercontent.com/kohske/kohske.github.com/master/R/rmarkdown/sample/rm-sample.Rmd">Rマークダウンファイル</a></li>
 </ul>
-<p>このRマークダウンファイルに対して、<code>render()</code>します。 なお、PDFで必要な<a href="http://raw.githubusercontent.com/kohske/kohske.github.com/master/R/rmarkdown/sample/preamble.tex">プリアンブル</a>です。</p>
+<p>このRマークダウンファイルに対して、<code>render()</code>します。 なお、PDFで必要な<a href="https://raw.githubusercontent.com/kohske/kohske.github.com/master/R/rmarkdown/sample/preamble.tex">プリアンブル</a>です。</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(rmarkdown)
 <span class="kw">render</span>(<span class="st">&quot;rm-sample.Rmd&quot;</span>, <span class="st">&quot;html_document&quot;</span>) <span class="co"># HTMLレポート</span>
 <span class="kw">render</span>(<span class="st">&quot;rm-sample.Rmd&quot;</span>, <span class="st">&quot;pdf_document&quot;</span>) <span class="co"># PDFレポート</span>
@@ -74,16 +74,16 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <span class="kw">render</span>(<span class="st">&quot;rm-sample.Rmd&quot;</span>, <span class="st">&quot;beamer_presentation&quot;</span>, <span class="st">&quot;rm-sample-beamer.pdf&quot;</span>) <span class="co"># beamer スライド</span></code></pre>
 <p>出力結果を置いておきます。</p>
 <ul>
-<li><a href="http://kohske.github.io/R/rmarkdown/sample/rm-sample.html">HTMLレポート</a></li>
-<li><a href="http://kohske.github.io/R/rmarkdown/sample/rm-sample.pdf">PDFレポート</a> (PDF注意)</li>
-<li><a href="http://kohske.github.io/R/rmarkdown/sample/rm-sample.docx">MS Word レポート</a> (DOCX注意)</li>
-<li><a href="http://kohske.github.io/R/rmarkdown/sample/rm-sample-reveal.html">revealjs ウェブスライド</a></li>
-<li><a href="http://kohske.github.io/R/rmarkdown/sample/rm-sample-io2012.html">io2012 ウェブスライド</a></li>
-<li><a href="http://kohske.github.io/R/rmarkdown/sample/rm-sample-beamer.pdf">Beamer スライド</a> (PDF注意)</li>
+<li><a href="https://kohske.github.io/R/rmarkdown/sample/rm-sample.html">HTMLレポート</a></li>
+<li><a href="https://kohske.github.io/R/rmarkdown/sample/rm-sample.pdf">PDFレポート</a> (PDF注意)</li>
+<li><a href="https://kohske.github.io/R/rmarkdown/sample/rm-sample.docx">MS Word レポート</a> (DOCX注意)</li>
+<li><a href="https://kohske.github.io/R/rmarkdown/sample/rm-sample-reveal.html">revealjs ウェブスライド</a></li>
+<li><a href="https://kohske.github.io/R/rmarkdown/sample/rm-sample-io2012.html">io2012 ウェブスライド</a></li>
+<li><a href="https://kohske.github.io/R/rmarkdown/sample/rm-sample-beamer.pdf">Beamer スライド</a> (PDF注意)</li>
 </ul>
 <p>ここでは一つの、そして唯一のRマークダウンファイルから全てのフォーマットを生成してるので、デザインとかはあまり気にしてません。 例えばセクションヘッダはレベル2(<code>## ...</code>)にしてますが(ウェブスライドのため)、PDFの場合はレベル1(<code># ...</code>)の方が良いでしょう。 通常はいずれかのフォーマットを選択すると思いますので、そのフォーマットに合わせて下さい。</p>
 <p>それと、BeamerとPDFレポートの両方に出力するため、YAMLフロントマターのdocumentclassの指定をややこしい方法で行っています。 PDFレポートだけならトップレベルに<code>documentclass: ltjarticle</code>で大丈夫です。</p>
-<h1 id="rmarkdownパッケージのインストール"><a href="#rmarkdownパッケージのインストール">rmarkdownパッケージのインストール</a></h1>
+<h1 id="rmarkdownパッケージのインストール">rmarkdownパッケージのインストール</h1>
 <ul>
 <li><a href="http://www.rstudio.com/ide/download/preview">RStudio Preview Release</a>をインストールするとついてきます。Pandocもついてきます。</li>
 <li><p>パッケージのみをインストールするには、</p>
@@ -91,7 +91,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
 devtools::<span class="kw">install_github</span>(<span class="st">&quot;rstudio/rmarkdown&quot;</span>)</code></pre>
 <p>とします。<a href="https://github.com/rstudio/rmarkdown/blob/master/PANDOC.md">Pandocのインストール</a>も必要です。</p></li>
 </ul>
-<h1 id="rmarkdownの特徴"><a href="#rmarkdownの特徴">rmarkdownの特徴</a></h1>
+<h1 id="rmarkdownの特徴">rmarkdownの特徴</h1>
 <ul>
 <li>マークダウンファイルを(Pandocの力で)様々なフォーマットに変換できます。
 <ul>
@@ -108,13 +108,13 @@ devtools::<span class="kw">install_github</span>(<span class="st">&quot;rstudio/
 <li>Rマークダウンの中に<a href="http://rmarkdown.rstudio.com/authoring_shiny.html">Shiny</a>を入れちゃうことができます。</li>
 </ul>
 <p>などなどです。</p>
-<h1 id="rmarkdownの使い方"><a href="#rmarkdownの使い方">rmarkdownの使い方</a></h1>
+<h1 id="rmarkdownの使い方">rmarkdownの使い方</h1>
 <p>Rマークダウンファイル(.Rmd)またはRスクリプトファイル(.R)を用意して、</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(rmarkdown)
 <span class="kw">render</span>(<span class="st">&quot;path-to.Rmd&quot;</span>)</code></pre>
 <p>以上。</p>
 <p>RStudioの場合、エディタパネルの上に[Knit HTML]というボタンがあるので、これをクリックします。以上。</p>
-<h1 id="yamlによるメタデータ指定"><a href="#yamlによるメタデータ指定">YAMLによるメタデータ指定</a></h1>
+<h1 id="yamlによるメタデータ指定">YAMLによるメタデータ指定</h1>
 <p>rmarkdownの特徴として、Rマークダウンファイルの中で<a href="http://ja.wikipedia.org/wiki/YAML">YAML(ヤムル)</a>によりドキュメント生成のためのメタデータを仕込めることが挙げられます。以下の様な感じです。</p>
 <pre><code>---
 title: &quot;Sample Document&quot;
@@ -130,13 +130,13 @@ output:
 <p>上の例では、タイトルと出力フォーマットを指定しています。</p>
 <p>出力フォーマットは<code>html_document</code>と<code>pdf_document</code>の2種類指定していて、それぞれのフォーマット用に更にオプションが指定されています。 例えば<code>toc: true</code>は目次を自動的に生成する、ということです。</p>
 <p>タイトルや著者(<code>author</code>)などは、出力フォーマットによって使われたり使われなかったりします。 例えばPDF出力の時の\maketitleに使われたりします。ココらへんは、まあ適当に試してみてください。</p>
-<h1 id="renderの解説"><a href="#renderの解説">render()の解説</a></h1>
+<h1 id="renderの解説">render()の解説</h1>
 <p><code>render()</code>の定義を見てみます。</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">render</span>(input, <span class="dt">output_format =</span> <span class="ot">NULL</span>, <span class="dt">output_file =</span> <span class="ot">NULL</span>, <span class="dt">output_dir =</span> <span class="ot">NULL</span>, <span class="dt">output_options =</span> <span class="ot">NULL</span>,
   <span class="dt">intermediates_dir =</span> <span class="ot">NULL</span>,    <span class="dt">runtime =</span> <span class="kw">c</span>(<span class="st">&quot;auto&quot;</span>, <span class="st">&quot;static&quot;</span>, <span class="st">&quot;shiny&quot;</span>), <span class="dt">clean =</span> <span class="ot">TRUE</span>, <span class="dt">envir =</span> <span class="kw">parent.frame</span>(),
   <span class="dt">quiet =</span> <span class="ot">FALSE</span>, <span class="dt">encoding =</span> <span class="kw">getOption</span>(<span class="st">&quot;encoding&quot;</span>))</code></pre>
 <p>とりあえず重要なのは、<code>input</code>と<code>output_format</code>です。</p>
-<h2 id="入力フォーマット"><a href="#入力フォーマット">入力フォーマット</a></h2>
+<h2 id="入力フォーマット">入力フォーマット</h2>
 <p><code>input</code>には処理するマークダウンファイル(.md)、Rマークダウンファイル(.Rmd)またはRスクリプト(.R)のファイル名を与えます。</p>
 <ul>
 <li>マークダウンが与えられた場合には<code>knit()</code>による処理は行われず、単純にPandocにより出力フォーマットに変換されます。
@@ -153,7 +153,7 @@ output:
 </ul></li>
 </ul>
 <p>入力ファイルのフォーマット問わず、とりあえず<code>render()</code>すれば上手くやってくれるということです。</p>
-<h2 id="出力フォーマット"><a href="#出力フォーマット">出力フォーマット</a></h2>
+<h2 id="出力フォーマット">出力フォーマット</h2>
 <p><code>output_format</code>では出力フォーマットを指定します。</p>
 <ul>
 <li><code>&quot;all&quot;</code>を指定すると、入力ファイルのYAMLで定義されたフォーマット(<code>output:</code>の中の項目)が全て出力されます。</li>
@@ -161,7 +161,7 @@ output:
 <li>フォーマットオブジェクト(例えば<code>html_document()</code>)で指定すると、そのフォーマットが出力されます。</li>
 <li><code>NULL</code>の場合は、入力ファイルのYAML中の最初のフォーマットが出力されます。入力ファイルの中で指定がなければHTMLが出力されます。</li>
 </ul>
-<h3 id="rmarkdownの組み込み出力フォーマット"><a href="#rmarkdownの組み込み出力フォーマット">rmarkdownの組み込み出力フォーマット</a></h3>
+<h3 id="rmarkdownの組み込み出力フォーマット">rmarkdownの組み込み出力フォーマット</h3>
 <p>rmarkdownパッケージでは出力フォーマットを独自に作成することもできてしまうんですが、ここでは既定の組み込みフォーマットを紹介します。通常はこれで事足りるでしょう。</p>
 <table>
 <thead>
@@ -211,7 +211,7 @@ output:
     toc: true
     theme: journal
 ---</code></pre>
-<h2 id="renderの引数"><a href="#renderの引数">render()の引数</a></h2>
+<h2 id="renderの引数">render()の引数</h2>
 <p><code>render()</code>の引数のリストです。</p>
 <table>
 <thead>
@@ -267,9 +267,9 @@ output:
 </tr>
 </tbody>
 </table>
-<h1 id="rmarkdown用のrマークダウンの書き方"><a href="#rmarkdown用のrマークダウンの書き方">rmarkdown用のRマークダウンの書き方</a></h1>
+<h1 id="rmarkdown用のrマークダウンの書き方">rmarkdown用のRマークダウンの書き方</h1>
 <p>YAMLフロントマターの件以外は、従来のknitrの場合と同じです。「ドキュメント・プレゼンテーション生成」を参考にして下さい(#ｽﾃﾏ)。</p>
-<h1 id="rmarkdown用のrスクリプトの書き方"><a href="#rmarkdown用のrスクリプトの書き方">rmarkdown用のRスクリプトの書き方</a></h1>
+<h1 id="rmarkdown用のrスクリプトの書き方">rmarkdown用のRスクリプトの書き方</h1>
 <p>rmarkdownパッケージではRスクリプト(.R)からドキュメントを生成できます。 rmarkdown的には「ノートブック」と呼んでいますが、これがメチャクチャ便利なんですよ。特に軽量の分析レポートには最適です。</p>
 <p>従来のknitrでは<code>spin()</code>で同じ処理が可能でした(「ドキュメント・プレゼンテーション生成」2章)。 rmarkdownでも内部的には<code>spin()</code>でRスクリプトからRマークダウンに変換する前処理を入れているだけなので、やってることは一緒です。</p>
 <p>Rスクリプトの書き方は以下を参考にして下さい。 <code>#'</code>で始まる行はRマークダウンファイルでのテキスト行に読み替えられます。 <code>#+</code>で始まる行はRマークダウンファイルでのチャンクヘッダに読み替えられます。</p>
@@ -302,15 +302,15 @@ plot(cars)
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">render</span>(<span class="st">&quot;path-to.R&quot;</span>, <span class="st">&quot;all&quot;</span>)</code></pre>
 <p>これで、HTMLレポートとPDFレポートが作成されます。 なお日本語混じりのレポートのためYAMLフロントマターで<code>documentclass: ltjarticle</code>と<code>latex_engine: lualatex</code>を指定しています。</p>
 <p>RStuidoではRスクリプト編集中に[Compile Notebook]というアイコンをクリックするとHTML形式のノートブックが作成されます。</p>
-<h1 id="windowsで日本語"><a href="#windowsで日本語">Windowsで日本語</a></h1>
+<h1 id="windowsで日本語">Windowsで日本語</h1>
 <p>これから試します。試した人は情報下さい。</p>
-<h1 id="更新履歴"><a href="#更新履歴">更新履歴</a></h1>
+<h1 id="更新履歴">更新履歴</h1>
 <ul>
 <li>2014/6/4 サンプルを追加。</li>
 <li>2014/6/4 <code>word_document()</code>を忘れていたので追加。</li>
 <li>2014/6/3 作成しました。</li>
 </ul>
-<h1 id="さいごに"><a href="#さいごに">さいごに</a></h1>
+<h1 id="さいごに">さいごに</h1>
 <p>Enjoy!!</p>
 <br/><hr/>
 <p>
