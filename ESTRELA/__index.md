@@ -9,7 +9,7 @@ title: "ESTRELA連載記事"
 - [Rとウェブの融合（３）ーrChartsの応用例ー (2014年9月号)](201409/index.html)
 - [大規模データの高速処理 ーdata.table、dplyrー (2014年10月号)](201410/index.html)
 - [Rとウェブの融合（４）ーrmarkdownー (2014年11月号)](201411/index.html)
-- Rとウェブの融合（５）ーslidify、R Presentationー (2014年12月号)
+- [Rとウェブの融合（５）ーslidify、R Presentationー (2014年12月号)](201412/index.html)
 - Rとウェブの融合（６）ーrglによる3次元グラフィックスー (2015年1月号)
 - Rとウェブの融合（７）ーggvisパッケージー (2015年2月号)
 - Rの現在と未来（仮） (2015年3月号)
