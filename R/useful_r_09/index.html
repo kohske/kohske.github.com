@@ -19,6 +19,7 @@
 <li><a href="#更新履歴">更新履歴</a></li>
 <li><a href="#関連ツール更新情報">関連ツール更新情報</a><ul>
 <li><a href="#knitr">knitr</a><ul>
+<li><a href="#ver.-1.9">Ver. 1.9</a></li>
 <li><a href="#ver.-1.8">Ver. 1.8</a></li>
 <li><a href="#ver.-1.7">Ver. 1.7</a></li>
 <li><a href="#ver.-1.6">Ver. 1.6</a><ul>
@@ -29,6 +30,7 @@
 <li><a href="#rstudio">Rstudio</a></li>
 <li><a href="#rmarkdown">rmarkdown</a></li>
 <li><a href="#shiny">shiny</a><ul>
+<li><a href="#ver.-0.11">Ver. 0.11</a></li>
 <li><a href="#ver.-0.10.2">Ver. 0.10.2</a></li>
 <li><a href="#ver.-0.10.1">Ver. 0.10.1</a></li>
 <li><a href="#ver.-0.10.0">Ver. 0.10.0</a></li>
@@ -71,6 +73,8 @@ devtools::install_github(&quot;rstudio/markdown&quot;)</code></pre></li>
 </ul>
 <h1 id="更新履歴">更新履歴</h1>
 <ul>
+<li>2014/2/6 shinyの更新情報を追加しました。</li>
+<li>2015/2/6 knitrの更新情報を追加しました。</li>
 <li>2014/11/15 knitrの更新情報を追加しました。</li>
 <li>2014/10/13 knitrの更新情報を追加しました。</li>
 <li>2014/10/5 knitrの更新情報を追加しました。</li>
@@ -88,6 +92,15 @@ devtools::install_github(&quot;rstudio/markdown&quot;)</code></pre></li>
 </ul>
 <h1 id="関連ツール更新情報">関連ツール更新情報</h1>
 <h2 id="knitr">knitr</h2>
+<h3 id="ver.-1.9">Ver. 1.9</h3>
+<p>2015年1月20日にknitr 1.9がCRAN上でリリースされました。主な変更点は次の通りです。</p>
+<ul>
+<li><code>load_cache()</code>関数が追加されました。後ろの方のチャンクの内容を先頭の方（アブストラクトとか）で参照したい時などに使うことができます。</li>
+<li><code>clean_cache()</code>関数が追加されました。</li>
+<li>Stan用の言語エンジン<code>stan</code>が追加されました。</li>
+<li><code>tikz</code>エンジン用の<code>convert</code>関数のパスを指定するためのチャンクオプション<code>engine.opts</code>が追加されました。また<code>engine.opts</code>で<code>convert</code>用のオプションを渡せるようになりました。</li>
+<li><code>dev = 'png'</code>の時はプロットの記録に<code>grDevices::png()</code>を使うようになりました。</li>
+</ul>
 <h3 id="ver.-1.8">Ver. 1.8</h3>
 <p>2014年11月11日にknitr 1.8がCRAN上でリリースされました。主な変更点は次の通りです。</p>
 <ul>
@@ -143,6 +156,17 @@ devtools::install_github(&quot;rstudio/markdown&quot;)</code></pre></li>
 <li>最新のRstudioでドキュメント変換のバックエンドに採用されています。<code>rmarkdown</code>パッケージについては<a href="../rmarkdown/index.html">解説ページ</a>を参考にして下さい。</li>
 </ul>
 <h2 id="shiny">shiny</h2>
+<h3 id="ver.-0.11">Ver. 0.11</h3>
+<p>2015年1月17日にshiny 0.11がCRAN上でリリースされました。主要は変更点は次の通りです。</p>
+<ul>
+<li>スライダーが jquery-slider から ion.rangeSlider に変更になりました。キーボードでも操作できます。</li>
+<li>CSSフレームワークが Bootstrap 2 から Bootstrap 3 に変更になりました。Bootstrap 2 が必要な場合は<code>shinybootstrap2</code>パッケージを使って下さい。</li>
+<li>UIで<code>body</code>タグがサポートされました。</li>
+<li><code>observeEvent</code>と<code>eventReactive</code>が追加されました。<code>actionButton</code>の扱いが簡単になっています。</li>
+<li><code>shiny.observer.error</code>オプションで、reactive中のエラーの処理を指定できるようになりました。</li>
+<li><code>renderDataTable()</code>関数に<code>escape</code>引数が追加されました。HTMLエンティティがエスケープされます。</li>
+<li><code>passwordInput()</code>が追加されて、パスワード入力が可能になりました。</li>
+</ul>
 <h3 id="ver.-0.10.2">Ver. 0.10.2</h3>
 <p>2014年10月1日にshiny 0.10.2がCRAN上でリリースされました。主要は変更点は次の通りです。</p>
 <ul>

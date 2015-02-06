@@ -39,6 +39,8 @@ devtools::install_github("rstudio/markdown")
 
 # 更新履歴
 
+- 2014/2/6 shinyの更新情報を追加しました。
+- 2015/2/6 knitrの更新情報を追加しました。
 - 2014/11/15 knitrの更新情報を追加しました。
 - 2014/10/13 knitrの更新情報を追加しました。
 - 2014/10/5 knitrの更新情報を追加しました。
@@ -57,6 +59,16 @@ devtools::install_github("rstudio/markdown")
 # 関連ツール更新情報
 
 ## knitr
+
+### Ver. 1.9
+
+2015年1月20日にknitr 1.9がCRAN上でリリースされました。主な変更点は次の通りです。
+
+- `load_cache()`関数が追加されました。後ろの方のチャンクの内容を先頭の方（アブストラクトとか）で参照したい時などに使うことができます。
+- `clean_cache()`関数が追加されました。
+- Stan用の言語エンジン`stan`が追加されました。
+- `tikz`エンジン用の`convert`関数のパスを指定するためのチャンクオプション`engine.opts`が追加されました。また`engine.opts`で`convert`用のオプションを渡せるようになりました。
+- `dev = 'png'`の時はプロットの記録に`grDevices::png()`を使うようになりました。
 
 ### Ver. 1.8
 
@@ -129,6 +141,18 @@ devtools::install_github("rstudio/markdown")
 - 最新のRstudioでドキュメント変換のバックエンドに採用されています。`rmarkdown`パッケージについては[解説ページ](../rmarkdown/index.html)を参考にして下さい。
 
 ## shiny
+
+### Ver. 0.11
+
+2015年1月17日にshiny 0.11がCRAN上でリリースされました。主要は変更点は次の通りです。
+
+- スライダーが jquery-slider から ion.rangeSlider に変更になりました。キーボードでも操作できます。
+- CSSフレームワークが Bootstrap 2 から Bootstrap 3 に変更になりました。Bootstrap 2 が必要な場合は`shinybootstrap2`パッケージを使って下さい。
+- UIで`body`タグがサポートされました。
+- `observeEvent`と`eventReactive`が追加されました。`actionButton`の扱いが簡単になっています。
+- `shiny.observer.error`オプションで、reactive中のエラーの処理を指定できるようになりました。
+- `renderDataTable()`関数に`escape`引数が追加されました。HTMLエンティティがエスケープされます。
+- `passwordInput()`が追加されて、パスワード入力が可能になりました。
 
 ### Ver. 0.10.2
 
