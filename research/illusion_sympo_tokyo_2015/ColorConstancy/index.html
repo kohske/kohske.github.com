@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>3D "Color Constancy"</title>
+    <script type="text/javascript" src="../lib/jquery-2.1.3.min.js"></script>
+    <script src="../threejs/three.min.js"></script>
+    <script src="../threejs/js/controls/OrbitControls.js"></script>
+    <script src="../threejs/js/loaders/BinaryLoader.js"></script>
+    
+    <script src="../threejs/js/shaders/NormalDisplacementShader.js"></script>
+    <script src="../threejs/js/Detector.js"></script>
+    
+    <script src="script.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  </head>
+  <body>
+    <table>
+      <tr>
+	<td id="three"></td>
+	<td style="vertical-align: top; padding-left: 50px">
+	  <h1>3D "Color Constancy"</h1>
+	  <hr/>
+	  <div style="line-height: 150%">
+	    <h3>Lighting Color:</h3>
+	    <label>R: <input type="range" id="e_lightR" min="0" max="1" step="0.01" value="1" style="width:200px; display:inline"/></label><br/>
+	    <label>G: <input type="range" id="e_lightG" min="0" max="1" step="0.01" value="1" style="width:200px; display:inline"/></label><br/>
+	    <label>B: <input type="range" id="e_lightB" min="0" max="1" step="0.01" value="1" style="width:200px; display:inline"/></label><br/>
+	    Presets:<br/>
+	    <button class="btn btn-default" onclick="set_light_col(0, 0, 0);" style="width:100px;">Dark</button>
+	    <button class="btn btn-default" onclick="set_light_col(0.5, 0.5, 0.5);" style="width:100px;">Normal</button>
+	    <button class="btn btn-default" onclick="set_light_col(1, 1, 1);" style="width:100px;">Bright</button>
+	    <button class="btn btn-default" onclick="set_special();" style="width:100px;">Special</button>
+
+	    <br/><br/>
+	    <p>
+	      <label><input type="checkbox" id="e_obj" checked="checked"/> Lighting on objects</label> If unchecked, the surface colors of objects remain constant regardless of the lighting in the environment.
+	    </p>
+	    <p>
+	      <label><input type="checkbox" id="e_bg" checked="checked"/> Draw background </label>
+	    </p>
+	    	    <h3>Scene:</h3>
+	    <p>
+	      <button class="btn btn-default" onclick="set_scene(0);" style="width:100px;">Pisa</button>
+	      <button class="btn btn-default" onclick="set_scene(1);" style="width:100px;">Bridge</button>
+	      <button class="btn btn-default" onclick="set_scene(2);" style="width:100px;">Night castle</button>
+	      <button class="btn btn-default" onclick="set_scene(3);" style="width:100px;">Sky</button>
+	      <br/>
+	      These are presets. You can also change eye/view by drag.
+	    </p>
+	    <label>Camera motion: 
+	      <label><input type="radio" name="camera" value="auto"/> Rotation</label>&nbsp;
+	      <label><input type="radio" name="camera" value="mouse"/> Mouse</label>&nbsp;
+	      <label><input type="radio" name="camera" value="static" checked="true"/> Static</label>
+	    </label>
+	    <br/>
+
+	  </div>
+	  <hr/>
+	  <p>
+	    The demonstration of the color constancy.
+	  </p>
+	  <p>
+	    Press "special" button. Do you see <a href="http://en.wikipedia.org/wiki/The_Dress_%28viral_phenomenon%29">blue and black, or white and gold?</a>.
+	  <hr/>
+	  <h3>Acknowledgements</h3>
+	  <ul>
+	    <li>Texture, Model, Library: <a href="http://threejs.org/">Three.js</a>
+	  </ul>
+	</td>
+      </tr>
+    </table>
+  </body>
+</html>

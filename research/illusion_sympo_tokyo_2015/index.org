@@ -1,0 +1,47 @@
+#+TITLE: 3D Visualization of Optical Illusions
+#+AUTHOR: Kohske Takahashi
+#+LANGUAGE: en
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+#+OPTIONS: toc:nil num:nil html5-fancy:t
+
+-----
+
+These works are a part of the presentation in 
+[[http://compillusion.mims.meiji.ac.jp/conf/index.html][International Symposium on Psychological vs Mathematical Approaches to Optical Illusion (Tokyo Symposium on Optical Illusion 2015)]].
+
+** Examples
+
+#+BEGIN_HTML
+<div class="container">
+<div class="row">
+<div class="col-md-4">
+<h3><a href="RotateSnakeBall">3D "Rotating snakes" Illusion</a></h3>
+<a href="RotateSnakeBall" width="300px"><img src="RotateSnakeBall/ss.png" alt="ss.png" width="300px"></a>
+</div>
+<div class="col-md-4">
+<h3 id="sec-1-2"><a href="HollowFace">3D "Hollow-Face Illusion"</a></h3>
+<p><a href="HollowFace" width="300px"><img src="HollowFace/ss.png" alt="ss.png" width="300px"></a></p>
+</div>
+<div class="col-md-4">
+<h3 id="sec-1-3"><a href="GelatinousEllipse">3D "Gelatinous Ellipses"</a></h3>
+<p><a href="GelatinousEllipse" width="300px"><img src="GelatinousEllipse/ss.png" alt="ss.png" width="300px"></a></p>
+</div>
+<div class="col-md-4">
+<h3 id="sec-1-4"><a href="TwoTower">3D "Leaning Tower Illusion"</a></h3>
+<p><a href="TwoTower" width="300px"><img src="TwoTower/ss.png" alt="ss.png" width="300px"></a></p>
+</div>
+<div class="col-md-4">
+<h3 id="sec-1-4"><a href="ColorConstancy">3D "Color Constancy"</a></h3>
+<p><a href="ColorConstancy" width="300px"><img src="ColorConstancy/ss.png" alt="ss.png" width="300px"></a></p>
+</div>
+</div>
+</div>
+#+END_HTML
+
+More illusions, TBA.
+
+-----
+
+
+
+
