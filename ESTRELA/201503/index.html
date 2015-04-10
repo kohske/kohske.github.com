@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>R言語の過去と最新の動向</title>
+
+<script type="text/javascript">
+window.onload = function() {
+  var imgs = document.getElementsByTagName('img'), i, img;
+  for (i = 0; i < imgs.length; i++) {
+    img = imgs[i];
+    // center an image if it is the only element of its parent
+    if (img.parentElement.childElementCount === 1)
+      img.parentElement.style.textAlign = 'center';
+  }
+};
+</script>
+
+
+
+
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 13px;
+}
+
+body {
+  max-width: 800px;
+  margin: auto;
+  padding: 1em;
+  line-height: 20px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 {
+   font-size:2.2em;
+}
+
+h2 {
+   font-size:1.8em;
+}
+
+h3 {
+   font-size:1.4em;
+}
+
+h4 {
+   font-size:1.0em;
+}
+
+h5 {
+   font-size:0.9em;
+}
+
+h6 {
+   font-size:0.8em;
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre, img {
+  max-width: 100%;
+}
+pre {
+  overflow-x: auto;
+}
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code {
+  font-size: 92%;
+  border: 1px solid #ccc;
+}
+
+code[class] {
+  background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * {
+      background: transparent !important;
+      color: black !important;
+      filter:none !important;
+      -ms-filter: none !important;
+   }
+
+   body {
+      font-size:12pt;
+      max-width:100%;
+   }
+
+   a, a:visited {
+      text-decoration: underline;
+   }
+
+   hr {
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote {
+      padding-right: 1em;
+      page-break-inside: avoid;
+   }
+
+   tr, img {
+      page-break-inside: avoid;
+   }
+
+   img {
+      max-width: 100% !important;
+   }
+
+   @page :left {
+      margin: 15mm 20mm 15mm 10mm;
+   }
+
+   @page :right {
+      margin: 15mm 10mm 15mm 20mm;
+   }
+
+   p, h2, h3 {
+      orphans: 3; widows: 3;
+   }
+
+   h2, h3 {
+      page-break-after: avoid;
+   }
+}
+</style>
+
+
+
+</head>
+
+<body>
+<h1>R言語の過去と最新の動向</h1>
+
+<p>本連載「フリーソフトによるデータ解析・マイニング」は今月号をもって終了となります。
+2003年8月に連載第1回として金明哲氏による「データ解析・マイニングとR言語」という記事が掲載されて以来、
+約12年半149回に渡り、6名の執筆陣がR言語とデータ解析について解説してきました。
+最終回となる今回は、過去10年余りのR言語の国内での普及、
+そしてR言語の最新の動向について紹介しながら、有用な情報をピックアップしてみます。
+なお今回の記事には著者の主観が多分に反映されていることをご承知おき下さい。</p>
+
+<h1>R言語の10余年史</h1>
+
+<p>コンピュータのバックアップ履歴を漁ってみたところ、著者自身は大学院生だった2003年頃からRを触り始めて、
+2004年夏頃に研究のための分析ツールとしてRを導入していたようです。
+この頃のRのバージョンは1.7から1.8だったように記憶しています。
+本連載の開始時期と著者のR利用開始時期が偶然にも一致しており、
+連載最終回を執筆させて頂くというのも何かの縁を感じます。</p>
+
+<p>2003年という連載開始のタイミングは、日本国内でのR言語の普及開始時期とちょうど重なります。
+現在では書籍やウェブでR言語に関する情報がいくらでも入手できますが、
+2003年当時は状況は全く異なっていました。
+著者自身も、有益な情報を探して四苦八苦していた記憶がありますし、周辺にRユーザは皆無でした。
+当時の状況や著者自身の経験から、国内でのR言語の黎明期とも呼ぶべき時期に大きな貢献を果たしたウェブサイト、書籍、イベントなどを挙げてみました（完全なリストではないので漏れがあったらご容赦下さい）。</p>
+
+<ul>
+<li>時期不明: 舟尾暢男氏によるウェブサイト「R-Tips」（ <a href="http://cse.naro.affrc.go.jp/takezawa/r-tips/r.html">http://cse.naro.affrc.go.jp/takezawa/r-tips/r.html</a> ）オープン</li>
+<li>2002年頃: 青木繁伸氏によるウェブサイト「R による統計処理」（ <a href="http://aoki2.si.gunma-u.ac.jp/R/index.html">http://aoki2.si.gunma-u.ac.jp/R/index.html</a> ）オープン</li>
+<li>2002年頃: 中澤港氏によるウェブサイト「統計処理ソフトウェアRについてのTips」（ <a href="http://minato.sip21c.org/swtips/R.html">http://minato.sip21c.org/swtips/R.html</a> ）オープン</li>
+<li>2003年6月: Rの情報集約サイト「RjpWiki」（ <a href="http://www.okada.jp.org/RWiki/">http://www.okada.jp.org/RWiki/</a> ）オープン</li>
+<li>2003年8月: 本連載開始</li>
+<li>2003年10月: 「Rによる統計解析の基礎」（中澤港著、ピアソンエデュケーション）刊行</li>
+<li>2003年11月: 統計数理研究所によりワークショップ「Modern statistical visualization and related topics」開催（ <a href="http://jasp.ism.ac.jp/workshop0312/">http://jasp.ism.ac.jp/workshop0312/</a> ）</li>
+<li>2004年4月: 「工学のためのデータサイエンス入門―フリーな統計環境Rを用いたデータ解析」（間瀬茂ら著、数理工学社）刊行</li>
+<li>2004年5月: 「The R Book―データ解析環境Rの活用事例集」（岡田昌史編、九天社）刊行</li>
+<li>2004年10月: R 2.0.0 公開</li>
+<li>2004年12月: データ解析環境「R」の国際化プロジェクトがIPAのオープンソースソフトウェア活用基盤整備事業に採択</li>
+<li>2005年2月: 「The R Tips―データ解析環境Rの基本技・グラフィックス活用集」（舟尾暢男著、九天社）刊行</li>
+</ul>
+
+<p>本連載が始まりRjpWikiがオープンした2003年は、日本国内のR言語の普及にとって一つの大きな転換点であったと言えるでしょう。
+2003〜2004年にはR言語の利用を中心に解説した書籍が刊行され始めました。国際化プロジェクトもこの時期にスタートしています。
+以降10年余りの間に、ご存知の通りR言語は爆発的な普及を遂げて現在に至ります。</p>
+
+<ul>
+<li>2005年12月: 第1回 Rユーザ会「データ解析環境Ｒの整備と利用」開催（ <a href="http://prcs.ism.ac.jp/useRjp/">http://prcs.ism.ac.jp/useRjp/</a> ）</li>
+<li>2007年11月: 「Rプログラミングマニュアル」（間瀬茂著、数理工学社）刊行</li>
+<li>2008年7月: 第1回 Tsukuba.R 開催（おそらく国内初のR勉強会）</li>
+<li>2010年1月: 第1回 Tokyo.R 開催</li>
+<li>2010年11月: 第1回 Japan.R 開催</li>
+<li>2011年2月: RStudio 公開ベータ版発表</li>
+<li>2013年4月: R 3.0.0 公開</li>
+<li>2014年5月: 「Rプログラミングマニュアル［第2版］」（間瀬茂著、数理工学社）刊行</li>
+</ul>
+
+<p>この間、Rユーザ会や各種R勉強会の開催など、国内Rユーザコミュニティが大きな広がりを見せています。
+また現在ではR言語に関連する書籍は毎週のように刊行され、
+ウェブ解説記事が毎日のように投稿されているといっても過言ではありません。</p>
+
+<h1>R言語の最新の動向</h1>
+
+<p>2010年代に入って以降、「ビッグデータ」「データサイエンティスト」がバズワードとなり、官民問わずデータ分析の有用性が意識され始めています。
+R言語は当初は学術分野を中心に普及が進みましたが、最近では民間企業でも多くの専門家がR言語を駆使してビジネス上の意思決定を支えています。
+事実、米国での2014年の報告によると、R言語はSQLなどのデータベース技術、Hadoopなどの大規模データ処理環境構築スキルなどを抑え、IT関連技術の中で最も高いサラリーが期待できるスキルとされています（ <a href="http://goo.gl/BPk4FP">http://goo.gl/BPk4FP</a> ）。
+またプログラミング言語について成長度、ユーザ数、求職数などを総合的に評価したIEEE Spectrumの2014年のランキングではJava、C、JavascriptなどについでR言語が9位にランクインしています。
+R言語は今後しばらくはデータ分析ツールのデファクト・スタンダードであり続けるに違いありません。このような状況を本連載当初に想像していた人は少ないでしょう。</p>
+
+<h2>豊富な統計解析手法の利用</h2>
+
+<p>分析に必要な統計解析手法や、それを利用するツールを、自分自身の手で実装するのは、勉強にはなりますが非常に時間がかかります。
+また、データ分析の専門家の間では、日々新たな統計解析手法が開発されています。
+Rの強みは何と言っても、多数の統計解析手法が容易に利用できる形ですでに提供されていて、さらに最先端の統計解析手法も利用できるという点にあるでしょう。
+統計解析手法の多くはRのパッケージとして公開されてます。Rの公式パッケージシステムであるCRANには2015年1月現在、6000以上のパッケージが登録されています。
+この中には従来の統計解析手法を使いやすくするパッケージ、効果的な可視化を行うためのパッケージなども多数含まれています。</p>
+
+<p>CRAN上の6000以上のパッケージの新規追加・更新情報を逐一フォローするのは困難ですが、
+Dirk Eddelbuettel氏（Rcppの開発者）によるCRANberries（ <a href="http://dirk.eddelbuettel.com/cranberries/">http://dirk.eddelbuettel.com/cranberries/</a> ・Twitterフィード: @CRANberriesFeed ）ではRSSやTwitterフィードを通して更新情報を手軽に確認できます。
+更新情報の中に気になるキーワードがあったら詳細を確認してみるとよいでしょう。
+また、CRAN Task Views（ <a href="http://cran.r-project.org/web/views/">http://cran.r-project.org/web/views/</a> ）では専門分野ごとに重要なパッケージがリストアップされています。</p>
+
+<h2>他のツールとの比較</h2>
+
+<p>R以外にも様々な統計解析ツールが開発されています。R言語の爆発的な普及以前は、商用ソフトウェアであるSPSSやSASが広く用いられていました。
+これらの商用ソフトウェアは、信頼性やプロフェッショナルなサポートを強みとしており、専門分野によっては今でも中心的ツールとして活躍しています。
+しかしSPSS、SASともに最近ではRへのインタフェースを提供しており、徐々にR言語にその座を譲りつつあるというのが現状です。</p>
+
+<p>一方で、統計解析を行うための新たなオープンソース・ソフトウェアとしてJulia言語（ <a href="http://julialang.org/">http://julialang.org/</a> ）やPythonベースの統計解析ライブラリが登場しています。
+Julia言語は2012年に公式にリリースされ、当初から速度面でのパフォーマンスに高い評価を得ていました。
+R言語の開発陣営もJuliaの動向に注目しており、JuliaがすぐにRの座に取って代わるということはないでしょうが、高速な処理が必要な場面ではJuliaの活用も選択肢のひとつです。</p>
+
+<p>Pythonは汎用スクリプト言語ですが、最近ではpandas、SciPy、statsmodelsなど、データ分析をサポートする多くのライブラリが開発されています。
+これらのライブラリを集めたAnacondaというディストリビューションも公開されています（ <a href="https://store.continuum.io/cshop/anaconda/">https://store.continuum.io/cshop/anaconda/</a> ）。
+また、IPython Notebookというツールを使うと、ウェブブラウザ上であたかもノートを作成するかのように解析作業を行い、記録することができます。</p>
+
+<p>2015年現在、他のツールと比較すると、速度面での極端に高いパフォーマンスや大規模データの処理が必要な状況以外では、
+利用できる統計解析手法の豊富さや信頼性、ユーザ数や情報の多さという点から、R言語に一日の長があるといえるでしょう。</p>
+
+<h2>データ解析環境としてのRStudio</h2>
+
+<p>2011年にβ版が公開されて以来、RStudioチーム（ <a href="http://www.rstudio.com/">http://www.rstudio.com/</a> ）はRコミュニティの中で急速に存在感を高めています。
+RStudioはR用IDEで、変数ビューアやデータビューア、グラフィック出力パネルの統合、Rの利用に役立つ様々な機能を実装しているだけでなく、
+プロジェクト管理、バージョン管理、レポート・スライド作成支援など、日々のデータ分析業務に役立つ機能も備えています。
+是非一度試してみることをお勧めします。</p>
+
+<p>また、2012年にHadley Wickham氏（ggplot2、dplyr等の開発者）がRStudioチームに加入して以来、
+データ分析業務をサポートする各種ツールの開発にも力を入れています。データ可視化（ggplot2/ggvis）、データ下処理（dplyr/plyr/reshape2）、
+解析レポートの作成（knitr/Rmarkdown）、ウェブアプリケーション作成（shiny）など、一部は本連載でも紹介しています。
+Hadley Wickham氏を中心とする開発チームは日本国内でも非常に人気があり、
+「Impact the world by being useful」というモットーのもとに開発される各種パッケージはCRANのダウンロード数上位に位置しています。</p>
+
+<h2>高速化・並列化・大規模データへの対応</h2>
+
+<p>これまでの話題は、どちらかと言えば小規模データに対する「軽め」のデータ分析が中心でした。
+「ビッグデータ」と呼ばれる超巨大データの登場で、現在ではデータ分析を取り巻く環境が大きく変化しています。
+R言語自体は大規模データを扱う能力に乏しいため、大規模なデータに対してR外部での高速・並列なデータ抽出、変換、読み込み（Extract/Transform/Load、ETL）環境の構築が不可欠ですが、
+最近ではR上でETL環境にアクセスできるパッケージが提供され始めています。
+高速化・並列化・大規模データへの対応については「Rによるハイパフォーマンスコンピューティング」（福島真太朗著、2014年9月・ソシム）で詳しく解説されています。
+大規模データを扱う必要のあるユーザには必読の一冊です。</p>
+
+<h2>コミュニティと情報発信</h2>
+
+<p>現在では日本国内でR言語に関する様々なイベントが開催されています。
+コミュニティ内では人的ネットワークも形成されているので、最新の動向を知るためにもこれらのイベントに参加してみるのもよいでしょう。
+また、R言語に関する話題をウェブ上に情報発信する場も増えています。</p>
+
+<ul>
+<li>統計数理研究所R研究集会（通称「Rユーザー会」）: 統計数理研究所が毎年秋に開催する研究集会です。R言語とその周辺に関する最新の話題について多数の講演が行われます。</li>
+<li>Japan.R: 各地のR勉強会の主催者や参加者が集まって年に一度開催しているイベントです。Rユーザー会よりソフトな内容が多いように思います。</li>
+<li>Tokyo.R: 2015年1月現在、開催回数は45回を数え、数10名から100名程度の参加者が集う国内最大の勉強会です。Tokyo.R以外にも日本各地で不定期の勉強会が開催されています。</li>
+<li>RPubs: 主にRmarkdownで作成した記事をアップロードできます。@RPubsRecentというTwitterボットで最新の記事をフォローできます。</li>
+<li>qiita（ <a href="http://qiita.com/">http://qiita.com/</a> ）: プログラマのための情報技術共有サービスです。Rタグには500以上の記事が掲載されています。</li>
+</ul>
+
+<p>これ以外にも個人ブログに多数の有用な記事が寄せられています。
+毎年12月には参加者が順番に毎日１記事ずつ執筆するというR Advent Calendarというオンラインイベントが開催されています。</p>
+
+<h1>おわりに</h1>
+
+<p>今回の記事で紹介したように、R言語を取り巻く状況はこの10余年で大きく変わりました。
+「データ解析・マイニング」の手法はデータの性質や周辺技術の進化に大きく左右されます。
+昨今のデータの巨大化を鑑みるに、これからも依然として状況は変わり続けるでしょう。
+特に今後は統計解析やR言語のスキルに加えて、ETL環境含む周辺技術との連携や、ウェブ可視化などの効率的なアウトプット手法との連携など、
+必要となるスキルの多様化が進むに違いありません。
+今回の記事が今後の読者の方々の「データ解析・マイニング」の助けになれば幸いです。</p>
+
+</body>
+
+</html>
