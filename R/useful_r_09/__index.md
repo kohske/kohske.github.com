@@ -39,7 +39,8 @@ devtools::install_github("rstudio/markdown")
 
 # 更新履歴
 
-- 2014/2/6 shinyの更新情報を追加しました。
+- 2015/4/26 knitrの更新情報を追加しました。
+- 2015/2/6 shinyの更新情報を追加しました。
 - 2015/2/6 knitrの更新情報を追加しました。
 - 2014/11/15 knitrの更新情報を追加しました。
 - 2014/10/13 knitrの更新情報を追加しました。
@@ -59,6 +60,19 @@ devtools::install_github("rstudio/markdown")
 # 関連ツール更新情報
 
 ## knitr
+
+### Ver. 1.10
+
+2015年4月6日にknitr 1.10がCRAN上でリリースされました。主な変更点は次の通りです。
+
+- チャンクオプション`cache.rebuild`が追加されました。`TRUE`にするとキャッシュを破棄してコードを再評価します。
+- `stata`言語エンジン、`lein`言語エンジン（Clojure用)が追加されました。`sas`言語エンジンが改善されました。
+- `kable`によるマークダウンテーブル生成でワイドキャラクタを上手く扱えるようになりました。[Hiroaki Yutaniさん](http://github.com/yutannihilation) ([\@yutannihilation](https://twitter.com/yutannihilation))によるバグ報告及びパッチのお陰です。ｸﾞｯｼﾞｮﾌﾞ!!
+- 言語エンジンの指定が`` ```{python, option=value}``の形式を受け付けるようになりました。
+- `all_labels()`関数に引数`...`が追加されました。チャンクオプションによってラベルをフィルタできます。例えば`all_labels(engine == 'Rcpp')`とすれば、`engine = 'Rcpp'`のチャンクラベルを返します。
+- `knit_params()`関数が追加されました。YAMLメタデータの情報を取得できます。
+- マークダウンの引用ブロックの中でコードチャンクを記述できるようになりました。
+- パッケージオプション`options(knitr.duplicate.label = 'allow')`でチャンクラベルの重複がOKになります。ラベルが重複してる場合、`foo-2`みたいな感じでsuffixがつけられます。
 
 ### Ver. 1.9
 
