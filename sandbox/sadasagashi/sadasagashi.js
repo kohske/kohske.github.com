@@ -92,8 +92,8 @@ function finish_exp() {
   con.fillStyle = "black";        
   
   con.fillText("正答率: "+(p_g*100).toString()+"%", can_size/2-100, can_size/2-25);
-  con.fillText("さださがし反応時間: "+(m_s/1000).toString()+"秒", can_size/2-100, can_size/2+0);
-  con.fillText("非さださがし反応時間: "+(m_ns/1000).toString()+"秒", can_size/2-100, can_size/2+25);
+  con.fillText("さだ反応時間: "+(m_s/1000).toString()+"秒", can_size/2-100, can_size/2+0);
+  con.fillText("非さだ反応時間: "+(m_ns/1000).toString()+"秒", can_size/2-100, can_size/2+25);
   con.fillText("さだ指数: "+(Math.max(m_ns-m_s, 0)).toString()+"", can_size/2-100, can_size/2+50);    
 }
 
@@ -115,7 +115,7 @@ function run_exp() {
   else cs = String.fromCharCode.apply(String, cs);
   
   if (sns[tr] == 1) ts = "さだまさし";
-  else ts = "さのひなこ";
+  else ts = "あべひろし";
   
   var csx, csy, dir;
   csx = Math.floor(Math.random()*(nx-4))+2;
