@@ -111,8 +111,7 @@ function run_exp() {
   for (var i = 0; i < nx*ny; ++i) {
     cs[i] = 0x3041+Math.floor(Math.random()*(0x3093-0x3041+1));
   }
-  if (easy) for (var i = 0; i < nx*ny; ++i) cs[i]="め";
-  else cs = String.fromCharCode.apply(String, cs);
+  for (var i = 0; i < nx*ny; ++i) cs[i] = easy ? "め" : String.fromCharCode(cs[i]);
   
   if (sns[tr] == 1) ts = "さだまさし";
   else ts = "あべひろし";
