@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- @title -->
+  <common name="title" lang="j">
+    <p>
+      <br/><a href="http://www.chukyo-u.ac.jp/">中京大学</a> <a href="http://www.chukyo-u.ac.jp/educate/psychol/">心理学部</a><br/>実験心理学領域<br/>
+    </p>
+    <h1><a href="">高橋研究室</a></h1>
+  </common>
+  <common name="title" lang="e">
+    <p>
+      <a href="http://www.chukyo-u.ac.jp/">Chukyo University</a><br/><a href="http://www.chukyo-u.ac.jp/educate/psychol/">School of Psychology</a><br/><br/>
+    </p>
+    <h1><a href="">Takahashi Laboratory</a></h1>
+  </common>
+
+  <!-- @menu -->
+  <common name="column2" lang="j">
+    <item url="membersj.html" name="members">メンバー</item>
+    <item url="publicationj.html" name="publication">Publications</item>
+    <item url="schedulej.html" name="schedule">発表予定</item>
+    <item url="jobj.html" name="job">求人情報</item>
+    <item url="accessj.html" name="access">アクセス</item>
+  </common>
+  <common name="column2" lang="e">
+    <item url="memberse.html" name="members">Members</item>
+    <item url="publicatione.html" name="publication">Publications</item>
+    <item url="schedulee.html">Presentations</item>-->
+    <item url="jobe.html" name="job">Jobs</item>
+    <item url="accesse.html" name="access">Access</item>
+    
+  </common>
+
+  <!-- @index -->
+  <file n="index" type="j">
+    <img id="top-image" src="img/top.jpg"/>
+  </file>
+  <file n="index" type="e"><img id="top-image" src="img/top.jpg"/></file>
+
+
+  <!-- @access -->
+  <file n="access" type="e">
+    <h1>Access to Takahashi Laboratory</h1>
+    <col2table>
+      <tr><td1>Address</td1><td2><p>School of Psychology, Chukyo University<br/>101-2 Yagoto Honmachi, Showa-ku, Nagoya-shi, AICHI (Japan) 466-8666</p></td2></tr>
+      <tr><td1>Contact</td1><td2><p>TEL +81-52-835-7185 / FAX +81-52-835-7144</p></td2></tr>
+      <tr><td1>Maps</td1><td2><p><a href="http://www.chukyo-u.ac.jp/english/access/index.html">Access Map</a><br/><a href="http://www.chukyo-u.ac.jp/english/campus/f1.html">Campus Map</a></p></td2></tr>
+    </col2table>
+  </file>
+  <file n="access" type="j">
+    <h1>高橋研究室へのアクセス</h1>
+    <col2table>
+      <tr><td1>所在地</td1><td2><p>〒466-8666 愛知県名古屋市昭和区八事本町101-2 中京大学 心理学部</p></td2></tr>
+      <tr><td1>連絡先</td1><td2><p>TEL 052-835-7185 / FAX 052-835-7144</p></td2></tr>
+      <tr><td1>交通案内</td1><td2><p><a href="http://www.chukyo-u.ac.jp/information/access/h1.html">交通アクセス</a><br/><a href="http://www.chukyo-u.ac.jp/information/facility/g1.html">キャンパスマップ</a></p></td2></tr>
+      
+    </col2table>
+  </file>
+
+  <!-- @enter -->
+  <file n="enter" type="e">
+    <h1>Admission (Ph.D course)</h1>
+    <!--
+	<p>We accept international students for Ph.D.<br/>Please send inquiry to<img class="vmiddle" src="img/email_contact.gif"/></p>
+	<p>Department of Advanced Interdisciplinary Studies (AIS)<br/><a href="http://www.rcast.u-tokyo.ac.jp/en/prospective/">http://www.rcast.u-tokyo.ac.jp/en/prospective/</a></p>
+    -->
+    <p>Coming soon.</p>
+	
+  </file>
+
+  
+  <!-- contents -->
+  <xi:include href="member.xml" xpointer="xpointer(/files/file)" parse="xml" />
+  <xi:include href="publication.xml" parse="xml" />
+  <xi:include href="schedule.xml" parse="xml" />
+  <xi:include href="job.xml" xpointer="xpointer(/files/file)" parse="xml" />
+  
+  <!-- @profiles -->
+  <xi:include href="p_ktakahashi.xml" parse="xml" />
+
+</root>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- @member -->
+<files>
+  <file n="members" type="e">
+    <members>
+      <itemlist name="current">
+	<mlist n="Associate professor">
+	  <item><url>profilee_ktakahashi.html</url><name>Kohske TAKAHASHI</name><intro>Multimodal interaction, illusion, Animacy</intro></item>
+	</mlist>
+	<mlist n="Students">
+	</mlist>
+      </itemlist>
+    </members>
+  </file>
+  <file n="members" type="j">
+    <members>
+      <itemlist name="current">
+	<mlist n="准教授">
+	  <item><url>profilej_ktakahashi.html</url><name>高橋 康介</name><intro>感覚間相互作用・錯視・生き物らしさ認知</intro><ruby>Kohske TAKAHASHI</ruby></item>
+	</mlist>
+	<mlist n="学部生">
+	</mlist>
+      </itemlist>
+    </members>
+  </file>
+</files>

@@ -1,0 +1,44 @@
+/* ******************************** 
+   backgound colors
+   ******************************** */
+
+body{ background: #FFF;}
+#title{ background:#000;
+//    -webkit-box-shadow: 0 10px 6px -6px #777;
+//       -moz-box-shadow: 0 10px 6px -6px #777;
+//            box-shadow: 0 10px 6px -6px #777;
+}
+#column1, #column2{ background: #FFF;}
+#header, #footer{ background: #000; }
+.column2item a:hover{ background: #000;
+//    -webkit-box-shadow: 0 6px 3px -3px #777;
+//       -moz-box-shadow: 0 6px 3px -3px #777;
+//            box-shadow: 0 6px 3px -3px #777;
+}
+.column2item #selected{ background:transparent;
+//    -webkit-box-shadow: 0 6px 3px -3px #777;
+//       -moz-box-shadow: 0 6px 3px -3px #777;
+//            box-shadow: 0 6px 3px -3px #777;
+}
+#column1 h2 div{ background: #000; }
+table.col2table .td1{ background:#000; }
+.bigchar{ background:#000;}
+
+/* ********************************
+   text colors
+   ******************************** */
+*{ color: #000; }
+#header, #header *, #footer, #footer *, #title, #title *{ color:#FFF; }
+.column2item a:hover{ color: #FFF; }
+.column2item #selected{ color:#000; }
+#column1 h2 div{ color: #FFF; }
+table.col2table .td1{ color:#FFF; }
+.bigchar{ color:#FFF; }
+
+/* ********************************
+   border colors
+   ******************************** */
+#column1 h2{ border-color: #000; }
+.column2item #selected{ border-color: #000;}
+
+.gray, .gray *{color:#666;}
