@@ -2,6 +2,7 @@
 <!-- @schedule -->
 <!--
 <pli type="c" lang=""><TI></TI><AU></AU><YE></YE><CO></CO><PL></PL><url></url></pli>
+
 -->
 <file n="schedule" type="b">
   <schedule>
@@ -9,6 +10,7 @@
       <pli type="c" lang="j"><TI>フィールドにおける認知実験.</TI><AU>高橋康介</AU><YE>2016/5/28-29</YE><CO>日本文化人類学会第50回研究大会</CO><PL>南山大学名古屋キャンパス (愛知県)</PL><url>http://www.jasca.org/meeting/50th/index.html</url></pli>
       <pli type="c" lang="j"><TI>生き物らしさ認知の諸現象と現実に対する過剰な意味付け.</TI><AU>高橋康介</AU><YE>2016/6/18-19</YE><CO>認知心理学会第14回大会 シンポジウム</CO><PL>広島大学東広島キャンパス (広島県)</PL><url>http://home.hiroshima-u.ac.jp/cogpsy14/</url></pli>      
       <pli type="c" lang="ej"><TI>Psychological experiment all over the world: an interdisciplinary collaboration.</TI><AU>Takahashi, K., Oishi, T., &#38; Shimada, M.</AU><YE>2016/7/30-8/3</YE><CO>The 23rd Congress of the International Association for Cross-Cultural Psychology (IACCP2016)</CO><PL>WINC Aichi Conference Center, Aichi, Japan</PL><url>http://www.iaccp2016.com/</url></pli>
+      <pli type="c" lang="ej"><TI>Visual search asymmetry between photographs and illustrations of animals and man-made objects</TI><AU>Takahashi, K. &#38; Watanabe, K.</AU><YE>2016/8/28-9/1</YE><CO>39th European Conference on Visual Perception</CO><PL>Barcelona, Spain</PL><url>http://www.ub.edu/ecvp/</url></pli>
     </future>
   </schedule>
 </file>
