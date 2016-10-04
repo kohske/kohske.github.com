@@ -16,9 +16,14 @@
     <members>
       <itemlist name="current">
 	<mlist n="准教授">
-	  <item><url>profilej_ktakahashi.html</url><name>高橋 康介</name><intro>感覚間相互作用・錯視・生き物らしさ認知</intro><ruby>Kohske TAKAHASHI</ruby></item>
+	  <item><url>profilej_ktakahashi.html</url><name>高橋 康介</name><intro>高次認知（生きものらしさ）・知覚・錯視</intro><ruby>Kohske TAKAHASHI</ruby></item>
 	</mlist>
-	<mlist n="学部生">
+	<mlist n="学部生（3年生）">
+	  <item><url> </url><name>安藤 大樹</name><intro>ヘビの動き</intro><ruby>Hiroki ANDO</ruby></item>
+	  <item><url> </url><name>伊藤 沙友里</name><intro>見た目の重さ</intro><ruby>Sayuri ITO</ruby></item>
+	  <item><url> </url><name>久保田 成</name><intro>エイリアン・アイ</intro><ruby>Akira KUBOTA</ruby></item>
+	  <item><url> </url><name>竹内 陸</name><intro>新奇錯視</intro><ruby>Riku TAKEUCHI</ruby></item>
+	  <item><url> </url><name>山本 裕美子</name><intro>認知編集</intro><ruby>Yumiko YAMAMOTO</ruby></item>
 	</mlist>
       </itemlist>
     </members>
