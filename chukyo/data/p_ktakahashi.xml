@@ -2,8 +2,8 @@
 <!-- @ktakahashi -->
 <file n="ktakahashi" type="p">
   <profile>
-    <prof><name>Kohske Takahashi</name><room>A306</room><tel>+81-52-835-7185</tel><fax>+81-52-835-7144</fax><degree>Ph.D.</degree><post>Associate Professor</post><spec>Multimodal interaction, illusion, Animacy</spec><img>img/face_ktakahashi.jpg</img></prof>
-    <profj><post>准教授</post><name>高橋 康介</name><ruby>たかはし こうすけ</ruby><spec>感覚間相互作用・錯視・生き物らしさ認知</spec><degree>博士 (情報学)</degree><room>A306</room><tel>052-835-7185</tel><fax>052-835-7144</fax></profj>
+    <prof><name>Kohske Takahashi</name><room>A306</room><tel>+81-52-835-7185</tel><fax>+81-52-835-7144</fax><degree>Ph.D.</degree><post>Associate Professor</post><spec>Cognition, perception, cognitive neuroscience, illusion</spec><img>img/face_ktakahashi.jpg</img></prof>
+    <profj><post>准教授</post><name>高橋 康介</name><ruby>たかはし こうすけ</ruby><spec>認知心理学・知覚心理学・認知神経科学・錯視</spec><degree>博士 (情報学)</degree><room>A306</room><tel>052-835-7185</tel><fax>052-835-7144</fax></profj>
     <bioj>
       <education>
 	<item><date>2001年3月</date><desc>京都大学文学部人文学科 卒業</desc></item>
@@ -84,6 +84,10 @@
     </publist>
     <!-- invited or special lectures -->
     <publist type="l">
+      <pli type="c" lang="j"><TI>知覚の初期設定：なぜみえないはずのものがみえるのか</TI><AU>高橋康介</AU><YE>2017/3/10</YE><CO>立命館大学システム視覚科学研究センター主催シンポジウム「錯視のシステム視覚科学」</CO><PL>立命館大学大阪いばらきキャンパス(OIC)</PL><url>http://www.psy.ritsumei.ac.jp/~akitaoka/system-symposium2017.jpg</url></pli>      
+      <pli type="c" lang="j"><TI>顔と身体表現の多文化比較フィールド実験研究.</TI><AU>高橋康介・大石高典・島田将喜</AU><YE>2016/10/22</YE><CO>シンポジウム「トランスカルチャー状況下における顔・身体学の構築」</CO><PL>東京外国語大学</PL><url>http://www.tufs.ac.jp/event/general/post_834.html</url></pli>      
+      <pli type="c" lang="j"><TI>意識と無意識がつくりだす認知的現実，そして超現実へ</TI><AU>高橋康介</AU><YE>2016/11/5-6</YE><CO>日本バーチャルリアリティ学会 第28回VR心理学研究会</CO><PL>愛知淑徳大学星ヶ丘キャンパス</PL><url>https://sites.google.com/site/sigvrpsy/home/workshop/vrpsy28</url></pli>      
+      <pli type="c" lang="j"><TI>認知的錯覚から考える世界と主観のあいだ</TI><AU>高橋康介</AU><YE>2016/10/22</YE><CO>日本認知科学会研究分科会「間合い―時空間インタラクション（間合い研）」第6回研究会</CO><PL>慶應義塾大学三田キャンパス</PL><url>https://sites.google.com/site/jccsmaai/home</url></pli>
       <pli type="c" lang="j"><TI>表情認知の文化差　ー(・∀・)は笑顔か？ー</TI><AU>高橋康介・大石高典・島田将喜</AU><YE>2016/8/17-19</YE><CO>日本視覚学会2016夏季大会</CO><PL>朱鷺メッセ：新潟コンベンションセンター, 新潟</PL><url>http://c-faculty.chuo-u.ac.jp/~vsj2016/</url></pli>            
       <pli type="c" lang="j"><TI>生き物らしさ認知の諸現象と現実に対する過剰な意味付け.</TI><AU>高橋康介</AU><YE>2016/6/18-19</YE><CO>認知心理学会第14回大会 シンポジウム</CO><PL>広島大学東広島キャンパス (広島県)</PL><url>http://home.hiroshima-u.ac.jp/cogpsy14/</url></pli>
       <pli type="c" lang="j"><TI>認知科学から考える「食」～クロスモーダル・意味付け・可食性</TI><AU>高橋康介</AU><YE>2016/1/19</YE><CO>ロッテ中央研究所交流会</CO><PL>ロッテ中央研究所</PL><url></url></pli>
@@ -163,6 +167,7 @@
     </publist>
     <!-- domestic conference -->
     <publist type="d">
+      <pli type="c" lang="j"><TI>チンパンジーにおける曲がり盲</TI><AU>友永雅己・Wilson Duncan A.・高橋康介</AU><YE>2016/10/29-30</YE><CO>日本基礎心理学会第35回大会</CO><PL>東京女子大学</PL><url>http://www.odalab.org/jps2016/</url></pli>      
       <pli type="c" lang="j"><TI>ヒト磁気知覚の可能性と現状.</TI><AU>高橋康介</AU><YE>2016/9/5-8</YE><CO>第40回日本磁気学会学術講演会</CO><PL>金沢大学角間キャンパス</PL><url>http://www.magnetics.jp/kouenkai/2016/</url></pli>            
       <pli type="c" lang="j"><TI>フィールドにおける認知実験.</TI><AU>高橋康介</AU><YE>2016/5/28-29</YE><CO>日本文化人類学会第50回研究大会</CO><PL>南山大学名古屋キャンパス (愛知県)</PL><url>http://www.jasca.org/meeting/50th/index.html</url></pli>      
       <pli type="c" lang="j"><TI>(^_^)は笑顔か? 顔文字の感情認知に関する通文化的研究.</TI><AU>高橋康介・大石高典・島田将喜</AU><YE>2016/2/6-7</YE><CO>第4回人類学若手の会・総合研究集会</CO><PL>九州大学</PL><url>https://sites.google.com/site/jinruiwakate/event/anualmeet2016</url></pli>            
