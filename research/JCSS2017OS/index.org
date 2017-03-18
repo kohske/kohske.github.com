@@ -63,7 +63,7 @@ file:pareh.png 　　file:107329r.png file:ayatsuri.png 　　file:230226.png
 - 日高 昇平（北陸先端科学技術大学院大学）
 
 
-** 連絡先・お問い合わせ :: file:email_kt.png
+** 連絡先・お問い合わせ :: http://kohske.github.io/chukyo/img/email_ktakahashi.png
 
 #+BEGIN_HTML
 <span style="font-size: 50%">本研究会は科学研究費補助金若手A「生き物らしさ認知の心的過程とその応用」「力学系の不変量による身体運動の分節化・認識・生成理論の構築」の補助を受けております。</span>
