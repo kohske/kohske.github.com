@@ -71,19 +71,15 @@
       <xsl:when test="$lang='j'">
 	<!--<h1>今後の発表予定</h1>-->
 	<div class="itemlist schedulelist"><ul><xsl:apply-templates select="future/pli[contains(@lang, 'j')]"/></ul></div>
-	<!--
-	    <h1>これまでの発表</h1>
-	    <xsl:for-each select="past">
-	    <h2><xsl:value-of select="@y"/>年</h2>
-	    <div class="itemlist schedulelist">
+	<h1>これまでの発表</h1>
+	<xsl:for-each select="past">
+	  <h2><xsl:value-of select="@y"/>年</h2>
+	  <div class="itemlist schedulelist">
 	    <ul>
-	    <xsl:for-each select="./pli[contains(@lang, 'j')]">
-	    <xsl:call-template name="reverse"/>
-	    </xsl:for-each>
+	      <xsl:apply-templates select="./pli[contains(@lang, 'j')]"/>
 	    </ul>
-	    </div>
-	    </xsl:for-each>
-	-->
+	  </div>
+	</xsl:for-each>
       </xsl:when>
       <xsl:when test="$lang='e'">
 	<h1>Future Presentations</h1>
@@ -93,9 +89,7 @@
 	  <h2><xsl:value-of select="@y"/></h2>
 	  <div class="itemlist schedulelist">
 	    <ul>
-	      <xsl:for-each select="./pli[contains(@lang, 'e')]">
-		<xsl:call-template name="reverse"/>
-	      </xsl:for-each>
+	      <xsl:apply-templates select="./pli[contains(@lang, 'e')]"/>	      
 	    </ul>
 	  </div>
 	</xsl:for-each>
