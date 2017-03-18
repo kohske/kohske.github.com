@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Cafe Wall Illusion (WebGL 3D version)</title>
+    <script src="../lib/three.min.js"></script>
+    <script src="../lib/OrbitControls.js"></script>
+    <script src="../lib/threejs/loaders/BinaryLoader.js"></script>
+
+    <script src="../lib/threejs/shaders/BleachBypassShader.js"></script>
+    <script src="../lib/threejs/shaders/ColorifyShader.js"></script>
+    <script src="../lib/threejs/shaders/ConvolutionShader.js"></script>
+    <script src="../lib/threejs/shaders/CopyShader.js"></script>
+    <script src="../lib/threejs/shaders/DotScreenShader.js"></script>
+    <script src="../lib/threejs/shaders/FilmShader.js"></script>
+    <script src="../lib/threejs/shaders/HorizontalBlurShader.js"></script>
+    <script src="../lib/threejs/shaders/SepiaShader.js"></script>
+    <script src="../lib/threejs/shaders/VerticalBlurShader.js"></script>
+    <script src="../lib/threejs/shaders/VignetteShader.js"></script>
+
+    <script src="../lib/threejs/postprocessing/EffectComposer.js"></script>
+    <script src="../lib/threejs/postprocessing/RenderPass.js"></script>
+    <script src="../lib/threejs/postprocessing/BloomPass.js"></script>
+    <script src="../lib/threejs/postprocessing/FilmPass.js"></script>
+    <script src="../lib/threejs/postprocessing/DotScreenPass.js"></script>
+    <script src="../lib/threejs/postprocessing/TexturePass.js"></script>
+    <script src="../lib/threejs/postprocessing/ShaderPass.js"></script>
+    <script src="../lib/threejs/postprocessing/MaskPass.js"></script>
+    <script src="script2.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <table>
+      <tr>
+	<td id="three"></td>
+	<td>
+	  <p>
+
+	    <input type="radio" id="e_v_2d" checked="checked" name="view" onclick="change_view(2);">2Dモード</input>
+	    <input type="radio" id="e_v_3d" name="view" onclick="change_view(3);">3Dモード</input><br/><br/>
+	    
+	    <input type="radio" id="e_v_ball" checked="checked" name="stim" onclick="change_stim(0);">球</input>
+	    <input type="radio" id="e_v_board" name="stim" onclick="change_stim(1);">板</input><br/><br/>
+	    
+	    <input type="checkbox" id="e_cam">視点移動有効（2Dモードのみ）</input><br/>
+	    <input type="checkbox" id="e_bg" checked="checked" onclick="change_bg();">背景を描画</input><br/>
+	    <input type="checkbox" id="e_wf" onclick="change_wireframe();">ワイヤーフレーム</input><br/>
+	  </p>
+	  <hr/>
+	  <p>
+	  </p>
+	</td>
+      </tr>
+    </table>
+
+    <h3>以下の素材を使っています</h3>
+    <ul>
+      <li>背景テクスチャ・顔ジオメトリモデル・ライブラリ: <a href="http://threejs.org/">http://threejs.org/</a></li>
+    </ul>
+  </body>
+</html>
+
+
