@@ -39,11 +39,23 @@ file:pareh.png 　　file:107329r.png file:ayatsuri.png 　　file:230226.png
 
 ** 講演者(予定)
 
-- 宮原 克典 (JSPS海外特別研究員・ハーバード大学)：哲学・現象学
-- 小川 奈美 (東京大学)：工学
+# - 宮原 克典 (JSPS海外特別研究員・ハーバード大学)：哲学・現象学
+- 哲学者 X氏
+- 小川 奈美 (東京大学)：VR工学
 
 
 - 高橋 康介 (中京大学)・日高 昇平 (JAIST)：認知科学
+ 
+** 関連コンテンツ
+
+- [[http://chitosepress.com/2016/09/28/2320/][意味を創る――生きものらしさの認知心理学（高橋によるサイナビ連載）]]
+- [[http://kohske.github.io/research/parews01/][第１回 パレイドリア研究会]]
+- [[http://kohske.github.io/research/parews02/][第２回 パレイドリア研究会]]
+
+
+- [[https://www.youtube.com/watch?v=xgHrfycNstU][えくす手／Metamorphosis Hand (小川奈美先生による身体所有感に関する作品)]]
+- [[http://www.moguravr.com/metamorphosis-hand-interview/][「人間を知るためのVR」（小川奈美先生インタビュー）]]
+
 
 ** 企画・司会
 
