@@ -1,4 +1,4 @@
-#+TITLE: 認知科学会 オーガナイズド・シンポジウム
+#+TITLE: 認知科学会 オーガナイズド・セッション
 #+AUTHOR: Kohske Takahashi
 #+LANGUAGE: en
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/readtheorg/css/htmlize.css"/>
