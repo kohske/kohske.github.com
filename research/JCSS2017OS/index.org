@@ -1,8 +1,8 @@
 #+TITLE: 認知科学会 オーガナイズド・セッション
 #+AUTHOR: Kohske Takahashi
 #+LANGUAGE: en
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/readtheorg/css/htmlize.css"/>
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="//www.pirilampo.org/styles/readtheorg/css/htmlize.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="//www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
 
 #+OPTIONS: toc:nil num:nil html5-fancy:t
 
@@ -37,16 +37,20 @@ file:pareh.png 　　file:107329r.png file:ayatsuri.png 　　file:230226.png
 
 意味・質感・芸術・（知覚・認知・身体の）錯覚・創造力・想像力・空想・感情や情動・人工物の擬人化・意図推定・遊び・超自然的な力の認知・間（ま）の感覚・クオリアなど。
 
+** オーガナイザ
+
+- 高橋 康介 (中京大学)
+- 日高 昇平 (JAIST)
+
 ** 講演者(予定)
 
-# - 宮原 克典 (JSPS海外特別研究員・ハーバード大学)：哲学・現象学
-- 哲学者 X氏 (調整中)：現象学
-- 小川 奈美 (東京大学)：VR工学
-- 西尾 慶之 (東北大学)：神経心理
-- ・・・
-
-
-- 高橋 康介 (中京大学)・日高 昇平 (JAIST)：認知科学
+- 高橋 康介 (中京大学）: イントロダクション
+- 小川 奈美 (東京大学):「多感覚を統合したがる自己：なぜ身体所有感を感じてしまうのか」
+- 西尾 慶之 (東北大学):「現実感が道理をしのぐ時：神経疾患患者の幻覚体験にそなわる現実感」
+- 友野 貴之 (早稲田大学):「間隙をつくる障害物の“人らしさ”は，通り抜け行為に影響を与えるか？−間隙の通過可否判断研究からの一考察」
+- 米満 文哉 (九州大学):「新たな減価効果—顔の多重重複は不気味さを生む—」
+- 日高 昇平 (JAIST):「特徴の統合によるオブジェクト構成の計算論に向けて」
+- 総合ディスカッション
  
 ** 関連コンテンツ
 
