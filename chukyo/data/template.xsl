@@ -69,7 +69,7 @@
   <xsl:template match="schedule">
     <xsl:choose>
       <xsl:when test="$lang='j'">
-	<!--<h1>今後の発表予定</h1>-->
+	<h1>今後の発表予定</h1>
 	<div class="itemlist schedulelist"><ul><xsl:apply-templates select="future/pli[contains(@lang, 'j')]"/></ul></div>
 	<h1>これまでの発表</h1>
 	<xsl:for-each select="past">
