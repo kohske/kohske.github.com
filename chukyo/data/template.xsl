@@ -395,7 +395,7 @@
 	      </div>
 	    </div>
 	    <!-- footer -->
-	    <div id="footer">copyright &#169; 2016 Takahashi Laboratory, All Rights Reserved.</div>
+	    <div id="footer">copyright &#169; 2017 Takahashi Laboratory, All Rights Reserved.</div>
 	  </div>
 	</body>
       </html>
