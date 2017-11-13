@@ -19,20 +19,32 @@
 	  <item><url>profilej_ktakahashi.html</url><name>高橋 康介</name><intro>認知・知覚・脳・錯視</intro><ruby>Kohske TAKAHASHI</ruby></item>
 	</mlist>
 	<mlist n="研究員">
+	  <item><url>https://sites.google.com/site/kokamotoanthropology/</url><name>岡本 圭史</name><intro>文化人類学</intro><ruby>Keishi OKAMOTO</ruby></item>	  
 	  <item><url> </url><name>鑓水 秀和</name><intro>顔・質感・集団の認知</intro><ruby>Hidekazu YARIMIZU</ruby></item>
+	  
+
 	</mlist>
 	<mlist n="大学院生（修士課程）">
 	  <item><url> </url><name>小林 由佳</name><intro>食の認知・錯視</intro><ruby>Yuka KOBAYASHI</ruby></item>
 	  <item><url> </url><name>玉木 峻也</name><intro>数量の認知</intro><ruby>Shunya TAMAKI</ruby></item>	  
 	</mlist>
-	<mlist n="学部生（4年生）">
+	<mlist n="学部生（2016〜）">
 	  <item><url> </url><name>安藤 大樹</name><intro>ヘビの動き</intro><ruby>Hiroki ANDO</ruby></item>
 	  <item><url> </url><name>伊藤 沙友里</name><intro>見た目の重さ</intro><ruby>Sayuri ITO</ruby></item>
 	  <item><url> </url><name>久保田 成</name><intro>エイリアン・アイ</intro><ruby>Akira KUBOTA</ruby></item>
 	  <item><url> </url><name>竹内 陸</name><intro>新奇錯視</intro><ruby>Riku TAKEUCHI</ruby></item>
 	  <item><url> </url><name>山本 裕美子</name><intro>認知編集</intro><ruby>Yumiko YAMAMOTO</ruby></item>
 	</mlist>
-      </itemlist>
+	<mlist n="学部生（2017〜）">
+	  <!--
+	  <item><url> </url><name>安藤 大樹</name><intro>ヘビの動き</intro><ruby>Hiroki ANDO</ruby></item>
+	  <item><url> </url><name>伊藤 沙友里</name><intro>見た目の重さ</intro><ruby>Sayuri ITO</ruby></item>
+	  <item><url> </url><name>久保田 成</name><intro>エイリアン・アイ</intro><ruby>Akira KUBOTA</ruby></item>
+	  <item><url> </url><name>竹内 陸</name><intro>新奇錯視</intro><ruby>Riku TAKEUCHI</ruby></item>
+	  <item><url> </url><name>山本 裕美子</name><intro>認知編集</intro><ruby>Yumiko YAMAMOTO</ruby></item>
+	  -->
+	</mlist>
+      </itemlist>      
     </members>
   </file>
 </files>
