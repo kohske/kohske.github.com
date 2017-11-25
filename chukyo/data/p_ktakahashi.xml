@@ -35,7 +35,7 @@
     </bio>
     <!-- journal articles -->
     <publist type="j">
-      <pli type="j" lang="ej"><AU>Takahashi, K.</AU><YE>accepted</YE><TI>Curvature Blindness Illusion.</TI><JO>i-Perception</JO><VO></VO><IS></IS><PP></PP><url></url><doi></doi></pli>      
+      <pli type="j" lang="ej"><AU>Takahashi, K.</AU><YE>2017</YE><TI>Curvature Blindness Illusion.</TI><JO>i-Perception</JO><VO>8</VO><IS></IS><PP>1-12</PP><url></url><doi>10.1177/2041669517742178</doi></pli>
       <pli type="j" lang="ej"><AU>Takahashi, K., Oishi, T., &#38; Shimada, M.</AU><YE>2017</YE><TI>Is ☺ Smiling? Cross-cultural Study on Recognition of Emoticon’s Emotion.</TI><JO>Journal of Cross-Cultural Psychology</JO><VO>48</VO><IS>10</IS><PP>1578-1586</PP><url></url><doi>10.1177/0022022117734372</doi></pli>
       <pli type="j" lang="ej"><AU>Takahashi, K., Fukuda, H., Watanabe, K., &#38; Ueda, K.</AU><YE>2017</YE><TI>Psychological influences of animal-themed food decorations.</TI><JO>Food Quality and Preference.</JO><VO></VO><IS></IS><PP></PP><url></url><doi>10.1016/j.foodqual.2017.09.004</doi></pli>
       <pli type="j" lang="ej"><AU>Jung, E., Takahashi, K., Watanabe, K., de la Rosa, S., Butz, M.V., Bülthoff, H.H., &#38; Meilinger, H.</AU><YE>2016</YE><TI>The Influence of Human Body Orientation on Distance Judgments.</TI><JO>Frontiers in Psychology</JO><VO>7</VO><IS>217</IS><PP></PP><url></url><doi>10.3389/fpsyg.2016.00217</doi></pli>      
@@ -173,6 +173,7 @@
     </publist>
     <!-- domestic conference -->
     <publist type="d">
+      <pli type="c" lang="j"><TI>没入型VR環境の時間変調の心理的・認知的効果に関する探索的検討</TI><AU>山本裕美子・高橋康介</AU><YE>2017/11/24-25</YE><CO>第30回日本バーチャルリアリティ学会 VR心理学研究委員会</CO><PL>金沢工業大学</PL><url>https://sites.google.com/site/sigvrpsy/home/workshop</url></pli>            
       <pli type="c" lang="j"><TI>静かな人は静かな場所で力を発揮する-作業環境と性格特性が認知課題のパフォーマンスに及ぼす影響</TI><AU>吉本早苗・高橋康介</AU><YE>2017/9/20-22</YE><CO>日本心理学会第81回大会</CO><PL>久留米大学, 長崎</PL><url>http://jpa2017.com/</url></pli>
       <pli type="c" lang="j"><TI>無彩色静止画に対する錯視的色づきの生起要因の検討.</TI><AU>小林由佳・高橋康介</AU><YE>2017/9/20-22</YE><CO>日本心理学会第81回大会</CO><PL>久留米大学, 長崎</PL><url>http://jpa2017.com/</url></pli>
       <pli type="c" lang="j"><TI>自然風景画像からの地域推定における色情報の効果.</TI><AU>鑓水秀和・錢琨・大石高典・島田将喜・高橋康介</AU><YE>2017/9/20-22</YE><CO>日本心理学会第81回大会</CO><PL>久留米大学, 長崎</PL><url>http://jpa2017.com/</url></pli>
