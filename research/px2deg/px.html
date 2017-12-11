@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Cognitive Science - Watanabe Laboratory</title>
+    <meta http-equiv="content-type"
+    content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="prototype.js">;</script>
+    <script type="text/javascript" src="px.js">;</script>
+  </head>
+  <body>
+    <h2>視角、画面上の大きさ、ピクセル数の計算</h2>
+    <p>
+      視角、画面上の大きさ、ピクセル数のどれかを入力すると他の値が出てきます。
+      画面の大きさ・解像度・視距離がわかっていれば、この3つのうちどれかひとつがわかれば、他のふたつは計算できます。
+    </p>
+    <h2>使い方</h2>
+    <ol>
+      <li>画面の大きさ・解像度・視距離を入力する。</li>
+      <li>視角、画面上の大きさ、ピクセル数のどれかを入力する。</li>
+      <li>知りたい値を読み取る。</li>
+    </ol>
+    <table>
+      <tr>
+	<td>画面の大きさ:</td>
+	<td><input class="inputBox" type="text" size="16" id="sSize" value="30"/> cm</td>
+      </tr>
+      <tr>
+	<td>画面の解像度:</td>
+	<td><input class="inputBox" type="text" size="16" id="sResl" value="800"/> pixel (※ 画面の大きさと解像度は、縦でも横でもどっちでも可。)</td>
+      </tr>
+      <tr>
+	<td>視距離:</td>
+	<td><input class="inputBox" type="text" size="16" id="vDist" value="57"/> cm</td>
+      </tr>
+      <tr style="height:1em"/>
+      <tr>
+	<td>視角:</td>
+	<td><input class="inputBox" type="text" size="16" id="vAngle" value="1"/> degree</td>
+      </tr>
+      <tr>
+	<td>画面上の大きさ:</td>
+	<td><input class="inputBox" type="text" size="16" id="vSize" value="0"/> cm</td>
+      </tr>
+      <tr>
+	<td>ピクセル数:</td>
+	<td><input class="inputBox" type="text" size="16" id="vSizePx" value="0"/> pixel</td>
+      </tr>
+    </table>
+    <br/>
+    <p>小数点以下<input type="text" id="numDig" value="2" size="1"/>桁まで</p>
+    <img src="px.jpg"/>
+  </body>
+</html>
