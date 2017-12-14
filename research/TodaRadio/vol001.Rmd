@@ -129,8 +129,6 @@ output: html_document
     - 心理学な心理学研究（平石・池田）https://www.psych.or.jp/publication/world_pdf/68/68-5-8.pdf
     - 心理学研究の常識が変わる（三浦）https://www.psych.or.jp/publication/world_pdf/68/68-9-12.pdf
     - 超能力ってどうなんでしょうか？（平石）https://www.psych.or.jp/publication/world_pdf/61/61-32.pdf
-- 社心広報（更新してない？）
-https://sites.google.com/site/jssppr/home/reproducibility
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
