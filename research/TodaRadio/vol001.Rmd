@@ -1,0 +1,139 @@
+---
+title: "TODA RADIO #001"
+output: html_document
+---
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelementplayer.min.css">
+
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-hashtags="TodaRadio" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+- コメントや再現可能性に関する議論は、ハッシュタグ`#TodaRadio`でお願いします（↑のボタンから行けます）。
+
+※ 本ラジオでの発言は個人の見解であり、所属する組織の見解ではありません。
+
+※ 科学的な正しさを重視して発言していますが、発言には誤りが含まれることもありえます。
+
+※ ご意見、苦情などありましたら高橋までメール takahashi.kohske@gmail.com またはツイッター [\@kohske](https://twitter.com/kohske) までご連絡ください。
+
+----
+
+- 収録日: 2017/12/13
+- 場所: [ロゼッタストーン](https://tabelog.com/aichi/A2301/A230108/23006343/)
+- メンバー
+    - コメンテーター: 池田さん
+    - パーソナリティ: 高橋
+
+
+## 前半
+
+
+- イントロ（趣旨説明・自己紹介）
+- 現在に至る再現可能性問題の流れ
+- 再現可能性を落とす研究手法について（QRPsとか）
+
+<audio class="mejs-player" controls="" data-mejsoptions='{"alwaysShowControls": true, "alwaysShowHours": true, "enableAutosize": true, "features": ["playpause", "progress", "current", "duration", "volume", "speed"]}' preload="auto" src="audio/vol001_1.mp3" width="100%"></audio>
+
+[MP3ファイルをダウンロード](audio/vol001_1.mp3)
+
+
+----
+
+## 後半
+
+- 事前登録と査読付き事前登録
+- 高橋Questions
+
+<audio class="mejs-player" controls="" data-mejsoptions='{"alwaysShowControls": true, "alwaysShowHours": true, "enableAutosize": true, "features": ["playpause", "progress", "current", "duration", "volume", "speed"]}' preload="auto" src="audio/vol001_2.mp3" width="100%"></audio>
+
+[MP3ファイルをダウンロード](audio/vol001_2.mp3)
+
+
+
+
+----
+
+
+## ラジオの時系列順にポインタ（前半）
+
+- Bem (2011) 予知能力論文: https://www.ncbi.nlm.nih.gov/pubmed/21280961
+- Simmons (2011) False Positive Psychology: http://journals.sagepub.com/doi/abs/10.1177/0956797611417632
+- Barbara A. Spellman
+- PPS 2012 (OA): http://journals.sagepub.com/toc/pps/7/6
+- PPS 2012 読書会資料: https://sites.google.com/site/ppsjournalclub/home
+- Science 2015: http://science.sciencemag.org/content/349/6251/aac4716
+- Brian Nosek: http://projectimplicit.net/nosek/
+- Open Scinece Framework: https://osf.io/
+- IAT (Implicit Association Test): https://implicit.harvard.edu/implicit/japan/
+- 信頼性と妥当性
+- 臨床医学の治験研究（厚生労働省）: http://www.mhlw.go.jp/stf/seisakunitsuite/bunya/inform.html
+- UMIN臨床試験登録システム: http://www.umin.ac.jp/ctr/index-j.htm
+- 再現可能性科研費: https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-15K13122/
+- サイナビの再現可能性連載: http://chitosepress.com/2015/10/26/125/
+- 心理学評論の再現可能性特集号: http://team1mile.com/sjpr59-1/
+- PPS 2012 読書会資料: https://sites.google.com/site/ppsjournalclub/home
+- バージの行動プライミング
+- 東大ー北大ー早稲田哲学ー日大芸術学部ー灘
+- 戸田正直: https://ja.wikipedia.org/wiki/%E6%88%B8%E7%94%B0%E6%AD%A3%E7%9B%B4
+- Simmons (2011) False Positive Psychology: http://journals.sagepub.com/doi/abs/10.1177/0956797611417632
+- 純粋知性体
+- 多重比較問題
+- PPS 2012 読書会資料: https://sites.google.com/site/ppsjournalclub/home
+- サイナビの再現可能性連載: http://chitosepress.com/2015/10/26/125/
+- 再現可能性科研費: https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-15K13122/
+- 日本社会心理学会第57回大会＠関西学院大学: http://www.socialpsychology.jp/conf2016/
+- 心理学評論の再現可能性特集号: http://team1mile.com/sjpr59-1/
+- Publish or perish: https://en.wikipedia.org/wiki/Publish_or_perish
+- 日本人間行動進化学会 (HBES-J): http://beep.c.u-tokyo.ac.jp/~hbesj/
+- 条件づけ警察
+- publication bias・QRPs・p-hacking・HARKing・弱い理論問題
+- 心理学な心理学研究（平石・池田）https://www.psych.or.jp/publication/world_pdf/68/68-5-8.pdf
+- 心理学評論の池田平石論文: http://team1mile.com/sjpr59-1/contents_original/ikeda_hiraishi2016/
+
+----
+
+
+## ラジオの時系列順にポインタ（後半）
+
+- 概念的追試と直接的追試
+- 事前登録と審査付き事前登録
+- Neuroskeptic: https://twitter.com/neuro_skeptic
+    - Discoverの記事: http://blogs.discovermagazine.com/neuroskeptic/2017/12/08/curvature-blindness-illusion/
+    - 一般紙（Telegraph）: http://www.telegraph.co.uk/science/2017/12/12/see-zig-zags-optical-illusion-suffering-curvature-blindness/
+- Open Scinece Framework: https://osf.io/
+- (高橋追記) プレレジのステージ１レビューはグラントレビューに近い?
+- Null Field
+- 某新学術（高橋が参加してる顔・身体学）: http://kao-shintai.jp/
+- 三浦さんの心理学ワールド: https://www.psych.or.jp/publication/world_pdf/68/68-9-12.pdf
+- 科学の方法（仲谷宇吉郎）: https://www.amazon.co.jp/dp/4004160502
+- HBES-JのLEBS: http://lebs.hbesj.org/index.php/lebs
+- ロジ好き
+- 究極要因と至近要因（本編での用法は誤りです）
+
+### 高橋Q
+
+- トリアージ: https://ja.wikipedia.org/wiki/%E3%83%88%E3%83%AA%E3%82%A2%E3%83%BC%E3%82%B8
+- Reputation
+- Curate Science: http://curatescience.org/
+- メタアナライシス
+- 三浦先生講演会＠中京大学「SNSから社会の心を読む：「ビッグデータ」の心理学」: https://www.chukyo-u.ac.jp/event/2017/12/012244.html
+
+----
+
+## 関連資料
+
+- 心理学評論特集号 http://team1mile.com/sjpr59-1/
+- togetter: https://togetter.com/li/901257
+- サイナビ http://chitosepress.com/2015/10/26/125/
+- 心理学ワールド
+    - 心理学な心理学研究（平石・池田）https://www.psych.or.jp/publication/world_pdf/68/68-5-8.pdf
+    - 心理学研究の常識が変わる（三浦）https://www.psych.or.jp/publication/world_pdf/68/68-9-12.pdf
+    - 超能力ってどうなんでしょうか？（平石）https://www.psych.or.jp/publication/world_pdf/61/61-32.pdf
+- 社心広報（更新してない？）
+https://sites.google.com/site/jssppr/home/reproducibility
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelement-and-player.min.js"></script>
+
+

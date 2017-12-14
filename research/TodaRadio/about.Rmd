@@ -1,0 +1,17 @@
+---
+title: "なかの人たち"
+---
+
+### 池田さん
+
+純粋知性体になりたい心理学者
+
+![](material/face_ikeda.jpg)
+
+----
+
+### 高橋
+
+イソギンチャクになりたい心理学者
+
+![](material/face_takahashi.png)

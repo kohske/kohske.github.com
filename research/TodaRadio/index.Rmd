@@ -1,0 +1,44 @@
+---
+title: "TODA RADIO"
+---
+
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-hashtags="TodaRadio" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+---- 
+
+## 概要
+
+- TODA RADIOでは、心理学における再現可能性の問題を中心に、
+適当に喋りたいことを喋る予定です。
+- ラジオパーソナリティが高橋、コメンテーターが池田さん。
+- コメントや再現可能性に関する議論は、ハッシュタグ`#TodaRadio`でお願いします（↑のボタンから行けます）。議論が盛り上がりそうなら、オンラインで議論できる仕組みを作る予定です。
+
+
+※ 本ラジオでの発言は個人の見解であり、所属する組織の見解ではありません。
+
+※ 科学的な正しさを重視して発言していますが、発言には誤りが含まれることもありえます。
+
+※ ご意見、苦情などありましたら高橋までメール takahashi.kohske@gmail.com またはツイッター [\@kohske](https://twitter.com/kohske) までご連絡ください。
+
+----
+
+## 主なテーマ
+
+- 心理学における再現可能性
+- 心理学の方法論
+- アージ理論
+- ゲストと喋る
+
+----
+
+## 過去のラジオ
+
+### [2017/12/13 #001](vol001.html)
+
+- メンバー: 高橋＆池田さん。
+- 再現可能性についてのイントロ。
+- 国内外の同行経緯と現状。
+- 事前登録・審査付き事前登録システム。
+
+
+    

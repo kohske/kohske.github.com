@@ -1,0 +1,20 @@
+name: TODA RADIO
+navbar:
+  title: TODA RADIO
+  type: inverse
+  left:
+    - text: "過去のラジオ"
+      menu:
+        - text: "Vol. 001 (2017/12/13)"
+          href: vol001.html
+    - text: "なかの人たち"
+      href: about.html
+output:
+  html_document:
+    theme: united
+    md_extensions: -ascii_identifiers
+    mathjax: ~
+    lib_dir: site_libs
+    self_contained: no
+output_dir: .
+
