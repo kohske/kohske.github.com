@@ -1,0 +1,14 @@
+---
+title: "TODA RADIO"
+output: html_document
+---
+
+コメントシステム（実験的実装）です。今のところ匿名可。
+
+- [zawazawa](https://zawazawa.jp) というところのサービスを使っています。
+- グループのサイトは https://zawazawa.jp/todaradio/
+- ↓には[コメントトピック（ファンレター・応援・要望・苦情など一般的な話題）](https://zawazawa.jp/todaradio/topic/1)の内容を埋め込んでいます。
+- （そんな物好きな人はいないと思いますが）再現可能性、戸田先生、その他各トピックについての議論は https://zawazawa.jp/todaradio/ で新トピックを立ち上げたりしてお願いします。
+
+<script src="https://zawazawa.jp/em/js/include?t=todaradio%2F1&h=200&size=50"></script>
+

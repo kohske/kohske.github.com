@@ -9,11 +9,14 @@ navbar:
           href: vol001.html
     - text: "なかの人たち"
       href: about.html
+    - text: "ディスカッション"
+      href: discussion.html
 output:
   html_document:
     theme: united
     md_extensions: -ascii_identifiers
     mathjax: ~
+    highlight: ~
     lib_dir: site_libs
     self_contained: no
 output_dir: .
