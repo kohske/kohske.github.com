@@ -7,6 +7,8 @@ navbar:
       menu:
         - text: "Vol. 001 (2017/12/13)"
           href: vol001.html
+        - text: "Vol. 002 (2018/01/04)"
+          href: vol002.html
     - text: "なかの人たち"
       href: about.html
     - text: "ディスカッション"
