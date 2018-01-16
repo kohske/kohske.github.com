@@ -5,10 +5,12 @@ navbar:
   left:
     - text: "過去のラジオ"
       menu:
-        - text: "Vol. 001 (2017/12/13)"
-          href: vol001.html
+        - text: "Vol. 003 (2018/01/15 ミウラジオ)"
+          href: vol003.html
         - text: "Vol. 002 (2018/01/04)"
           href: vol002.html
+        - text: "Vol. 001 (2017/12/13)"
+          href: vol001.html
     - text: "なかの人たち"
       href: about.html
     - text: "ディスカッション"

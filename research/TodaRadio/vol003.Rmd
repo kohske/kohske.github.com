@@ -1,0 +1,98 @@
+---
+title: "TODA RADIO #003 ミウラジオ"
+output: html_document
+---
+
+```{r echo=FALSE}
+a=function(u)paste0("<a href='", u, "' target='_blank'>", u, "</a>")
+```
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelementplayer.min.css">
+
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-hashtags="TodaRadio" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+- ハッシュタグ`#TodaRadio`でお願いします（↑のボタンから行けます）。
+
+※ 本ラジオでの発言は個人の見解であり、所属する組織の見解ではありません。
+
+※ 科学的な正しさを重視して発言していますが、発言には誤りが含まれることもありえます。
+
+※ ご意見、苦情などありましたら高橋までメール takahashi.kohske@gmail.com またはツイッター [\@kohske](https://twitter.com/kohske) までご連絡ください。
+
+----
+
+- 収録日: 2018/01/15
+- 場所: [ロゼッタストーン](https://tabelog.com/aichi/A2301/A230108/23006343/)
+- メンバー
+    - ゲスト：三浦さん
+    - コメンテーター: 池田さん
+    - パーソナリティ: 高橋
+
+## 概要
+
+- イントロ（三浦さん紹介など）
+- 探索的研究の立ち位置
+- 再現可能性についての研究者心理・抵抗感など
+- 心理学会広報関連
+
+<audio class="mejs-player" controls="" data-mejsoptions='{"alwaysShowControls": true, "alwaysShowHours": true, "enableAutosize": true, "features": ["playpause", "progress", "current", "duration", "volume", "speed"]}' preload="auto" src="audio/vol003_1.mp3" width="100%"></audio>
+
+[MP3ファイルをダウンロード](audio/vol003_1.mp3)
+
+----
+
+## ラジオの時系列順にポインタ
+
+### イントロ
+
+- 三浦さんのウェブサイト `r a("http://team1mile.com/asarinlab/")`
+- 業績リスト `r a("http://team1mile.com/asarinlab/publications/")`
+- ファン心理・祭り・熱狂・炎上・２ちゃんねる
+- 中京大学心理学研究科学術講演会「SNSから社会の心を読む：「ビッグデータ」の心理学」 `r a("https://www.chukyo-u.ac.jp/educate/psychol/news/171122.html")`
+- マイルチャンピオンシップ `r a("https://ja.wikipedia.org/wiki/%E3%83%9E%E3%82%A4%E3%83%AB%E3%83%81%E3%83%A3%E3%83%B3%E3%83%94%E3%82%AA%E3%83%B3%E3%82%B7%E3%83%83%E3%83%97")`
+- 味噌おでんで有名な「みゆき」`r a("https://tabelog.com/aichi/A2301/A230108/23006642/")`
+- 友永先生企画の犬山ICBM1 `r a("https://langint.pri.kyoto-u.ac.jp/langint/news/icbm/index.html")`
+- 犬山の三浦さん発表スライド 「PSYCHOLOGY OF PSYCHOLOGICAL RESEARCH （社会）心理学者は何を測定しているのか という根本的な問題について」 `r a("https://www.slideshare.net/asarin/20180106-icbm1-public")`
+- 相対化
+
+### 探索的研究の立ち位置的なもの
+
+- satisfice研究論文（１） `r a("https://www.jstage.jst.go.jp/article/jssp/31/1/31_892/_article/-char/ja/")`
+- satisfice研究論文（２） `r a("https://www.jstage.jst.go.jp/article/jssp/31/2/31_907/_article/-char/ja/")`
+- satisfice研究記事 `r a("http://www.socialpsychology.jp/ronbun_news/31_02_04.html")`)
+- 共著者の小林さん `r a("https://researchmap.jp/munimuni/")`
+- 暗黒卿 `r a("https://ja.wikipedia.org/wiki/%E3%82%B7%E3%82%B9_(%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%BB%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%BA)")`
+- 探索的研究を妨げるものではないということ
+- にんげんだもの `r a("https://ja.wikipedia.org/wiki/%E7%9B%B8%E7%94%B0%E3%81%BF%E3%81%A4%E3%82%92")`
+- 選挙の研究 `r a("https://www.jstage.jst.go.jp/article/jssp/32/3/32_0955/_article/-char/ja/")`
+- 多重比較汚染
+
+### 再現可能性についての研究者心理・抵抗感など
+
+- 再現性の萌芽研究 `r a("http://asarin.team1mile.com/replicability/jsps_kakenhi")`
+- 乙事主さんのコメント `r a("https://zawazawa.jp/todaradio/topic/1/12")`
+- 三浦さんツイート `r a("https://twitter.com/asarin/status/950469435906666496")`
+- 「ほんまかいな」追試だけではなく「ほんまやんな」研究も。
+- 視覚探索 `r a("https://kagaku-jiten.com/cognitive-psychology/perception/visual-attention.html")`
+- Dot probe task `r a("https://en.wikipedia.org/wiki/Dot-probe_paradigm")`
+- 寺田寅彦 `r a("https://ja.wikipedia.org/wiki/%E5%AF%BA%E7%94%B0%E5%AF%85%E5%BD%A6")`
+- 寺田寅彦「科学者とあたま」 `r a("http://www.aozora.gr.jp/cards/000042/files/2359_13797.html")`
+- 純粋知性体
+
+### 心理学会広報関連
+
+- 日本心理学会 `r a("https://psych.or.jp/")`
+- 日本心理学会 広報委員会 `r a("https://psych.or.jp/about/iinkai_kouhou/")`
+- 日本心理学会 公式Twitter `r a("https://twitter.com/jpa_psych")`
+- 社会心理学会 `r a("http://www.socialpsychology.jp/")`
+- 動画で見る社会心理学 `r a("http://www.socialpsychology.jp/jssppr/movie/")`
+- 社心広報委員会 Twitter `r a("https://twitter.com/jssp_pr")`
+- 公正世界仮説 `r a("http://psychmuseum.jp/just_world/")`
+- バズってるツイート `r a("https://twitter.com/neko_mami_re/status/951960495610712064")`
+- Stand alone complex `r a("https://ja.wikipedia.org/wiki/%E6%94%BB%E6%AE%BB%E6%A9%9F%E5%8B%95%E9%9A%8A_STAND_ALONE_COMPLEX")`
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelement-and-player.min.js"></script>
+
+
