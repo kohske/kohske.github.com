@@ -21,6 +21,7 @@
     <item url="schedulej.html" name="schedule">発表予定</item>
     <item url="jobj.html" name="job">求人情報</item>
     <item url="accessj.html" name="access">アクセス</item>
+    <item url="linkj.html" name="link">リンク</item>    
   </common>
   <common name="column2" lang="e">
     <item url="memberse.html" name="members">Members</item>
@@ -75,6 +76,16 @@
 	
   </file>
 
+  <file n="link" type="j">
+    <ul>
+      <li><a href="https://www.chukyo-u.ac.jp/">中京大学</a> <a href="https://www.chukyo-u.ac.jp/educate/psychol/">心理学部</a> <a href="https://www.chukyo-u.ac.jp/educate/psychol/kyoin/kyoin_21.html">教員紹介</a></li>
+      <li><a href="http://kao-shintai.jp/">科研費新学術領域「顔・身体学」</a></li>
+      <li><a href="http://www.shitsukan.jp/ISST">科研費新学術領域「多元質感知」</a></li>
+      <li><a href="http://www.fennel.sci.waseda.ac.jp/indexj.html">早稲田大学 渡邊研究室</a></li>
+      <li><a href="http://cs.c.u-tokyo.ac.jp/index.html">東京大学 植田研究室</a></li>
+    </ul>
+  </file>
+  
   
   <!-- contents -->
   <xi:include href="member.xml" xpointer="xpointer(/files/file)" parse="xml" />
