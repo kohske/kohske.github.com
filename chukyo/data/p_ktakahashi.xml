@@ -112,6 +112,7 @@
     </publist>
     <!-- international conference @i -->
     <publist type="i">
+      <pli type="c" lang="ej"><TI>Audiovisual semantic congruency effect with onomatopoeia.</TI><AU>Fedalgo, A., Takahashi, K., Murata, A., &#38; Watanabe, K. </AU><YE>2018/2/1-3 </YE><CO>10th International Conference on Knowledge and Smart Technology (KST2018)</CO><PL>Chiangmai, Thailand</PL><url>http://kst.buu.ac.th/2018new/</url></pli>            
       <pli type="c" lang="ej"><TI>Psychology of the face: inter-individual, inter-cultural, and inter-disciplinary approach. (Symposium organizer)</TI><AU>Takahashi, K., Matsuyoshi, D., &#38; Ujiie, Y.</AU><YE>2017/8/21-25</YE><CO>International Society for Theoretical Psychology 2017</CO><PL>Rikkyo University, Japan</PL><url>https://www2.rikkyo.ac.jp/web/istp2017/index.html</url></pli>
       <pli type="c" lang="ej"><TI>Yagoto Illusion: illusory colorization on a static achromatic grid pattern.</TI><AU>Kobayashi, Y. &#38; Takahashi, K.</AU><YE>2017/5/19-24</YE><CO>VSS 17th Annual Meeting</CO><PL>Florida, USA</PL><url>http://www.visionsciences.org/</url></pli>
       <pli type="c" lang="ej"><TI>Visual search asymmetry between photographs and illustrations of animals and man-made objects</TI><AU>Takahashi, K. &#38; Watanabe, K.</AU><YE>2016/8/28-9/1</YE><CO>39th European Conference on Visual Perception</CO><PL>Barcelona, Spain</PL><url>http://www.ub.edu/ecvp/</url></pli>
@@ -132,7 +133,7 @@
       <pli type="c" lang="ej"><TI>Pattern from visual noise motion: animacy versus intention.</TI><AU>Takahashi, K., &#38; Watanabe, K.</AU><YE>2014/8/24-28</YE><CO> The 37th European Conference on Visual Perception (ECVP)</CO><PL>Belgrade, Serbia</PL><url>http://ecvp2014.org/</url></pli>
       <pli type="c" lang="ej"><TI>Visual illusion: a crossroads of vision science and entertainment.</TI><AU>Takahashi, K. &#38; Watanabe, K.</AU><YE>2014/8/5</YE><CO>The Mind Across Cultures, A British Academy Early Careers Networking Event</CO><PL>University of York</PL><url></url></pli>
       <pli type="c" lang="ej"><TI>Motion standstill by flicker: a novel illusion</TI><AU>Takahashi, K. &#38; Watanabe, K.</AU><YE>2014/7/24</YE><CO>RIEC International Symposium on Perception and Communication</CO><PL>Tohoku University, Sendai, Japan</PL><url>http://www.vision.riec.tohoku.ac.jp/RIECsymp2014/Site2/RIEC_International_Symposium_2014.html</url></pli>
-     <pli type="c" lang="ej"><TI>Seeing objects as face enhances object detection.</TI><AU>Takahashi, K., &#38; Watanabe, K.</AU><YE>2014/7/19-22</YE><CO>The 10th Asia-Pacific Conference on Vision (APCV 2014)</CO><PL>Takamatsu, Japan</PL><url>http://www.visionsociety.jp/apcv2014/</url></pli>
+      <pli type="c" lang="ej"><TI>Seeing objects as face enhances object detection.</TI><AU>Takahashi, K., &#38; Watanabe, K.</AU><YE>2014/7/19-22</YE><CO>The 10th Asia-Pacific Conference on Vision (APCV 2014)</CO><PL>Takamatsu, Japan</PL><url>http://www.visionsociety.jp/apcv2014/</url></pli>
       <pli type="c" lang="ej"><TI>Interference of manual reactions by concurrent saccades.</TI><AU>Ueda, H., Takahashi, K., &#38; Watanabe, K.</AU><YE>2014/7/19-22</YE><CO>The 10th Asia-Pacific Conference on Vision (APCV 2014)</CO><PL>Takamatsu, Japan</PL><url>http://www.visionsociety.jp/apcv2014/</url></pli>
       <pli type="c" lang="ej"><TI>Crossmodal semantic priming of visual sensitivity with onomatopoeia.</TI><AU>Rei-Fedalgo, A., Takahashi, K., &#38; Watanabe, K.</AU><YE>2014/7/5-9</YE><CO>9th FENS Forum of Neuroscience (FENS/IBRO Traval Award)</CO><PL>Milan, Italy</PL><url>http://fens2014.neurosciences.asso.fr</url></pli>
       <pli type="c" lang="ej"><TI>Face is beautiful: aesthetic evaluation of pareidolian faces.</TI><AU>Takahashi, K. &#38; Watanabe, K.</AU><YE>2014/1/30-31</YE><CO>Special session on "Recent Advances in Cognitive Science", 6th International Conference on Knowledge and Smart Technology (KST-2014)</CO><PL>Burapha University, Thailand</PL><url>http://kst.buu.ac.th/</url></pli>
@@ -250,6 +251,7 @@
     </publist>
     <!-- others -->
     <publist type="o">
+      <pli type="j" lang="j"><AU>高橋康介</AU><YE>2017</YE><TI>マハレ珍道中 第９回 帰路、一人旅、ムガンボ村にて船を待つ</TI><JO>マハレ珍聞</JO><VO>30 (2017冬)</VO><url>http://mahale.main.jp/chimpun/030/03.html</url></pli>      
       <pli type="j" lang="j"><AU>鑓水秀和・牧野義隆・高橋康介</AU><YE>2017</YE><TI>複数の男性顔からなるグループに対する魅力判断.</TI><JO>中京大学心理学研究科・心理学部紀要</JO><VO>17</VO><IS>1</IS><PP>73-80</PP><url></url><doi></doi></pli>
       <pli type="j" lang="ej"><AU>Kondo, A., Takahashi, K., &#38; Watanabe, K.</AU><YE>2014</YE><TI>Effects of gender membership on sequential dependencies in facial attractiveness judgments.</TI><JO>The Japanese Journal of Psychonomic Science</JO><VO>33</VO><IS>1</IS><PP>115-116</PP><url></url><doi></doi></pli>      
       <pli type="j" lang="j"><AU>近藤あき・新美亮輔・高橋康介・渡邊克巳 </AU><YE>2011</YE><TI>物体と顔の魅力度評定における系列効果.</TI><JO>信学技報</JO><VO>111</VO><IS>155</IS><PP>63-68</PP></pli>
@@ -293,9 +295,38 @@
     <publist type="x" jname="教育・授業等 (他大学非常勤講師・集中講義等)" ename="ZZZ">
       <pli type="x" lang="j">法政大学 理工学部 (2013年度後期 認知動態学)</pli>
     </publist>
-    <publist type="x" jname="その他 (アウトリーチ・メディアなど)" ename="ZZZ">
+    <publist type="x" jname="アウトリーチ" ename="ZZZ">
       <pli type="x" lang="j">2017年10月21日 名古屋土曜学習プログラム「だまし絵体験学習」</pli>
+      <pli type="x" lang="j">理科教育ニュース 1004号 (2017年3月8日) 監修「斜塔錯視」</pli>
     </publist>
+    <publist type="x" jname="査読" ename="ZZZ">    
+      <pli type="x" lang="j">IEICE TRANSACTIONS on Communications</pli>
+      <pli type="x" lang="j">Psychologia</pli>
+      <pli type="x" lang="j">認知科学</pli>
+      <pli type="x" lang="j">電子情報通信学会論文誌 D</pli>
+      <pli type="x" lang="j">Journal of Vision</pli>
+      <pli type="x" lang="j">PLOS ONE</pli>
+      <pli type="x" lang="j">R Journal</pli>
+      <pli type="x" lang="j">心理学研究</pli>
+      <pli type="x" lang="j">Neuroscience Letters</pli>
+      <pli type="x" lang="j">IEICE TRANSACTIONS on Information and Systems</pli>
+      <pli type="x" lang="j">電子情報通信学会論文誌 A</pli>
+      <pli type="x" lang="j">American Journal of Human Biology</pli>
+      <pli type="x" lang="j">Frontiers in Integrative Neuroscience</pli>
+      <pli type="x" lang="j">Experimental Brain Research</pli>
+      <pli type="x" lang="j">Journal of Autism and Developmental Disorders</pli>
+      <pli type="x" lang="j">Neuropsychologia</pli>
+      <pli type="x" lang="j">Perception</pli>
+      <pli type="x" lang="j">i-Perception</pli>
+      <pli type="x" lang="j">Advances in Cognitive Psychology</pli>
+      <pli type="x" lang="j">The Journal of General Psychology</pli>
+      <pli type="x" lang="j">情報処理学会論文誌</pli>
+      <pli type="x" lang="j">Frontiers in Psychology</pli>
+      <pli type="x" lang="j">Japanese Psychological Research</pli>
+      <pli type="x" lang="j">Neurodegenerative Disease Management</pli>
+      <pli type="x" lang="j">Scientific Reports</pli>
+    </publist>
+
     <linkj>
     </linkj>
   </profile>
