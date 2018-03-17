@@ -111,6 +111,10 @@ knitr::include_graphics("material/vol004_fig04.jpg")
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 - ブロッキング（阻止）: `r a("https://kagaku-jiten.com/learning-psychology/theory-of-classical-conditioning.html")`
+- 澤先生によるブロッキングの解説スライド    
+```{r, echo=FALSE, out.width = "600px"}
+knitr::include_graphics("material/vol004_fig05.jpg")
+```
 - オープンサイエンス
 - 実験環境のビデオ撮り
 - SPSPの発表: `r a("https://spsp2018.zerista.com/event/member/438321")`
