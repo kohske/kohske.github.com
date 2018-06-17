@@ -88,6 +88,9 @@
     </publist>
     <!-- invited or special lectures -->
     <publist type="l">
+      <pli type="c" lang="j"><TI>顔・パレイドリア・文化</TI><AU>高橋康介</AU><YE>2018/3/8</YE><CO>KG-RCSP合同ゼミ</CO><PL>関西学院大学</PL><url>http://team1mile.com/asarinlab/2018/01/25/kg-rcsp4thseminar/</url></pli>
+      <pli type="c" lang="j"><TI>フィールドワーカーから見た心理学実験と実験心理学者から見たフィールドワーク</TI><AU>島田将喜・高橋康介・大石高典・錢琨</AU><YE>2018/3/8</YE><CO>KG-RCSP合同ゼミ</CO><PL>関西学院大学</PL><url>http://team1mile.com/asarinlab/2018/01/25/kg-rcsp4thseminar/</url></pli>
+      <pli type="c" lang="j"><TI>再現可能性ベストプラクティス</TI><AU>高橋康介</AU><YE>2018/3/12</YE><CO>専修大学社会知性開発研究センター／心理科学研究センター「心理学における再現可能性入門」</CO><PL>専修大学 サテライトキャンパス スタジオＡ</PL><url>https://kunisatolab.github.io/main/intro_reproducible_res.html</url></pli>            
       <pli type="c" lang="j"><TI>顔認知における感性情報処理</TI><AU>高橋康介</AU><YE>2018/1/18</YE><CO>第17回 感性学研究会</CO><PL>九州大学箱崎キャンパス</PL><url>http://www.psycho.hes.kyushu-u.ac.jp/~lab_miura/Kansei/</url></pli>
       <pli type="c" lang="j"><TI>顔認識の多様性を知る</TI><AU>高橋康介</AU><YE>2018/1/6-7</YE><CO>第1回 犬山認知行動研究会議</CO><PL>京都大学霊長類研究所</PL><url>https://langint.pri.kyoto-u.ac.jp/langint/news/icbm/index.html</url></pli>      
       <pli type="c" lang="j"><TI>知覚の初期設定：なぜみえないはずのものがみえるのか</TI><AU>高橋康介</AU><YE>2017/3/10</YE><CO>立命館大学システム視覚科学研究センター主催シンポジウム「錯視のシステム視覚科学」</CO><PL>立命館大学大阪いばらきキャンパス(OIC)</PL><url>http://www.psy.ritsumei.ac.jp/~akitaoka/system-symposium2017.jpg</url></pli>      
@@ -176,6 +179,7 @@
     </publist>
     <!-- domestic conference -->
     <publist type="d">
+      <pli type="c" lang="j"><TI>続・フィールドにおける認知実験-文化人類学と認知心理学の融合による仮説生成と仮説検証の循環</TI><AU>高橋康介</AU><YE>2018/6/3</YE><CO>日本文化人類学会第52回研究大会分科会「文化人類学と異分野のコラボレーション―達成したこと・問題点・今後の課題」</CO><PL>弘前大学</PL><url>https://confit.atlas.jp/guide/event/jasca52nd/top</url></pli>            
       <pli type="c" lang="j"><TI>ヘビを想起させる運動刺激に感じる不快感.</TI><AU>高橋康介・安藤大樹</AU><YE>2017/12/9-10</YE><CO>日本人間行動進化学会第10回大会</CO><PL>名古屋工業大学</PL><url>https://sites.google.com/site/hbesjnagoya/</url></pli>
       <pli type="c" lang="j"><TI>複数の顔の平均顔としての表象を形成できるか</TI><AU>鑓水秀和・高橋康介</AU><YE>2017/12/1-2</YE><CO>日本基礎心理学会第36回大会</CO><PL>立命館大学大阪いばらきキャンパス(大阪府茨木市)</PL><url>http://www.psy.ritsumei.ac.jp/jps2017/</url></pli>
       <pli type="c" lang="j"><TI>続・顔と身体表現の多文化比較フィールド実験研究.</TI><AU>高橋康介・島田将喜・大石高典・錢琨</AU><YE>2017/12/2</YE><CO>公開シンポジウム「トランスカルチャー状況下における顔身体学の構築 (第2回)」</CO><PL>東京外国語大学</PL><url>http://kao-shintai.jp/news/0003.html</url></pli>
@@ -251,6 +255,7 @@
     </publist>
     <!-- others -->
     <publist type="o">
+      <pli type="j" lang="j"><AU>高橋康介</AU><YE>2018</YE><TI>認知心理学者のタンザニア滞在記</TI><JO>心理学ワールド</JO><VO>81</VO><url>https://psych.or.jp/publication/world081/</url></pli>      
       <pli type="j" lang="j"><AU>高橋康介</AU><YE>2017</YE><TI>マハレ珍道中 第９回 帰路、一人旅、ムガンボ村にて船を待つ</TI><JO>マハレ珍聞</JO><VO>30 (2017冬)</VO><url>http://mahale.main.jp/chimpun/030/03.html</url></pli>      
       <pli type="j" lang="j"><AU>鑓水秀和・牧野義隆・高橋康介</AU><YE>2017</YE><TI>複数の男性顔からなるグループに対する魅力判断.</TI><JO>中京大学心理学研究科・心理学部紀要</JO><VO>17</VO><IS>1</IS><PP>73-80</PP><url></url><doi></doi></pli>
       <pli type="j" lang="ej"><AU>Kondo, A., Takahashi, K., &#38; Watanabe, K.</AU><YE>2014</YE><TI>Effects of gender membership on sequential dependencies in facial attractiveness judgments.</TI><JO>The Japanese Journal of Psychonomic Science</JO><VO>33</VO><IS>1</IS><PP>115-116</PP><url></url><doi></doi></pli>      
@@ -296,6 +301,8 @@
       <pli type="x" lang="j">法政大学 理工学部 (2013年度後期 認知動態学)</pli>
     </publist>
     <publist type="x" jname="アウトリーチ" ename="ZZZ">
+      <pli type="x" lang="j">2018年 岩倉市生涯学習センター教養講座「錯覚-だまされる脳の不思議-」</pli>      
+      <pli type="x" lang="j">2018年6月23日 名古屋土曜学習プログラム「だまし絵体験学習」</pli>      
       <pli type="x" lang="j">2017年10月21日 名古屋土曜学習プログラム「だまし絵体験学習」</pli>
       <pli type="x" lang="j">理科教育ニュース 1004号 (2017年3月8日) 監修「斜塔錯視」</pli>
     </publist>
