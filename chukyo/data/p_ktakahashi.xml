@@ -34,7 +34,7 @@
       </career>
     </bio>
     <!-- journal articles -->
-    <publist type="j">
+    <publist type="j">      
       <pli type="j" lang="ej"><AU>Takahashi, K.</AU><YE>2017</YE><TI>Curvature Blindness Illusion.</TI><JO>i-Perception</JO><VO>8</VO><IS></IS><PP>1-12</PP><url></url><doi>10.1177/2041669517742178</doi></pli>
       <pli type="j" lang="ej"><AU>Takahashi, K., Oishi, T., &#38; Shimada, M.</AU><YE>2017</YE><TI>Is ☺ Smiling? Cross-cultural Study on Recognition of Emoticon’s Emotion.</TI><JO>Journal of Cross-Cultural Psychology</JO><VO>48</VO><IS>10</IS><PP>1578-1586</PP><url></url><doi>10.1177/0022022117734372</doi></pli>
       <pli type="j" lang="ej"><AU>Takahashi, K., Fukuda, H., Watanabe, K., &#38; Ueda, K.</AU><YE>2017</YE><TI>Psychological influences of animal-themed food decorations.</TI><JO>Food Quality and Preference.</JO><VO></VO><IS></IS><PP></PP><url></url><doi>10.1016/j.foodqual.2017.09.004</doi></pli>
@@ -179,8 +179,9 @@
       <pli type="c" lang="ej" pt="p"><AU>Takahashi, K., &#38; Saiki, J.</AU><YE>2006</YE><TI>Illusory spatial perception induced by the temporal discrepancy between modalities in dynamic vision-haptics integration.</TI><CO>The 7th International Multisensory Research Forum</CO><PL>June, Dublin, Ireland</PL></pli>
       <pli type="c" lang="ej" pt="p"><AU>Takahashi, K., Saiki, J.</AU><YE>2005</YE><TI>Combining multi-modal information of a deformation of an object.</TI><CO>Poster Presented at Vision Sciences Society Meeting</CO><PL>May, Sarasota, FL</PL></pli>
     </publist>
-    <!-- domestic conference -->
+    <!-- domestic conference @d -->
     <publist type="d">
+      <pli type="c" lang="j"><TI>顔の平均知覚における倒立効果の影響</TI><AU>鑓水秀和・高橋康介</AU><YE>2018/9/25-27</YE><CO>日本心理学会第82回大会</CO><PL>仙台国際センター</PL><url>http://jpa2018.com/</url></pli>            
       <pli type="c" lang="j"><TI>バーチャルリアリティを通した「意味」の理解</TI><AU>高橋康介・鳴海拓志</AU><YE>2018/8/30-9/1</YE><CO>日本認知科学会第35回大会</CO><PL>立命館大学 大阪いばらきキャンパス</PL><url>http://www.jcss.gr.jp/meetings/jcss2018/index.html</url></pli>                              
       <pli type="c" lang="j"><TI>意味理解とオブジェクト認知: ホモ・クオリタスとしての人間理解へ向けて. (オーガナイズドセッション)</TI><AU>日高昇平・高橋康介</AU><YE>2018/8/30-9/1</YE><CO>日本認知科学会第35回大会</CO><PL>立命館大学 大阪いばらきキャンパス</PL><url>http://www.jcss.gr.jp/meetings/jcss2018/index.html</url></pli>                        
       <pli type="c" lang="j"><TI>意味の過剰な読み込みに関する実験的検討-アニマシーを例にして-</TI><AU>今泉拓・高橋康介・植田一博</AU><YE>2018/8/30-9/1</YE><CO>日本認知科学会第35回大会</CO><PL>立命館大学 大阪いばらきキャンパス</PL><url>http://www.jcss.gr.jp/meetings/jcss2018/index.html</url></pli>                  
@@ -305,7 +306,7 @@
     <publist type="x" jname="教育・授業等 (他大学非常勤講師・集中講義等)" ename="ZZZ">
       <pli type="x" lang="j">法政大学 理工学部 (2013年度後期 認知動態学)</pli>
     </publist>
-    <publist type="x" jname="アウトリーチ" ename="ZZZ">
+    <publist type="x" jname="アウトリーチ" ename="ZZZ">      
       <pli type="x" lang="j">2018年 岩倉市生涯学習センター教養講座「錯覚-だまされる脳の不思議-」</pli>      
       <pli type="x" lang="j">2018年6月23日 名古屋土曜学習プログラム「だまし絵体験学習」</pli>      
       <pli type="x" lang="j">2017年10月21日 名古屋土曜学習プログラム「だまし絵体験学習」</pli>
