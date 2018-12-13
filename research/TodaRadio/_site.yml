@@ -5,6 +5,8 @@ navbar:
   left:
     - text: "過去のラジオ"
       menu:
+        - text: "Vol. 005 (2018/12/10 ゲスト神谷先生)"
+          href: vol005.html
         - text: "Vol. 004 (2018/03/12 専修大学公開収録)"
           href: vol004.html
         - text: "Vol. 003 (2018/01/15 ミウラジオ)"

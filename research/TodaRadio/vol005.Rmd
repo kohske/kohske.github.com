@@ -1,0 +1,201 @@
+---
+title: "TODA RADIO #005 ゲスト神谷先生"
+output: html_document
+---
+
+```{r echo=FALSE}
+a=function(u)paste0("<a href='", u, "' target='_blank'>", u, "</a>")
+```
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelementplayer.min.css">
+
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-hashtags="TodaRadio" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+- ハッシュタグ`#TodaRadio`でお願いします（↑のボタンから行けます）。
+
+※ 本ラジオでの発言は個人の見解であり、所属する組織の見解ではありません。
+
+※ 科学的な正しさを重視して発言していますが、発言には誤りが含まれることもありえます。
+
+※ ご意見、苦情などありましたら高橋までメール takahashi.kohske@gmail.com またはツイッター [\@kohske](https://twitter.com/kohske) までご連絡ください。
+
+※ [ディスカッションルーム](discussion.html)もあります。 
+
+
+----
+
+- 収録日: 2018/12/10
+- 場所: [Massa BAR & BISTRO](http://massa.jp/)
+- メンバー
+    - ゲスト：[神谷先生](https://researchmap.jp/y_kamitani/)
+    - コメンテーター: 池田さん
+    - パーソナリティ: 高橋
+
+## 概要
+
+- Part 1 (12:16): イントロ（神谷先生紹介）・アートとデコーディングについて
+- Part 2 (11:35): 再現可能性の問題を気にすることになったきっかけ
+- Part 3 (21:42): 認知神経科学の再現可能性問題
+- Part 4 (8:08): （基礎系）心理学への思い
+- Part 5 (23:53): オープンデータ・オープンサイエンスの実践とかラボ運営体制とか
+- Part 6 (11:20): 池田さんの質問・神谷先生の感想
+
+---
+
+### Part 1: イントロ（神谷先生紹介）・アートとデコーディングについて
+
+<audio class="mejs-player" controls="" data-mejsoptions='{"alwaysShowControls": true, "alwaysShowHours": true, "enableAutosize": true, "features": ["playpause", "progress", "current", "duration", "volume", "speed"]}' preload="auto" src="audio/vol005_1.mp3" width="100%"></audio>
+
+[MP3ファイルをダウンロード](audio/vol005_1.mp3)
+
+----
+
+### Part 2: 再現可能性の問題を気にすることになったきっかけ
+
+<audio class="mejs-player" controls="" data-mejsoptions='{"alwaysShowControls": true, "alwaysShowHours": true, "enableAutosize": true, "features": ["playpause", "progress", "current", "duration", "volume", "speed"]}' preload="auto" src="audio/vol005_2.mp3" width="100%"></audio>
+
+[MP3ファイルをダウンロード](audio/vol005_2.mp3)
+
+----
+
+### Part 3: 認知神経科学の再現可能性問題
+
+<audio class="mejs-player" controls="" data-mejsoptions='{"alwaysShowControls": true, "alwaysShowHours": true, "enableAutosize": true, "features": ["playpause", "progress", "current", "duration", "volume", "speed"]}' preload="auto" src="audio/vol005_3.mp3" width="100%"></audio>
+
+[MP3ファイルをダウンロード](audio/vol005_3.mp3)
+
+----
+
+### Part 4: （基礎系）心理学への思い
+
+<audio class="mejs-player" controls="" data-mejsoptions='{"alwaysShowControls": true, "alwaysShowHours": true, "enableAutosize": true, "features": ["playpause", "progress", "current", "duration", "volume", "speed"]}' preload="auto" src="audio/vol005_4.mp3" width="100%"></audio>
+
+[MP3ファイルをダウンロード](audio/vol005_4.mp3)
+
+----
+
+### Part 5: オープンデータ・オープンサイエンスの実践とかラボ運営体制とか
+
+<audio class="mejs-player" controls="" data-mejsoptions='{"alwaysShowControls": true, "alwaysShowHours": true, "enableAutosize": true, "features": ["playpause", "progress", "current", "duration", "volume", "speed"]}' preload="auto" src="audio/vol005_5.mp3" width="100%"></audio>
+
+[MP3ファイルをダウンロード](audio/vol005_5.mp3)
+
+----
+
+### Part 6: 池田さんの質問・神谷先生の感想
+
+<audio class="mejs-player" controls="" data-mejsoptions='{"alwaysShowControls": true, "alwaysShowHours": true, "enableAutosize": true, "features": ["playpause", "progress", "current", "duration", "volume", "speed"]}' preload="auto" src="audio/vol005_6.mp3" width="100%"></audio>
+
+[MP3ファイルをダウンロード](audio/vol005_6.mp3)
+
+----
+
+## ラジオの時系列順にポインタ
+
+### Part 1: イントロ（神谷先生紹介）・アートとデコーディングについて
+
+- 神谷先生 (Research Map) `r a("https://researchmap.jp/y_kamitani/")`
+- 神谷ラボ `r a("http://kamitani-lab.ist.i.kyoto-u.ac.jp/")`
+- ATRフェロー `r a("https://www.atr.jp/prize/fellow.html")`
+- 深層イメージ再構成関連 `r a("https://twitter.com/ykamit/status/946437140514091013")`
+- 再構成動画 `r a("https://www.youtube.com/watch?v=jsp1KaM-avU")`
+- bioRxivのプレプリント `r a("https://www.biorxiv.org/content/early/2017/12/28/240317")`
+- Pierre Huyghe `r a("https://en.wikipedia.org/wiki/Pierre_Huyghe")`
+- 那須太郎さん `r a("http://www.taronasugallery.com/")`
+- UUmwelt（Huygheの個展） `r a("https://www.serpentinegalleries.org/exhibitions-events/pierre-huyghe-uumwelt")`
+- UUmwelt紹介動画 `r a("https://www.youtube.com/watch?v=enx-vyWn7UU")`
+- 真鍋大度さん `r a("http://www.daito.ws/")`
+- 真鍋大度さんの個展 (鹿児島県霧島アートの森) `r a("https://open-air-museum.org/event/event-36404")`
+- 夢の論文 `r a("http://science.sciencemag.org/content/340/6132/639")`
+- GANアート、クリスティーズで4800万円で落札の件 `r a("https://bijutsutecho.com/magazine/news/headline/18719")`
+- フランシス・ベーコン `r a("https://www.artpedia.jp/francis-bacon/")`
+- ピカソ `r a("https://www.artpedia.jp/pablo-picasso/")`
+- Maison book girl、京大教授とのコラボで「夢」を映像化 `r a("https://natalie.mu/music/news/310429")`
+- Maison book girl / 夢 / MV （分かる人にはわかると思いますが、MRI測定時のノイズ音が音楽に使われています）`r a("https://www.youtube.com/watch?v=DwcKed26KQ8")`
+- トライポフォビア（閲覧注意） `r a("https://tocana.jp/2017/07/post_13929_entry.html")`
+
+### Part 2: 再現可能性の問題を気にすることになったきっかけ
+
+- 下條先生 `r a("http://www.bbe.caltech.edu/people/shinsuke-shin-shimojo")`
+- ラマチャンドラン `r a("https://ja.wikipedia.org/wiki/%E3%83%B4%E3%82%A3%E3%83%A9%E3%83%A4%E3%83%8C%E3%83%AB%E3%83%BBS%E3%83%BB%E3%83%A9%E3%83%9E%E3%83%81%E3%83%A3%E3%83%B3%E3%83%89%E3%83%A9%E3%83%B3")`
+- SAS `r a("https://www.sas.com/en_us/software/stat.html")`
+- はるぼうについての論文 `r a("http://halbau.world.coocan.jp/hal87.html")`
+- はるぼう（最新版は多分コレ） `r a("http://halbau.jp/Contents/Software.htm")`
+- 行動プライミング `r a("http://psycnet.apa.org/record/1996-06400-003")`
+- そのあたりの話 `r a("http://chitosepress.com/2015/10/26/125/")`
+- Publish or Perish `r a("http://el.jibun.atmarkit.co.jp/gadgetaidedstudy/2015/07/publish-or-peri-88e9.html")`
+- 三浦さんのプロジェクト `r a("https://sites.google.com/view/asarin1003/")`
+
+### Part 3: 認知神経科学の再現可能性問題
+
+- SPM `r a("https://www.fil.ion.ucl.ac.uk/spm/")`
+- インファレンスの方向の話 (これはもっと議論を深めてみたい) `r a("https://twitter.com/ykamit/status/810663744279875584")`
+- このあたりも参考になるかも `r a("https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3240863/")`
+- Neurosynth `r a("http://neurosynth.org/")`
+- SNPとGWAS（遺伝子の話）はこのあたり `r a("https://bsd.neuroinf.jp/wiki/%E3%82%B2%E3%83%8E%E3%83%A0%E3%83%AF%E3%82%A4%E3%83%89%E9%96%A2%E9%80%A3%E8%A7%A3%E6%9E%90")`
+- Registered Replication Report on Mazar, Amir, and Ariely (2008) `r a("https://journals.sagepub.com/doi/full/10.1177/2515245918781032")`
+- 行動プライミング `r a("http://psycnet.apa.org/record/1996-06400-003")`
+- Diederik Stapel `r a("https://en.wikipedia.org/wiki/Diederik_Stapel")`
+- Human Connectome Project (HCP) `r a("http://www.humanconnectomeproject.org/")`
+- Neuro Spin `r a("http://www.meteoreservice.com/neurospin/")`
+- トリアージ `r a("https://ja.wikipedia.org/wiki/%E3%83%88%E3%83%AA%E3%82%A2%E3%83%BC%E3%82%B8")`
+- SOTA (State of the Art) `r a("https://ja.wiktionary.org/wiki/state_of_the_art")`
+
+### Part 4: （基礎系）心理学への思い
+
+- 神谷さんツイッター `r a("https://twitter.com/ykamit")`
+- ちょっと文脈が分かりづらいですが、神谷さんから心理学に対する愛情を感じる、という高橋の印象、ということです。
+- ダニエル・カーネマン `r a("https://ja.wikipedia.org/wiki/%E3%83%80%E3%83%8B%E3%82%A8%E3%83%AB%E3%83%BB%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%9E%E3%83%B3")`
+- 「ファスト＆スロー あなたの意思はどのように決まるか?」 `r a("https://www.amazon.co.jp/dp/B0716S2Z29")`
+- 山田さん `r a("https://sites.google.com/site/jyamadayuk/")`
+- 三浦さんのプロジェクト（再掲） `r a("https://sites.google.com/view/asarin1003/")`
+- オープンデータの話は次のパートで
+- 山田さんのFrontiersのコメンタリ `r a("https://www.frontiersin.org/articles/10.3389/fpsyg.2018.01831/full")`
+- PSYCOMMU (サイエンスコミュニケーション研究会) `r a("https://psycommu.webnode.jp/")`
+
+### Part 5: オープンデータ・オープンサイエンスの実践とかラボ運営体制とか
+
+- 神谷ラボのgithub `r a("https://github.com/KamitaniLab")`
+- 夢の研究のオープンデータ `r a("https://bicr.atr.jp/dni/en/2015/09/%E5%A4%A2%E5%86%85%E5%AE%B9%E3%82%92%E8%A7%A3%E8%AA%AD%E3%81%97%E3%81%9F%E7%A0%94%E7%A9%B6%E3%81%A7%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%9Ffmri%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E3%81%A8%E3%82%B5/")`
+- 脳プロ `r a("http://www.nips.ac.jp/srpbs/youkoso/index.html")`
+- ATR brainliner `r a("http://brainliner.jp/")`
+- Github `r a("https://github.com/")`
+- (神谷先生より、補足）「Githubを研究室で使い始めたのは2010年でした。最初は一つのプロジェクト（データベースのウェブアプリのコード）だけでしたが、徐々に、論文ごとにコードとデータ（へのポインタ）をGithubで公開するようになりました。」とのことです。
+- ちなみに高橋がGithubに参加したのも調べてみたら2010年でした。
+- プログラマの三大美徳（怠惰・短気・傲慢） `r a("https://moneyforward.com/engineers_blog/2016/02/08/engineers-virtue/")`
+- KISSの法則 `r a("https://ja.wikipedia.org/wiki/KISS%E3%81%AE%E5%8E%9F%E5%89%87")`
+- FSL `r a("https://fsl.fmrib.ox.ac.uk/fsl/fslwiki")`
+- リーダブルコード `r a("https://www.amazon.co.jp/dp/4873115655")`
+- 『再現可能性のすゝめ』 (宣伝) `r a("https://www.amazon.co.jp/dp/4320112431")`
+- 国里さんのこのあたりも参考に `r a("https://www.slideshare.net/YoshihikoKunisato/ss-77835559")`
+- Evernote `r a("https://evernote.com/intl/jp")`
+- スクラッチボックスではなくスクラップボックス (Scrapbox) `r a("https://scrapbox.io/")`
+- CFS (Continuous Flash Supression) `r a("https://www.ncbi.nlm.nih.gov/pubmed/15995700")`
+- 「目の話」 `r a("https://twitter.com/ykamit/status/1015515215968915456")`
+
+### Part 6: 池田さんの質問・神谷先生の感想
+
+- OSF `r a("https://osf.io/")`
+- 金井さん `r a("https://www.araya.org/archives/276")`
+- 圏論ワークショップ `r a("https://kohske.github.io/research/201901CTWS/")`
+- IIT (意識の統合情報理論) `r a("https://ja.wikipedia.org/wiki/%E6%84%8F%E8%AD%98%E3%81%AE%E7%B5%B1%E5%90%88%E6%83%85%E5%A0%B1%E7%90%86%E8%AB%96")`
+- 金井土谷ラジオ `r a("https://www.youtube.com/watch?v=orwXjp3HCio")`
+
+----
+
+###　感想
+
+心理学への思いなども含め、普段なかなか聞けないことをお話して頂きました。
+神谷先生、ありがとうございました。
+オープンサイエンスの実践など、私自身も勉強になりました。
+科学の透明性、再現性の向上のために、このラジオがどれくらい役立っているのかわかりませんが、
+ほんの少しでも、何かを考える、何かが変わっていくきっかけになれば幸いです。（高橋）
+
+ご意見、ご批判、コメントなどは、[ディスカッションルーム](discussion.html)までお願い致します。
+
+----
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelement-and-player.min.js"></script>
+
+
