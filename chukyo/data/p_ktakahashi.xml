@@ -34,10 +34,14 @@
       </career>
     </bio>
     <!-- journal articles -->
-    <publist type="j">      
+    <publist type="j">
+      <pli type="j" lang="ej"><AU>Abe, M. O., Koike, T., Okazaki, S., Sugawara, S. K., Takahashi, K., Watanabe, K., &#38; Sadato, N.</AU><YE>2019</YE><TI>Neural correlates of online cooperation during joint force production.</TI><JO>NeuroImage</JO><VO>191</VO><IS></IS><PP>150-161</PP><url></url><doi>10.1016/j.neuroimage.2019.02.003</doi></pli>    
+      <pli type="j" lang="ej"><AU>Irie, R., Kamagata, K., Kerever, A., Ueda, R., Yokosawa, S., Otake, Y., Ochi, H., Yoshizawa, H., Hayashi, A., Tagawa, K., Okazawa, H., Takahashi, K., Sato, K., Hori, M., Arikawa-Hirasawa, E., &#38; Aoki, S.</AU><YE>2018</YE><TI>The relationship between neurite density measured with confocal microscopy in a cleared mouse brain and metrics obtained from diffusion tensor and diffusion kurtosis imaging.</TI><JO>Magnetic Resonance in Medical Sciences</JO><VO>17</VO><IS>2</IS><PP>138-144</PP><url></url><doi>10.2463/mrms.mp.2017-0031</doi></pli>
+      <pli type="j" lang="ej"><AU>Weller, M., Takahashi, K., Watanabe, K., Bülthoff, H. H., &#38; Meilinger, T.</AU><YE>2018</YE><TI>The Object Orientation Effect in Exocentric Distances.</TI><JO>Frontiers in psychology</JO><VO>9</VO><IS></IS><PP>1374</PP><url></url><doi>10.3389/fpsyg.2018.01374</doi></pli>      
+      <pli type="j" lang="j"><AU>高橋康介・日髙昇平</AU><YE>2018</YE><TI>特集「ホモ・クオリタス: 過剰に意味を創り出す認知の理解に向けて」の編集にあたって.</TI><JO>認知科学</JO><VO>25</VO><IS>1</IS><PP>3-6</PP><url></url><doi>10.11225/jcss.25.3</doi></pli>
+      <pli type="j" lang="ej"><AU>Takahashi, K., Fukuda, H., Watanabe, K., &#38; Ueda, K.</AU><YE>2018</YE><TI>Psychological influences of animal-themed food decorations.</TI><JO>Food Quality and Preference.</JO><VO>64</VO><IS></IS><PP>232-237</PP><url></url><doi>10.1016/j.foodqual.2017.09.004</doi></pli>            
       <pli type="j" lang="ej"><AU>Takahashi, K.</AU><YE>2017</YE><TI>Curvature Blindness Illusion.</TI><JO>i-Perception</JO><VO>8</VO><IS></IS><PP>1-12</PP><url></url><doi>10.1177/2041669517742178</doi></pli>
       <pli type="j" lang="ej"><AU>Takahashi, K., Oishi, T., &#38; Shimada, M.</AU><YE>2017</YE><TI>Is ☺ Smiling? Cross-cultural Study on Recognition of Emoticon’s Emotion.</TI><JO>Journal of Cross-Cultural Psychology</JO><VO>48</VO><IS>10</IS><PP>1578-1586</PP><url></url><doi>10.1177/0022022117734372</doi></pli>
-      <pli type="j" lang="ej"><AU>Takahashi, K., Fukuda, H., Watanabe, K., &#38; Ueda, K.</AU><YE>2017</YE><TI>Psychological influences of animal-themed food decorations.</TI><JO>Food Quality and Preference.</JO><VO></VO><IS></IS><PP></PP><url></url><doi>10.1016/j.foodqual.2017.09.004</doi></pli>
       <pli type="j" lang="ej"><AU>Jung, E., Takahashi, K., Watanabe, K., de la Rosa, S., Butz, M.V., Bülthoff, H.H., &#38; Meilinger, H.</AU><YE>2016</YE><TI>The Influence of Human Body Orientation on Distance Judgments.</TI><JO>Frontiers in Psychology</JO><VO>7</VO><IS>217</IS><PP></PP><url></url><doi>10.3389/fpsyg.2016.00217</doi></pli>      
       <pli type="j" lang="ej"><AU>Takahashi, K., &#38; Watanabe, K.</AU><YE>2015</YE><TI>Mental summation of temporal duration within and across senses.</TI><JO>PLoS ONE</JO><VO>10</VO><IS>10</IS><PP>e0141466</PP><url></url><doi>10.1371/ journal.pone.0141466</doi></pli>
       <pli type="j" lang="ej"><AU>Takahashi, K., &#38; Watanabe, K.</AU><YE>2015</YE><TI>Seeing objects as faces enhances object detection.</TI><JO>i-Perception</JO><VO>6</VO><IS>5</IS><PP></PP><url></url><doi>10.1177/2041669515606007</doi></pli>
@@ -89,6 +93,7 @@
     </publist>
     <!-- invited or special lectures -->
     <publist type="l">
+      <pli type="c" lang="j"><TI>知覚の恒常性（constancy）と認知的錯覚の類似性について.</TI><AU>高橋康介</AU><YE>2019/2/8</YE><CO>知識科学に基づくイノベーションデザインセミナー</CO><PL>北陸先端科学技術大学院大学</PL><url>https://www.jaist.ac.jp/whatsnew/event/2019/01/30-3.html</url></pli>            
       <pli type="c" lang="j"><TI>身体選択の自由と認知の恒常性</TI><AU>高橋康介</AU><YE>2018/10/20</YE><CO>第15回クロスモーダルデザインワークショップ</CO><PL>東北大学片平キャンパス</PL><url>https://goo.gl/b9ydEm</url></pli>      
       <pli type="c" lang="j"><TI>顔・パレイドリア・文化</TI><AU>高橋康介</AU><YE>2018/3/8</YE><CO>KG-RCSP合同ゼミ</CO><PL>関西学院大学</PL><url>http://team1mile.com/asarinlab/2018/01/25/kg-rcsp4thseminar/</url></pli>
       <pli type="c" lang="j"><TI>フィールドワーカーから見た心理学実験と実験心理学者から見たフィールドワーク</TI><AU>島田将喜・高橋康介・大石高典・錢琨</AU><YE>2018/3/8</YE><CO>KG-RCSP合同ゼミ</CO><PL>関西学院大学</PL><url>http://team1mile.com/asarinlab/2018/01/25/kg-rcsp4thseminar/</url></pli>
@@ -182,6 +187,11 @@
     </publist>
     <!-- domestic conference @d -->
     <publist type="d">
+      <pli type="c" lang="j"><TI>恒常性（constancy）の構造と認知的錯覚への適用.</TI><AU>高橋康介・日高昇平</AU><YE>2019/2/25-26</YE><CO>第13回 錯覚ワークショップ 錯覚現象のモデリングとその応用</CO><PL>明治大学中野キャンパス</PL><url>http://cmma.mims.meiji.ac.jp/events/jointresearch_seminars/index_2018.html#006</url></pli>            
+      <pli type="c" lang="j"><TI>圏論で恒常性 (constancy) の一般化を目指す.</TI><AU>高橋康介</AU><YE>2019/1/17</YE><CO>ワークショップ「圏論による認知モデリングの可能性」</CO><PL>長浜バイオ大学</PL><url>https://kohske.github.io/research/201901CTWS/</url></pli>
+      <pli type="c" lang="j"><TI>フィールドで実験をするという行為について.</TI><AU>高橋康介</AU><YE>2019/1/5-6</YE><CO>第2回 犬山認知行動研究会議</CO><PL>日本モンキーセンター (愛知県犬山市)</PL><url>https://sites.google.com/view/icbm-2/home</url></pli>      
+      <pli type="c" lang="j"><TI>☺は笑っていますか？絵文字の表情認知に関する文化比較研究.</TI><AU>高橋康介</AU><YE>2018/11/30</YE><CO>基礎心理学会第37回大会 若手オーラルセッション</CO><PL>専修大学生田キャンパス</PL><url>http://psychonomic.jp/young/ypsoty/intro.html</url></pli>      
+      <pli type="c" lang="j"><TI>集合体恐怖症における凹凸の量の効果.</TI><AU>高橋康介・粂柚里・近藤晴香</AU><YE>2018/11/30-2018/12/2</YE><CO>基礎心理学会第37回大会</CO><PL>専修大学生田キャンパス</PL><url>http://www3.psy.senshu-u.ac.jp/~jps2018/</url></pli>
       <pli type="c" lang="j"><TI>身体選択の自由と認知の恒常性</TI><AU>高橋康介</AU><YE>2018/10/20</YE><CO>第15回クロスモーダルデザインワークショップ</CO><PL>東北大学片平キャンパス</PL><url>https://goo.gl/b9ydEm</url></pli>      
       <pli type="c" lang="j"><TI>横縞の服はなぜ太って見えるのか? 縞の方向と視覚的な重さの知覚</TI><AU>高橋康介・伊藤沙友里</AU><YE>2018/10/20-22</YE><CO>第10回多感覚研究会</CO><PL>東北大学片平キャンパス</PL><url>https://sites.google.com/site/multisensejapan/</url></pli>      
       <pli type="c" lang="j"><TI>顔の平均知覚における倒立効果の影響</TI><AU>鑓水秀和・高橋康介</AU><YE>2018/9/25-27</YE><CO>日本心理学会第82回大会</CO><PL>仙台国際センター</PL><url>http://jpa2018.com/</url></pli>            
@@ -278,6 +288,7 @@
     </publist>
     <!-- awards -->
     <publist type="a">
+      <pli type="x" lang="j"><a href="http://psychonomic.jp/young/">2018年 The Young Psychonomic Scientist of the Year</a> 受賞 (☺は笑っていますか？絵文字の表情認知に関する文化比較研究)</pli>
       <pli type="x" lang="j"><a href="http://www.psy.ritsumei.ac.jp/~akitaoka/sakkon/sakkon2013.html">2016年度 第8回錯視コンテスト</a>入賞 (曲がり盲)</pli>
       <pli type="x" lang="j"><a href="http://www.psy.ritsumei.ac.jp/~akitaoka/sakkon/sakkon2013.html">2016年度 第8回錯視コンテスト</a>入賞 (八事錯視・小林由佳)</pli>            
       <pli type="x" lang="j">2013年度日本基礎心理学会優秀発表賞（近藤あき）</pli>
@@ -296,8 +307,8 @@
     </publist>
     <publist type="g">
       <pli type="x" lang="j">2017年7月〜2022年3月 (予定) 科学研究費補助金（新学術研究）<br/>「顔と身体表現の多文化比較フィールド実験研究」</pli>
-      <pli type="x" lang="j">2017年7月〜2018年3月 (予定) 中京大学特定研究助成 <br/>「環境の身体化による自己認知編集技術の開発とマインドフルネスへの応用」</pli>
-      <pli type="x" lang="j">2013年4月〜2018年3月 (予定) 科学研究費補助金（若手研究(A)）<br/>「生き物らしさ認知の心的過程とその応用」</pli>
+      <pli type="x" lang="j">2017年7月〜2018年3月 中京大学特定研究助成 <br/>「環境の身体化による自己認知編集技術の開発とマインドフルネスへの応用」</pli>
+      <pli type="x" lang="j">2013年4月〜2018年3月 科学研究費補助金（若手研究(A)）<br/>「生き物らしさ認知の心的過程とその応用」</pli>
       <pli type="x" lang="j">2016年4月〜2017年6月 科学研究費補助金（新学術研究）<br/>「質感認知の異文化比較研究」</pli>            
       <pli type="x" lang="j">2014年4月〜2016年3月 ロッテ財団・第1回奨励研究助成 3,000,000円<br/>「食べ物の擬生物化に関する認知科学的研究」</pli>            
       <pli type="x" lang="j">2014年4月〜2016年3月 科学研究費補助金（挑戦的萌芽研究）<br/>「ヒトにおける磁気感覚の検討」</pli>      
@@ -307,9 +318,11 @@
       <pli type="x" lang="j">2005年4月〜2006年3月 京都大学21世紀COE「心の働きの総合的研究教育拠点」若手研究者養成プログラム 500,000円<br/>「物体操作時の動的な知覚対象に対する視覚触覚情報の統合過程の検討」</pli>
     </publist>
     <publist type="x" jname="教育・授業等 (他大学非常勤講師・集中講義等)" ename="ZZZ">
-      <pli type="x" lang="j">法政大学 理工学部 (2013年度後期 認知動態学)</pli>
+      <pli type="x" lang="j">徳島大学 総合科学部 (2018年度後期 情報処理基礎論 ゲスト講師)</pli>      <pli type="x" lang="j">法政大学 理工学部 (2013年度後期 認知動態学)</pli>
     </publist>
-    <publist type="x" jname="アウトリーチ" ename="ZZZ">      
+    <publist type="x" jname="アウトリーチ" ename="ZZZ">
+      <pli type="x" lang="j">2019年1月29日 <a href="https://www.chukyo-u.ac.jp/research_2/news/2019/01/013422.html">中部経済新聞 オープンカレッジ「錯覚からわかる脳の賢さ」</a></pli>
+      <pli type="x" lang="j">2019年1月20日 <a href="http://www.asahi.com/area/aichi/articles/MTW20190121241370001.html">朝日新聞 先端人</a></pli>
       <pli type="x" lang="j">2018年 岩倉市生涯学習センター教養講座「錯覚-だまされる脳の不思議-」</pli>      
       <pli type="x" lang="j">2018年6月23日 名古屋土曜学習プログラム「だまし絵体験学習」</pli>      
       <pli type="x" lang="j">2017年10月21日 名古屋土曜学習プログラム「だまし絵体験学習」</pli>

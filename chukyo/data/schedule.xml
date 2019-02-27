@@ -7,11 +7,16 @@
 <file n="schedule" type="b">
   <schedule>
     <future>
+    </future>
+    <past y="2019">
+      <pli type="c" lang="j"><TI>恒常性（constancy）の構造と認知的錯覚への適用.</TI><AU>高橋康介・日高昇平</AU><YE>2019/2/25-26</YE><CO>第13回 錯覚ワークショップ 錯覚現象のモデリングとその応用</CO><PL>明治大学中野キャンパス</PL><url>http://cmma.mims.meiji.ac.jp/events/jointresearch_seminars/index_2018.html#006</url></pli>            
+      <pli type="c" lang="j"><TI>知覚の恒常性（constancy）と認知的錯覚の類似性について.</TI><AU>高橋康介</AU><YE>2019/2/8</YE><CO>知識科学に基づくイノベーションデザインセミナー</CO><PL>北陸先端科学技術大学院大学</PL><url>https://www.jaist.ac.jp/whatsnew/event/2019/01/30-3.html</url></pli>      
+      <pli type="c" lang="j"><TI>圏論で恒常性 (constancy) の一般化を目指す.</TI><AU>高橋康介</AU><YE>2019/1/17</YE><CO>ワークショップ「圏論による認知モデリングの可能性」</CO><PL>長浜バイオ大学</PL><url>https://kohske.github.io/research/201901CTWS/</url></pli>
+      <pli type="c" lang="j"><TI>フィールドで実験をするという行為について.</TI><AU>高橋康介</AU><YE>2019/1/5-6</YE><CO>第2回 犬山認知行動研究会議</CO><PL>日本モンキーセンター (愛知県犬山市)</PL><url>https://sites.google.com/view/icbm-2/home</url></pli>
+    </past>
+    <past y="2018">      
       <pli type="c" lang="j"><TI>☺は笑っていますか？絵文字の表情認知に関する文化比較研究.</TI><AU>高橋康介</AU><YE>2018/11/30</YE><CO>基礎心理学会第37回大会 若手オーラルセッション</CO><PL>専修大学生田キャンパス</PL><url>http://psychonomic.jp/young/ypsoty/intro.html</url></pli>      
       <pli type="c" lang="j"><TI>集合体恐怖症における凹凸の量の効果.</TI><AU>高橋康介・粂柚里・近藤晴香</AU><YE>2018/11/30-2018/12/2</YE><CO>基礎心理学会第37回大会</CO><PL>専修大学生田キャンパス</PL><url>http://www3.psy.senshu-u.ac.jp/~jps2018/</url></pli>
-      <pli type="c" lang="j"><TI>フィールドで実験をするという行為について.</TI><AU>高橋康介</AU><YE>2019/1/5-6</YE><CO>第2回 犬山認知行動研究会議</CO><PL>日本モンキーセンター (愛知県犬山市)</PL><url>https://sites.google.com/view/icbm-2/home</url></pli>      
-    </future>
-    <past y="2018">
       <pli type="c" lang="j"><TI>身体選択の自由と認知の恒常性</TI><AU>高橋康介</AU><YE>2018/10/20</YE><CO>第15回クロスモーダルデザインワークショップ</CO><PL>東北大学片平キャンパス</PL><url>https://goo.gl/b9ydEm</url></pli>      
       <pli type="c" lang="j"><TI>横縞の服はなぜ太って見えるのか? 縞の方向と視覚的な重さの知覚</TI><AU>高橋康介・伊藤沙友里</AU><YE>2018/10/20-22</YE><CO>第10回多感覚研究会</CO><PL>東北大学片平キャンパス</PL><url>https://sites.google.com/site/multisensejapan/</url></pli>
       <pli type="c" lang="j"><TI> 色変調が施された食材の視覚的な美味しさに対する色の恒常性の効果</TI><AU>高橋康介・緒川智子・原ひなの・柊実里</AU><YE>2018/10/20-22</YE><CO>第10回多感覚研究会</CO><PL>東北大学片平キャンパス</PL><url>https://sites.google.com/site/multisensejapan/</url></pli>            
