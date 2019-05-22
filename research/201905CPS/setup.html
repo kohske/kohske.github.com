@@ -42,74 +42,29 @@
 </div>
 <div id="-" class="section level1">
 <h1>認知心理学研究のための再現可能性のすゝめ<br />〜プレレジからデータ解析そしてオープンサイエンスまで〜</h1>
-<p>司会 | 高橋康介（中京大学）<br />
-企画 | 山田祐樹（九州大学）・高橋康介（中京大学）<br />
-連携 | 日本認知心理学会 心理学の信頼性研究部会</p>
-<p>日時・・・2019年5月24日（金） 14:45〜17:50（ベーシック＆フロンティアセミナー第3部）</p>
-<p>場所・・・京都テルサ 東館2階中会議室（ <a href="http://www.kyoto-terrsa.or.jp/floor_map/" class="uri">http://www.kyoto-terrsa.or.jp/floor_map/</a> ）</p>
-<p>会費・・・ベーシック＆フロンティアセミナーの参加費です。当日受付で徴収します。</p>
-<ul>
-<li>認知心理学会会員 ∪ (非会員 ∩ 学部生)・・・無料</li>
-<li>非会員 ∩ 大学院生・・・1000円</li>
-<li>非会員 ∩ 社会人・・・3000円</li>
-</ul>
-<p>会員、学部生、院生の方は当日の受付にて会員番号や学生証をご提示ください。</p>
 <div style="color:red;">
 実習形式のチュートリアルを行いますので、<strong>パソコンの持ち込みを推奨します</strong>。必要なソフトウェアやデータフィアルをインストール、ダウンロードした上で、ノートパソコンの持ち込みを推奨します。
 </div>
 <hr />
 <div class="section level2">
 <h2>インストール・セットアップについて</h2>
-<p>事前に<a href="setup.html">セットアップについて</a>を確認の上、ソフトウェア・パッケージのインストール、データのダウンロードなど、お願いいたします。</p>
+<p>「其ノ弐　再現可能なデータ解析のすゝめ」では実習形式のチュートリアルを行う予定です。</p>
 <ul>
-<li><a href="setup.html">セットアップについて</a></li>
+<li>R <a href="https://cran.r-project.org/" class="uri">https://cran.r-project.org/</a></li>
+<li>RStudio <a href="https://www.rstudio.com/products/rstudio/download/" class="uri">https://www.rstudio.com/products/rstudio/download/</a></li>
 </ul>
-<hr />
-<p>お問い合わせ先・・・</p>
+<p>をダウンロード、インストールの上、RStudioを起動して、以下のコマンドで必要なパッケージをインストールしていただき、下の2つのzipファイルをダウンロードしておいてもらえると、滞り無く進行できます。</p>
+<pre><code>install.packages(&quot;rprojroot&quot;)
+install.packages(&quot;tidyverse&quot;)</code></pre>
 <ul>
-<li>本企画に関するお問い合わせは高橋 (e-mail <code>takahashi.kohske+cp2019@gmail.com</code> またはツイッター <a href="https://twitter.com/kohske">@kohkse</a> ) にてお願いします。</li>
-<li>認知心理学会第17回大会およびベーシック＆フロンティアセミナーに関するお問い合わせは<a href="https://confit.atlas.jp/guide/event/cogpsy2019/top">公式ウェブサイト</a>からお願い致します。</li>
+<li><a href="sample_project_before.zip">sample_project_before.zip</a></li>
+<li><a href="sample_project_after.zip">sample_project_after.zip</a></li>
 </ul>
-<hr />
-</div>
-<div class="section level2">
-<h2>概要</h2>
-<p>心理学の実験結果が再現できないという心理学における再現性の危機が叫ばれて久しい。認知研究は比較的再現性が高いと言われているが、まだまだ改善の余地はあるだろう。本セミナーでは再現性を高めるために有効な研究実践を紹介する。其ノ壱「プレレジ」では、講演者の体験談を交えながら，事前登録（および事前審査）の一連の手続きをデモンストレーションする。其ノ弐「データ解析」では、R/RStudioによる再現可能なデータ解析のチュートリアルを実習形式で行う。PsychoPyの実験データをRマークダウンに流し込み、下処理、図表作成、統計検定、レポート出力という作業を実際に体験する。其ノ参「オープンサイエンス」では、データと解析コードの公開・共有の取り組みについて解説する。主にヒト脳機能イメージング研究のデータとコードを対象とし、代表的な科学データ共有プラットフォームのfigshareにおけるデータの公開方法と、ソースコードホスティングサービスのGitHubを用いた解析コードの共有方法を、デモンストレーションを交えて紹介する。</p>
-<table>
-<thead>
-<tr class="header">
-<th>時間</th>
-<th>内容</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>14:45-15:05</td>
-<td>イントロダクション〜再現性問題について〜（高橋康介・中京大学）</td>
-</tr>
-<tr class="even">
-<td>15:05-15:30</td>
-<td>其ノ壱　プレレジのすゝめ（佐々木恭志郎・早稲田大学/学振SPD）</td>
-</tr>
-<tr class="odd">
-<td>15:30-16:30</td>
-<td>其ノ弐　再現可能なデータ解析のすゝめ（高橋康介・中京大学）</td>
-</tr>
-<tr class="even">
-<td>16:30-16:40</td>
-<td>休憩</td>
-</tr>
-<tr class="odd">
-<td>16:40-17:30</td>
-<td>其ノ参　オープンサイエンスのすゝめ（青木俊太郎・京都大学）</td>
-</tr>
-<tr class="even">
-<td>17:30-17:50</td>
-<td>質疑応答（みんな）</td>
-</tr>
-</tbody>
-</table>
-<p>★ 参加者の皆様へ・・・ノートパソコンの持ち込みを推奨します。事前にセットアップが必要なソフトウェアなどは本ホームページにてセミナー前日までに案内します。其ノ弐では参考書として<a href="https://www.kyoritsu-pub.co.jp/bookdetail/9784320112438">「再現可能性のすゝめ」（共立出版）</a>を用いますが、資料を用意しますので必ずしも持参する必要はありません。</p>
+<p>なお、動作テストは</p>
+<pre><code>RStuido Version 1.2.1335
+R version 3.5.3 (2019-03-11)</code></pre>
+<p>で行っていますが、これ以外のバージョンでも動くと思います。</p>
+<p>当日は、データ（と刺激の図）だけの状態から、<a href="a01.html">このようなHTMLドキュメント</a>を作成します。</p>
 </div>
 </div>
 </section>
