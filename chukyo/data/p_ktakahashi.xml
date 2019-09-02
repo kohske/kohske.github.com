@@ -35,6 +35,7 @@
     </bio>
     <!-- journal articles -->
     <publist type="j">
+      <pli type="j" lang="ej"><AU>Sen, S., Daimi, S. N., Watanabe, K., Takahashi, K., Bhattacharya, J., &#38; Saha, G.</AU><YE>2019</YE><TI>Switch or stay? Automatic classification of internal mental states in bistable perception.</TI><JO>Cognitive Neurodynamics</JO><VO></VO><IS></IS><PP>1-19</PP><url></url><doi>10.1007/s11571-019-09548-7</doi></pli>
       <pli type="j" lang="ej"><AU>Abe, M. O., Koike, T., Okazaki, S., Sugawara, S. K., Takahashi, K., Watanabe, K., &#38; Sadato, N.</AU><YE>2019</YE><TI>Neural correlates of online cooperation during joint force production.</TI><JO>NeuroImage</JO><VO>191</VO><IS></IS><PP>150-161</PP><url></url><doi>10.1016/j.neuroimage.2019.02.003</doi></pli>    
       <pli type="j" lang="ej"><AU>Irie, R., Kamagata, K., Kerever, A., Ueda, R., Yokosawa, S., Otake, Y., Ochi, H., Yoshizawa, H., Hayashi, A., Tagawa, K., Okazawa, H., Takahashi, K., Sato, K., Hori, M., Arikawa-Hirasawa, E., &#38; Aoki, S.</AU><YE>2018</YE><TI>The relationship between neurite density measured with confocal microscopy in a cleared mouse brain and metrics obtained from diffusion tensor and diffusion kurtosis imaging.</TI><JO>Magnetic Resonance in Medical Sciences</JO><VO>17</VO><IS>2</IS><PP>138-144</PP><url></url><doi>10.2463/mrms.mp.2017-0031</doi></pli>
       <pli type="j" lang="ej"><AU>Weller, M., Takahashi, K., Watanabe, K., Bülthoff, H. H., &#38; Meilinger, T.</AU><YE>2018</YE><TI>The Object Orientation Effect in Exocentric Distances.</TI><JO>Frontiers in psychology</JO><VO>9</VO><IS></IS><PP>1374</PP><url></url><doi>10.3389/fpsyg.2018.01374</doi></pli>      
@@ -94,7 +95,8 @@
     <!-- invited or special lectures -->
     <publist type="l">
       <pli type="c" lang="j"><TI>知覚の恒常性（constancy）と認知的錯覚の類似性について.</TI><AU>高橋康介</AU><YE>2019/2/8</YE><CO>知識科学に基づくイノベーションデザインセミナー</CO><PL>北陸先端科学技術大学院大学</PL><url>https://www.jaist.ac.jp/whatsnew/event/2019/01/30-3.html</url></pli>            
-      <pli type="c" lang="j"><TI>身体選択の自由と認知の恒常性</TI><AU>高橋康介</AU><YE>2018/10/20</YE><CO>第15回クロスモーダルデザインワークショップ</CO><PL>東北大学片平キャンパス</PL><url>https://goo.gl/b9ydEm</url></pli>      
+      <pli type="c" lang="j"><TI>身体選択の自由と認知の恒常性</TI><AU>高橋康介</AU><YE>2018/10/20</YE><CO>第15回クロスモーダルデザインワークショップ</CO><PL>東北大学片平キャンパス</PL><url>https://goo.gl/b9ydEm</url></pli>
+      <pli type="c" lang="j"><TI>錯視を通して視覚を知る.</TI><AU>高橋康介</AU><YE>2018/8/24</YE><CO>JAISTサマースクール2018 特別講演</CO><PL>北陸先端科学技術大学院大学</PL><url>http://www.jaist.ac.jp/ks/labs/shhidaka/cogcomp/summerschool2018/</url></pli>            
       <pli type="c" lang="j"><TI>顔・パレイドリア・文化</TI><AU>高橋康介</AU><YE>2018/3/8</YE><CO>KG-RCSP合同ゼミ</CO><PL>関西学院大学</PL><url>http://team1mile.com/asarinlab/2018/01/25/kg-rcsp4thseminar/</url></pli>
       <pli type="c" lang="j"><TI>フィールドワーカーから見た心理学実験と実験心理学者から見たフィールドワーク</TI><AU>島田将喜・高橋康介・大石高典・錢琨</AU><YE>2018/3/8</YE><CO>KG-RCSP合同ゼミ</CO><PL>関西学院大学</PL><url>http://team1mile.com/asarinlab/2018/01/25/kg-rcsp4thseminar/</url></pli>
       <pli type="c" lang="j"><TI>再現可能性ベストプラクティス</TI><AU>高橋康介</AU><YE>2018/3/12</YE><CO>専修大学社会知性開発研究センター／心理科学研究センター「心理学における再現可能性入門」</CO><PL>専修大学 サテライトキャンパス スタジオＡ</PL><url>https://kunisatolab.github.io/main/intro_reproducible_res.html</url></pli>            
@@ -322,6 +324,8 @@
       <pli type="x" lang="j">法政大学 理工学部 (2013年度後期 認知動態学)</pli>
     </publist>
     <publist type="x" jname="アウトリーチ" ename="ZZZ">
+      <pli type="x" lang="j">Fole No. 203 (2019年8月) 「顔学」超入門</pli>
+      <pli type="x" lang="j">2019年5月18日 名古屋土曜学習プログラム「だまし絵体験学習」</pli>            
       <pli type="x" lang="j">2019年1月29日 <a href="https://www.chukyo-u.ac.jp/research_2/news/2019/01/013422.html">中部経済新聞 オープンカレッジ「錯覚からわかる脳の賢さ」</a></pli>
       <pli type="x" lang="j">2019年1月20日 <a href="http://www.asahi.com/area/aichi/articles/MTW20190121241370001.html">朝日新聞 先端人</a></pli>
       <pli type="x" lang="j">2018年 岩倉市生涯学習センター教養講座「錯覚-だまされる脳の不思議-」</pli>      

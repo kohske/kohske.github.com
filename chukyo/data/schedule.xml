@@ -7,8 +7,14 @@
 <file n="schedule" type="b">
   <schedule>
     <future>
+      <pli type="c" lang="j"><TI>圏論の可能性に期待する事.</TI><AU>高橋康介</AU><YE>2019/9/5-7</YE><CO>日本認知科学会題36会大会 オーガナイズドシンポジウム「圏論による認知モデリングの可能性：ホモ・クオリタスとしての人間理解へ向けて」</CO><PL>静岡大学浜松キャンパス</PL><url>名古屋大学</url></pli>                        
+      <pli type="c" lang="j"><TI>圏論による認知モデリングの可能性：ホモ・クオリタスとしての人間理解へ向けて (オーガナイズドシンポジウム企画)</TI><AU>日髙昇平・高橋康介</AU><YE>2019/9/5-7</YE><CO>日本認知科学会題36会大会</CO><PL>静岡大学浜松キャンパス</PL><url>名古屋大学</url></pli>                  
+      <pli type="c" lang="j"><TI>未知領域を含むオブジェクト同定による窓問題知覚の説明</TI><AU>日髙昇平・高橋康介</AU><YE>2019/9/5-7</YE><CO>日本認知科学会題36会大会</CO><PL>静岡大学浜松キャンパス</PL><url>名古屋大学</url></pli>            
     </future>
     <past y="2019">
+      <pli type="c" lang="j"><TI>没入型VR環境下における速度順応の影響―二次元呈示との比較―</TI><AU>山本裕美子</AU><YE>2019/8/9</YE><CO>第五回認知科学若手の会ワークショップ</CO><PL>名古屋大学</PL><url>https://www.jcss.gr.jp/cogsciwakate/entry-343.html</url></pli>      
+      <pli type="c" lang="j"><TI>日本人とアメリカ人が謝罪を表す顔文字から受ける印象の比較</TI><AU>鈴木萌々香</AU><YE>2019/8/9</YE><CO>第五回認知科学若手の会ワークショップ</CO><PL>名古屋大学</PL><url>https://www.jcss.gr.jp/cogsciwakate/entry-343.html</url></pli>      
+      <pli type="c" lang="j"><TI>劣化音声の知覚的明瞭度に対するプライミング効果の検討</TI><AU>西川琴実</AU><YE>2019/8/9</YE><CO>第五回認知科学若手の会ワークショップ</CO><PL>名古屋大学</PL><url>https://www.jcss.gr.jp/cogsciwakate/entry-343.html</url></pli>
       <pli type="c" lang="j"><TI>恒常性（constancy）の構造と認知的錯覚への適用.</TI><AU>高橋康介・日高昇平</AU><YE>2019/2/25-26</YE><CO>第13回 錯覚ワークショップ 錯覚現象のモデリングとその応用</CO><PL>明治大学中野キャンパス</PL><url>http://cmma.mims.meiji.ac.jp/events/jointresearch_seminars/index_2018.html#006</url></pli>            
       <pli type="c" lang="j"><TI>知覚の恒常性（constancy）と認知的錯覚の類似性について.</TI><AU>高橋康介</AU><YE>2019/2/8</YE><CO>知識科学に基づくイノベーションデザインセミナー</CO><PL>北陸先端科学技術大学院大学</PL><url>https://www.jaist.ac.jp/whatsnew/event/2019/01/30-3.html</url></pli>      
       <pli type="c" lang="j"><TI>圏論で恒常性 (constancy) の一般化を目指す.</TI><AU>高橋康介</AU><YE>2019/1/17</YE><CO>ワークショップ「圏論による認知モデリングの可能性」</CO><PL>長浜バイオ大学</PL><url>https://kohske.github.io/research/201901CTWS/</url></pli>
@@ -23,7 +29,8 @@
       <pli type="c" lang="j"><TI>顔の平均知覚における倒立効果の影響</TI><AU>鑓水秀和・高橋康介</AU><YE>2018/9/25-27</YE><CO>日本心理学会第82回大会</CO><PL>仙台国際センター</PL><url>http://jpa2018.com/</url></pli>      
       <pli type="c" lang="j"><TI>バーチャルリアリティを通した「意味」の理解</TI><AU>高橋康介・鳴海拓志</AU><YE>2018/8/30-9/1</YE><CO>日本認知科学会第35回大会</CO><PL>立命館大学 大阪いばらきキャンパス</PL><url>http://www.jcss.gr.jp/meetings/jcss2018/index.html</url></pli>                              
       <pli type="c" lang="j"><TI>意味理解とオブジェクト認知: ホモ・クオリタスとしての人間理解へ向けて. (オーガナイズドセッション)</TI><AU>日高昇平・高橋康介</AU><YE>2018/8/30-9/1</YE><CO>日本認知科学会第35回大会</CO><PL>立命館大学 大阪いばらきキャンパス</PL><url>http://www.jcss.gr.jp/meetings/jcss2018/index.html</url></pli>                        
-      <pli type="c" lang="j"><TI>意味の過剰な読み込みに関する実験的検討-アニマシーを例にして-</TI><AU>今泉拓・高橋康介・植田一博</AU><YE>2018/8/30-9/1</YE><CO>日本認知科学会第35回大会</CO><PL>立命館大学 大阪いばらきキャンパス</PL><url>http://www.jcss.gr.jp/meetings/jcss2018/index.html</url></pli>                  
+      <pli type="c" lang="j"><TI>意味の過剰な読み込みに関する実験的検討-アニマシーを例にして-</TI><AU>今泉拓・高橋康介・植田一博</AU><YE>2018/8/30-9/1</YE><CO>日本認知科学会第35回大会</CO><PL>立命館大学 大阪いばらきキャンパス</PL><url>http://www.jcss.gr.jp/meetings/jcss2018/index.html</url></pli>
+      <pli type="c" lang="j"><TI>錯視を通して視覚を知る.</TI><AU>高橋康介</AU><YE>2018/8/24</YE><CO>JAISTサマースクール2018 特別講演</CO><PL>北陸先端科学技術大学院大学</PL><url>http://www.jaist.ac.jp/ks/labs/shhidaka/cogcomp/summerschool2018/</url></pli>      
       <pli type="c" lang="ej"><TI>Perception of average appearance of multiple faces.</TI><AU>Yarimizu, H. &#38; Takahashi, K.</AU><YE>2018/7/13-16</YE><CO>The 14th Asia-Pacific Conference on Vision</CO><PL>Hangzhou, China</PL><url>http://www.apcv2018.org/</url></pli>      
       <pli type="c" lang="j"><TI>続・フィールドにおける認知実験-文化人類学と認知心理学の融合による仮説生成と仮説検証の循環</TI><AU>高橋康介</AU><YE>2018/6/3</YE><CO>日本文化人類学会第52回研究大会分科会「文化人類学と異分野のコラボレーション―達成したこと・問題点・今後の課題」</CO><PL>弘前大学</PL><url>https://confit.atlas.jp/guide/event/jasca52nd/top</url></pli>      
       <pli type="c" lang="j"><TI>顔・パレイドリア・文化</TI><AU>高橋康介</AU><YE>2018/3/8</YE><CO>KG-RCSP合同ゼミ</CO><PL>関西学院大学</PL><url>http://team1mile.com/asarinlab/2018/01/25/kg-rcsp4thseminar/</url></pli>

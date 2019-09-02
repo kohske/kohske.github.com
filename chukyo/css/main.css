@@ -225,6 +225,9 @@ ol.prof-publist , ul.prof-publist{width:540px;margin:0px; padding:20px 0px 0px 3
    font-size:9pt;
    vertical-align:middle;
 }
+.member-persons {
+  font-size:10.5pt;    
+}
 div#members div.member-list{
    clear:both;
    padding-bottom:30px;

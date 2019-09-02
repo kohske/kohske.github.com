@@ -116,6 +116,10 @@
       </xsl:choose>
     </div>
   </xsl:template>
+
+  <xsl:template match="members/itemlist/mlist/persons">
+    <div class="member-persons"><xsl:value-of select="."/></div>
+  </xsl:template>
   
   <xsl:template match="members">
     <div id="members">
@@ -124,6 +128,7 @@
 	<xsl:for-each select="itemlist[@name='current']/mlist">
 	  <h2><xsl:value-of select="@n"/></h2>
 	  <xsl:apply-templates select="item"/>
+	  <xsl:apply-templates select="persons"/>	  
 	</xsl:for-each>
       </div>
       <!--
@@ -132,7 +137,7 @@
       -->
     </div>
   </xsl:template>
-  
+
   <!-- profiles -->
   <xsl:template match="/root/file[@type='p']/profile">
     <xsl:if test="$lang='j'">
