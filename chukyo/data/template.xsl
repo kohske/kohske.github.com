@@ -131,6 +131,14 @@
 	  <xsl:apply-templates select="persons"/>	  
 	</xsl:for-each>
       </div>
+      <h1><xsl:if test="$lang='j'">旧メンバー</xsl:if><xsl:if test="$lang='e'">Alumni</xsl:if></h1>
+      <div class="member-list">
+	<xsl:for-each select="itemlist[@name='old']/mlist">
+	  <h2><xsl:value-of select="@n"/></h2>
+	  <xsl:apply-templates select="item"/>
+	  <xsl:apply-templates select="persons"/>	  
+	</xsl:for-each>
+      </div>
       <!--
 	  <h1><xsl:if test="$lang='j'">旧メンバー</xsl:if><xsl:if test="$lang='e'">Alumni</xsl:if></h1>
 	  <div class="member-list"><xsl:apply-templates select="itemlist[@name='old']/mlist/item"/></div>

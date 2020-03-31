@@ -15,31 +15,31 @@
   <file n="members" type="j">
     <members>
       <itemlist name="current">
-	<mlist n="准教授">
+	<mlist n="教授">
 	  <item><url>profilej_ktakahashi.html</url><name>高橋 康介</name><intro>認知・知覚・脳・錯視</intro><ruby>Kohske TAKAHASHI</ruby></item>
 	</mlist>
 	<mlist n="研究員">
-	  <item><url>https://researchmap.jp/kokamotoanthropology/</url><name>岡本 圭史</name><intro>文化人類学</intro><ruby>Keishi OKAMOTO</ruby></item>
 	  <item><url>https://researchmap.jp/87_______________/</url><name>氏家 悠太</name><intro>実験心理学</intro><ruby>Yuta UJIIE</ruby></item>	  	  
-
-	  
-
 	</mlist>
 	<mlist n="大学院生（修士課程）">
-	  <item><url> </url><name>山本 裕美子</name><intro>バーチャルリアリティ・時間認知</intro><ruby>Yumiko YAMAMOTO</ruby></item>
 	  <item><url> </url><name>西川 琴実</name><intro>音声知覚</intro><ruby>Kotomi NISHIKAWA</ruby></item>	  	  
 	</mlist>
-
-	<mlist n="関係者">
+      </itemlist>
+      <itemlist name="old">
+	<mlist n="元関係者">
+	  <item><url>https://researchmap.jp/kokamotoanthropology/</url><name>岡本 圭史</name><intro>文化人類学</intro><ruby>Keishi OKAMOTO</ruby></item>	  
 	  <item><url>https://sites.google.com/site/qianshuixiuheyarimizu/</url><name>鑓水 秀和</name><intro>明治学院大学助手</intro><ruby>Hidekazu YARIMIZU</ruby></item>
 	</mlist>
-
 	<mlist n="修了生">
+	  <item><url> </url><name>山本 裕美子</name><intro>バーチャルリアリティ・時間認知</intro><ruby>Yumiko YAMAMOTO</ruby></item>
 	  <item><url> </url><name>小林 由佳</name><intro>食の認知・錯視</intro><ruby>Yuka KOBAYASHI</ruby></item>
 	  <item><url> </url><name>玉木 峻也</name><intro>数量の認知</intro><ruby>Shunya TAMAKI</ruby></item>
 	</mlist>
+	<mlist n="卒業生 (2019卒)">
+	  <persons>成瀬大誠・大脇愛・北村勇斗・佐藤妃奈乃・武山莉奈・坪井美穂・西川怜美・樋口奈那・平美久・松岡空・三宅詠輔・村上佳菜子・森田博文・森田瑞穂・若尾直哉</persons>
+	</mlist>
 	<mlist n="卒業生 (2018卒)">
-	  <persons>井藤葵・岡田彩子・緒川智子・北村健太郎・粂柚里・近藤晴香・篠田奈美・柴山広大・鷲見彩香・竹中舜季・西川琴実・原ひなの・柊実里・比良奈都希</persons>
+	  <persons>稲垣亘・井藤葵・岡田彩子・緒川智子・北村健太郎・粂柚里・近藤晴香・篠田奈美・柴山広大・鷲見彩香・竹中舜季・西川琴実・原ひなの・柊実里・比良奈都希</persons>
 	</mlist>
 	<mlist n="卒業生 (2017卒)">
 	  <persons>安藤大樹・伊藤沙友里・久保田成・竹内陸・山本裕美子</persons>

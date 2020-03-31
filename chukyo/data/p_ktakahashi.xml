@@ -17,7 +17,8 @@
 	<item><date>2007年4月〜2009年3月</date><desc>JST ERATO 下條潜在脳機能プロジェクト 技術員</desc></item>
 	<item><date>2009年4月〜2012年3月</date><desc>日本学術振興会 特別研究員 SPD</desc></item>
 	<item><date>2012年4月〜2016年3月</date><desc>東京大学 先端科学技術研究センター 認知科学分野 特任助教</desc></item>
-	<item><date>2016年4月〜</date><desc>中京大学 心理学部 准教授</desc></item>
+	<item><date>2016年4月〜2020年3月</date><desc>中京大学 心理学部 准教授</desc></item>
+	<item><date>2020年4月〜</date><desc>中京大学 心理学部 教授</desc></item>	
       </career>
     </bioj>
     <bio>
@@ -30,11 +31,13 @@
 	<item><date>2007.4-2009.3</date><desc>Research Assistant, Shimojo Implicit Brain Function Project, ERATO, JST</desc></item>
 	<item><date>2009.4-2012.3</date><desc>JSPS Research Fellow</desc></item>
 	<item><date>2012.4-2016.3</date><desc>Assistant Professor, Research Center for Advanced Science and Technology, University of Tokyo.</desc></item>
-	<item><date>2016.4-</date><desc>Associate Professor, School of Psychology, Chukyo University.</desc></item>	
+	<item><date>2016.4-2020.3</date><desc>Associate Professor, School of Psychology, Chukyo University.</desc></item>
+	<item><date>2020.4-</date><desc>Professor, School of Psychology, Chukyo University.</desc></item>		
       </career>
     </bio>
     <!-- journal articles -->
     <publist type="j">
+      <pli type="j" lang="ej"><AU> Wickham, H., et al.</AU><YE>2019</YE><TI>Welcome to the Tidyverse.</TI><JO>Journal of Open Source Software</JO><VO>4</VO><IS>43</IS><PP>1686</PP><url></url><doi>10.21105/joss.01686</doi></pli>      
       <pli type="j" lang="ej"><AU>Sen, S., Daimi, S. N., Watanabe, K., Takahashi, K., Bhattacharya, J., &#38; Saha, G.</AU><YE>2019</YE><TI>Switch or stay? Automatic classification of internal mental states in bistable perception.</TI><JO>Cognitive Neurodynamics</JO><VO></VO><IS></IS><PP>1-19</PP><url></url><doi>10.1007/s11571-019-09548-7</doi></pli>
       <pli type="j" lang="ej"><AU>Abe, M. O., Koike, T., Okazaki, S., Sugawara, S. K., Takahashi, K., Watanabe, K., &#38; Sadato, N.</AU><YE>2019</YE><TI>Neural correlates of online cooperation during joint force production.</TI><JO>NeuroImage</JO><VO>191</VO><IS></IS><PP>150-161</PP><url></url><doi>10.1016/j.neuroimage.2019.02.003</doi></pli>    
       <pli type="j" lang="ej"><AU>Irie, R., Kamagata, K., Kerever, A., Ueda, R., Yokosawa, S., Otake, Y., Ochi, H., Yoshizawa, H., Hayashi, A., Tagawa, K., Okazawa, H., Takahashi, K., Sato, K., Hori, M., Arikawa-Hirasawa, E., &#38; Aoki, S.</AU><YE>2018</YE><TI>The relationship between neurite density measured with confocal microscopy in a cleared mouse brain and metrics obtained from diffusion tensor and diffusion kurtosis imaging.</TI><JO>Magnetic Resonance in Medical Sciences</JO><VO>17</VO><IS>2</IS><PP>138-144</PP><url></url><doi>10.2463/mrms.mp.2017-0031</doi></pli>
@@ -189,6 +192,11 @@
     </publist>
     <!-- domestic conference @d -->
     <publist type="d">
+      <pli type="c" lang="j"><TI>劣化音声の知覚的明瞭度に対する視覚的プライミングの効果.</TI><AU>西川琴実・高橋康介</AU><YE>2019/12/14-15</YE><CO>第11回多感覚研究会</CO><PL>立教大学</PL><url>https://sites.google.com/view/multisensejapan</url></pli>
+      <pli type="c" lang="j"><TI>日本人とアメリカ人が謝罪を表す顔文字から受ける印象の比較.</TI><AU>鈴木萌々香・高橋康介</AU><YE>2019/12/14-15</YE><CO>第11回多感覚研究会</CO><PL>立教大学</PL><url>https://sites.google.com/view/multisensejapan</url></pli>
+      <pli type="c" lang="j"><TI>視聴覚統合における他人種効果‐ 日本人大学生を対象とした検討‐.</TI><AU>氏家悠太・高橋康介</AU><YE>2019/12/14-15</YE><CO>第11回多感覚研究会</CO><PL>立教大学</PL><url>https://sites.google.com/view/multisensejapan</url></pli>
+      <pli type="c" lang="j"><TI>視聴覚統合における他人種効果の検討.</TI><AU>氏家悠太・高橋康介</AU><YE>2019/11/29-12/1</YE><CO>日本基礎心理学会第38回大会</CO><PL>神戸大学</PL><url>http://www.lit.kobe-u.ac.jp/psychology/jps2019/</url></pli>            
+      <pli type="c" lang="j"><TI>顔ガクガク錯視とは何なのか―ブレ画像との比較実験―</TI><AU>高橋康介・佐藤妃奈乃・三宅詠輔・村上佳菜子・森田博文</AU><YE>2019/11/29-12/1</YE><CO>日本基礎心理学会第38回大会</CO><PL>神戸大学</PL><url>http://www.lit.kobe-u.ac.jp/psychology/jps2019/</url></pli>
       <pli type="c" lang="j"><TI>没入型VR環境における速度順応の影響～二次元呈示との比較～</TI><AU>山本裕美子・高橋康介</AU><YE>2019/11/8-9</YE><CO>第35回日本バーチャルリアリティ学会 VR心理学研究委員会</CO><PL>近畿大学東大阪キャンパス</PL><url>https://sites.google.com/site/sigvrpsy/home/workshop/vrpsy35</url></pli>                  
       <pli type="c" lang="j"><TI>圏論の可能性に期待する事.</TI><AU>高橋康介</AU><YE>2019/9/5-7</YE><CO>日本認知科学会題36会大会 オーガナイズドシンポジウム「圏論による認知モデリングの可能性：ホモ・クオリタスとしての人間理解へ向けて」</CO><PL>静岡大学浜松キャンパス</PL><url>名古屋大学</url></pli>                        
       <pli type="c" lang="j"><TI>圏論による認知モデリングの可能性：ホモ・クオリタスとしての人間理解へ向けて (オーガナイズドシンポジウム企画)</TI><AU>日髙昇平・高橋康介</AU><YE>2019/9/5-7</YE><CO>日本認知科学会題36会大会</CO><PL>静岡大学浜松キャンパス</PL><url>名古屋大学</url></pli>                  
