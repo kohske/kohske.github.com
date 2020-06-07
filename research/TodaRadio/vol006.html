@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>TODA RADIO #006 モムラジオ</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/united.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">TODA RADIO</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    過去のラジオ
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="vol006.html">Vol. 006 (2020/06/06 モムラジオ)</a>
+    </li>
+    <li>
+      <a href="vol005.html">Vol. 005 (2018/12/10 ゲスト神谷先生)</a>
+    </li>
+    <li>
+      <a href="vol004.html">Vol. 004 (2018/03/12 専修大学公開収録)</a>
+    </li>
+    <li>
+      <a href="vol003.html">Vol. 003 (2018/01/15 ミウラジオ)</a>
+    </li>
+    <li>
+      <a href="vol002.html">Vol. 002 (2018/01/04)</a>
+    </li>
+    <li>
+      <a href="vol001.html">Vol. 001 (2017/12/13)</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="about.html">なかの人たち</a>
+</li>
+<li>
+  <a href="discussion.html">ディスカッション</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">TODA RADIO #006 モムラジオ</h1>
+
+</div>
+
+
+<p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelementplayer.min.css"></p>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-hashtags="TodaRadio" data-show-count="false">Tweet</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<ul>
+<li>ハッシュタグ<code>#TodaRadio</code>でお願いします（↑のボタンから行けます）。</li>
+</ul>
+<p>※ 本ラジオでの発言は個人の見解であり、所属する組織の見解ではありません。</p>
+<p>※ 科学的な正しさを重視して発言していますが、発言には誤りが含まれることもありえます。</p>
+<p>※ ご意見、苦情などありましたら高橋までメール <a href="mailto:takahashi.kohske@gmail.com" class="email">takahashi.kohske@gmail.com</a> またはツイッター <a href="https://twitter.com/kohske">@kohske</a> までご連絡ください。</p>
+<p>※ <a href="discussion.html">ディスカッションルーム</a>もあります。</p>
+<hr />
+<ul>
+<li>収録日: 2020/6/6</li>
+<li>場所: Zoom</li>
+<li>メンバー
+<ul>
+<li>ゲスト：山田さん</li>
+<li>コメンテーター: 池田さん</li>
+<li>パーソナリティ: 高橋</li>
+</ul></li>
+</ul>
+<div id="概要" class="section level2">
+<h2>概要</h2>
+<p>いつも Toda Radio をお聞きいただき、ありがとうございます。お待たせいたしました。番組第6回をお送りいたします。ゲストは鎮西の乙事主こと、山田祐樹さん。最近山田さんが取り組んでらっしゃる話題を中心にお話をお伺いします。前半は、国際的な大規模協力研究の実情と、科学コミュニケーションについて、後半は、ピアレビュー制度についてお聞きします。お楽しみください。</p>
+<hr />
+<div id="前半" class="section level3">
+<h3>前半</h3>
+<audio class="mejs-player" controls data-mejsoptions="{&quot;alwaysShowControls&quot;: true, &quot;alwaysShowHours&quot;: true, &quot;enableAutosize&quot;: true, &quot;features&quot;: [&quot;playpause&quot;, &quot;progress&quot;, &quot;current&quot;, &quot;duration&quot;, &quot;volume&quot;, &quot;speed&quot;]}" preload="auto" src="audio/TODARADIO06_1.mp3" width="100%">
+</audio>
+<p><a href="audio/TODARADIO06_1.mp3">MP3ファイルをダウンロード</a></p>
+<hr />
+</div>
+<div id="後半" class="section level3">
+<h3>後半</h3>
+<audio class="mejs-player" controls data-mejsoptions="{&quot;alwaysShowControls&quot;: true, &quot;alwaysShowHours&quot;: true, &quot;enableAutosize&quot;: true, &quot;features&quot;: [&quot;playpause&quot;, &quot;progress&quot;, &quot;current&quot;, &quot;duration&quot;, &quot;volume&quot;, &quot;speed&quot;]}" preload="auto" src="audio/TODARADIO06_2.mp3" width="100%">
+</audio>
+<p><a href="audio/TODARADIO06_2.mp3">MP3ファイルをダウンロード</a></p>
+<hr />
+</div>
+</div>
+<div id="ラジオの時系列順にポインタ" class="section level2">
+<h2>ラジオの時系列順にポインタ</h2>
+<div id="前半-1" class="section level3">
+<h3>前半</h3>
+<div id="オープニング" class="section level4">
+<h4>オープニング</h4>
+<ul>
+<li>傷痕 <a href='https://www.todaradio.org/songs' target='_blank'>https://www.todaradio.org/songs</a></li>
+<li>ざじょんくす: <a href='https://twitter.com/Zajonc_s' target='_blank'>https://twitter.com/Zajonc_s</a>
+<ul>
+<li>心理学ライフ「ざじょんくす バンドやろうぜ」<a href='https://psych.or.jp/publication/world088/pw20/' target='_blank'>https://psych.or.jp/publication/world088/pw20/</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="イントロ" class="section level4">
+<h4>イントロ</h4>
+<ul>
+<li>山田さん: <a href='https://sites.google.com/site/jyamadayuk/' target='_blank'>https://sites.google.com/site/jyamadayuk/</a>
+<ul>
+<li>ツイッター: <a href='https://twitter.com/momentumyy' target='_blank'>https://twitter.com/momentumyy</a></li>
+</ul></li>
+<li>Bem (2011) 予知能力論文: <a href='https://www.ncbi.nlm.nih.gov/pubmed/21280961' target='_blank'>https://www.ncbi.nlm.nih.gov/pubmed/21280961</a></li>
+<li>Science 2015: <a href='http://science.sciencemag.org/content/349/6251/aac4716' target='_blank'>http://science.sciencemag.org/content/349/6251/aac4716</a></li>
+<li>Voodoo Correlation <a href='https://www.scientificamerican.com/article/brain-scan-results-overstated/' target='_blank'>https://www.scientificamerican.com/article/brain-scan-results-overstated/</a></li>
+<li>死んだサケのMRI: <a href='http://www.wired.com/wiredscience/2009/09/fmrisalmon/' target='_blank'>http://www.wired.com/wiredscience/2009/09/fmrisalmon/</a>
+<ul>
+<li>初期の追試研究: <a href='https://tinyurl.com/y9a9t76q' target='_blank'>https://tinyurl.com/y9a9t76q</a></li>
+</ul></li>
+<li>Ojiro, Y., Gobara, A., Nam, G., Sasaki, K., Kishimoto, R., Yamada, Y., &amp; Miura, K. (2015). Two replications of “Hierarchical encoding makes individuals in a group seem more attractive (2014; Experiment 4)”. The Quantitative Methods for Psychology, 11(2), r8-r11. <a href='https://www.tqmp.org/ReplicationStudies/vol11-2/r008/index.html' target='_blank'>https://www.tqmp.org/ReplicationStudies/vol11-2/r008/index.html</a></li>
+<li>Attentional Blink: <a href='https://en.wikipedia.org/wiki/Attentional_blink' target='_blank'>https://en.wikipedia.org/wiki/Attentional_blink</a></li>
+</ul>
+</div>
+<div id="マルチラボ" class="section level4">
+<h4>マルチラボ</h4>
+<ul>
+<li>Fernando Marmolejo-Ramos: <a href='https://people.unisa.edu.au/Fernando.Marmolejo-Ramos' target='_blank'>https://people.unisa.edu.au/Fernando.Marmolejo-Ramos</a></li>
+<li>Psychological Science Accelerator: <a href='https://psysciacc.org/' target='_blank'>https://psysciacc.org/</a></li>
+<li>70ラボによる同一fMRIデータ解析の話: <a href='http://www.natureasia.com/ja-jp/nature/highlights/103510' target='_blank'>http://www.natureasia.com/ja-jp/nature/highlights/103510</a></li>
+<li>SAC: <a href='https://tinyurl.com/yxffvlqp' target='_blank'>https://tinyurl.com/yxffvlqp</a></li>
+<li>ミウラジオ: <a href='https://kohske.github.io/research/TodaRadio/vol003.html' target='_blank'>https://kohske.github.io/research/TodaRadio/vol003.html</a></li>
+<li>スーパーカミオカンデ <a href='http://www-sk.icrr.u-tokyo.ac.jp/sk/' target='_blank'>http://www-sk.icrr.u-tokyo.ac.jp/sk/</a></li>
+<li>ヒッグスと加速器 <a href='https://www.icepp.s.u-tokyo.ac.jp/elementaryparticle/higgsparticle.html' target='_blank'>https://www.icepp.s.u-tokyo.ac.jp/elementaryparticle/higgsparticle.html</a></li>
+<li>山田さん1stのマルチラボCOVIDiSTRESS <a href='https://psyarxiv.com/v7cep/' target='_blank'>https://psyarxiv.com/v7cep/</a>
+<ul>
+<li>Tweet <a href='https://twitter.com/momentumyy/status/1267959268826701825' target='_blank'>https://twitter.com/momentumyy/status/1267959268826701825</a></li>
+<li>Andreas Lieberoth <a href='https://scholar.google.dk/citations?user=U8KFNa4AAAAJ&hl=en' target='_blank'>https://scholar.google.dk/citations?user=U8KFNa4AAAAJ&amp;hl=en</a></li>
+</ul></li>
+<li>PsychMap <a href='https://www.facebook.com/groups/psychmap/' target='_blank'>https://www.facebook.com/groups/psychmap/</a></li>
+<li>Psychological Science Accelerator: <a href='https://psysciacc.org/' target='_blank'>https://psysciacc.org/</a></li>
+<li>ManyBabies （発達のマルチラボ） <a href='https://manybabies.github.io/' target='_blank'>https://manybabies.github.io/</a>
+<ul>
+<li>日本語解説 <a href='https://note.com/hagiii/n/n908414fae13e' target='_blank'>https://note.com/hagiii/n/n908414fae13e</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="サイコミュ" class="section level4">
+<h4>サイコミュ</h4>
+<ul>
+<li>サイエンスコミュニケーション
+<ul>
+<li>心理学会サイエンスコミュニケーション研究会 <a href='https://psycommu.webnode.jp/' target='_blank'>https://psycommu.webnode.jp/</a></li>
+</ul></li>
+<li>シチズンサイエンス: <a href='https://ja.wikipedia.org/wiki/%E5%B8%82%E6%B0%91%E7%A7%91%E5%AD%A6' target='_blank'>https://ja.wikipedia.org/wiki/%E5%B8%82%E6%B0%91%E7%A7%91%E5%AD%A6</a></li>
+<li>「朝礼に来なかった人問題」
+<ul>
+<li>山田祐樹 (2019). 未来はごく一部の人達の手の中 ―研究者評価の歪みがもたらす心理学界全体の歪み― 心理学評論, 62(3), 296-303. <a href='https://psyarxiv.com/4p6wq/' target='_blank'>https://psyarxiv.com/4p6wq/</a></li>
+</ul></li>
+<li>サイエンスリテラシー：</li>
+<li><a href='https://ja.wikipedia.org/wiki/%E7%A7%91%E5%AD%A6%E3%83%AA%E3%83%86%E3%83%A9%E3%82%B7%E3%83%BC' target='_blank'>https://ja.wikipedia.org/wiki/%E7%A7%91%E5%AD%A6%E3%83%AA%E3%83%86%E3%83%A9%E3%82%B7%E3%83%BC</a></li>
+<li>心理学部（部活）</li>
+<li>名古屋市科学館: <a href='http://www.ncsm.city.nagoya.jp/' target='_blank'>http://www.ncsm.city.nagoya.jp/</a></li>
+<li>「心の実験パッケージ」開発研究委員会: <a href='http://www.kokorojps.org/' target='_blank'>http://www.kokorojps.org/</a></li>
+<li>心理学甲子園福岡大会</li>
+<li>伊都キャンパス: <a href='https://www.kyushu-u.ac.jp/ja/campus/ito/' target='_blank'>https://www.kyushu-u.ac.jp/ja/campus/ito/</a></li>
+<li>Learning by teaching: <a href='https://en.wikipedia.org/wiki/Learning_by_teaching' target='_blank'>https://en.wikipedia.org/wiki/Learning_by_teaching</a></li>
+<li>公民館：<a href='https://ja.wikipedia.org/wiki/%E5%85%AC%E6%B0%91%E9%A4%A8' target='_blank'>https://ja.wikipedia.org/wiki/%E5%85%AC%E6%B0%91%E9%A4%A8</a></li>
+<li>認定心理士: <a href='https://psych.or.jp/qualification/' target='_blank'>https://psych.or.jp/qualification/</a></li>
+<li>名古屋市土曜学習: <a href='http://www.city.nagoya.jp/kyoiku/page/0000116825.html' target='_blank'>http://www.city.nagoya.jp/kyoiku/page/0000116825.html</a></li>
+<li>名古屋市科学館の竜巻ラボ: <a href='https://tinyurl.com/ydbegqlr' target='_blank'>https://tinyurl.com/ydbegqlr</a></li>
+</ul>
+</div>
+</div>
+<div id="後半-1" class="section level3">
+<h3>後半</h3>
+<div id="リスナーからのおたより" class="section level4">
+<h4>リスナーからのおたより</h4>
+<ul>
+<li>ため息 <a href='https://www.todaradio.org/songs' target='_blank'>https://www.todaradio.org/songs</a>
+<ul>
+<li>ざじょんくす: <a href='https://twitter.com/Zajonc_s' target='_blank'>https://twitter.com/Zajonc_s</a></li>
+</ul></li>
+<li>トダラジオ質問箱: <a href='https://peing.net/ja/todaradio1' target='_blank'>https://peing.net/ja/todaradio1</a></li>
+</ul>
+</div>
+<div id="ppprpost-publication-peer-review" class="section level4">
+<h4>PPPR（Post publication peer review）</h4>
+<ul>
+<li>佐々なんとかさん: <a href='https://kyoshiro0920.wixsite.com/japanese' target='_blank'>https://kyoshiro0920.wixsite.com/japanese</a></li>
+<li>認知心理学会TR（査読体験など）: <a href='https://psyarxiv.com/ezaq2' target='_blank'>https://psyarxiv.com/ezaq2</a>
+<ul>
+<li>佐々木恭志郎・山田祐樹 (2020). 実験心理学者も快適に論文投稿したい 認知心理学会テクニカルレポート, COGPSY-TR-007, 1-6.</li>
+</ul></li>
+<li>フロンティアズ: <a href='https://www.frontiersin.org/' target='_blank'>https://www.frontiersin.org/</a></li>
+<li>コラブラ: <a href='https://www.collabra.org/' target='_blank'>https://www.collabra.org/</a></li>
+<li>PPPR for Real: <a href='https://psyarxiv.com/sp3j5/' target='_blank'>https://psyarxiv.com/sp3j5/</a></li>
+<li>Prediction Market: <a href='https://en.wikipedia.org/wiki/Prediction_market' target='_blank'>https://en.wikipedia.org/wiki/Prediction_market</a>
+<ul>
+<li>Replication market: <a href='https://www.replicationmarkets.com/' target='_blank'>https://www.replicationmarkets.com/</a></li>
+<li>山田さんの心理学評論に少し解説 <a href='https://www.jstage.jst.go.jp/article/sjpr/59/1/59_15/_article/-char/ja' target='_blank'>https://www.jstage.jst.go.jp/article/sjpr/59/1/59_15/_article/-char/ja</a> 山田祐樹. (2016). 認知心理学における再現可能性の認知心理学. 心理学評論, 59(1), 15-29.</li>
+</ul></li>
+<li>プレプリント: <a href='https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%AC%E3%83%97%E3%83%AA%E3%83%B3%E3%83%88' target='_blank'>https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%AC%E3%83%97%E3%83%AA%E3%83%B3%E3%83%88</a>
+<ul>
+<li>PsyArxiv : <a href='https://psyarxiv.com/' target='_blank'>https://psyarxiv.com/</a></li>
+</ul></li>
+<li>アクセプティポ: <a href='https://twitter.com/search?q=%E3%82%A2%E3%82%AF%E3%82%BB%E3%83%97%E3%83%86%E3%82%A3%E3%83%9D&f=live' target='_blank'>https://twitter.com/search?q=%E3%82%A2%E3%82%AF%E3%82%BB%E3%83%97%E3%83%86%E3%82%A3%E3%83%9D&amp;f=live</a></li>
+<li>リジェクティポ: <a href='https://twitter.com/search?q=%E3%83%AA%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%86%E3%82%A3%E3%83%9D&f=live' target='_blank'>https://twitter.com/search?q=%E3%83%AA%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%86%E3%82%A3%E3%83%9D&amp;f=live</a></li>
+<li>科学哲学・社会認識論</li>
+<li>ラカトシュ：<a href='https://ja.wikipedia.org/wiki/%E3%83%A9%E3%82%AB%E3%83%88%E3%82%B7%E3%83%A5%E3%83%BB%E3%82%A4%E3%83%A0%E3%83%AC' target='_blank'>https://ja.wikipedia.org/wiki/%E3%83%A9%E3%82%AB%E3%83%88%E3%82%B7%E3%83%A5%E3%83%BB%E3%82%A4%E3%83%A0%E3%83%AC</a></li>
+<li>Physics envy: <a href='https://en.wikipedia.org/wiki/Physics_envy' target='_blank'>https://en.wikipedia.org/wiki/Physics_envy</a></li>
+<li>Hodgkin-Huxley方程式: <a href='https://bsd.neuroinf.jp/wiki/Hodgkin-Huxley%E6%96%B9%E7%A8%8B%E5%BC%8F' target='_blank'>https://bsd.neuroinf.jp/wiki/Hodgkin-Huxley%E6%96%B9%E7%A8%8B%E5%BC%8F</a></li>
+<li>レプリキャッツ: <a href='https://replicats.research.unimelb.edu.au/' target='_blank'>https://replicats.research.unimelb.edu.au/</a></li>
+<li>弱い理論の話: <a href='https://www.jstage.jst.go.jp/article/sjpr/61/1/61_42/_article/-char/ja/' target='_blank'>https://www.jstage.jst.go.jp/article/sjpr/61/1/61_42/_article/-char/ja/</a> 竹澤正哲. (2018). 心理学におけるモデリングの必要性. 心理学評論, 61(1), 42-54.</li>
+<li>The Hardest Science by Sanjay Srivastava: <a href='https://thehardestscience.com/' target='_blank'>https://thehardestscience.com/</a></li>
+<li>社会生物学: <a href='https://ja.wikipedia.org/wiki/%E7%A4%BE%E4%BC%9A%E7%94%9F%E7%89%A9%E5%AD%A6' target='_blank'>https://ja.wikipedia.org/wiki/%E7%A4%BE%E4%BC%9A%E7%94%9F%E7%89%A9%E5%AD%A6</a></li>
+<li>遺伝子・文化共進化 (二重継承理論): <a href='https://ja.wikipedia.org/wiki/%E4%BA%8C%E9%87%8D%E7%9B%B8%E7%B6%9A%E7%90%86%E8%AB%96' target='_blank'>https://ja.wikipedia.org/wiki/%E4%BA%8C%E9%87%8D%E7%9B%B8%E7%B6%9A%E7%90%86%E8%AB%96</a></li>
+</ul>
+</div>
+<div id="若者へのメッセージ" class="section level4">
+<h4>若者へのメッセージ</h4>
+<ul>
+<li>自分を一回疑うこと</li>
+<li>デカルト: <a href='https://ja.wikipedia.org/wiki/%E6%96%B9%E6%B3%95%E7%9A%84%E6%87%90%E7%96%91' target='_blank'>https://ja.wikipedia.org/wiki/%E6%96%B9%E6%B3%95%E7%9A%84%E6%87%90%E7%96%91</a></li>
+</ul>
+<hr />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelement-and-player.min.js"></script>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+</body>
+</html>

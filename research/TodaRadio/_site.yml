@@ -5,6 +5,8 @@ navbar:
   left:
     - text: "過去のラジオ"
       menu:
+        - text: "Vol. 006 (2020/06/06 モムラジオ)"
+          href: vol006.html
         - text: "Vol. 005 (2018/12/10 ゲスト神谷先生)"
           href: vol005.html
         - text: "Vol. 004 (2018/03/12 専修大学公開収録)"
@@ -27,5 +29,5 @@ output:
     highlight: ~
     lib_dir: site_libs
     self_contained: no
-output_dir: .
+output_dir: "."
 

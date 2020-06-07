@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -52,9 +52,7 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -68,13 +66,18 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
 }
+.html-widget {
+  margin-bottom: 20px;
+}
 button.code-folding-btn:focus {
   outline: none;
+}
+summary {
+  display: list-item;
 }
 </style>
 
@@ -90,7 +93,6 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
-
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -110,6 +112,43 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -131,19 +170,74 @@ $(document).ready(function () {
 });
 </script>
 
-
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
 
 <!-- code folding -->
 
 
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -167,6 +261,9 @@ $(document).ready(function () {
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="vol006.html">Vol. 006 (2020/06/06 モムラジオ)</a>
+    </li>
     <li>
       <a href="vol005.html">Vol. 005 (2018/12/10 ゲスト神谷先生)</a>
     </li>
@@ -300,14 +397,8 @@ TODAラジオ収録ちう。 <a href="https://t.co/ywsXdLuYAw">pic.twitter.com/y
 <li>関連するNature記事 <a href='https://www.nature.com/news/a-mouse-s-house-may-ruin-experiments-1.19335' target='_blank'>https://www.nature.com/news/a-mouse-s-house-may-ruin-experiments-1.19335</a></li>
 <li>関連記事「マウスの飼育状態で、実験結果が台無しに？」 <a href='http://animals-peace.net/experiments/mouses_house_ruin_experiments.html' target='_blank'>http://animals-peace.net/experiments/mouses_house_ruin_experiments.html</a></li>
 <li>ツァイトゲーバー（生物時計） <a href='https://staff.aist.go.jp/s-hanai/biologicalrhythm.html' target='_blank'>https://staff.aist.go.jp/s-hanai/biologicalrhythm.html</a></li>
-<li>コア理論と周辺理論（その１） <img src="material/vol004_fig03.jpg" width="876" /></li>
-<li>コア理論と周辺理論（その２）
-<div class="figure">
-<img src="material/vol004_fig04.jpg" alt="5-8ページ目" width="876" />
-<p class="caption">
-5-8ページ目
-</p>
-</div></li>
+<li>コア理論と周辺理論（その１） <img src="material/vol004_fig03.jpg" /><!-- --></li>
+<li><p>コア理論と周辺理論（その２） <img src="material/vol004_fig04.jpg" alt="5-8ページ目" /></p></li>
 <li>分子生物学</li>
 <li>関連するツイート <a href='https://twitter.com/kohske/status/974130074617225216' target='_blank'>https://twitter.com/kohske/status/974130074617225216</a>
 <blockquote class="twitter-tweet" data-lang="ja">
@@ -339,7 +430,7 @@ TODAラジオ収録ちう。 <a href="https://t.co/ywsXdLuYAw">pic.twitter.com/y
 <li>ブートストラップ法: <a href='https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%BC%E3%83%88%E3%82%B9%E3%83%88%E3%83%A9%E3%83%83%E3%83%97%E6%B3%95' target='_blank'>https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%BC%E3%83%88%E3%82%B9%E3%83%88%E3%83%A9%E3%83%83%E3%83%97%E6%B3%95</a></li>
 <li>公益社団法人日本心理学会 倫理規程: <a href='https://psych.or.jp/publication/rinri_kitei/' target='_blank'>https://psych.or.jp/publication/rinri_kitei/</a></li>
 <li>クラウドソーシングについて「大学生はオンライン調査に“まともに”答えているか？」: <a href='http://www.socialpsychology.jp/ronbun_news/32_02_0932.html' target='_blank'>http://www.socialpsychology.jp/ronbun_news/32_02_0932.html</a></li>
-<li>「追試やるべき度」方程式<br/> <img src="material/vol004_fig01.png" width="400px" /><img src="material/vol004_fig02.png" width="400px" /></li>
+<li><p>「追試やるべき度」方程式<br/> <img src="material/vol004_fig01.png" width="400px" /><img src="material/vol004_fig02.png" width="400px" /></p></li>
 </ul>
 </div>
 <div id="診断による現象のカテゴリ化と機序研究の実践" class="section level3">
@@ -399,6 +490,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 
 </body>

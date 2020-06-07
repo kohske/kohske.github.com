@@ -1,0 +1,154 @@
+---
+title: "TODA RADIO #006 モムラジオ"
+output: html_document
+---
+
+```{r echo=FALSE}
+a=function(u)paste0("<a href='", u, "' target='_blank'>", u, "</a>")
+```
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelementplayer.min.css">
+
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-hashtags="TodaRadio" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+- ハッシュタグ`#TodaRadio`でお願いします（↑のボタンから行けます）。
+
+※ 本ラジオでの発言は個人の見解であり、所属する組織の見解ではありません。
+
+※ 科学的な正しさを重視して発言していますが、発言には誤りが含まれることもありえます。
+
+※ ご意見、苦情などありましたら高橋までメール takahashi.kohske@gmail.com またはツイッター [\@kohske](https://twitter.com/kohske) までご連絡ください。
+
+※ [ディスカッションルーム](discussion.html)もあります。 
+
+
+----
+
+- 収録日: 2020/6/6
+- 場所: Zoom
+- メンバー
+    - ゲスト：山田さん
+    - コメンテーター: 池田さん
+    - パーソナリティ: 高橋
+
+## 概要
+
+いつも Toda Radio をお聞きいただき、ありがとうございます。お待たせいたしました。番組第6回をお送りいたします。ゲストは鎮西の乙事主こと、山田祐樹さん。最近山田さんが取り組んでらっしゃる話題を中心にお話をお伺いします。前半は、国際的な大規模協力研究の実情と、科学コミュニケーションについて、後半は、ピアレビュー制度についてお聞きします。お楽しみください。
+
+---
+
+### 前半
+
+<audio class="mejs-player" controls="" data-mejsoptions='{"alwaysShowControls": true, "alwaysShowHours": true, "enableAutosize": true, "features": ["playpause", "progress", "current", "duration", "volume", "speed"]}' preload="auto" src="audio/TODARADIO06_1.mp3" width="100%"></audio>
+
+[MP3ファイルをダウンロード](audio/TODARADIO06_1.mp3)
+
+----
+
+### 後半
+
+<audio class="mejs-player" controls="" data-mejsoptions='{"alwaysShowControls": true, "alwaysShowHours": true, "enableAutosize": true, "features": ["playpause", "progress", "current", "duration", "volume", "speed"]}' preload="auto" src="audio/TODARADIO06_2.mp3" width="100%"></audio>
+
+[MP3ファイルをダウンロード](audio/TODARADIO06_2.mp3)
+
+----
+
+## ラジオの時系列順にポインタ
+
+### 前半
+
+#### オープニング
+
+- 傷痕 `r a("https://www.todaradio.org/songs")`
+- ざじょんくす: `r a("https://twitter.com/Zajonc_s")`
+  - 心理学ライフ「ざじょんくす バンドやろうぜ」`r a("https://psych.or.jp/publication/world088/pw20/")`
+
+#### イントロ
+- 山田さん: `r a("https://sites.google.com/site/jyamadayuk/")`
+  - ツイッター: `r a("https://twitter.com/momentumyy")`
+- Bem (2011) 予知能力論文: `r a("https://www.ncbi.nlm.nih.gov/pubmed/21280961")`
+- Science 2015: `r a("http://science.sciencemag.org/content/349/6251/aac4716")`
+- Voodoo Correlation `r a("https://www.scientificamerican.com/article/brain-scan-results-overstated/")`
+- 死んだサケのMRI: `r a("http://www.wired.com/wiredscience/2009/09/fmrisalmon/")`
+  - 初期の追試研究: `r a("https://tinyurl.com/y9a9t76q")`
+- Ojiro, Y., Gobara, A., Nam, G., Sasaki, K., Kishimoto, R., Yamada, Y., & Miura, K. (2015). Two replications of “Hierarchical encoding makes individuals in a group seem more attractive (2014; Experiment 4)”. The Quantitative Methods for Psychology, 11(2), r8-r11. `r a("https://www.tqmp.org/ReplicationStudies/vol11-2/r008/index.html")`
+- Attentional Blink: `r a("https://en.wikipedia.org/wiki/Attentional_blink")`
+ 
+#### マルチラボ
+- Fernando Marmolejo-Ramos: `r a("https://people.unisa.edu.au/Fernando.Marmolejo-Ramos")`
+- Psychological Science Accelerator: `r a("https://psysciacc.org/")`
+- 70ラボによる同一fMRIデータ解析の話:  `r a("http://www.natureasia.com/ja-jp/nature/highlights/103510")`
+- SAC: `r a("https://tinyurl.com/yxffvlqp")`
+- ミウラジオ: `r a("https://kohske.github.io/research/TodaRadio/vol003.html")`
+- スーパーカミオカンデ `r a("http://www-sk.icrr.u-tokyo.ac.jp/sk/")`
+- ヒッグスと加速器 `r a("https://www.icepp.s.u-tokyo.ac.jp/elementaryparticle/higgsparticle.html")`
+- 山田さん1stのマルチラボCOVIDiSTRESS `r a("https://psyarxiv.com/v7cep/")`
+  - Tweet `r a("https://twitter.com/momentumyy/status/1267959268826701825")`
+  - Andreas Lieberoth `r a("https://scholar.google.dk/citations?user=U8KFNa4AAAAJ&hl=en")`
+- PsychMap `r a("https://www.facebook.com/groups/psychmap/")`
+- Psychological Science Accelerator: `r a("https://psysciacc.org/")`
+- ManyBabies （発達のマルチラボ） `r a("https://manybabies.github.io/")`
+  - 日本語解説 `r a("https://note.com/hagiii/n/n908414fae13e")`
+
+#### サイコミュ
+
+- サイエンスコミュニケーション
+  - 心理学会サイエンスコミュニケーション研究会 `r a("https://psycommu.webnode.jp/")`
+- シチズンサイエンス: `r a("https://ja.wikipedia.org/wiki/%E5%B8%82%E6%B0%91%E7%A7%91%E5%AD%A6")`
+- 「朝礼に来なかった人問題」
+  - 山田祐樹 (2019). 未来はごく一部の人達の手の中 ―研究者評価の歪みがもたらす心理学界全体の歪み― 心理学評論, 62(3), 296-303. `r a("https://psyarxiv.com/4p6wq/")`
+- サイエンスリテラシー：
+- `r a("https://ja.wikipedia.org/wiki/%E7%A7%91%E5%AD%A6%E3%83%AA%E3%83%86%E3%83%A9%E3%82%B7%E3%83%BC")`
+- 心理学部（部活）
+- 名古屋市科学館: `r a("http://www.ncsm.city.nagoya.jp/")`
+- 「心の実験パッケージ」開発研究委員会: `r a("http://www.kokorojps.org/")`
+- 心理学甲子園福岡大会
+- 伊都キャンパス: `r a("https://www.kyushu-u.ac.jp/ja/campus/ito/")`
+- Learning by teaching: `r a("https://en.wikipedia.org/wiki/Learning_by_teaching")`
+- 公民館：`r a("https://ja.wikipedia.org/wiki/%E5%85%AC%E6%B0%91%E9%A4%A8")`
+- 認定心理士: `r a("https://psych.or.jp/qualification/")`
+- 名古屋市土曜学習: `r a("http://www.city.nagoya.jp/kyoiku/page/0000116825.html")`
+- 名古屋市科学館の竜巻ラボ: `r a("https://tinyurl.com/ydbegqlr")`
+
+### 後半
+
+#### リスナーからのおたより
+- ため息 `r a("https://www.todaradio.org/songs")`
+  - ざじょんくす: `r a("https://twitter.com/Zajonc_s")`
+- トダラジオ質問箱: `r a("https://peing.net/ja/todaradio1")`
+ 
+#### PPPR（Post publication peer review）
+
+- 佐々なんとかさん: `r a("https://kyoshiro0920.wixsite.com/japanese")`
+- 認知心理学会TR（査読体験など）: `r a("https://psyarxiv.com/ezaq2")`
+  - 佐々木恭志郎・山田祐樹 (2020). 実験心理学者も快適に論文投稿したい 認知心理学会テクニカルレポート, COGPSY-TR-007, 1-6.
+- フロンティアズ: `r a("https://www.frontiersin.org/")`
+- コラブラ: `r a("https://www.collabra.org/")`
+- PPPR for Real: `r a("https://psyarxiv.com/sp3j5/")`
+- Prediction Market: `r a("https://en.wikipedia.org/wiki/Prediction_market")`
+  - Replication market: `r a("https://www.replicationmarkets.com/")`
+  - 山田さんの心理学評論に少し解説 `r a("https://www.jstage.jst.go.jp/article/sjpr/59/1/59_15/_article/-char/ja")` 山田祐樹. (2016). 認知心理学における再現可能性の認知心理学. 心理学評論, 59(1), 15-29.
+- プレプリント: `r a("https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%AC%E3%83%97%E3%83%AA%E3%83%B3%E3%83%88")`
+  - PsyArxiv : `r a("https://psyarxiv.com/")`
+- アクセプティポ: `r a("https://twitter.com/search?q=%E3%82%A2%E3%82%AF%E3%82%BB%E3%83%97%E3%83%86%E3%82%A3%E3%83%9D&f=live")`
+- リジェクティポ: `r a("https://twitter.com/search?q=%E3%83%AA%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%86%E3%82%A3%E3%83%9D&f=live")`
+- 科学哲学・社会認識論
+- ラカトシュ：`r a("https://ja.wikipedia.org/wiki/%E3%83%A9%E3%82%AB%E3%83%88%E3%82%B7%E3%83%A5%E3%83%BB%E3%82%A4%E3%83%A0%E3%83%AC")`
+- Physics envy: `r a("https://en.wikipedia.org/wiki/Physics_envy")`
+- Hodgkin-Huxley方程式: `r a("https://bsd.neuroinf.jp/wiki/Hodgkin-Huxley%E6%96%B9%E7%A8%8B%E5%BC%8F")`
+- レプリキャッツ: `r a("https://replicats.research.unimelb.edu.au/")`
+- 弱い理論の話: `r a("https://www.jstage.jst.go.jp/article/sjpr/61/1/61_42/_article/-char/ja/")` 竹澤正哲. (2018). 心理学におけるモデリングの必要性. 心理学評論, 61(1), 42-54.
+- The Hardest Science by Sanjay Srivastava: `r a("https://thehardestscience.com/")`
+- 社会生物学: `r a("https://ja.wikipedia.org/wiki/%E7%A4%BE%E4%BC%9A%E7%94%9F%E7%89%A9%E5%AD%A6")`
+- 遺伝子・文化共進化 (二重継承理論): `r a("https://ja.wikipedia.org/wiki/%E4%BA%8C%E9%87%8D%E7%9B%B8%E7%B6%9A%E7%90%86%E8%AB%96")`
+ 
+#### 若者へのメッセージ
+- 自分を一回疑うこと
+- デカルト: `r a("https://ja.wikipedia.org/wiki/%E6%96%B9%E6%B3%95%E7%9A%84%E6%87%90%E7%96%91")`
+
+----
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelement-and-player.min.js"></script>
+
+
