@@ -5,6 +5,8 @@ navbar:
   left:
     - text: "過去のラジオ"
       menu:
+        - text: "Vol. 007 (2020/06/27 ゲスト平石さん)"
+          href: vol007.html
         - text: "Vol. 006 (2020/06/06 モムラジオ)"
           href: vol006.html
         - text: "Vol. 005 (2018/12/10 ゲスト神谷先生)"

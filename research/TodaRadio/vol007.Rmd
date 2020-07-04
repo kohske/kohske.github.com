@@ -1,0 +1,138 @@
+---
+title: "TODA RADIO #007 ゲスト平石さん"
+output: html_document
+---
+
+```{r echo=FALSE}
+a=function(u)paste0("<a href='", u, "' target='_blank'>", u, "</a>")
+```
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelementplayer.min.css">
+
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-hashtags="TodaRadio" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+- ハッシュタグ`#TodaRadio`でお願いします（↑のボタンから行けます）。
+
+※ 本ラジオでの発言は個人の見解であり、所属する組織の見解ではありません。
+
+※ 科学的な正しさを重視して発言していますが、発言には誤りが含まれることもありえます。
+
+※ ご意見、苦情などありましたら高橋までメール takahashi.kohske@gmail.com またはツイッター [\@kohske](https://twitter.com/kohske) までご連絡ください。
+
+※ [ディスカッションルーム](discussion.html)もあります。 
+
+
+----
+
+- 収録日: 2020/6/26
+- 場所: Zoom
+- メンバー
+    - ゲスト：平石さん
+    - コメンテーター: 池田さん
+    - パーソナリティ: 高橋
+
+## 概要
+
+
+---
+
+### Part 1
+
+<audio class="mejs-player" controls="" data-mejsoptions='{"alwaysShowControls": true, "alwaysShowHours": true, "enableAutosize": true, "features": ["playpause", "progress", "current", "duration", "volume", "speed"]}' preload="auto" src="audio/vol007_1.mp3" width="100%"></audio>
+
+[MP3ファイルをダウンロード](audio/vol007_1.mp3)
+
+----
+
+### Part 2
+
+<audio class="mejs-player" controls="" data-mejsoptions='{"alwaysShowControls": true, "alwaysShowHours": true, "enableAutosize": true, "features": ["playpause", "progress", "current", "duration", "volume", "speed"]}' preload="auto" src="audio/vol007_2.mp3" width="100%"></audio>
+
+[MP3ファイルをダウンロード](audio/vol007_2.mp3)
+
+----
+
+### Part 3
+
+<audio class="mejs-player" controls="" data-mejsoptions='{"alwaysShowControls": true, "alwaysShowHours": true, "enableAutosize": true, "features": ["playpause", "progress", "current", "duration", "volume", "speed"]}' preload="auto" src="audio/vol007_3.mp3" width="100%"></audio>
+
+[MP3ファイルをダウンロード](audio/vol007_3.mp3)
+
+----
+
+## ラジオの時系列順にポインタ
+
+### オープニングBGM
+
+- ため息 `r a("https://www.todaradio.org/songs")`
+  - ざじょんくす: `r a("https://twitter.com/Zajonc_s")`
+
+### Part 1 イントロ&論文紹介
+
+- 戸田先生「心理学の将来」 `r a("https://www.jcss.gr.jp/meetings/jcss2007/weblog/20070324.html")`
+- 認知科学特集号「 戸田正直『心理学の将来』から半世紀」 `r a("https://www.jcss.gr.jp/contribution/")`
+- 平石さん `r a("https://sites.google.com/site/kaihiraishi/home")`
+- BLM `r a("https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%E3%83%BB%E3%83%A9%E3%82%A4%E3%83%B4%E3%82%BA%E3%83%BB%E3%83%9E%E3%82%BF%E3%83%BC")`
+- ジョージ・フロイドさんの事件`r a("https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A7%E3%83%BC%E3%82%B8%E3%83%BB%E3%83%95%E3%83%AD%E3%82%A4%E3%83%89_(%E7%99%BD%E4%BA%BA%E8%AD%A6%E5%AE%98%E3%81%AB%E6%AE%BA%E3%81%95%E3%82%8C%E3%81%9F%E9%BB%92%E4%BA%BA%E7%94%B7%E6%80%A7)")`
+- Clark論文 `r a("https://journals.sagepub.com/doi/abs/10.1177/0956797619897915")`
+  - Clark, C. J., Winegard, B. M., Beardslee, J., Baumeister, R. F., & Shariff, A. F. (2020). Declines in Religiosity Predict Increases in Violent Crime—but Not Among Countries With Relatively High Average IQ. Psychological science, 31(2), 170-183. 
+- Multiverse analysis `r a("https://journals.sagepub.com/doi/10.1177/1745691616658637")`
+- バッジ `r a("https://www.psychologicalscience.org/publications/badges")`
+- Andrew Gelmanのブログ `r a("https://statmodeling.stat.columbia.edu/2020/06/22/retraction-of-racial-essentialist-article-that-appeared-in-psychological-science/")`
+- IQ `r a("https://ja.wikipedia.org/wiki/%E7%9F%A5%E8%83%BD%E6%8C%87%E6%95%B0")`
+- ツイッターの反応（APS公式含む）
+  - LynnのIQデータについてのスレッド`r a("https://twitter.com/RebeccaSear/status/1271547090221572096")`
+  - APSのコメント `r a("https://twitter.com/PsychScience/status/1271494967257677830")`
+  - Winegardのツイッター `r a("https://twitter.com/EPoe187/status/1272679640843390978 https://twitter.com/EPoe187/status/1273026768836886529")`
+  - ShaiffがRetractを決定 `r a("https://twitter.com/azimshariff/status/1273432519023587329")`
+  - Psych Sci が editorial を発表   `r a("https://twitter.com/PsychScience/status/1275162883928752128")`
+  - 論文出版当時の Psych Sci  編集長だった Lindsay の声明 `r a("https://twitter.com/dstephenlindsay/status/1275459715992915973")`
+
+- Great Awokening `r a("https://www.vox.com/2019/3/22/18259865/great-awokening-white-liberals-race-polling-trump-2020")`
+- Politics of Social Psychology (2017)  `r a("https://www.amazon.co.jp/Politics-Social-Psychology-Frontiers/dp/1138930601/")`
+ 
+### Part 2 平石さんによる行動遺伝学の話
+
+- 行動遺伝学 `r a("https://en.wikipedia.org/wiki/Behavioural_genetics")`
+- 進化心理学 `r a("https://ja.wikipedia.org/wiki/%E9%80%B2%E5%8C%96%E5%BF%83%E7%90%86%E5%AD%A6")`
+- 安藤寿康先生 `r a("https://ja.wikipedia.org/wiki/%E5%AE%89%E8%97%A4%E5%AF%BF%E5%BA%B7")`
+- 長谷川寿一先生 `r a("https://ja.wikipedia.org/wiki/%E9%95%B7%E8%B0%B7%E5%B7%9D%E5%AF%BF%E4%B8%80")`
+- 遺伝率 `r a("https://ja.wikipedia.org/wiki/%E9%81%BA%E4%BC%9D%E7%8E%87")`
+- Nature Nurture `r a("https://en.wikipedia.org/wiki/Nature_versus_nurture")`
+- 『人種は存在しない』 `r a("https://www.amazon.co.jp/dp/4120044815")`
+- ホモ・サピエンスの移動の歴史 `r a("https://ja.wikipedia.org/wiki/%E4%BA%BA%E3%81%AE%E7%A7%BB%E5%8B%95%E3%81%AE%E6%AD%B4%E5%8F%B2")`
+- メンデルの法則 `r a("https://ja.wikipedia.org/wiki/%E3%83%A1%E3%83%B3%E3%83%87%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87")`
+- 人種の違いは、遺伝学的には大した差ではない | ナショナルジオグラフィック日本版サイト `r a("https://natgeo.nikkeibp.co.jp/atcl/news/17/101800399/")`
+ 
+### Part 3 科学的事実と倫理的判断、自然主義的誤謬
+ 
+- 橘玲さんのブログ `r a("https://www.tachibana-akira.com/")`
+  - 知能と遺伝についての記事 `r a("https://diamond.jp/articles/-/192564")`
+- 日本心理学会 倫理規程 `r a("https://psych.or.jp/publication/rinri_kitei/")`
+- 日本人類学会・人類学の研究倫理に関する基本姿勢と基本指針 (PDF) `r a("http://anthropology.jp/assets/docs/kenkyurinri1.pdf")`
+- アフリカ報道における危険な「シングルストーリー」 `r a("https://newsphere.jp/national/20200610-1/")`
+- 自然主義的誤謬 `r a("https://ja.wikipedia.org/wiki/%E8%87%AA%E7%84%B6%E4%B8%BB%E7%BE%A9%E7%9A%84%E8%AA%A4%E8%AC%AC")`
+- アブグレイブ刑務所における捕虜虐待 `r a("https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%96%E3%82%B0%E3%83%AC%E3%82%A4%E3%83%96%E5%88%91%E5%8B%99%E6%89%80%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E6%8D%95%E8%99%9C%E8%99%90%E5%BE%85")`
+
+- 社会ダーウィニズム `r a("https://kotobank.jp/word/%E7%A4%BE%E4%BC%9A%E3%83%80%E3%83%BC%E3%82%A6%E3%82%A3%E3%83%8B%E3%82%BA%E3%83%A0-286531")`
+- 優生学 `r a("https://kotobank.jp/word/%E5%84%AA%E7%94%9F%E5%AD%A6-144773")`
+- もやウィン `r a("https://news.yahoo.co.jp/articles/f08da9c0add37bfe0bc794a9812c2f2e17ea6309")`
+- ⽇本⼈間⾏動進化学会「『ダーウィンの進化論』に関して流布する⾔説についての声明」 `r a("https://www.hbesj.org/wp/wp-content/uploads/2020/06/HBES-J_announcement_20200627.pdf")`
+- 【訂正】アブグレイブじゃなくて、グアンタナモでした：「強化拷問」を考案の心理学者が証言　米同時テロ公判前審問 `r a("https://www.bbc.com/japanese/51201929")`
+
+- 認知科学特集号「 戸田正直『心理学の将来』から半世紀」 `r a("https://www.jcss.gr.jp/contribution/")`
+ 
+ 
+###  エンディングテーマ
+
+ざじょんくす『恋のつり橋効果』
+
+作詞: 松田・作曲: 樋口・編曲: 藤島、樋口、松田、小森・ギター: 藤島、松田・ベース: 藤島(打ち込み)・ドラム: 藤島(打ち込み)・ボーカル: 松田(打ち込み; NEUTRINO w/ きりたん)
+
+
+----
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelement-and-player.min.js"></script>
+
+
