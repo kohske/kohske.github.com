@@ -1,0 +1,135 @@
+---
+title: "TODA RADIO #008 コロナ禍と心理学"
+output: html_document
+---
+
+```{r echo=FALSE}
+a=function(u)paste0("<a href='", u, "' target='_blank'>", u, "</a>")
+```
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelementplayer.min.css">
+
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-hashtags="TodaRadio" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+- ハッシュタグ`#TodaRadio`でお願いします（↑のボタンから行けます）。
+
+※ 本ラジオでの発言は個人の見解であり、所属する組織の見解ではありません。
+
+※ 科学的な正しさを重視して発言していますが、発言には誤りが含まれることもありえます。
+
+※ ご意見、苦情などありましたら高橋までメール takahashi.kohske@gmail.com またはツイッター [\@kohske](https://twitter.com/kohske) までご連絡ください。
+
+※ [ディスカッションルーム](discussion.html)もあります。 
+
+
+----
+
+- 収録日: 2020/6/30
+- 場所: Zoom
+- メンバー
+    - ゲスト：平石さん（レギュラーゲスト）・山田さん（準レギュラー）
+    - コメンテーター: 池田さん
+    - パーソナリティ: 高橋
+
+## 概要
+
+
+---
+
+### Part 1
+
+<audio class="mejs-player" controls="" data-mejsoptions='{"alwaysShowControls": true, "alwaysShowHours": true, "enableAutosize": true, "features": ["playpause", "progress", "current", "duration", "volume", "speed"]}' preload="auto" src="audio/vol008_1.mp3" width="100%"></audio>
+
+[MP3ファイルをダウンロード](audio/vol008_1.mp3)
+
+----
+
+### Part 2
+
+<audio class="mejs-player" controls="" data-mejsoptions='{"alwaysShowControls": true, "alwaysShowHours": true, "enableAutosize": true, "features": ["playpause", "progress", "current", "duration", "volume", "speed"]}' preload="auto" src="audio/vol008_2.mp3" width="100%"></audio>
+
+[MP3ファイルをダウンロード](audio/vol008_2.mp3)
+
+----
+
+### Part 3
+
+<audio class="mejs-player" controls="" data-mejsoptions='{"alwaysShowControls": true, "alwaysShowHours": true, "enableAutosize": true, "features": ["playpause", "progress", "current", "duration", "volume", "speed"]}' preload="auto" src="audio/vol008_3.mp3" width="100%"></audio>
+
+[MP3ファイルをダウンロード](audio/vol008_3.mp3)
+
+----
+
+## ラジオの時系列順にポインタ
+
+
+### オープニングBGM
+
+ざじょんくす『恋のつり橋効果』
+
+### Part 1 心理学者のステイホームについてまったり語る
+
+- ざじょんくす: `r a("https://twitter.com/Zajonc_s")`
+- 平石さん（レギュラーゲスト）  `r a("https://sites.google.com/site/kaihiraishi/home")`
+- 山田さん（準レギュラー） `r a("https://sites.google.com/site/jyamadayuk/")`
+- 質問箱 `r a("https://peing.net/ja/todaradio1")`
+  - 当該の質問と回答 `r a("https://peing.net/ja/q/b322d55d-0aa6-418f-94c5-5449d8f960e8")`
+  - Dr. Michael Inzlicht `r a("http://michaelinzlicht.com/#lab-view")`
+  - プライミング `r a("https://bsd.neuroinf.jp/wiki/%E3%83%97%E3%83%A9%E3%82%A4%E3%83%9F%E3%83%B3%E3%82%B0%E5%8A%B9%E6%9E%9C")`
+- 住みたいランキング `r a("https://diamond.jp/articles/-/241544")`
+- 「世界の住みやすい都市」福岡7位は通過点!?　目指すは“東京超え”の世界一！`r a("http://hash.city.fukuoka.lg.jp/news/archives/131.html")`
+- キソジオンライン `r a("https://kohske.github.io/KisojiOnline/")`
+  - `r a("https://twitter.com/asarin/status/1246298433003982850")`
+  - `r a("https://twitter.com/kohske/status/1246328669573808128")`
+  - `r a("https://twitter.com/asarin/status/1246361427071254529")`
+- HAD `r a("https://norimune.net/had")`
+- 澤さんすごい `r a("https://twitter.com/kosukesa/status/1277272382130946049")`
+ 
+### Part 2 コロナ禍の中の心理学
+
+- van Bavel (2020) NHB `r a("https://www.nature.com/articles/s41562-020-0884-z")`
+- PSA `r a("https://psysciacc.org/")`
+  - NHB in principle accept `r a("https://tinyurl.com/y7pk8spf")`
+- RSOS `r a("https://royalsocietypublishing.org/journal/rsos")`
+  - Urgent Call for Registered Reports on Coronavirus `r a("https://blogs.royalsociety.org/publishing/call-for-registered-reports-coronavirus/")`
+  - CALLING ALL SCIENTISTS: Rapid evaluation of COVID19-related Registered Reports at Royal Society Open Science
+- `r a("http://neurochambers.blogspot.com/2020/03/calling-all-scientists-rapid-evaluation.html")`
+- Ijzerman et al. (2020) `r a("https://psyarxiv.com/whds4/")`
+- Behavioural Insights Team `r a("https://www.bi.team/")`
+  - wiki `r a("https://en.wikipedia.org/wiki/Behavioural_Insights_Team")`
+  - BBC 「イギリス独自のウイルス対策、「国民の命を危険に」と多数の科学者反対」 `r a("https://www.bbc.com/japanese/features-and-analysis-51894727")`
+- ReproducibiliTea Tokyo `r a("https://note.com/kokiikeda/n/nd5df27174ab7")`
+- Ijzerman et al. (2020)に関するブログ `r a("https://note.com/kymd/n/n8dfa874c691b")`
+- ラカトシュ `r a("https://ja.wikipedia.org/wiki/%E3%83%A9%E3%82%AB%E3%83%88%E3%82%B7%E3%83%A5%E3%83%BB%E3%82%A4%E3%83%A0%E3%83%AC")`
+- 三浦さん・平石さんたちの Disgust sensitivity and COVID-19 `r a("https://osf.io/9cbhr")`
+  - 読売新聞「コロナ感染は自業自得」日本は１１％、米英の１０倍…阪大教授など調査  `r a("https://www.yomiuri.co.jp/national/20200629-OYT1T50107/")`
+
+### Part 3 心理学の応用
+
+- 日本心理学会「新型コロナウイルス感染拡大に関連した実践活動及び研究」 `r a("https://psych.or.jp/2020_covid")`
+- 心理学研究 特集号「新型コロナウイルス感染症と心理学」`r a("https://psych.or.jp/publication/sp_JJP/")`
+- frontiers Knowledge Hub Coronavirus `r a("https://coronavirus.frontiersin.org/")`
+- プレプリント `r a("https://www.editage.jp/insights/the-role-of-preprints-in-research-dissemination")`
+- チョコ `r a("https://www.nikkei.com/article/DGXMZO27844720Y8A300C1CR0000/")`
+- 符号科学
+- 岩田先生の連ツイ `r a("https://twitter.com/georgebest1969/status/1274330973363027972")`
+- 心理学会「新型コロナウイルス感染症（COVID-19）関連ページ」 `r a("https://psych.or.jp/special/covid19/")`
+- 心理物理学
+- 皮質拡大係数(cortical magnification factor) `r a("https://ja.wikipedia.org/wiki/%E7%9A%AE%E8%B3%AA%E6%8B%A1%E5%A4%A7")`
+- Crud factor - Crud (Re)Defined `r a("https://journals.sagepub.com/doi/full/10.1177/2515245920917961")`
+- フレーミング効果 `r a("https://www.jumonji-u.ac.jp/sscs/ikeda/cognitive_bias/cate_d/d_05.html")`
+  - NHBの追試論文 `r a("https://www.nature.com/articles/s41562-020-0886-x")`
+- 質問箱 `r a("https://peing.net/ja/todaradio1")`
+- ECR `r a("https://academiccareermaps.org/glossary/early-career-researcher-ecr")`
+
+### エンディングテーマ
+
+ざじょんくす『傷痕』 `r a("https://www.todaradio.org/songs")`
+
+
+----
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelement-and-player.min.js"></script>
+
+

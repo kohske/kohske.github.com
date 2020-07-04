@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>TODA RADIO #008 コロナ禍と心理学</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/united.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">TODA RADIO</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    過去のラジオ
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="vol007.html">Vol. 007 (2020/06/27 ゲスト平石さん)</a>
+    </li>
+    <li>
+      <a href="vol006.html">Vol. 006 (2020/06/06 モムラジオ)</a>
+    </li>
+    <li>
+      <a href="vol005.html">Vol. 005 (2018/12/10 ゲスト神谷先生)</a>
+    </li>
+    <li>
+      <a href="vol004.html">Vol. 004 (2018/03/12 専修大学公開収録)</a>
+    </li>
+    <li>
+      <a href="vol003.html">Vol. 003 (2018/01/15 ミウラジオ)</a>
+    </li>
+    <li>
+      <a href="vol002.html">Vol. 002 (2018/01/04)</a>
+    </li>
+    <li>
+      <a href="vol001.html">Vol. 001 (2017/12/13)</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="about.html">なかの人たち</a>
+</li>
+<li>
+  <a href="discussion.html">ディスカッション</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">TODA RADIO #008 コロナ禍と心理学</h1>
+
+</div>
+
+
+<p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelementplayer.min.css"></p>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-hashtags="TodaRadio" data-show-count="false">Tweet</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<ul>
+<li>ハッシュタグ<code>#TodaRadio</code>でお願いします（↑のボタンから行けます）。</li>
+</ul>
+<p>※ 本ラジオでの発言は個人の見解であり、所属する組織の見解ではありません。</p>
+<p>※ 科学的な正しさを重視して発言していますが、発言には誤りが含まれることもありえます。</p>
+<p>※ ご意見、苦情などありましたら高橋までメール <a href="mailto:takahashi.kohske@gmail.com" class="email">takahashi.kohske@gmail.com</a> またはツイッター <a href="https://twitter.com/kohske">@kohske</a> までご連絡ください。</p>
+<p>※ <a href="discussion.html">ディスカッションルーム</a>もあります。</p>
+<hr />
+<ul>
+<li>収録日: 2020/6/30</li>
+<li>場所: Zoom</li>
+<li>メンバー
+<ul>
+<li>ゲスト：平石さん（レギュラーゲスト）・山田さん（準レギュラー）</li>
+<li>コメンテーター: 池田さん</li>
+<li>パーソナリティ: 高橋</li>
+</ul></li>
+</ul>
+<div id="概要" class="section level2">
+<h2>概要</h2>
+<hr />
+<div id="part-1" class="section level3">
+<h3>Part 1</h3>
+<audio class="mejs-player" controls data-mejsoptions="{&quot;alwaysShowControls&quot;: true, &quot;alwaysShowHours&quot;: true, &quot;enableAutosize&quot;: true, &quot;features&quot;: [&quot;playpause&quot;, &quot;progress&quot;, &quot;current&quot;, &quot;duration&quot;, &quot;volume&quot;, &quot;speed&quot;]}" preload="auto" src="audio/vol008_1.mp3" width="100%">
+</audio>
+<p><a href="audio/vol008_1.mp3">MP3ファイルをダウンロード</a></p>
+<hr />
+</div>
+<div id="part-2" class="section level3">
+<h3>Part 2</h3>
+<audio class="mejs-player" controls data-mejsoptions="{&quot;alwaysShowControls&quot;: true, &quot;alwaysShowHours&quot;: true, &quot;enableAutosize&quot;: true, &quot;features&quot;: [&quot;playpause&quot;, &quot;progress&quot;, &quot;current&quot;, &quot;duration&quot;, &quot;volume&quot;, &quot;speed&quot;]}" preload="auto" src="audio/vol008_2.mp3" width="100%">
+</audio>
+<p><a href="audio/vol008_2.mp3">MP3ファイルをダウンロード</a></p>
+<hr />
+</div>
+<div id="part-3" class="section level3">
+<h3>Part 3</h3>
+<audio class="mejs-player" controls data-mejsoptions="{&quot;alwaysShowControls&quot;: true, &quot;alwaysShowHours&quot;: true, &quot;enableAutosize&quot;: true, &quot;features&quot;: [&quot;playpause&quot;, &quot;progress&quot;, &quot;current&quot;, &quot;duration&quot;, &quot;volume&quot;, &quot;speed&quot;]}" preload="auto" src="audio/vol008_3.mp3" width="100%">
+</audio>
+<p><a href="audio/vol008_3.mp3">MP3ファイルをダウンロード</a></p>
+<hr />
+</div>
+</div>
+<div id="ラジオの時系列順にポインタ" class="section level2">
+<h2>ラジオの時系列順にポインタ</h2>
+<div id="オープニングbgm" class="section level3">
+<h3>オープニングBGM</h3>
+<p>ざじょんくす『恋のつり橋効果』</p>
+</div>
+<div id="part-1-心理学者のステイホームについてまったり語る" class="section level3">
+<h3>Part 1 心理学者のステイホームについてまったり語る</h3>
+<ul>
+<li>ざじょんくす: <a href='https://twitter.com/Zajonc_s' target='_blank'>https://twitter.com/Zajonc_s</a></li>
+<li>平石さん（レギュラーゲスト） <a href='https://sites.google.com/site/kaihiraishi/home' target='_blank'>https://sites.google.com/site/kaihiraishi/home</a></li>
+<li>山田さん（準レギュラー） <a href='https://sites.google.com/site/jyamadayuk/' target='_blank'>https://sites.google.com/site/jyamadayuk/</a></li>
+<li>質問箱 <a href='https://peing.net/ja/todaradio1' target='_blank'>https://peing.net/ja/todaradio1</a>
+<ul>
+<li>当該の質問と回答 <a href='https://peing.net/ja/q/b322d55d-0aa6-418f-94c5-5449d8f960e8' target='_blank'>https://peing.net/ja/q/b322d55d-0aa6-418f-94c5-5449d8f960e8</a></li>
+<li>Dr. Michael Inzlicht <a href='http://michaelinzlicht.com/#lab-view' target='_blank'>http://michaelinzlicht.com/#lab-view</a></li>
+<li>プライミング <a href='https://bsd.neuroinf.jp/wiki/%E3%83%97%E3%83%A9%E3%82%A4%E3%83%9F%E3%83%B3%E3%82%B0%E5%8A%B9%E6%9E%9C' target='_blank'>https://bsd.neuroinf.jp/wiki/%E3%83%97%E3%83%A9%E3%82%A4%E3%83%9F%E3%83%B3%E3%82%B0%E5%8A%B9%E6%9E%9C</a></li>
+</ul></li>
+<li>住みたいランキング <a href='https://diamond.jp/articles/-/241544' target='_blank'>https://diamond.jp/articles/-/241544</a></li>
+<li>「世界の住みやすい都市」福岡7位は通過点!?　目指すは“東京超え”の世界一！<a href='http://hash.city.fukuoka.lg.jp/news/archives/131.html' target='_blank'>http://hash.city.fukuoka.lg.jp/news/archives/131.html</a></li>
+<li>キソジオンライン <a href='https://kohske.github.io/KisojiOnline/' target='_blank'>https://kohske.github.io/KisojiOnline/</a>
+<ul>
+<li><a href='https://twitter.com/asarin/status/1246298433003982850' target='_blank'>https://twitter.com/asarin/status/1246298433003982850</a></li>
+<li><a href='https://twitter.com/kohske/status/1246328669573808128' target='_blank'>https://twitter.com/kohske/status/1246328669573808128</a></li>
+<li><a href='https://twitter.com/asarin/status/1246361427071254529' target='_blank'>https://twitter.com/asarin/status/1246361427071254529</a></li>
+</ul></li>
+<li>HAD <a href='https://norimune.net/had' target='_blank'>https://norimune.net/had</a></li>
+<li>澤さんすごい <a href='https://twitter.com/kosukesa/status/1277272382130946049' target='_blank'>https://twitter.com/kosukesa/status/1277272382130946049</a></li>
+</ul>
+</div>
+<div id="part-2-コロナ禍の中の心理学" class="section level3">
+<h3>Part 2 コロナ禍の中の心理学</h3>
+<ul>
+<li>van Bavel (2020) NHB <a href='https://www.nature.com/articles/s41562-020-0884-z' target='_blank'>https://www.nature.com/articles/s41562-020-0884-z</a></li>
+<li>PSA <a href='https://psysciacc.org/' target='_blank'>https://psysciacc.org/</a>
+<ul>
+<li>NHB in principle accept <a href='https://tinyurl.com/y7pk8spf' target='_blank'>https://tinyurl.com/y7pk8spf</a></li>
+</ul></li>
+<li>RSOS <a href='https://royalsocietypublishing.org/journal/rsos' target='_blank'>https://royalsocietypublishing.org/journal/rsos</a>
+<ul>
+<li>Urgent Call for Registered Reports on Coronavirus <a href='https://blogs.royalsociety.org/publishing/call-for-registered-reports-coronavirus/' target='_blank'>https://blogs.royalsociety.org/publishing/call-for-registered-reports-coronavirus/</a></li>
+<li>CALLING ALL SCIENTISTS: Rapid evaluation of COVID19-related Registered Reports at Royal Society Open Science</li>
+</ul></li>
+<li><a href='http://neurochambers.blogspot.com/2020/03/calling-all-scientists-rapid-evaluation.html' target='_blank'>http://neurochambers.blogspot.com/2020/03/calling-all-scientists-rapid-evaluation.html</a></li>
+<li>Ijzerman et al. (2020) <a href='https://psyarxiv.com/whds4/' target='_blank'>https://psyarxiv.com/whds4/</a></li>
+<li>Behavioural Insights Team <a href='https://www.bi.team/' target='_blank'>https://www.bi.team/</a>
+<ul>
+<li>wiki <a href='https://en.wikipedia.org/wiki/Behavioural_Insights_Team' target='_blank'>https://en.wikipedia.org/wiki/Behavioural_Insights_Team</a></li>
+<li>BBC 「イギリス独自のウイルス対策、「国民の命を危険に」と多数の科学者反対」 <a href='https://www.bbc.com/japanese/features-and-analysis-51894727' target='_blank'>https://www.bbc.com/japanese/features-and-analysis-51894727</a></li>
+</ul></li>
+<li>ReproducibiliTea Tokyo <a href='https://note.com/kokiikeda/n/nd5df27174ab7' target='_blank'>https://note.com/kokiikeda/n/nd5df27174ab7</a></li>
+<li>Ijzerman et al. (2020)に関するブログ <a href='https://note.com/kymd/n/n8dfa874c691b' target='_blank'>https://note.com/kymd/n/n8dfa874c691b</a></li>
+<li>ラカトシュ <a href='https://ja.wikipedia.org/wiki/%E3%83%A9%E3%82%AB%E3%83%88%E3%82%B7%E3%83%A5%E3%83%BB%E3%82%A4%E3%83%A0%E3%83%AC' target='_blank'>https://ja.wikipedia.org/wiki/%E3%83%A9%E3%82%AB%E3%83%88%E3%82%B7%E3%83%A5%E3%83%BB%E3%82%A4%E3%83%A0%E3%83%AC</a></li>
+<li>三浦さん・平石さんたちの Disgust sensitivity and COVID-19 <a href='https://osf.io/9cbhr' target='_blank'>https://osf.io/9cbhr</a>
+<ul>
+<li>読売新聞「コロナ感染は自業自得」日本は１１％、米英の１０倍…阪大教授など調査 <a href='https://www.yomiuri.co.jp/national/20200629-OYT1T50107/' target='_blank'>https://www.yomiuri.co.jp/national/20200629-OYT1T50107/</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="part-3-心理学の応用" class="section level3">
+<h3>Part 3 心理学の応用</h3>
+<ul>
+<li>日本心理学会「新型コロナウイルス感染拡大に関連した実践活動及び研究」 <a href='https://psych.or.jp/2020_covid' target='_blank'>https://psych.or.jp/2020_covid</a></li>
+<li>心理学研究 特集号「新型コロナウイルス感染症と心理学」<a href='https://psych.or.jp/publication/sp_JJP/' target='_blank'>https://psych.or.jp/publication/sp_JJP/</a></li>
+<li>frontiers Knowledge Hub Coronavirus <a href='https://coronavirus.frontiersin.org/' target='_blank'>https://coronavirus.frontiersin.org/</a></li>
+<li>プレプリント <a href='https://www.editage.jp/insights/the-role-of-preprints-in-research-dissemination' target='_blank'>https://www.editage.jp/insights/the-role-of-preprints-in-research-dissemination</a></li>
+<li>チョコ <a href='https://www.nikkei.com/article/DGXMZO27844720Y8A300C1CR0000/' target='_blank'>https://www.nikkei.com/article/DGXMZO27844720Y8A300C1CR0000/</a></li>
+<li>符号科学</li>
+<li>岩田先生の連ツイ <a href='https://twitter.com/georgebest1969/status/1274330973363027972' target='_blank'>https://twitter.com/georgebest1969/status/1274330973363027972</a></li>
+<li>心理学会「新型コロナウイルス感染症（COVID-19）関連ページ」 <a href='https://psych.or.jp/special/covid19/' target='_blank'>https://psych.or.jp/special/covid19/</a></li>
+<li>心理物理学</li>
+<li>皮質拡大係数(cortical magnification factor) <a href='https://ja.wikipedia.org/wiki/%E7%9A%AE%E8%B3%AA%E6%8B%A1%E5%A4%A7' target='_blank'>https://ja.wikipedia.org/wiki/%E7%9A%AE%E8%B3%AA%E6%8B%A1%E5%A4%A7</a></li>
+<li>Crud factor - Crud (Re)Defined <a href='https://journals.sagepub.com/doi/full/10.1177/2515245920917961' target='_blank'>https://journals.sagepub.com/doi/full/10.1177/2515245920917961</a></li>
+<li>フレーミング効果 <a href='https://www.jumonji-u.ac.jp/sscs/ikeda/cognitive_bias/cate_d/d_05.html' target='_blank'>https://www.jumonji-u.ac.jp/sscs/ikeda/cognitive_bias/cate_d/d_05.html</a>
+<ul>
+<li>NHBの追試論文 <a href='https://www.nature.com/articles/s41562-020-0886-x' target='_blank'>https://www.nature.com/articles/s41562-020-0886-x</a></li>
+</ul></li>
+<li>質問箱 <a href='https://peing.net/ja/todaradio1' target='_blank'>https://peing.net/ja/todaradio1</a></li>
+<li>ECR <a href='https://academiccareermaps.org/glossary/early-career-researcher-ecr' target='_blank'>https://academiccareermaps.org/glossary/early-career-researcher-ecr</a></li>
+</ul>
+</div>
+<div id="エンディングテーマ" class="section level3">
+<h3>エンディングテーマ</h3>
+<p>ざじょんくす『傷痕』 <a href='https://www.todaradio.org/songs' target='_blank'>https://www.todaradio.org/songs</a></p>
+<hr />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelement-and-player.min.js"></script>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+</body>
+</html>
